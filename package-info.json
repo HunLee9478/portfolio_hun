@@ -1,0 +1,26 @@
+{
+  "name": "leeseunghun-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, interactive portfolio website showcasing professional content creation work with advanced scroll-based animations and comprehensive content management system.",
+  "author": {
+    "name": "LEESEUNGHUN",
+    "email": "buen136003@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/leeseunghun-portfolio.git"
+  },
+  "homepage": "https://yourusername.github.io/leeseunghun-portfolio",
+  "keywords": [
+    "portfolio",
+    "content-creator",
+    "react",
+    "typescript",
+    "tailwind",
+    "gsap",
+    "framer-motion",
+    "vite"
+  ],
+  "license": "MIT",
+  "note": "This is the intended package.json configuration. Use the custom build scripts instead of npm scripts for deployment."
+}
