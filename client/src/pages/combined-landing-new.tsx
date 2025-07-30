@@ -971,7 +971,7 @@ export default function CombinedLanding() {
             {/* Main About Section */}
             <div className={SPACING.sectionGap}>
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1cabe2]" style={{ color: COLORS.primary }}>
+                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
                   ABOUT Hun
                 </h3>
                 <span
@@ -1161,7 +1161,7 @@ export default function CombinedLanding() {
             {/* Education & Career Section */}
             <div className={SPACING.sectionGap}>
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
+                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
                   Education & Experience
                 </h3>
                 <span
@@ -1340,7 +1340,7 @@ export default function CombinedLanding() {
             {/* Featured Work Section */}
             <div className={SPACING.sectionGap} data-section="work">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
+                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
                   MAIN PROJECT
                 </h3>
                 <span
@@ -1401,7 +1401,7 @@ export default function CombinedLanding() {
             {/* Gallery Section */}
             <div className={SPACING.sectionGap} data-section="gallery">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
+                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
                   VISUAL GALLERY
                 </h3>
                 <span
@@ -1477,7 +1477,7 @@ export default function CombinedLanding() {
             {/* Contact Section */}
             <div className="mb-0" data-section="contact">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">Keep going</h3>
+                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>Keep going</h3>
                 <span
                   className={`${FONT_SIZES.small} font-medium text-gray-500`}
                 >

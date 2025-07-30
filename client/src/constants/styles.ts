@@ -42,7 +42,7 @@ export const TYPOGRAPHY = {
 
 // Color constants for consistent styling
 export const COLORS = {
-  primary: "#ef4444", // 빨간색 강조
+  primary: "#1CABE2", // 파란색 강조
   text: {
     primary: "#282623", // 진한 회색 메인 텍스트
     secondary: "#58534e", // 중간 회색 보조 텍스트
