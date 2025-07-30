@@ -230,7 +230,7 @@ export default function CombinedLanding() {
   });
   const [editableTexts, setEditableTexts] = useState<Record<string, string>>({
     heroTitle1: "메세지 전달을 넘어",
-    heroTitle2: "<span style='color: #1CABE2'>후원자의 마음</span>을",
+    heroTitle2: "<span style='color: #ef4444'>후원자의 마음</span>을",
     heroTitle3: "움직이는",
     heroTitle4: "디지털 마케터 이승훈 입니다",
     aboutTitle: "> ALL-IN-ONE CAMPAIGN\nCREATOR",
@@ -785,7 +785,7 @@ export default function CombinedLanding() {
       )}
       {/* Navigation Bar */}
       <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-[99999]">
-        <div className="backdrop-blur-md rounded-full px-8 py-3" style={{ backgroundColor: "#1CABE2" }}>
+        <div className="backdrop-blur-md rounded-full px-8 py-3" style={{ backgroundColor: COLORS.primary }}>
           <div className="flex items-center space-x-8">
             <button
               onClick={() => handleNavigation("home")}
@@ -971,7 +971,7 @@ export default function CombinedLanding() {
             {/* Main About Section */}
             <div className={SPACING.sectionGap}>
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1cabe2]" style={{ color: COLORS.primary }}>
+                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
                   ABOUT Hun
                 </h3>
                 <span
@@ -1008,14 +1008,14 @@ export default function CombinedLanding() {
                   >
                     <EditableText
                       textKey="aboutTitle"
-                      className="leading-tight font-light text-[#1CABE2]"
+                      className="leading-tight font-light"
                       style={{
                         fontFamily: "'Noto Sans', sans-serif",
                         fontSize: "3.5rem",
                         fontWeight: "300",
                         letterSpacing: "0.05em",
                         lineHeight: "1.1",
-                        color: "#1CABE2",
+                        color: COLORS.primary,
                       }}
                     >
                       &gt; ALL-IN-ONE CAMPAIGN<br />CREATOR
@@ -1161,7 +1161,7 @@ export default function CombinedLanding() {
             {/* Education & Career Section */}
             <div className={SPACING.sectionGap}>
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
+                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
                   Education & Experience
                 </h3>
                 <span
@@ -1185,7 +1185,7 @@ export default function CombinedLanding() {
                     학력
                   </h4>
                   <div className="space-y-6">
-                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#1CABE2" }}>
+                    <div className="border-l-2 pl-4" style={{ borderLeftColor: COLORS.primary }}>
                       <div className="flex justify-between items-start mb-2">
                         <h5
                           className={`${FONT_SIZES.body} font-medium text-gray-900`}
@@ -1243,7 +1243,7 @@ export default function CombinedLanding() {
                     주요 경력
                   </h4>
                   <div className="space-y-6">
-                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#1CABE2" }}>
+                    <div className="border-l-2 pl-4" style={{ borderLeftColor: COLORS.primary }}>
                       <div className="flex justify-between items-start mb-2">
                         <h5
                           className={`${FONT_SIZES.body} font-medium text-gray-900`}
@@ -1340,7 +1340,7 @@ export default function CombinedLanding() {
             {/* Featured Work Section */}
             <div className={SPACING.sectionGap} data-section="work">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
+                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
                   MAIN PROJECT
                 </h3>
                 <span
@@ -1401,7 +1401,7 @@ export default function CombinedLanding() {
             {/* Gallery Section */}
             <div className={SPACING.sectionGap} data-section="gallery">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
+                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
                   VISUAL GALLERY
                 </h3>
                 <span
@@ -1477,7 +1477,7 @@ export default function CombinedLanding() {
             {/* Contact Section */}
             <div className="mb-0" data-section="contact">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">Keep going</h3>
+                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>Keep going</h3>
                 <span
                   className={`${FONT_SIZES.small} font-medium text-gray-500`}
                 >
