@@ -1935,7 +1935,29 @@ export default function CombinedLanding() {
                           )}
                         </>
                       ) : (
-                        
+                        <>
+                          {/* 다른 프로젝트들을 위한 기본 이미지 레이아웃 */}
+                          <div className="grid grid-cols-2 gap-4 mb-4">
+                            {selectedProject.images.map((image, index) => (
+                              <div key={index} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                                <AdvancedEditableText
+                                  textKey={`project-${selectedProject.id}-image-${index}`}
+                                  isImageEditable={true}
+                                  imageSrc={image}
+                                  onImageChange={(newSrc) => {
+                                    console.log(`Image ${index} changed to:`, newSrc);
+                                  }}
+                                >
+                                  <img 
+                                    src={image} 
+                                    alt={`${selectedProject.title} 이미지 ${index + 1}`}
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                  />
+                                </AdvancedEditableText>
+                              </div>
+                            ))}
+                          </div>
+                        </>
                       )
                     ) : (
                       <div className="text-center py-8 text-gray-500">
