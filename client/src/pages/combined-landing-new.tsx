@@ -1717,35 +1717,18 @@ export default function CombinedLanding() {
                   <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                     <div className="lg:col-span-3">
                       <h1 className="text-4xl lg:text-5xl text-[#282623] leading-tight mb-0 font-semibold">
-                        {selectedProject.id === "1" && (
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-title`}
-                            className="text-4xl lg:text-5xl text-[#282623] leading-tight font-semibold"
-                            style={{
-                              fontSize: "clamp(2rem, 4vw, 3rem)",
-                              lineHeight: "1.2",
-                              fontWeight: "600",
-                              color: "#282623"
-                            }}
-                          >
-                            온·오프라인 실시간 행사<br />
-                            /교육 기획·진행
-                          </AdvancedEditableText>
-                        )}
-                        {selectedProject.id !== "1" && (
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-title`}
-                            className="text-4xl lg:text-5xl text-[#282623] leading-tight font-semibold"
-                            style={{
-                              fontSize: "clamp(2rem, 4vw, 3rem)",
-                              lineHeight: "1.2",
-                              fontWeight: "600",
-                              color: "#282623"
-                            }}
-                          >
-                            {selectedProject.title}
-                          </AdvancedEditableText>
-                        )}
+                        <AdvancedEditableText
+                          textKey={`project-${selectedProject.id}-title`}
+                          className="text-4xl lg:text-5xl text-[#282623] leading-tight font-semibold"
+                          style={{
+                            fontSize: "clamp(2rem, 4vw, 3rem)",
+                            lineHeight: "1.2",
+                            fontWeight: "600",
+                            color: "#282623"
+                          }}
+                        >
+                          {selectedProject.title}
+                        </AdvancedEditableText>
                       </h1>
                     </div>
                   </div>
@@ -1762,7 +1745,7 @@ export default function CombinedLanding() {
                             color: "#282623"
                           }}
                         >
-                          {selectedProject.id === "1" ? "행사, 교육 기획" : "콘텐츠 기획·제작"}
+                          {selectedProject.category || "콘텐츠 기획·제작"}
                         </AdvancedEditableText>
                       </div>
                       <div>
@@ -1775,7 +1758,7 @@ export default function CombinedLanding() {
                             color: "#282623"
                           }}
                         >
-                          {selectedProject.id === "1" ? "삼성 그룹" : selectedProject.client}
+                          {selectedProject.client}
                         </AdvancedEditableText>
                       </div>
                       <div>
@@ -1788,7 +1771,7 @@ export default function CombinedLanding() {
                             color: "#282623"
                           }}
                         >
-                          {selectedProject.id === "1" ? "기획, 운영, 제작" : selectedProject.role}
+                          {selectedProject.role}
                         </AdvancedEditableText>
                       </div>
                     </div>
