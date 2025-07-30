@@ -230,7 +230,7 @@ export default function CombinedLanding() {
   });
   const [editableTexts, setEditableTexts] = useState<Record<string, string>>({
     heroTitle1: "메세지 전달을 넘어",
-    heroTitle2: "<span style='color: #1CABE2'>후원자의 마음</span>만을",
+    heroTitle2: "<span style='color: #1CABE2'>후원자의 마음</span>을",
     heroTitle3: "움직이는",
     heroTitle4: "디지털 마케터 이승훈 입니다",
     aboutTitle: "> ALL IN ONE CONTENT\nCREATOR",
