@@ -3367,28 +3367,7 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
-                {/* 프로젝트 이미지 갤러리 */}
-                {selectedProject.images && selectedProject.images.length > 0 && (
-                  <div className="mb-8 pt-8 border-t border-gray-200">
-                    <h2 className="text-base text-[#282623] font-medium mb-6 tracking-tight leading-relaxed">
-                      <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">{selectedProject.id === "1" ? "5" : selectedProject.id === "3" ? "6" : "6"}</span>
-                      프로젝트 이미지
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      {selectedProject.images.map((image, index) => (
-                        <div key={index} className="group cursor-pointer overflow-hidden rounded-lg bg-gray-100">
-                          <img
-                            src={image}
-                            alt={`${selectedProject.title} 이미지 ${index + 1}`}
-                            className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                            loading="lazy"
-                            decoding="async"
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
+
 
                 <div className="pb-8"></div>
               </div>
