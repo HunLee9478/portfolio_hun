@@ -1936,24 +1936,27 @@ export default function CombinedLanding() {
                         </>
                       ) : (
                         <>
-                          {/* 다른 프로젝트들을 위한 기본 이미지 레이아웃 */}
-                          <div className="grid grid-cols-2 gap-4 mb-4">
+                          {/* 다른 프로젝트들을 위한 새로운 이미지 레이아웃 */}
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                             {selectedProject.images.map((image, index) => (
-                              <div key={index} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                                <AdvancedEditableText
-                                  textKey={`project-${selectedProject.id}-image-${index}`}
-                                  isImageEditable={true}
-                                  imageSrc={image}
-                                  onImageChange={(newSrc) => {
-                                    console.log(`Image ${index} changed to:`, newSrc);
-                                  }}
-                                >
-                                  <img 
-                                    src={image} 
-                                    alt={`${selectedProject.title} 이미지 ${index + 1}`}
-                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                  />
-                                </AdvancedEditableText>
+                              <div key={index} className="relative group">
+                                <div className="aspect-[16/9] bg-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-image-${index}`}
+                                    isImageEditable={true}
+                                    imageSrc={image}
+                                    onImageChange={(newSrc) => {
+                                      console.log(`Image ${index} changed to:`, newSrc);
+                                    }}
+                                  >
+                                    <img 
+                                      src={image} 
+                                      alt={`${selectedProject.title} 이미지 ${index + 1}`}
+                                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    />
+                                  </AdvancedEditableText>
+                                </div>
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 rounded-xl"></div>
                               </div>
                             ))}
                           </div>
