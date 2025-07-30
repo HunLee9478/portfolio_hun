@@ -2209,20 +2209,12 @@ export default function CombinedLanding() {
                   </div>
                   <div className="space-y-5 mb-8">
                     <div>
-                      <AdvancedEditableText
-                        textKey={`project-${selectedProject.id}-period`}
-                        className="text-sm text-[#282623] tracking-tight leading-relaxed"
-                        style={{
-                          fontSize: TYPOGRAPHY.fontSize.small,
-                          color: "#282623",
-                          lineHeight: TYPOGRAPHY.lineHeight.relaxed
-                        }}
-                      >
-                        {selectedProject.id === "1" && "2023.03 ~ 2024.11 (21개월)"}
+                      <span className="text-sm text-[#282623] tracking-tight leading-relaxed" style={{ fontSize: "14px", color: "rgb(40, 38, 35)", lineHeight: "1.6", letterSpacing: "0px", fontFamily: "inherit", fontWeight: "400" }}>
+                        전체 기간: {selectedProject.id === "1" && "2023.03 ~ 2024.11 (21개월)"}
                         {selectedProject.id === "2" && "2022.01 ~ 2022.07 (7개월)"}
                         {selectedProject.id === "3" && "2023.02 ~ 2023.08 (7개월)"}
                         {selectedProject.id === "4" && "2019.05 ~ 2019.06 (2개월)"}
-                      </AdvancedEditableText>
+                      </span>
                     </div>
                   </div>
                 </div>
