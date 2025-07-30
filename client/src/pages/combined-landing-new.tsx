@@ -851,14 +851,14 @@ export default function CombinedLanding() {
                 className="block text-left"
                 style={{ lineHeight: "1.1" }}
               >
-                메세지를 넘어
+                메세지 전달을 넘어
               </EditableText>
               <EditableText
                 textKey="heroTitle2"
                 className="block mt-[2px] mb-[2px] pt-[1px] pb-[1px]"
                 style={{ lineHeight: "1.1" }}
               >
-                시청자의 경험까지
+                후원자의 마음만을
               </EditableText>
               <div
                 className="block pt-[0px] pb-[0px] mt-[-4px] mb-[-4px]"
@@ -869,7 +869,7 @@ export default function CombinedLanding() {
                   className="inline"
                   style={{ lineHeight: "1.1" }}
                 >
-                  설계하는
+                  움직이는
                 </EditableText>
                 <span
                   ref={videoWrapRef}
