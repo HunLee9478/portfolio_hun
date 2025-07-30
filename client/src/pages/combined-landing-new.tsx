@@ -1729,17 +1729,47 @@ export default function CombinedLanding() {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white w-full max-w-5xl h-[90vh] rounded-xl shadow-2xl relative tracking-tight leading-relaxed overflow-hidden">
             <div className="h-full overflow-y-scroll">
-              <div className="px-8 lg:px-16 pb-2 pt-16">
+              {/* 헤더 제목 영역 */}
+              <div className="relative bg-gradient-to-br from-gray-50 to-white px-8 lg:px-16 pt-12 pb-8">
+                {/* Close 버튼 */}
+                <button 
+                  onClick={closeProjectModal}
+                  className="absolute top-6 right-6 w-8 h-8 flex items-center justify-center rounded-full bg-white/80 hover:bg-white shadow-lg hover:shadow-xl transition-all duration-200 text-gray-600 hover:text-gray-900"
+                >
+                  ✕
+                </button>
+
                 {/* Back 버튼 */}
                 <div className="mb-8">
                   <button 
                     onClick={closeProjectModal}
-                    className="text-sm text-[#58534e] hover:text-[#282623] transition-colors flex items-center gap-1"
+                    className="text-sm text-[#58534e] hover:text-[#282623] transition-colors flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-white/50"
                   >
                     ← Back To All Work
                   </button>
                 </div>
 
+                {/* 메인 제목 */}
+                <div className="text-center mb-8">
+                  <h1 className="text-5xl lg:text-6xl font-bold text-[#282623] mb-4 tracking-tight">
+                    <AdvancedEditableText
+                      textKey={`project-${selectedProject?.id}-main-title`}
+                      className="text-5xl lg:text-6xl font-bold text-[#282623] tracking-tight"
+                      style={{
+                        fontSize: "clamp(2.5rem, 5vw, 4rem)",
+                        lineHeight: "1.1",
+                        fontWeight: "700",
+                        color: "#282623"
+                      }}
+                    >
+                      {selectedProject?.title}
+                    </AdvancedEditableText>
+                  </h1>
+                  <div className="w-24 h-1 bg-[#ff6b6b] mx-auto rounded-full"></div>
+                </div>
+              </div>
+
+              <div className="px-8 lg:px-16 pb-2 pt-8">
                 {/* 제목 및 기본 정보 */}
                 <div className="mb-12">
                   <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
