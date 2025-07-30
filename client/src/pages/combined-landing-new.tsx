@@ -830,14 +830,14 @@ export default function CombinedLanding() {
             <div className="space-y-2 text-center max-w-4xl mx-auto">
               <EditableText
                 textKey="heroTitle1"
-                className="block text-left"
+                className="block text-left text-[#2D2926]"
                 style={{ lineHeight: "1.1" }}
               >
                 메세지 전달을 넘어
               </EditableText>
               <EditableText
                 textKey="heroTitle2"
-                className="block mt-[2px] mb-[2px] pt-[1px] pb-[1px]"
+                className="block mt-[2px] mb-[2px] pt-[1px] pb-[1px] text-[#2D2926]"
                 style={{ lineHeight: "1.1" }}
               >
                 후원자의 마음만을
@@ -848,7 +848,7 @@ export default function CombinedLanding() {
               >
                 <EditableText
                   textKey="heroTitle3"
-                  className="inline"
+                  className="inline text-[#2D2926]"
                   style={{ lineHeight: "1.1" }}
                 >
                   움직이는
@@ -893,7 +893,7 @@ export default function CombinedLanding() {
               >
                 <EditableText
                   textKey="heroTitle4"
-                  className="inline"
+                  className="inline text-[#2D2926]"
                   style={{ lineHeight: "1.1" }}
                 >
                   콘텐츠 제작자 이승훈 입니다
