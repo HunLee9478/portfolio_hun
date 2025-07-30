@@ -470,7 +470,11 @@ export default function CombinedLanding() {
       client: "종로구청",
       role: "VR 콘텐츠 기획, 제작",
       tools: ["VR Development", "Cultural Research", "3D Modeling"],
-      images: [],
+      images: [
+        VRCulturalHeritageImage,
+        "/assets/gallery/personal-portfolio.png",
+        "/assets/gallery/interview.png",
+      ],
     },
     {
       id: "gallery-2",
@@ -485,7 +489,11 @@ export default function CombinedLanding() {
       client: "고려대학교구로병원",
       role: "방송 콘텐츠 기획, 제작",
       tools: ["Broadcasting", "Medical Communication", "Video Production"],
-      images: [],
+      images: [
+        KoreyaHospitalImage,
+        "/assets/gallery/beauty-portrait-new.png",
+        "/assets/gallery/conference-presentation.png",
+      ],
     },
     {
       id: "gallery-3",
@@ -500,7 +508,11 @@ export default function CombinedLanding() {
       client: "삼성",
       role: "메타버스 행사 기획, 가상환경 제작, 기술 구현",
       tools: ["Unity", "VR/AR Development", "3D Modeling", "Metaverse Platform", "Real-time Interaction"],
-      images: [],
+      images: [
+        GalleryBeautyImage,
+        "/assets/gallery/jinair-surfing.png",
+        "/assets/gallery/jinair-promotion.png",
+      ],
     },
 
     {
@@ -515,7 +527,11 @@ export default function CombinedLanding() {
       client: "현대 글로비스",
       role: "현장 촬영, 프로그램 제작",
       tools: ["Documentary Style", "Interview Setup"],
-      images: [],
+      images: [
+        GalleryInterviewImage,
+        "/assets/gallery/vr-cultural-heritage.jpg",
+        "/assets/gallery/koreya-hospital.jpg",
+      ],
     },
     {
       id: "gallery-5",
@@ -530,7 +546,11 @@ export default function CombinedLanding() {
       client: "삼성",
       role: "해외 행사 기획, 운영 총괄, 국제 업무 조율",
       tools: ["Global Event Planning", "International Protocol", "Multi-language Support", "Cross-cultural Communication"],
-      images: [],
+      images: [
+        LikelionHackathonImage,
+        "/assets/images/samsung-offline.png",
+        "/assets/projects/jinair-esports.png",
+      ],
     },
     {
       id: "gallery-6",
@@ -545,7 +565,11 @@ export default function CombinedLanding() {
       client: "삼성",
       role: "웨비나 기획, 행사 운영, 기술 관리",
       tools: ["Live Streaming", "Event Management", "OBS", "Zoom", "YouTube Live"],
-      images: [],
+      images: [
+        GalleryMalePortraitImage,
+        "/assets/projects/snapask-1.png",
+        "/assets/projects/samsung-education-studio.jpg",
+      ],
     },
     {
       id: "gallery-7",
@@ -559,7 +583,11 @@ export default function CombinedLanding() {
       client: "JINAIR",
       role: "시각 콘텐츠 기획, 디자인",
       tools: ["Photoshop", "Illustrator", "Brand Design"],
-      images: [],
+      images: [
+        JinairSurfingDayImage,
+        "/assets/projects/jinair-fan-event.png",
+        "/assets/projects/jinair-shilla-beauty.png",
+      ],
     },
 
 
