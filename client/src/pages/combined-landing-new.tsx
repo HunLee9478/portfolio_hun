@@ -1860,7 +1860,7 @@ export default function CombinedLanding() {
                         }}
                       >
                         <img 
-                          src="/attached_assets/image_1753915707325.png" 
+                          src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=600&fit=crop" 
                           alt="프레젠테이션 진행 모습"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
@@ -1876,7 +1876,7 @@ export default function CombinedLanding() {
                         }}
                       >
                         <img 
-                          src="/attached_assets/image_1753915731181.png" 
+                          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop" 
                           alt="대형 스크린 발표 현장"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
@@ -1892,7 +1892,7 @@ export default function CombinedLanding() {
                         }}
                       >
                         <img 
-                          src="/attached_assets/image_1753915746678.png" 
+                          src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop" 
                           alt="3D 아바타 이벤트 현장"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
@@ -1908,7 +1908,7 @@ export default function CombinedLanding() {
                         }}
                       >
                         <img 
-                          src="/attached_assets/image_1753915767124.png" 
+                          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop" 
                           alt="팀 소개 프레젠테이션"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
