@@ -2004,6 +2004,198 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
+                {/* 추가 이미지 갤러리 - 2번 프로젝트 전용 */}
+                {selectedProject.id === "2" && (
+                  <div className="mb-12">
+                    <div className="mb-6">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        프로젝트 세부 활동
+                      </h3>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4 mb-8">
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src="/assets/projects/snapask-5.png" 
+                          alt="Snapask 콘텐츠 제작 과정"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: snapask-5.png")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src="/assets/projects/snapask-6.png" 
+                          alt="Snapask 영상 편집"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: snapask-6.png")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src="/assets/projects/snapask-7.png" 
+                          alt="Snapask 품질 관리"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: snapask-7.png")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src="/assets/projects/snapask-8.png" 
+                          alt="Snapask 최종 결과물"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: snapask-8.png")}
+                        />
+                      </div>
+                    </div>
+                    <div className="text-center mb-8">
+                      <p className="text-sm text-[#58534e] italic">프리미엄 콘텐츠 제작 과정 및 품질 관리</p>
+                    </div>
+                  </div>
+                )}
+
+                {/* 추가 이미지 갤러리 - 3번 프로젝트 전용 */}
+                {selectedProject.id === "3" && (
+                  <div className="mb-12">
+                    <div className="mb-6">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        프로젝트 세부 활동
+                      </h3>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4 mb-8">
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src="/assets/projects/snapask-9.png" 
+                          alt="Samsung 교육 콘텐츠 기획"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: snapask-9.png")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src="/assets/projects/snapask-10.png" 
+                          alt="Samsung 교육 콘텐츠 실행"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: snapask-10.png")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src={VRCulturalHeritageImage} 
+                          alt="Samsung 교육 시스템 구축"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: vr-cultural-heritage.jpg")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src={KoreyaHospitalImage} 
+                          alt="Samsung 교육 성과 분석"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: koreya-hospital.jpg")}
+                        />
+                      </div>
+                    </div>
+                    <div className="text-center mb-8">
+                      <p className="text-sm text-[#58534e] italic">교육 콘텐츠 기획 및 제작 과정</p>
+                    </div>
+                  </div>
+                )}
+
+                {/* 추가 이미지 갤러리 - 4번 프로젝트 전용 */}
+                {selectedProject.id === "4" && (
+                  <div className="mb-12">
+                    <div className="mb-6">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        프로젝트 세부 활동
+                      </h3>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4 mb-8">
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src={GalleryBeautyImage} 
+                          alt="Jinair 프로모션 콘텐츠 기획"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: beauty.png")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src={PersonalPortfolioImage} 
+                          alt="Jinair 마케팅 전략"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: personal-portfolio.png")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src={GalleryInterviewImage} 
+                          alt="Jinair 콘텐츠 제작"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: interview.png")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src={LikelionHackathonImage} 
+                          alt="Jinair 성과 분석"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: likelion-hackathon.png")}
+                        />
+                      </div>
+                    </div>
+                    <div className="text-center mb-8">
+                      <p className="text-sm text-[#58534e] italic">베트남 인플루언서 프로모션 기획 및 제작</p>
+                    </div>
+                  </div>
+                )}
+
                 {/* 프로젝트 기간 */}
                 <div className="mb-12">
                   <div className="mb-6">
