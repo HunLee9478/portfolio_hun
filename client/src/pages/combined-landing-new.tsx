@@ -1008,7 +1008,7 @@ export default function CombinedLanding() {
                   >
                     <EditableText
                       textKey="aboutTitle"
-                      className="leading-tight font-light"
+                      className="leading-tight font-light text-[#1CABE2]"
                       style={{
                         fontFamily: "'Noto Sans', sans-serif",
                         fontSize: "3.5rem",
