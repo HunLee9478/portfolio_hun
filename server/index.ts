@@ -9,6 +9,8 @@ app.use(express.urlencoded({ extended: false }));
 
 // Serve assets folder statically
 app.use('/assets', express.static(path.resolve(import.meta.dirname, '..', 'assets')));
+// Serve attached_assets folder statically
+app.use('/attached_assets', express.static(path.resolve(import.meta.dirname, '..', 'attached_assets')));
 
 app.use((req, res, next) => {
   const start = Date.now();
