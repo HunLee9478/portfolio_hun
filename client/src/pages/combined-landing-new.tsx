@@ -1860,9 +1860,14 @@ export default function CombinedLanding() {
                         }}
                       >
                         <img 
-                          src="/assets/projects/samsung-education-filming.jpg" 
+                          src="/assets/projects/samsung-education-filming.jpg?v=1" 
                           alt="프레젠테이션 진행 모습"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-filming.jpg")}
                         />
                       </AdvancedEditableText>
                     </div>
@@ -1876,9 +1881,14 @@ export default function CombinedLanding() {
                         }}
                       >
                         <img 
-                          src="/assets/projects/samsung-education-multiscreen.jpg" 
+                          src="/assets/projects/samsung-education-multiscreen.jpg?v=1" 
                           alt="대형 스크린 발표 현장"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-multiscreen.jpg")}
                         />
                       </AdvancedEditableText>
                     </div>
@@ -1892,9 +1902,14 @@ export default function CombinedLanding() {
                         }}
                       >
                         <img 
-                          src="/assets/projects/samsung-education-screenlife.jpg" 
+                          src="/assets/projects/samsung-education-screenlife.jpg?v=1" 
                           alt="3D 아바타 이벤트 현장"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-screenlife.jpg")}
                         />
                       </AdvancedEditableText>
                     </div>
@@ -1908,9 +1923,14 @@ export default function CombinedLanding() {
                         }}
                       >
                         <img 
-                          src="/assets/projects/samsung-education-studio.jpg" 
+                          src="/assets/projects/samsung-education-studio.jpg?v=1" 
                           alt="팀 소개 프레젠테이션"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-studio.jpg")}
                         />
                       </AdvancedEditableText>
                     </div>
