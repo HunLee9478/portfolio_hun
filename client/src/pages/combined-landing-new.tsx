@@ -1332,7 +1332,7 @@ export default function CombinedLanding() {
             {/* Featured Work Section */}
             <div className={SPACING.sectionGap} data-section="work">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="text-red-500 uppercase tracking-wide text-base font-semibold">
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
                   MAIN PROJECT
                 </h3>
                 <span
