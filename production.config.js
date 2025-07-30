@@ -1,46 +1,34 @@
 /**
  * Production Configuration
- * Environment-specific settings for production deployment
+ * This file contains production-ready settings for deployment
  */
 
 export const productionConfig = {
-  // Server configuration
-  server: {
-    port: process.env.PORT || 5000,
-    host: process.env.HOST || '0.0.0.0',
-    nodeEnv: 'production'
+  // Server settings
+  port: process.env.PORT || 5000,
+  host: process.env.HOST || '0.0.0.0',
+  
+  // Environment
+  nodeEnv: 'production',
+  
+  // Build settings
+  buildDir: 'dist',
+  clientBuildDir: 'dist/client',
+  
+  // Deployment commands
+  commands: {
+    build: 'node build.js',
+    start: 'node start.js',
+    healthCheck: 'node health-check.js'
   },
-
-  // Build configuration
-  build: {
-    target: 'production',
-    minify: true,
-    sourcemap: false,
-    outDir: 'dist'
-  },
-
-  // Security configuration
-  security: {
-    cors: {
-      origin: process.env.CORS_ORIGIN || false,
-      credentials: true
-    },
-    helmet: true,
-    compression: true
-  },
-
-  // Database configuration
-  database: {
-    url: process.env.DATABASE_URL,
-    ssl: process.env.NODE_ENV === 'production'
-  },
-
-  // Logging configuration
-  logging: {
-    level: 'info',
-    format: 'combined',
-    errorLog: 'logs/error.log',
-    accessLog: 'logs/access.log'
+  
+  // Replit deployment configuration
+  replit: {
+    deploymentTarget: 'autoscale',
+    buildCommand: ['sh', '-c', 'node build.js'],
+    runCommand: ['sh', '-c', 'node start.js'],
+    port: 5000,
+    externalPort: 80
   }
 };
 

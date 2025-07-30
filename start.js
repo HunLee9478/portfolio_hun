@@ -1,56 +1,59 @@
 #!/usr/bin/env node
+
 /**
  * Production Start Script
- * Starts the server with proper error handling and environment setup
+ * This script starts the production server
  */
 
 import { existsSync } from 'fs';
 import { spawn } from 'child_process';
 import path from 'path';
 
-const SERVER_FILE = 'dist/index.js';
-const PORT = process.env.PORT || 5000;
-
 console.log('🚀 Starting production server...');
 
 // Check if build exists
-if (!existsSync(SERVER_FILE)) {
-  console.error('❌ Server build not found. Please run build first.');
-  console.log('Run: npm run build');
+if (!existsSync('dist/index.js')) {
+  console.error('❌ Production build not found. Please run: node build.js');
   process.exit(1);
 }
 
-// Set production environment
+// Set production environment variables
 process.env.NODE_ENV = 'production';
+process.env.PORT = process.env.PORT || '5000';
+process.env.HOST = process.env.HOST || '0.0.0.0';
 
-// Start server
-const server = spawn('node', [SERVER_FILE], {
-  stdio: 'inherit',
-  env: {
-    ...process.env,
-    PORT: PORT
-  }
-});
+console.log(`🌍 Environment: ${process.env.NODE_ENV}`);
+console.log(`📡 Server will start on: ${process.env.HOST}:${process.env.PORT}`);
 
-server.on('error', (err) => {
-  console.error('❌ Server start error:', err);
+try {
+  // Start the production server
+  const server = spawn('node', ['dist/index.js'], {
+    stdio: 'inherit',
+    env: process.env
+  });
+
+  // Handle server shutdown gracefully
+  process.on('SIGTERM', () => {
+    console.log('📴 Received SIGTERM, shutting down gracefully...');
+    server.kill('SIGTERM');
+  });
+
+  process.on('SIGINT', () => {
+    console.log('📴 Received SIGINT, shutting down gracefully...');
+    server.kill('SIGINT');
+  });
+
+  server.on('close', (code) => {
+    console.log(`🔚 Server process exited with code ${code}`);
+    process.exit(code);
+  });
+
+  server.on('error', (error) => {
+    console.error('❌ Server error:', error);
+    process.exit(1);
+  });
+
+} catch (error) {
+  console.error('❌ Failed to start server:', error.message);
   process.exit(1);
-});
-
-server.on('exit', (code) => {
-  console.log(`Server exited with code ${code}`);
-  process.exit(code);
-});
-
-// Handle graceful shutdown
-process.on('SIGINT', () => {
-  console.log('\n🛑 Shutting down server...');
-  server.kill('SIGINT');
-});
-
-process.on('SIGTERM', () => {
-  console.log('\n🛑 Shutting down server...');
-  server.kill('SIGTERM');
-});
-
-console.log(`✅ Server starting on port ${PORT}`);
+}

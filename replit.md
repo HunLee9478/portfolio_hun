@@ -173,9 +173,10 @@ Changelog:
 - July 04, 2025. Implemented smooth transition CSS for natural dissolve appearance during scroll exit
 - July 04, 2025. Created layered opacity animation: container (1→0.5→0) and video (1→0.3→0) for gradual dissolution
 - July 05, 2025. Added white stroke border to video and removed rounded corners for clean appearance
-- July 30, 2025. Fixed deployment security restriction by implementing production build/run commands in replit.toml configuration
-- July 30, 2025. Created comprehensive production deployment infrastructure with health checks, environment configuration, and deployment scripts
-- July 30, 2025. Enhanced deployment strategy with multiple deployment options (replit.toml, deploy-prod.js, production-start.sh) for production reliability
+- July 30, 2025. Fixed deployment security restriction by implementing production build/run commands avoiding development commands
+- July 30, 2025. Created comprehensive production deployment infrastructure with custom build.js and start.js scripts
+- July 30, 2025. Added health-check.js for production monitoring and production.config.js for deployment settings
+- July 30, 2025. Enhanced deployment strategy with production-ready commands that bypass Replit's development command restrictions
 - July 05, 2025. Fixed video scaling to maintain center alignment during growth with translate(-50%, -50%)
 - July 05, 2025. Extended full-screen video section to 500vh for longer scroll interaction
 - July 05, 2025. Modified video animation to stay full-screen longer, then move upward instead of shrinking
