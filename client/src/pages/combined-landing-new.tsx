@@ -390,10 +390,10 @@ export default function CombinedLanding() {
       role: "기획, 운영, 제작",
       tools: ["Adobe Premiere", "After Effects", "Photoshop"],
       images: [
-        SamsungOfflineImage,
-        IntegratedOperationImage,
-        TechSupportImage,
-        OverseasEventImage,
+        "/assets/projects/samsung-education-filming.jpg",
+        "/assets/projects/samsung-education-multiscreen.jpg",
+        "/assets/projects/samsung-education-screenlife.jpg",
+        "/assets/projects/samsung-education-studio.jpg",
       ],
     },
     {
@@ -1959,10 +1959,10 @@ export default function CombinedLanding() {
                           lineHeight: TYPOGRAPHY.lineHeight.relaxed
                         }}
                       >
-                        {selectedProject.id === "1" && "전체 기간: 2023.03 ~ 2024.11 (21개월)"}
-                        {selectedProject.id === "2" && "전체 기간: 2022년 1월 ~ 2022년 7월 (7개월)"}
-                        {selectedProject.id === "3" && "전체 기간: 2023.02 ~ 2023.08 (7개월)"}
-                        {selectedProject.id === "4" && "전체 기간: 2019.05 ~ 2019.06 (2개월)"}
+                        {selectedProject.id === "1" && "2023.03 ~ 2024.11 (21개월)"}
+                        {selectedProject.id === "2" && "2022.01 ~ 2022.07 (7개월)"}
+                        {selectedProject.id === "3" && "2023.02 ~ 2023.08 (7개월)"}
+                        {selectedProject.id === "4" && "2019.05 ~ 2019.06 (2개월)"}
                       </AdvancedEditableText>
                     </div>
                   </div>
