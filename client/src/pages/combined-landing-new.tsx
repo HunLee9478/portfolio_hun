@@ -384,7 +384,7 @@ export default function CombinedLanding() {
       id: "1",
       src: SamsungOfflineImage,
       alt: "Samsung 온·오프라인 콘텐츠 기획",
-      title: "온오프라인 캠페인 기획 운영",
+      title: "온·오프라인 캠페인 기획 운영",
       subtitle: "통합 교육 프로그램 운영",
       description: "SAMSUNG\n온 오프라인 콘텐츠 기획. 운영",
       category: "Event Planning",
@@ -1927,50 +1927,50 @@ export default function CombinedLanding() {
                     <div className="grid grid-cols-2 gap-4 mb-8">
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src="/assets/projects/snapask-5.png" 
+                          src="/assets/projects/snapask-1.png" 
                           alt="Snapask 콘텐츠 제작 과정"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: snapask-5.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: snapask-1.png")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src="/assets/projects/snapask-6.png" 
+                          src="/assets/projects/snapask-2.png" 
                           alt="Snapask 영상 편집"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: snapask-6.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: snapask-2.png")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src="/assets/projects/snapask-7.png" 
+                          src="/assets/projects/snapask-3.png" 
                           alt="Snapask 품질 관리"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: snapask-7.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: snapask-3.png")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src="/assets/projects/snapask-8.png" 
+                          src="/assets/projects/snapask-4.png" 
                           alt="Snapask 최종 결과물"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: snapask-8.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: snapask-4.png")}
                         />
                       </div>
                     </div>
@@ -2730,7 +2730,7 @@ export default function CombinedLanding() {
                               fontWeight: "500"
                             }}
                           >
-                            사용자 몰입 유도를 위한 온라인 콘텐츠 플랫폼 기획
+                            몰입 유도를 위한 온라인 캠페인 기획
                           </AdvancedEditableText>
                           <div className="relative pl-4 mt-4 mb-6">
                             <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200"></div>
