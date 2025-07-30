@@ -1940,7 +1940,7 @@ export default function CombinedLanding() {
                           lineHeight: TYPOGRAPHY.lineHeight.relaxed
                         }}
                       >
-                        {selectedProject.id === "1" && "전체 기간: 2023.01 ~ 2024.11 (23개월)"}
+                        {selectedProject.id === "1" && "전체 기간: 2023.03 ~ 2024.11 (21개월)"}
                         {selectedProject.id === "2" && "전체 기간: 2022년 1월 ~ 2022년 7월 (7개월)"}
                         {selectedProject.id === "3" && "전체 기간: 2023.02 ~ 2023.08 (7개월)"}
                         {selectedProject.id === "4" && "전체 기간: 2019.05 ~ 2019.06 (2개월)"}
