@@ -971,7 +971,7 @@ export default function CombinedLanding() {
             {/* Main About Section */}
             <div className={SPACING.sectionGap}>
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]" style={{ color: COLORS.primary }}>
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1cabe2]" style={{ color: COLORS.primary }}>
                   ABOUT Hun
                 </h3>
                 <span
@@ -1258,7 +1258,7 @@ export default function CombinedLanding() {
                         Professional
                       </p>
                       <div className={`text-gray-500 mt-2 ${FONT_SIZES.small}`}>
-                        콘텐츠 기획·제작 총괄, 라이브 운영, 클라이언트 관리
+                        온, 오프라인 캠페인 기획, 운영, 제작 총괄, 라이브, 벤더사 및 클라이언트 관리
                       </div>
                     </div>
 
@@ -1313,17 +1313,25 @@ export default function CombinedLanding() {
                 
                 {/* Core Skills Grid */}
                 <div className="flex flex-wrap gap-3">
-                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Premiere Pro</span>
-                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>After Effects</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>캠페인 기획, 전략 수립</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>미디어 콘텐츠 기획, 연출, 제작</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>프로젝트 매니지먼트</span>
+                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>온,오프라인 캠페인 진행,운영</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>데이터 분석</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Snowflake</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Python</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Premier Pro</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>DaVinci Resolve</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>After Effect</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>DaVinci Resolve</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Photoshop</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>ComfyUI</span>
-                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Python</span>
-                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Unity</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Java</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>웹 콘텐츠 제작</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>콘텐츠 기획</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>프로젝트 관리</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>정보처리기사</span>
-                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>한국어 (모국어)</span>
+                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Midjourney</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>영어 (업무 수준)</span>
                 </div>
               </div>
