@@ -230,7 +230,7 @@ export default function CombinedLanding() {
   });
   const [editableTexts, setEditableTexts] = useState<Record<string, string>>({
     heroTitle1: "메세지 전달을 넘어",
-    heroTitle2: "<span style='color: #1CABE2'>후원자의 마음만</span>을",
+    heroTitle2: "후원자의 마음까지",
     heroTitle3: "움직이는",
     heroTitle4: "디지털 마케터 이승훈 입니다",
     aboutTitle: "> ALL IN ONE CONTENT\nCREATOR",
@@ -791,41 +791,29 @@ export default function CombinedLanding() {
       )}
       {/* Navigation Bar */}
       <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-[99999]">
-        <div className="bg-gray-100/90 backdrop-blur-md rounded-full px-8 py-3">
+        <div className="backdrop-blur-md rounded-full px-8 py-3" style={{ backgroundColor: "#1CABE2" }}>
           <div className="flex items-center space-x-8">
             <button
               onClick={() => handleNavigation("home")}
-              className={`${FONT_SIZES.small} transition-colors cursor-pointer`}
-              style={{ color: COLORS.text.hover }}
-              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = COLORS.text.primary)}
-              onMouseLeave={(e) => ((e.target as HTMLElement).style.color = COLORS.text.hover)}
+              className={`${FONT_SIZES.small} transition-colors cursor-pointer text-white hover:text-white/80`}
             >
               Home
             </button>
             <button
               onClick={() => handleNavigation("about")}
-              className={`${FONT_SIZES.small} transition-colors cursor-pointer`}
-              style={{ color: COLORS.text.hover }}
-              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = COLORS.text.primary)}
-              onMouseLeave={(e) => ((e.target as HTMLElement).style.color = COLORS.text.hover)}
+              className={`${FONT_SIZES.small} transition-colors cursor-pointer text-white hover:text-white/80`}
             >
               About
             </button>
             <button
               onClick={() => handleNavigation("work")}
-              className={`${FONT_SIZES.small} transition-colors cursor-pointer`}
-              style={{ color: COLORS.text.hover }}
-              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = COLORS.text.primary)}
-              onMouseLeave={(e) => ((e.target as HTMLElement).style.color = COLORS.text.hover)}
+              className={`${FONT_SIZES.small} transition-colors cursor-pointer text-white hover:text-white/80`}
             >
               Work
             </button>
             <button
               onClick={() => handleNavigation("contact")}
-              className={`${FONT_SIZES.small} transition-colors cursor-pointer`}
-              style={{ color: COLORS.text.hover }}
-              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = COLORS.text.primary)}
-              onMouseLeave={(e) => ((e.target as HTMLElement).style.color = COLORS.text.hover)}
+              className={`${FONT_SIZES.small} transition-colors cursor-pointer text-white hover:text-white/80`}
             >
               Contact
             </button>
