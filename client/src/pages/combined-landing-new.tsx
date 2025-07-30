@@ -971,7 +971,7 @@ export default function CombinedLanding() {
             {/* Main About Section */}
             <div className={SPACING.sectionGap}>
               <div className="flex justify-between items-start mb-6">
-                <h3 className={`uppercase tracking-wide ${FONT_SIZES.body} font-semibold`} style={{ color: COLORS.primary }}>
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]" style={{ color: COLORS.primary }}>
                   ABOUT Hun
                 </h3>
                 <span
