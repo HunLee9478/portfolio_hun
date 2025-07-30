@@ -1950,67 +1950,40 @@ export default function CombinedLanding() {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                        <AdvancedEditableText
-                          textKey={`project-${selectedProject.id}-extra-image-0`}
-                          isImageEditable={true}
-                          imageSrc="/assets/images/integrated-operation.jpg"
-                          onImageChange={(newSrc) => {
-                            console.log(`Extra Image 0 changed to:`, newSrc);
+                        <img 
+                          src={IntegratedOperationImage} 
+                          alt="통합 운영 시스템"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                        >
-                          <img 
-                            src="/assets/images/integrated-operation.jpg?v=1" 
-                            alt="통합 운영 시스템"
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                            onError={(e) => {
-                              console.error("이미지 로딩 실패:", e.currentTarget.src);
-                              e.currentTarget.style.backgroundColor = "#ff6b6b";
-                            }}
-                            onLoad={() => console.log("이미지 로딩 성공: integrated-operation.jpg")}
-                          />
-                        </AdvancedEditableText>
+                          onLoad={() => console.log("이미지 로딩 성공: integrated-operation.jpg")}
+                        />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                        <AdvancedEditableText
-                          textKey={`project-${selectedProject.id}-extra-image-1`}
-                          isImageEditable={true}
-                          imageSrc="/assets/images/tech-support.jpg"
-                          onImageChange={(newSrc) => {
-                            console.log(`Extra Image 1 changed to:`, newSrc);
+                        <img 
+                          src={TechSupportImage} 
+                          alt="기술 지원 현장"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                        >
-                          <img 
-                            src="/assets/images/tech-support.jpg?v=1" 
-                            alt="기술 지원 현장"
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                            onError={(e) => {
-                              console.error("이미지 로딩 실패:", e.currentTarget.src);
-                              e.currentTarget.style.backgroundColor = "#ff6b6b";
-                            }}
-                            onLoad={() => console.log("이미지 로딩 성공: tech-support.jpg")}
-                          />
-                        </AdvancedEditableText>
+                          onLoad={() => console.log("이미지 로딩 성공: tech-support.jpg")}
+                        />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                        <AdvancedEditableText
-                          textKey={`project-${selectedProject.id}-extra-image-2`}
-                          isImageEditable={true}
-                          imageSrc="/assets/images/overseas-event.jpg"
-                          onImageChange={(newSrc) => {
-                            console.log(`Extra Image 2 changed to:`, newSrc);
+                        <img 
+                          src={OverseasEventImage} 
+                          alt="해외 이벤트 진행"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                        >
-                          <img 
-                            src="/assets/images/overseas-event.jpg?v=1" 
-                            alt="해외 이벤트 진행"
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                            onError={(e) => {
-                              console.error("이미지 로딩 실패:", e.currentTarget.src);
-                              e.currentTarget.style.backgroundColor = "#ff6b6b";
-                            }}
-                            onLoad={() => console.log("이미지 로딩 성공: overseas-event.jpg")}
-                          />
-                        </AdvancedEditableText>
+                          onLoad={() => console.log("이미지 로딩 성공: overseas-event.jpg")}
+                        />
                       </div>
                     </div>
                     <div className="text-center mb-8">
