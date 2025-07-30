@@ -1393,7 +1393,7 @@ export default function CombinedLanding() {
             {/* Gallery Section */}
             <div className={SPACING.sectionGap} data-section="gallery">
               <div className="flex justify-between items-start mb-6">
-                <h3 className={`text-red-500 uppercase tracking-wide ${FONT_SIZES.body} font-semibold`}>
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
                   VISUAL GALLERY
                 </h3>
                 <span
