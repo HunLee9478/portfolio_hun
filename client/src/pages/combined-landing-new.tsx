@@ -19,11 +19,11 @@ const OnlineEventImage = "/assets/images/online-event.jpg";
 // Gallery images
 const VRCulturalHeritageImage = "/assets/gallery/vr-cultural-heritage.jpg";
 const KoreyaHospitalImage = "/assets/gallery/koreya-hospital.jpg";
-const GalleryBeautyImage = "/assets/gallery/beauty-portrait-new.png";
+const GalleryBeautyImage = "/assets/gallery/beauty.png";
 const PersonalPortfolioImage = "/assets/gallery/personal-portfolio.png";
 const GalleryInterviewImage = "/assets/gallery/interview.png";
-const LikelionHackathonImage = "/assets/gallery/overseas-corporate-event.png";
-const GalleryMalePortraitImage = "/assets/gallery/conference-presentation.png";
+const LikelionHackathonImage = "/assets/gallery/likelion-hackathon.png";
+const GalleryMalePortraitImage = "/assets/gallery/male-portrait.png";
 const JinairSurfingDayImage = "/assets/gallery/jinair-surfing.png";
 const GalleryJinairPromotionImage = "/assets/gallery/jinair-promotion.png";
 
@@ -470,11 +470,7 @@ export default function CombinedLanding() {
       client: "종로구청",
       role: "VR 콘텐츠 기획, 제작",
       tools: ["VR Development", "Cultural Research", "3D Modeling"],
-      images: [
-        VRCulturalHeritageImage,
-        "/assets/gallery/personal-portfolio.png",
-        "/assets/gallery/interview.png",
-      ],
+      images: [],
     },
     {
       id: "gallery-2",
@@ -489,30 +485,22 @@ export default function CombinedLanding() {
       client: "고려대학교구로병원",
       role: "방송 콘텐츠 기획, 제작",
       tools: ["Broadcasting", "Medical Communication", "Video Production"],
-      images: [
-        KoreyaHospitalImage,
-        "/assets/gallery/beauty-portrait-new.png",
-        "/assets/gallery/conference-presentation.png",
-      ],
+      images: [],
     },
     {
       id: "gallery-3",
-      src: GalleryBeautyImage,
-      alt: "삼성 메타버스 행사 기획 제작",
-      title: "삼성 메타버스 행사",
-      subtitle: "가상현실 플랫폼 행사 기획·제작",
+      src: PersonalPortfolioImage,
+      alt: "AI 뷰티 제품 광고",
+      title: "개인 포트폴리오",
+      subtitle: "AI 뷰티 제품 광고",
       description:
-        "삼성의 혁신적인 메타버스 플랫폼을 활용한 대규모 가상 행사의 기획부터 제작까지 전 과정을 담당했습니다. 3D 가상 환경 설계, 아바타 시스템 구축, 실시간 인터랙션 기능 개발 등 차세대 디지털 행사 경험을 구현하여 참가자들에게 몰입형 브랜드 체험을 제공했습니다.",
-      category: "Metaverse Event Planning",
+        "ComfyUI, FLUX를 활용하여 제작한 실사형 AI 뷰티 제품 광고 이미지입니다. AI 기술을 통해 자연스러운 모델 표현과 제품 배치를 구현한 개인 포트폴리오 작업입니다.",
+      category: "Personal Project",
       year: "2024",
-      client: "삼성",
-      role: "메타버스 행사 기획, 가상환경 제작, 기술 구현",
-      tools: ["Unity", "VR/AR Development", "3D Modeling", "Metaverse Platform", "Real-time Interaction"],
-      images: [
-        GalleryBeautyImage,
-        "/assets/gallery/jinair-surfing.png",
-        "/assets/gallery/jinair-promotion.png",
-      ],
+      client: "개인 포트폴리오",
+      role: "AI 이미지 생성, 프롬프트 엔지니어링",
+      tools: ["ComfyUI", "FLUX", "AI Image Generation"],
+      images: [],
     },
 
     {
@@ -527,67 +515,51 @@ export default function CombinedLanding() {
       client: "현대 글로비스",
       role: "현장 촬영, 프로그램 제작",
       tools: ["Documentary Style", "Interview Setup"],
-      images: [
-        GalleryInterviewImage,
-        "/assets/gallery/vr-cultural-heritage.jpg",
-        "/assets/gallery/koreya-hospital.jpg",
-      ],
+      images: [],
     },
     {
       id: "gallery-5",
       src: LikelionHackathonImage,
-      alt: "해외법인 초청 행사 기획 운영",
-      title: "해외법인 초청 행사",
-      subtitle: "글로벌 파트너십 프로그램 기획·운영",
+      alt: "멋쟁이사자처럼 해커톤 홍보영상",
+      title: "해커톤 홍보영상 제작",
+      subtitle: "개발자 커뮤니티 행사 홍보",
       description:
-        "해외법인 임직원들을 초청한 글로벌 파트너십 프로그램의 전체 기획과 운영을 담당했습니다. 국제 업무 프로토콜에 맞춘 행사 진행, 다국가 참가자 관리, 실시간 통번역 지원 등 글로벌 기업 행사의 복합적 요구사항을 성공적으로 조율하여 원활한 국제 교류 프로그램을 구현했습니다.",
-      category: "Global Event Management",
+        "멋쟁이사자처럼 해커톤 행사를 위한 홍보영상을 기획하고 제작했습니다. 개발자 커뮤니티의 열정과 도전 정신을 담아 참가자들의 참여를 유도하는 영상 콘텐츠입니다.",
+      category: "Event Promotion",
       year: "2024",
-      client: "삼성",
-      role: "해외 행사 기획, 운영 총괄, 국제 업무 조율",
-      tools: ["Global Event Planning", "International Protocol", "Multi-language Support", "Cross-cultural Communication"],
-      images: [
-        LikelionHackathonImage,
-        "/assets/images/samsung-offline.png",
-        "/assets/projects/jinair-esports.png",
-      ],
+      client: "멋쟁이사자처럼",
+      role: "홍보영상 기획, 제작",
+      tools: ["Video Production", "Motion Graphics", "Event Marketing"],
+      images: [],
     },
     {
       id: "gallery-6",
       src: GalleryMalePortraitImage,
-      alt: "셀럽 초청 온라인 웨비나 행사 운영",
-      title: "셀럽 초청 온라인 웨비나",
-      subtitle: "프리미엄 웨비나 행사 기획·운영",
+      alt: "개인 포트폴리오",
+      title: "개인 포트폴리오",
+      subtitle: "",
       description:
-        "유명 인플루언서와 셀러브리티를 초청한 온라인 웨비나 행사의 기획부터 운영까지 전 과정을 담당했습니다. 라이브 스트리밍 기술 세팅, 참가자 관리, 실시간 Q&A 진행 등 온·오프라인 하이브리드 행사 운영 노하우를 바탕으로 성공적인 프리미엄 웨비나를 구현했습니다.",
-      category: "Online Event Management",
+        "ComfyUI, FLUX, Python을 활용하여 실사형 제품 광고 이미지를 제작했습니다. 자연스러운 인물 표현과 디테일한 후보정을 통해 실제 촬영과 구분이 어려운 수준의 결과물을 구현했습니다.",
+      category: "AI Portrait",
       year: "2024",
-      client: "삼성",
-      role: "웨비나 기획, 행사 운영, 기술 관리",
-      tools: ["Live Streaming", "Event Management", "OBS", "Zoom", "YouTube Live"],
-      images: [
-        GalleryMalePortraitImage,
-        "/assets/projects/snapask-1.png",
-        "/assets/projects/samsung-education-studio.jpg",
-      ],
+      client: "개인 포트폴리오",
+      role: "개인 포트폴리오",
+      tools: ["ComfyUI", "Python", "Photoshop"],
+      images: [],
     },
     {
       id: "gallery-7",
       src: JinairSurfingDayImage,
-      alt: "진에어 서핑 데이 프로모션 캠페인",
-      title: "진에어 서핑 데이 프로모션 캠페인",
-      subtitle: "12월 겨울철 서핑 여행 프로모션 캠페인",
-      description: "진에어의 겨울 서핑 여행 프로모션 캠페인 '서핑 데이'를 위한 영상 콘텐츠를 기획, 제작했습니다. 12월 겨울철에도 따뜻한 해변에서 서핑을 즐길 수 있다는 메시지를 전달하며, 항공사 브랜드의 젊고 활동적인 이미지를 강조했습니다.",
+      alt: "진에어 서핑 데이 프로모션",
+      title: "진에어 서핑 데이 프로모션",
+      subtitle: "12월 겨울철 서핑 여행 프로모션",
+      description: "진에어의 겨울 서핑 여행 프로모션 '서핑 데이'를 위한 영상 콘텐츠를 제작했습니다. 12월 겨울철에도 따뜻한 해변에서 서핑을 즐길 수 있다는 메시지를 전달하며, 항공사 브랜드의 젊고 활동적인 이미지를 강조했습니다.",
       category: "Travel Promotion",
       year: "2024",
       client: "JINAIR",
       role: "시각 콘텐츠 기획, 디자인",
       tools: ["Photoshop", "Illustrator", "Brand Design"],
-      images: [
-        JinairSurfingDayImage,
-        "/assets/projects/jinair-fan-event.png",
-        "/assets/projects/jinair-shilla-beauty.png",
-      ],
+      images: [],
     },
 
 
@@ -999,7 +971,7 @@ export default function CombinedLanding() {
             {/* Main About Section */}
             <div className={SPACING.sectionGap}>
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1cabe2]" style={{ color: COLORS.primary }}>
                   ABOUT Hun
                 </h3>
                 <span
@@ -1144,7 +1116,7 @@ export default function CombinedLanding() {
                   </h5>
                   <p
                     className={`text-gray-900 font-medium ${FONT_SIZES.small}`}
-                  > 캠페인 기획, 제작, 운영</p>
+                  >콘텐츠 기획, 제작, 운영</p>
                 </div>
 
                 <div>
@@ -1189,7 +1161,7 @@ export default function CombinedLanding() {
             {/* Education & Career Section */}
             <div className={SPACING.sectionGap}>
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
                   Education & Experience
                 </h3>
                 <span
@@ -1368,7 +1340,7 @@ export default function CombinedLanding() {
             {/* Featured Work Section */}
             <div className={SPACING.sectionGap} data-section="work">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
                   MAIN PROJECT
                 </h3>
                 <span
@@ -1429,7 +1401,7 @@ export default function CombinedLanding() {
             {/* Gallery Section */}
             <div className={SPACING.sectionGap} data-section="gallery">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
                   VISUAL GALLERY
                 </h3>
                 <span
@@ -1505,7 +1477,7 @@ export default function CombinedLanding() {
             {/* Contact Section */}
             <div className="mb-0" data-section="contact">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold" style={{ color: COLORS.primary }}>Keep going</h3>
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">Keep going</h3>
                 <span
                   className={`${FONT_SIZES.small} font-medium text-gray-500`}
                 >
@@ -1895,55 +1867,18 @@ export default function CombinedLanding() {
                 {/* 이미지 갤러리 */}
                 <div className="mb-12">
                   <div className="mb-8">
-                    {selectedProject.images && selectedProject.images.length > 0 ? (
-                      selectedProject.id === "2" ? (
-                        <>
-                          {/* Snapask 프로젝트 - 더 많은 이미지를 위한 특별 레이아웃 */}
-                          <div className="grid grid-cols-2 gap-4 mb-4">
-                            {selectedProject.images.slice(0, 4).map((image, index) => (
-                              <div key={index} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                                <AdvancedEditableText
-                                  textKey={`project-${selectedProject.id}-image-${index}`}
-                                  isImageEditable={true}
-                                  imageSrc={image}
-                                  onImageChange={(newSrc) => {
-                                    console.log(`Image ${index} changed to:`, newSrc);
-                                  }}
-                                >
-                                  <img 
-                                    src={image} 
-                                    alt={`${selectedProject.title} 이미지 ${index + 1}`}
-                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                  />
-                                </AdvancedEditableText>
-                              </div>
-                            ))}
-                          </div>
-                          {/* 추가 이미지들 - 3열 레이아웃 */}
-                          {selectedProject.images.length > 4 && (
-                            <div className="grid grid-cols-3 gap-3 mb-4">
-                              {selectedProject.images.slice(4).map((image, index) => (
-                                <div key={index + 4} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg">
-                                  <img 
-                                    src={image} 
-                                    alt={`${selectedProject.title} 이미지 ${index + 5}`}
-                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                  />
-                                </div>
-                              ))}
-                            </div>
-                          )}
-                        </>
-                      ) : (
-                        /* 다른 프로젝트들 - 기본 2x2 레이아웃 */
+                    {selectedProject.id === "2" ? (
+                      <>
+                        {/* Snapask 프로젝트 - 더 많은 이미지를 위한 특별 레이아웃 */}
                         <div className="grid grid-cols-2 gap-4 mb-4">
-                          {selectedProject.images.map((image, index) => (
+                          {selectedProject.images.slice(0, 4).map((image, index) => (
                             <div key={index} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                               <AdvancedEditableText
                                 textKey={`project-${selectedProject.id}-image-${index}`}
                                 isImageEditable={true}
                                 imageSrc={image}
                                 onImageChange={(newSrc) => {
+                                  // 이미지 변경 로직 - 실제로는 상태 업데이트 필요
                                   console.log(`Image ${index} changed to:`, newSrc);
                                 }}
                               >
@@ -1956,11 +1891,43 @@ export default function CombinedLanding() {
                             </div>
                           ))}
                         </div>
-                      )
+                        {/* 추가 이미지들 - 3열 레이아웃 */}
+                        {selectedProject.images.length > 4 && (
+                          <div className="grid grid-cols-3 gap-3 mb-4">
+                            {selectedProject.images.slice(4).map((image, index) => (
+                              <div key={index + 4} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg">
+                                <img 
+                                  src={image} 
+                                  alt={`${selectedProject.title} 이미지 ${index + 5}`}
+                                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </>
                     ) : (
-                      <div className="text-center py-8 text-gray-500">
-                        이미지를 불러오는 중입니다...
-                      </div>
+                      /* 다른 프로젝트들 - 기본 2x2 레이아웃 */
+                      (<div className="grid grid-cols-2 gap-4 mb-4">
+                        {selectedProject.images.map((image, index) => (
+                          <div key={index} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                            <AdvancedEditableText
+                              textKey={`project-${selectedProject.id}-image-${index}`}
+                              isImageEditable={true}
+                              imageSrc={image}
+                              onImageChange={(newSrc) => {
+                                console.log(`Image ${index} changed to:`, newSrc);
+                              }}
+                            >
+                              <img 
+                                src={image} 
+                                alt={`${selectedProject.title} 이미지 ${index + 1}`}
+                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                              />
+                            </AdvancedEditableText>
+                          </div>
+                        ))}
+                      </div>)
                     )}
                   </div>
                   <div className="text-center mb-8">
@@ -3371,8 +3338,6 @@ export default function CombinedLanding() {
                     </div>
                   </div>
                 )}
-
-
 
                 <div className="pb-8"></div>
               </div>
