@@ -1849,8 +1849,8 @@ export default function CombinedLanding() {
               <div className="px-8 lg:px-16 pb-12">
                 {/* 이미지 갤러리 */}
                 <div className="mb-12">
-                  <div className="space-y-6 mb-8">
-                    <div className="w-full bg-[#b9b8b6] overflow-hidden rounded-lg">
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                       <AdvancedEditableText
                         textKey={`project-${selectedProject.id}-image-0`}
                         isImageEditable={true}
@@ -1862,12 +1862,11 @@ export default function CombinedLanding() {
                         <img 
                           src="/attached_assets/image_1753915707325.png" 
                           alt="프레젠테이션 진행 모습"
-                          className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </AdvancedEditableText>
                     </div>
-                    
-                    <div className="w-full bg-[#b9b8b6] overflow-hidden rounded-lg">
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                       <AdvancedEditableText
                         textKey={`project-${selectedProject.id}-image-1`}
                         isImageEditable={true}
@@ -1879,12 +1878,11 @@ export default function CombinedLanding() {
                         <img 
                           src="/attached_assets/image_1753915731181.png" 
                           alt="대형 스크린 발표 현장"
-                          className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </AdvancedEditableText>
                     </div>
-                    
-                    <div className="w-full bg-[#b9b8b6] overflow-hidden rounded-lg">
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                       <AdvancedEditableText
                         textKey={`project-${selectedProject.id}-image-2`}
                         isImageEditable={true}
@@ -1896,12 +1894,11 @@ export default function CombinedLanding() {
                         <img 
                           src="/attached_assets/image_1753915746678.png" 
                           alt="3D 아바타 이벤트 현장"
-                          className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </AdvancedEditableText>
                     </div>
-                    
-                    <div className="w-full bg-[#b9b8b6] overflow-hidden rounded-lg">
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                       <AdvancedEditableText
                         textKey={`project-${selectedProject.id}-image-3`}
                         isImageEditable={true}
@@ -1913,7 +1910,71 @@ export default function CombinedLanding() {
                         <img 
                           src="/attached_assets/image_1753915767124.png" 
                           alt="팀 소개 프레젠테이션"
-                          className="w-full h-auto hover:scale-105 transition-transform duration-300"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </AdvancedEditableText>
+                    </div>
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                      <AdvancedEditableText
+                        textKey={`project-${selectedProject.id}-image-4`}
+                        isImageEditable={true}
+                        imageSrc="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=600&fit=crop"
+                        onImageChange={(newSrc) => {
+                          console.log(`Image 4 changed to:`, newSrc);
+                        }}
+                      >
+                        <img 
+                          src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=600&fit=crop" 
+                          alt="비즈니스 미팅 현장"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </AdvancedEditableText>
+                    </div>
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                      <AdvancedEditableText
+                        textKey={`project-${selectedProject.id}-image-5`}
+                        isImageEditable={true}
+                        imageSrc="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
+                        onImageChange={(newSrc) => {
+                          console.log(`Image 5 changed to:`, newSrc);
+                        }}
+                      >
+                        <img 
+                          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop" 
+                          alt="팀워크 협업 모습"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </AdvancedEditableText>
+                    </div>
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                      <AdvancedEditableText
+                        textKey={`project-${selectedProject.id}-image-6`}
+                        isImageEditable={true}
+                        imageSrc="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop"
+                        onImageChange={(newSrc) => {
+                          console.log(`Image 6 changed to:`, newSrc);
+                        }}
+                      >
+                        <img 
+                          src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop" 
+                          alt="전략 기획 회의"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </AdvancedEditableText>
+                    </div>
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                      <AdvancedEditableText
+                        textKey={`project-${selectedProject.id}-image-7`}
+                        isImageEditable={true}
+                        imageSrc="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop"
+                        onImageChange={(newSrc) => {
+                          console.log(`Image 7 changed to:`, newSrc);
+                        }}
+                      >
+                        <img 
+                          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop" 
+                          alt="창의적 작업 환경"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
                       </AdvancedEditableText>
                     </div>
