@@ -542,7 +542,7 @@ export default function CombinedLanding() {
         "유명 인플루언서와 셀러브리티를 초청한 온라인 웨비나 행사의 기획부터 운영까지 전 과정을 담당했습니다. 라이브 스트리밍 기술 세팅, 참가자 관리, 실시간 Q&A 진행 등 온·오프라인 하이브리드 행사 운영 노하우를 바탕으로 성공적인 프리미엄 웨비나를 구현했습니다.",
       category: "Online Event Management",
       year: "2024",
-      client: "프리미엄 브랜드",
+      client: "삼성",
       role: "웨비나 기획, 행사 운영, 기술 관리",
       tools: ["Live Streaming", "Event Management", "OBS", "Zoom", "YouTube Live"],
       images: [],
