@@ -1369,7 +1369,7 @@ export default function CombinedLanding() {
                     viewport={{ once: true }}
                   >
                     {/* 프로젝트 이미지 카드 */}
-                    <div className="relative overflow-hidden bg-gray-100 rounded-lg aspect-[21/9]">
+                    <div className="relative overflow-hidden bg-gray-100 rounded-lg aspect-square">
                       <img
                         src={item.src}
                         alt={item.alt}
