@@ -520,11 +520,11 @@ export default function CombinedLanding() {
     {
       id: "gallery-5",
       src: LikelionHackathonImage,
-      alt: "멋쟁이사자처럼 해커톤 홍보영상",
-      title: "해커톤 홍보영상 제작",
+      alt: "멋쟁이사자처럼 해커톤 참여 독려 캠페인",
+      title: "해커톤 참여독려 캠페인 제작",
       subtitle: "개발자 커뮤니티 행사 홍보",
       description:
-        "멋쟁이사자처럼 해커톤 행사를 위한 홍보영상을 기획하고 제작했습니다. 개발자 커뮤니티의 열정과 도전 정신을 담아 참가자들의 참여를 유도하는 영상 콘텐츠입니다.",
+        "멋쟁이사자처럼 해커톤 행사 참여 독려를 위한 캠페인을 기획하고 제작했습니다. 개발자 커뮤니티의 열정과 도전 정신을 담아 참가자들의 참여를 유도하는 영상 콘텐츠입니다.",
       category: "Event Promotion",
       year: "2024",
       client: "멋쟁이사자처럼",
@@ -535,25 +535,25 @@ export default function CombinedLanding() {
     {
       id: "gallery-6",
       src: GalleryMalePortraitImage,
-      alt: "개인 포트폴리오",
-      title: "개인 포트폴리오",
+      alt: "디자인 개인 포트폴리오",
+      title: "디자인 개인 포트폴리오",
       subtitle: "",
       description:
         "ComfyUI, FLUX, Python을 활용하여 실사형 제품 광고 이미지를 제작했습니다. 자연스러운 인물 표현과 디테일한 후보정을 통해 실제 촬영과 구분이 어려운 수준의 결과물을 구현했습니다.",
       category: "AI Portrait",
       year: "2024",
-      client: "개인 포트폴리오",
-      role: "개인 포트폴리오",
+      client: "디자인 개인 포트폴리오",
+      role: "디자인 개인 포트폴리오",
       tools: ["ComfyUI", "Python", "Photoshop"],
       images: [],
     },
     {
       id: "gallery-7",
       src: JinairSurfingDayImage,
-      alt: "진에어 서핑 데이 프로모션",
-      title: "진에어 서핑 데이 프로모션",
-      subtitle: "12월 겨울철 서핑 여행 프로모션",
-      description: "진에어의 겨울 서핑 여행 프로모션 '서핑 데이'를 위한 영상 콘텐츠를 제작했습니다. 12월 겨울철에도 따뜻한 해변에서 서핑을 즐길 수 있다는 메시지를 전달하며, 항공사 브랜드의 젊고 활동적인 이미지를 강조했습니다.",
+      alt: "진에어 서핑 데이 프로모션 캠페인",
+      title: "진에어 서핑 데이 프로모션 캠페인",
+      subtitle: "12월 겨울철 서핑 여행 프로모션 캠페인",
+      description: "진에어의 겨울 서핑 여행 프로모션 캠페인 '서핑 데이'를 위한 영상 콘텐츠를 기획, 제작했습니다. 12월 겨울철에도 따뜻한 해변에서 서핑을 즐길 수 있다는 메시지를 전달하며, 항공사 브랜드의 젊고 활동적인 이미지를 강조했습니다.",
       category: "Travel Promotion",
       year: "2024",
       client: "JINAIR",
@@ -1116,7 +1116,7 @@ export default function CombinedLanding() {
                   </h5>
                   <p
                     className={`text-gray-900 font-medium ${FONT_SIZES.small}`}
-                  >콘텐츠 기획, 제작, 운영</p>
+                  > 캠페인 기획, 제작, 운영</p>
                 </div>
 
                 <div>
