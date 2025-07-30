@@ -1940,6 +1940,85 @@ export default function CombinedLanding() {
                   </div>
                 </div>
 
+                {/* 추가 이미지 갤러리 - 1번 프로젝트 전용 */}
+                {selectedProject.id === "1" && (
+                  <div className="mb-12">
+                    <div className="mb-6">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        프로젝트 세부 활동
+                      </h3>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <AdvancedEditableText
+                          textKey={`project-${selectedProject.id}-extra-image-0`}
+                          isImageEditable={true}
+                          imageSrc="/assets/images/integrated-operation.jpg"
+                          onImageChange={(newSrc) => {
+                            console.log(`Extra Image 0 changed to:`, newSrc);
+                          }}
+                        >
+                          <img 
+                            src="/assets/images/integrated-operation.jpg?v=1" 
+                            alt="통합 운영 시스템"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: integrated-operation.jpg")}
+                          />
+                        </AdvancedEditableText>
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <AdvancedEditableText
+                          textKey={`project-${selectedProject.id}-extra-image-1`}
+                          isImageEditable={true}
+                          imageSrc="/assets/images/tech-support.jpg"
+                          onImageChange={(newSrc) => {
+                            console.log(`Extra Image 1 changed to:`, newSrc);
+                          }}
+                        >
+                          <img 
+                            src="/assets/images/tech-support.jpg?v=1" 
+                            alt="기술 지원 현장"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: tech-support.jpg")}
+                          />
+                        </AdvancedEditableText>
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <AdvancedEditableText
+                          textKey={`project-${selectedProject.id}-extra-image-2`}
+                          isImageEditable={true}
+                          imageSrc="/assets/images/overseas-event.jpg"
+                          onImageChange={(newSrc) => {
+                            console.log(`Extra Image 2 changed to:`, newSrc);
+                          }}
+                        >
+                          <img 
+                            src="/assets/images/overseas-event.jpg?v=1" 
+                            alt="해외 이벤트 진행"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: overseas-event.jpg")}
+                          />
+                        </AdvancedEditableText>
+                      </div>
+                    </div>
+                    <div className="text-center mb-8">
+                      <p className="text-sm text-[#58534e] italic">온·오프라인 통합 운영 및 기술 지원 활동</p>
+                    </div>
+                  </div>
+                )}
+
                 {/* 프로젝트 기간 */}
                 <div className="mb-12">
                   <div className="mb-6">
