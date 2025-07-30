@@ -13,6 +13,7 @@ const SamsungEducationImage = "/assets/images/samsung-education.jpg";
 const JinairPromoImage = "/assets/images/jinair-promo.png";
 const IntegratedOperationImage = "/assets/images/integrated-operation.jpg";
 const TechSupportImage = "/assets/images/tech-support.jpg";
+const SamsungSeminarRoomImage = "/assets/images/samsung-seminar-room.png";
 const OverseasEventImage = "/assets/images/overseas-event.jpg";
 const OnlineEventImage = "/assets/images/online-event.jpg";
 
@@ -1963,14 +1964,14 @@ export default function CombinedLanding() {
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src={TechSupportImage} 
-                          alt="기술 지원 현장"
+                          src={SamsungSeminarRoomImage} 
+                          alt="삼성 세미나실 촬영 현장"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: tech-support.jpg")}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-seminar-room.png")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
