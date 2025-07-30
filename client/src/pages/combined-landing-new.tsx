@@ -229,9 +229,10 @@ export default function CombinedLanding() {
     return localStorage.getItem("developerMode") === "true";
   });
   const [editableTexts, setEditableTexts] = useState<Record<string, string>>({
-    heroTitle2: "메세지 전달을 넘어 <span style='color: #1CABE2'>후원자의 마음</span>까지",
-    heroTitle3: "움직이고 싶은  ",
-    heroTitle4: "디지털 마케터 이승훈 입니다",
+    heroTitle1: "메세지 전달을 넘어",
+    heroTitle2: "후원자의<span style='color: #1CABE2'>마음</span>까지",
+    heroTitle3: "움직이는",
+    heroTitle4: "디지털 제작자 이승훈 입니다",
     aboutTitle: "> ALL IN ONE CONTENT\nCREATOR",
     aboutDescription: "기획에서 후반작업까지 모든 제작 과정을 아우르는 올라운드 역량을 갖춘 콘텐츠 크리에이터입니다. 다양한 플랫폼과 장르에서 축적한 경험을 바탕으로 시청자 중심의 창의적 솔루션을 제시하며, 브랜드 가치 향상과 사용자 경험 개선을 통해 measurable한 성과를 달성합니다.",
     service1Title: "콘텐츠 기획, 제작",
