@@ -1201,7 +1201,7 @@ export default function CombinedLanding() {
                       </p>
                     </div>
 
-                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#1CABE2" }}>
+                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#E2F0F6" }}>
                       <div className="flex justify-between items-start mb-2">
                         <h5
                           className={`${FONT_SIZES.body} font-medium text-gray-900`}
@@ -1217,7 +1217,7 @@ export default function CombinedLanding() {
                       </p>
                     </div>
 
-                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#1CABE2" }}>
+                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#E2F0F6" }}>
                       <div className="flex justify-between items-start mb-2">
                         <h5
                           className={`${FONT_SIZES.body} font-medium text-gray-900`}
@@ -1262,7 +1262,7 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#1CABE2" }}>
+                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#E2F0F6" }}>
                       <div className="flex justify-between items-start mb-2">
                         <h5
                           className={`${FONT_SIZES.body} font-medium text-gray-900`}
@@ -1281,7 +1281,7 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#1CABE2" }}>
+                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#E2F0F6" }}>
                       <div className="flex justify-between items-start mb-2">
                         <h5
                           className={`${FONT_SIZES.body} font-medium text-gray-900`}
