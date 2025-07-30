@@ -22,7 +22,7 @@ const KoreyaHospitalImage = "/assets/gallery/koreya-hospital.jpg";
 const GalleryBeautyImage = "/assets/gallery/beauty-portrait-new.png";
 const PersonalPortfolioImage = "/assets/gallery/personal-portfolio.png";
 const GalleryInterviewImage = "/assets/gallery/interview.png";
-const LikelionHackathonImage = "/assets/gallery/likelion-hackathon.png";
+const LikelionHackathonImage = "/assets/gallery/overseas-corporate-event.png";
 const GalleryMalePortraitImage = "/assets/gallery/conference-presentation.png";
 const JinairSurfingDayImage = "/assets/gallery/jinair-surfing.png";
 const GalleryJinairPromotionImage = "/assets/gallery/jinair-promotion.png";
@@ -520,16 +520,16 @@ export default function CombinedLanding() {
     {
       id: "gallery-5",
       src: LikelionHackathonImage,
-      alt: "멋쟁이사자처럼 해커톤 참여 독려 캠페인",
-      title: "해커톤 참여독려 캠페인 제작",
-      subtitle: "개발자 커뮤니티 행사 홍보",
+      alt: "해외법인 초청 행사 기획 운영",
+      title: "해외법인 초청 행사",
+      subtitle: "글로벌 파트너십 프로그램 기획·운영",
       description:
-        "멋쟁이사자처럼 해커톤 행사 참여 독려를 위한 캠페인을 기획하고 제작했습니다. 개발자 커뮤니티의 열정과 도전 정신을 담아 참가자들의 참여를 유도하는 영상 콘텐츠입니다.",
-      category: "Event Promotion",
+        "해외법인 임직원들을 초청한 글로벌 파트너십 프로그램의 전체 기획과 운영을 담당했습니다. 국제 업무 프로토콜에 맞춘 행사 진행, 다국가 참가자 관리, 실시간 통번역 지원 등 글로벌 기업 행사의 복합적 요구사항을 성공적으로 조율하여 원활한 국제 교류 프로그램을 구현했습니다.",
+      category: "Global Event Management",
       year: "2024",
-      client: "멋쟁이사자처럼",
-      role: "홍보영상 기획, 제작",
-      tools: ["Video Production", "Motion Graphics", "Event Marketing"],
+      client: "글로벌 기업",
+      role: "해외 행사 기획, 운영 총괄, 국제 업무 조율",
+      tools: ["Global Event Planning", "International Protocol", "Multi-language Support", "Cross-cultural Communication"],
       images: [],
     },
     {
