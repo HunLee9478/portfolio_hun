@@ -1361,7 +1361,7 @@ export default function CombinedLanding() {
                   <motion.div
                     key={item.id}
                     className="group cursor-pointer"
-                    whileHover={{ scale: 1.02 }}
+                    whileHover={{ scale: 1.05 }}
                     onClick={() => openProjectModal(item)}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -1373,7 +1373,7 @@ export default function CombinedLanding() {
                       <img
                         src={item.src}
                         alt={item.alt}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                         loading="lazy"
                         decoding="async"
                       />
@@ -1436,7 +1436,7 @@ export default function CombinedLanding() {
                     <motion.div
                       key={`gallery-${item.id}`}
                       className={`group cursor-pointer break-inside-avoid mb-4 ${randomHeight}`}
-                      whileHover={{ scale: 1.02 }}
+                      whileHover={{ scale: 1.05 }}
                       onClick={() => openGalleryLightbox(item)}
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
@@ -1448,7 +1448,7 @@ export default function CombinedLanding() {
                         <img
                           src={item.src}
                           alt={item.alt}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                           loading="lazy"
                           decoding="async"
                         />
