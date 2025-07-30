@@ -1015,10 +1015,10 @@ export default function CombinedLanding() {
                         fontWeight: "300",
                         letterSpacing: "0.05em",
                         lineHeight: "1.1",
-                        color: COLORS.primary,
+                        color: "#1CABE2",
                       }}
                     >
-                      &gt; ALL IN ONE CONTENT<br />CREATOR
+                      &gt; ALL-IN-ONE CAMPAIGN<br />CREATOR
                     </EditableText>
                   </motion.h2>
                   <EditableText
