@@ -23,7 +23,7 @@ const GalleryBeautyImage = "/assets/gallery/beauty-portrait-new.png";
 const PersonalPortfolioImage = "/assets/gallery/personal-portfolio.png";
 const GalleryInterviewImage = "/assets/gallery/interview.png";
 const LikelionHackathonImage = "/assets/gallery/likelion-hackathon.png";
-const GalleryMalePortraitImage = "/assets/gallery/male-portrait.png";
+const GalleryMalePortraitImage = "/assets/gallery/conference-presentation.png";
 const JinairSurfingDayImage = "/assets/gallery/jinair-surfing.png";
 const GalleryJinairPromotionImage = "/assets/gallery/jinair-promotion.png";
 
@@ -535,16 +535,16 @@ export default function CombinedLanding() {
     {
       id: "gallery-6",
       src: GalleryMalePortraitImage,
-      alt: "디자인 개인 포트폴리오",
-      title: "디자인 개인 포트폴리오",
-      subtitle: "",
+      alt: "테크 컨퍼런스 발표 현장",
+      title: "테크 컨퍼런스 발표",
+      subtitle: "기술 세미나 및 워크샵 진행",
       description:
-        "ComfyUI, FLUX, Python을 활용하여 실사형 제품 광고 이미지를 제작했습니다. 자연스러운 인물 표현과 디테일한 후보정을 통해 실제 촬영과 구분이 어려운 수준의 결과물을 구현했습니다.",
-      category: "AI Portrait",
+        "전문적인 컨퍼런스 환경에서 진행된 기술 발표 현장입니다. 최신 기술 트렌드와 개발 노하우를 공유하며 참가자들과 소통하는 순간을 담았습니다. 체계적인 프레젠테이션과 실무 경험을 바탕으로 한 인사이트를 제공합니다.",
+      category: "Tech Conference",
       year: "2024",
-      client: "디자인 개인 포트폴리오",
-      role: "디자인 개인 포트폴리오",
-      tools: ["ComfyUI", "Python", "Photoshop"],
+      client: "기술 컨퍼런스",
+      role: "기술 발표, 세미나 진행",
+      tools: ["Presentation", "Tech Speaking", "Workshop"],
       images: [],
     },
     {
