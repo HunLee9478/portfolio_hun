@@ -1518,7 +1518,7 @@ export default function CombinedLanding() {
                   </div>
 
                   {/* Right Column - Content */}
-                  <div className="bg-gray-50 p-8 lg:p-16 flex flex-col justify-center" style={{ color: COLORS.text.light }}>
+                  <div className="p-8 lg:p-16 flex flex-col justify-center bg-[#ffffff]" style={{ color: COLORS.text.light }}>
                     <motion.h3
                       className="font-light mb-4"
                       style={{
