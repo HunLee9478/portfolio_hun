@@ -1789,7 +1789,7 @@ export default function CombinedLanding() {
                             width: "100%"
                           }}
                         >
-                          삼성 그룹의 온·오프라인 실시간 행사/교육 기획·진행 프로젝트를 담당했습니다. 진행과 동시에 콘텐츠 제작 기반의 기술 이슈 대응, 커뮤니케이션을 주도하여 고객 만족도 NPS 4.5+를 달성하고, 온라인 이벤트 콘텐츠는 신규 고객사 5개를 수주했습니다.
+                          삼성 그룹의 온·오프라인 캠페인 기획·진행 프로젝트를 담당했습니다. 진행과 동시에 콘텐츠 제작 기반의 기술 이슈 대응, 커뮤니케이션을 주도하여 고객 만족도 NPS 4.5+를 달성하였습니다.
                         </AdvancedEditableText>
                       )}
                       {selectedProject.id === "2" && (
@@ -1850,24 +1850,70 @@ export default function CombinedLanding() {
                 {/* 이미지 갤러리 */}
                 <div className="mb-12">
                   <div className="grid grid-cols-2 gap-4 mb-8">
-                    {selectedProject.images.map((image, index) => (
-                      <div key={index} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                        <AdvancedEditableText
-                          textKey={`project-${selectedProject.id}-image-${index}`}
-                          isImageEditable={true}
-                          imageSrc={image}
-                          onImageChange={(newSrc) => {
-                            console.log(`Image ${index} changed to:`, newSrc);
-                          }}
-                        >
-                          <img 
-                            src={image} 
-                            alt={`${selectedProject.title} 이미지 ${index + 1}`}
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                          />
-                        </AdvancedEditableText>
-                      </div>
-                    ))}
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                      <AdvancedEditableText
+                        textKey={`project-${selectedProject.id}-image-0`}
+                        isImageEditable={true}
+                        imageSrc="/attached_assets/image_1753915707325.png"
+                        onImageChange={(newSrc) => {
+                          console.log(`Image 0 changed to:`, newSrc);
+                        }}
+                      >
+                        <img 
+                          src="/attached_assets/image_1753915707325.png" 
+                          alt="프레젠테이션 진행 모습"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </AdvancedEditableText>
+                    </div>
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                      <AdvancedEditableText
+                        textKey={`project-${selectedProject.id}-image-1`}
+                        isImageEditable={true}
+                        imageSrc="/attached_assets/image_1753915731181.png"
+                        onImageChange={(newSrc) => {
+                          console.log(`Image 1 changed to:`, newSrc);
+                        }}
+                      >
+                        <img 
+                          src="/attached_assets/image_1753915731181.png" 
+                          alt="대형 스크린 발표 현장"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </AdvancedEditableText>
+                    </div>
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                      <AdvancedEditableText
+                        textKey={`project-${selectedProject.id}-image-2`}
+                        isImageEditable={true}
+                        imageSrc="/attached_assets/image_1753915746678.png"
+                        onImageChange={(newSrc) => {
+                          console.log(`Image 2 changed to:`, newSrc);
+                        }}
+                      >
+                        <img 
+                          src="/attached_assets/image_1753915746678.png" 
+                          alt="3D 아바타 이벤트 현장"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </AdvancedEditableText>
+                    </div>
+                    <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                      <AdvancedEditableText
+                        textKey={`project-${selectedProject.id}-image-3`}
+                        isImageEditable={true}
+                        imageSrc="/attached_assets/image_1753915767124.png"
+                        onImageChange={(newSrc) => {
+                          console.log(`Image 3 changed to:`, newSrc);
+                        }}
+                      >
+                        <img 
+                          src="/attached_assets/image_1753915767124.png" 
+                          alt="팀 소개 프레젠테이션"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </AdvancedEditableText>
+                    </div>
                   </div>
                   <div className="text-center mb-8">
                     <p className="text-sm text-[#58534e] italic">프로젝트 진행 과정 및 결과물</p>
