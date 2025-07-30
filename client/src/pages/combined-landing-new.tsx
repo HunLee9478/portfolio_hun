@@ -1895,14 +1895,6 @@ export default function CombinedLanding() {
                 {/* 이미지 갤러리 */}
                 <div className="mb-12">
                   <div className="mb-8">
-                    {/* 이미지 디버그 정보 */}
-                    {process.env.NODE_ENV === 'development' && (
-                      <div className="mb-4 p-2 bg-gray-100 rounded text-xs">
-                        <p>이미지 개수: {selectedProject.images?.length || 0}</p>
-                        <p>이미지 경로들: {JSON.stringify(selectedProject.images)}</p>
-                      </div>
-                    )}
-                    
                     {selectedProject.images && selectedProject.images.length > 0 ? (
                       selectedProject.id === "2" ? (
                         <>
@@ -1922,11 +1914,6 @@ export default function CombinedLanding() {
                                     src={image} 
                                     alt={`${selectedProject.title} 이미지 ${index + 1}`}
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                    onError={(e) => {
-                                      console.error(`이미지 로드 실패: ${image}`);
-                                      e.currentTarget.style.backgroundColor = '#f3f4f6';
-                                    }}
-                                    onLoad={() => console.log(`이미지 로드 성공: ${image}`)}
                                   />
                                 </AdvancedEditableText>
                               </div>
@@ -1941,11 +1928,6 @@ export default function CombinedLanding() {
                                     src={image} 
                                     alt={`${selectedProject.title} 이미지 ${index + 5}`}
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                    onError={(e) => {
-                                      console.error(`이미지 로드 실패: ${image}`);
-                                      e.currentTarget.style.backgroundColor = '#f3f4f6';
-                                    }}
-                                    onLoad={() => console.log(`이미지 로드 성공: ${image}`)}
                                   />
                                 </div>
                               ))}
@@ -1969,11 +1951,6 @@ export default function CombinedLanding() {
                                   src={image} 
                                   alt={`${selectedProject.title} 이미지 ${index + 1}`}
                                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                  onError={(e) => {
-                                    console.error(`이미지 로드 실패: ${image}`);
-                                    e.currentTarget.style.backgroundColor = '#f3f4f6';
-                                  }}
-                                  onLoad={() => console.log(`이미지 로드 성공: ${image}`)}
                                 />
                               </AdvancedEditableText>
                             </div>
