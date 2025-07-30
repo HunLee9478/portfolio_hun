@@ -1849,69 +1849,25 @@ export default function CombinedLanding() {
               <div className="px-8 lg:px-16 pb-12">
                 {/* 이미지 갤러리 */}
                 <div className="mb-12">
-                  <div className="mb-8">
-                    {selectedProject.id === "2" ? (
-                      <>
-                        {/* Snapask 프로젝트 - 더 많은 이미지를 위한 특별 레이아웃 */}
-                        <div className="grid grid-cols-2 gap-4 mb-4">
-                          {selectedProject.images.slice(0, 4).map((image, index) => (
-                            <div key={index} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                              <AdvancedEditableText
-                                textKey={`project-${selectedProject.id}-image-${index}`}
-                                isImageEditable={true}
-                                imageSrc={image}
-                                onImageChange={(newSrc) => {
-                                  // 이미지 변경 로직 - 실제로는 상태 업데이트 필요
-                                  console.log(`Image ${index} changed to:`, newSrc);
-                                }}
-                              >
-                                <img 
-                                  src={image} 
-                                  alt={`${selectedProject.title} 이미지 ${index + 1}`}
-                                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                />
-                              </AdvancedEditableText>
-                            </div>
-                          ))}
-                        </div>
-                        {/* 추가 이미지들 - 3열 레이아웃 */}
-                        {selectedProject.images.length > 4 && (
-                          <div className="grid grid-cols-3 gap-3 mb-4">
-                            {selectedProject.images.slice(4).map((image, index) => (
-                              <div key={index + 4} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg">
-                                <img 
-                                  src={image} 
-                                  alt={`${selectedProject.title} 이미지 ${index + 5}`}
-                                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                />
-                              </div>
-                            ))}
-                          </div>
-                        )}
-                      </>
-                    ) : (
-                      /* 다른 프로젝트들 - 기본 2x2 레이아웃 */
-                      (<div className="grid grid-cols-2 gap-4 mb-4">
-                        {selectedProject.images.map((image, index) => (
-                          <div key={index} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                            <AdvancedEditableText
-                              textKey={`project-${selectedProject.id}-image-${index}`}
-                              isImageEditable={true}
-                              imageSrc={image}
-                              onImageChange={(newSrc) => {
-                                console.log(`Image ${index} changed to:`, newSrc);
-                              }}
-                            >
-                              <img 
-                                src={image} 
-                                alt={`${selectedProject.title} 이미지 ${index + 1}`}
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                              />
-                            </AdvancedEditableText>
-                          </div>
-                        ))}
-                      </div>)
-                    )}
+                  <div className="grid grid-cols-2 gap-4 mb-8">
+                    {selectedProject.images.map((image, index) => (
+                      <div key={index} className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <AdvancedEditableText
+                          textKey={`project-${selectedProject.id}-image-${index}`}
+                          isImageEditable={true}
+                          imageSrc={image}
+                          onImageChange={(newSrc) => {
+                            console.log(`Image ${index} changed to:`, newSrc);
+                          }}
+                        >
+                          <img 
+                            src={image} 
+                            alt={`${selectedProject.title} 이미지 ${index + 1}`}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </AdvancedEditableText>
+                      </div>
+                    ))}
                   </div>
                   <div className="text-center mb-8">
                     <p className="text-sm text-[#58534e] italic">프로젝트 진행 과정 및 결과물</p>
