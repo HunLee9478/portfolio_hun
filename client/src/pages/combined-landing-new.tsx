@@ -384,12 +384,12 @@ export default function CombinedLanding() {
       id: "1",
       src: SamsungOfflineImage,
       alt: "Samsung 온·오프라인 콘텐츠 기획",
-      title: "온·오프라인 캠페인 기획 운영",
+      title: "온·오프라인 캠페인 기획, 운영",
       subtitle: "통합 교육 프로그램 운영",
-      description: "SAMSUNG\n온 오프라인 캠페인 기획. 운영",
-      category: "Event Planning",
+      description: "SAMSUNG\n온 오프라인 캠페인 기획, 운영",
+      category: "Campagin",
       year: "2023-2024",
-      client: "삼성 그룹",
+      client: "Samsung",
       role: "기획, 운영, 제작",
       tools: ["Adobe Premiere", "After Effects", "Photoshop"],
       images: [
@@ -402,8 +402,8 @@ export default function CombinedLanding() {
     {
       id: "2",
       src: SnapaskContentImage,
-      alt: "Snapask 프리미엄 콘텐츠 제작",
-      title: "Snapask 프리미엄 콘텐츠 제작",
+      alt: "Snapask 프리미엄 콘텐츠 기획, 제작",
+      title: "Snapask 프리미엄 콘텐츠 기획, 제작",
       subtitle: "교육 콘텐츠 기획 및 제작",
       description: "SNAPASK KOREA\n프리미엄 콘텐츠 제작",
       category: "Content Production",
@@ -421,14 +421,14 @@ export default function CombinedLanding() {
     {
       id: "3",
       src: SamsungEducationImage,
-      alt: "Samsung 교육 콘텐츠 기획 제작",
-      title: "Samsung 교육 콘텐츠 기획 제작",
+      alt: "컴플라이언스 캠페인 기획,제작",
+      title: "컴플라이언스 캠페인 기획,제작",
       subtitle: "기업 교육 프로그램 개발",
-      description: "SAMSUNG\n교육형 영상 콘텐츠 기획, 제작",
-      category: "Educational Content",
+      description: "SAMSUNG\n컴플라이언스 캠페인 콘텐츠 기획, 제작",
+      category: "Campagin",
       year: "2023",
-      client: "삼성교육재단",
-      role: "교육 콘텐츠 기획",
+      client: "Samsung",
+      role: "기획,제작,관리 ",
       tools: ["Learning Management", "Video Production", "Interactive Content"],
       images: [
         SamsungEducationStudio,
@@ -1824,7 +1824,7 @@ export default function CombinedLanding() {
                             width: "100%"
                           }}
                         >
-                          삼성물산의 교육 콘텐츠 기획 및 브랜드 전략을 통해 효과적인 교육 메시지 전달을 위한 Screen Life 연출 기법을 활용하여 교육 콘텐츠를 제작하고, 사용자 행동 분석을 통한 맞춤형 교육 전략을 수립했습니다. 경쟁사 대비 30% 높은 단가임에도 불구하고 수주에 성공하여 상업적 가치를 입증했습니다.
+                          사용자 행동 분석을 통한 맞춤형 캠페인 기획,전략을 수립했습니다. 메세지 전달을 위한 컴퓨터 디스플레이를 활용한 연출 기법을 활용하여 콘텐츠를 제작하고, 경쟁사 대비 30% 높은 단가임에도 불구하고 수주에 성공하여 가치를 입증했습니다.
                         </AdvancedEditableText>
                       )}
                       {selectedProject.id === "4" && (
@@ -1991,50 +1991,50 @@ export default function CombinedLanding() {
                     <div className="grid grid-cols-2 gap-4 mb-8">
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src="/assets/projects/snapask-9.png" 
+                          src="/assets/projects/samsung-education-filming.jpg" 
                           alt="Samsung 교육 콘텐츠 기획"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: snapask-9.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-filming.jpg")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src="/assets/projects/snapask-10.png" 
+                          src="/assets/projects/samsung-education-multiscreen.jpg" 
                           alt="Samsung 교육 콘텐츠 실행"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: snapask-10.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-multiscreen.jpg")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src={VRCulturalHeritageImage} 
+                          src="/assets/projects/samsung-education-screenlife.jpg" 
                           alt="Samsung 교육 시스템 구축"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: vr-cultural-heritage.jpg")}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-screenlife.jpg")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src={KoreyaHospitalImage} 
+                          src="/assets/projects/samsung-education-studio.jpg" 
                           alt="Samsung 교육 성과 분석"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: koreya-hospital.jpg")}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-studio.jpg")}
                         />
                       </div>
                     </div>
@@ -3156,13 +3156,6 @@ export default function CombinedLanding() {
                           </div>
                         </div>
                         <div>
-                          <h3 className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed">• 브랜드 메시지 전달 최적화</h3>
-                          <div className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 space-y-1">
-                            <p>- 교육 콘텐츠 내 자연스러운 브랜드 메시지 통합</p>
-                            <p>- 사용자 경험을 해치지 않는 브랜드 노출 전략</p>
-                            <p>- 교육 효과와 브랜드 인지도 동시 달성</p>
-                            <p>- 타겟 오디언스별 맞춤형 메시지 개발</p>
-                          </div>
                         </div>
                       </>
                     )}
