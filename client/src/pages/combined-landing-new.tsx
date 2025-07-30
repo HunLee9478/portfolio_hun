@@ -1185,7 +1185,7 @@ export default function CombinedLanding() {
                     학력
                   </h4>
                   <div className="space-y-6">
-                    <div className="border-l-2 border-red-500 pl-4">
+                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#1CABE2" }}>
                       <div className="flex justify-between items-start mb-2">
                         <h5
                           className={`${FONT_SIZES.body} font-medium text-gray-900`}
@@ -1243,7 +1243,7 @@ export default function CombinedLanding() {
                     주요 경력
                   </h4>
                   <div className="space-y-6">
-                    <div className="border-l-2 border-red-500 pl-4">
+                    <div className="border-l-2 pl-4" style={{ borderLeftColor: "#1CABE2" }}>
                       <div className="flex justify-between items-start mb-2">
                         <h5
                           className={`${FONT_SIZES.body} font-medium text-gray-900`}
