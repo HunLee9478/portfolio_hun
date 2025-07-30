@@ -1161,7 +1161,7 @@ export default function CombinedLanding() {
             {/* Education & Career Section */}
             <div className={SPACING.sectionGap}>
               <div className="flex justify-between items-start mb-6">
-                <h3 className={`text-red-500 uppercase tracking-wide ${FONT_SIZES.body} font-semibold`}>
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">
                   Education & Experience
                 </h3>
                 <span
