@@ -19,7 +19,7 @@ const OnlineEventImage = "/assets/images/online-event.jpg";
 // Gallery images
 const VRCulturalHeritageImage = "/assets/gallery/vr-cultural-heritage.jpg";
 const KoreyaHospitalImage = "/assets/gallery/koreya-hospital.jpg";
-const GalleryBeautyImage = "/assets/gallery/beauty.png";
+const GalleryBeautyImage = "/assets/gallery/beauty-portrait-new.png";
 const PersonalPortfolioImage = "/assets/gallery/personal-portfolio.png";
 const GalleryInterviewImage = "/assets/gallery/interview.png";
 const LikelionHackathonImage = "/assets/gallery/likelion-hackathon.png";
@@ -489,17 +489,17 @@ export default function CombinedLanding() {
     },
     {
       id: "gallery-3",
-      src: PersonalPortfolioImage,
-      alt: "AI 뷰티 제품 광고",
-      title: "개인 포트폴리오",
-      subtitle: "AI 뷰티 제품 광고",
+      src: GalleryBeautyImage,
+      alt: "뷰티 브랜드 화장품 광고",
+      title: "뷰티 브랜드 화장품 광고",
+      subtitle: "AI 생성 실사형 제품 광고",
       description:
-        "ComfyUI, FLUX를 활용하여 제작한 실사형 AI 뷰티 제품 광고 이미지입니다. AI 기술을 통해 자연스러운 모델 표현과 제품 배치를 구현한 개인 포트폴리오 작업입니다.",
-      category: "Personal Project",
+        "AI 기술을 활용하여 제작한 고품질 뷰티 제품 광고 이미지입니다. 자연스러운 모델 포즈와 제품 배치를 통해 브랜드의 세련된 이미지를 효과적으로 전달하는 실사형 광고 콘텐츠입니다.",
+      category: "AI Beauty Advertisement",
       year: "2024",
-      client: "개인 포트폴리오",
-      role: "AI 이미지 생성, 프롬프트 엔지니어링",
-      tools: ["ComfyUI", "FLUX", "AI Image Generation"],
+      client: "뷰티 브랜드",
+      role: "AI 이미지 생성, 광고 제작",
+      tools: ["ComfyUI", "FLUX", "AI Image Generation", "Photoshop"],
       images: [],
     },
 
