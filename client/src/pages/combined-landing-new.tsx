@@ -384,7 +384,7 @@ export default function CombinedLanding() {
       id: "1",
       src: SamsungOfflineImage,
       alt: "Samsung 온·오프라인 콘텐츠 기획",
-      title: "Samsung 온·오프라인 콘텐츠 기획",
+      title: "온오프라인 캠페인 기획 운영",
       subtitle: "통합 교육 프로그램 운영",
       description: "SAMSUNG\n온 오프라인 콘텐츠 기획. 운영",
       category: "Event Planning",
