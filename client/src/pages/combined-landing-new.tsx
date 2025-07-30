@@ -1469,7 +1469,7 @@ export default function CombinedLanding() {
             {/* Contact Section */}
             <div className="mb-0" data-section="contact">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="text-red-500 uppercase tracking-wide text-base font-semibold">Keep going</h3>
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1CABE2]">Keep going</h3>
                 <span
                   className={`${FONT_SIZES.small} font-medium text-gray-500`}
                 >
