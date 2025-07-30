@@ -233,7 +233,7 @@ export default function CombinedLanding() {
     heroTitle2: "<span style='color: #1CABE2'>후원자의 마음</span>을",
     heroTitle3: "움직이는",
     heroTitle4: "디지털 마케터 이승훈 입니다",
-    aboutTitle: "> ALL IN ONE CONTENT\nCREATOR",
+    aboutTitle: "> ALL-IN-ONE CAMPAIGN\nCREATOR",
     aboutDescription: "기획에서 후반작업까지 모든 제작 과정을 아우르는 올라운드 역량을 갖춘 콘텐츠 크리에이터입니다. 다양한 플랫폼과 장르에서 축적한 경험을 바탕으로 시청자 중심의 창의적 솔루션을 제시하며, 브랜드 가치 향상과 사용자 경험 개선을 통해 measurable한 성과를 달성합니다.",
     service1Title: "콘텐츠 기획, 제작",
     service1Description: "시청자 데이터와 시청환경 분석을 바탕으로 한 전략적 기획력과 촬영·편집·조명·미술까지 아우르는 올라운드 제작 역량으로 고품질 콘텐츠를 구현하여 제작비 최적화와 브랜드 가치 향상을 견인합니다.",
