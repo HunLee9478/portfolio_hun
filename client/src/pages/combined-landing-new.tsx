@@ -1917,6 +1917,7 @@ export default function CombinedLanding() {
                   </div>
                   <div className="text-center mb-8">
                     <p className="text-sm text-[#58534e] italic">프로젝트 진행 과정 및 결과물</p>
+                    <p className="text-base text-[#282623] font-medium mt-4">2023.03 ~ 2024.11</p>
                   </div>
                 </div>
 
