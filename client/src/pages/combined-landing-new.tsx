@@ -898,7 +898,7 @@ export default function CombinedLanding() {
                 >
                   콘텐츠 제작자 이승훈 입니다
                 </EditableText>
-                <span className="text-pink-500">.</span>
+                <span className="text-[#FFDC0E]">.</span>
               </div>
             </div>
           </motion.h1>
