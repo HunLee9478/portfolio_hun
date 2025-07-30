@@ -1948,7 +1948,7 @@ export default function CombinedLanding() {
                         프로젝트 세부 활동
                       </h3>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                    <div className="grid grid-cols-2 gap-4 mb-8">
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
                           src={IntegratedOperationImage} 
@@ -1983,6 +1983,18 @@ export default function CombinedLanding() {
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
                           onLoad={() => console.log("이미지 로딩 성공: overseas-event.jpg")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src={OnlineEventImage} 
+                          alt="온라인 이벤트 기획"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: online-event.jpg")}
                         />
                       </div>
                     </div>
