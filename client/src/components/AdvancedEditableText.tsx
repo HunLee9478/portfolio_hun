@@ -153,9 +153,13 @@ export default function AdvancedEditableText({
 
   if (!isDeveloperMode) {
     return (
-      <span className={className} style={appliedStyle}>
-        {children}
-      </span>
+      <span 
+        className={className} 
+        style={appliedStyle}
+        dangerouslySetInnerHTML={{ 
+          __html: localStorage.getItem(`editedText_${textKey}`) || (typeof children === 'string' ? children : '') 
+        }}
+      />
     );
   }
 
@@ -208,7 +212,11 @@ export default function AdvancedEditableText({
             </div>
           </div>
         ) : (
-          localStorage.getItem(`editedText_${textKey}`) || children
+          <span 
+            dangerouslySetInnerHTML={{ 
+              __html: localStorage.getItem(`editedText_${textKey}`) || (typeof children === 'string' ? children : '') 
+            }}
+          />
         )}
       </div>
 

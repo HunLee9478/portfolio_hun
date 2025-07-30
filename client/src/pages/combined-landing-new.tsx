@@ -351,15 +351,9 @@ export default function CombinedLanding() {
       <div
         className={`${className} ${isDeveloperMode ? 'hover:bg-yellow-50 cursor-pointer border-2 border-dashed border-transparent hover:border-yellow-300' : ''}`}
         onClick={() => startEditing(textKey)}
+        dangerouslySetInnerHTML={{ __html: text.replace(/\n/g, '<br />') }}
         {...props}
-      >
-        {text.split('\n').map((line, index) => (
-          <span key={index}>
-            {line}
-            {index < text.split('\n').length - 1 && <br />}
-          </span>
-        ))}
-      </div>
+      />
     );
   };
 
