@@ -2168,35 +2168,7 @@ export default function CombinedLanding() {
                             30+ 온 오프라인 행사, 교육에서 일관된 고품질 서비스 제공
                           </AdvancedEditableText>
                         </div>
-                        <div>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-achievement-2-title`}
-                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#282623",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              fontWeight: "400",
-                              display: "block",
-                              marginBottom: "8px"
-                            }}
-                          >
-                            • 기업 고객사 수주 5개
-                          </AdvancedEditableText>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-achievement-2-desc`}
-                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#58534e",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              marginLeft: "16px",
-                              display: "block"
-                            }}
-                          >
-                            NH농협, 삼성교육재단, 한국증권 등 온라인 이벤트 프로젝트 수주
-                          </AdvancedEditableText>
-                        </div>
+
                         <div>
                           <AdvancedEditableText
                             textKey={`project-${selectedProject.id}-achievement-3-title`}
