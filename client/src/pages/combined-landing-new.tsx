@@ -527,7 +527,7 @@ export default function CombinedLanding() {
         "해외법인 임직원들을 초청한 글로벌 파트너십 프로그램의 전체 기획과 운영을 담당했습니다. 국제 업무 프로토콜에 맞춘 행사 진행, 다국가 참가자 관리, 실시간 통번역 지원 등 글로벌 기업 행사의 복합적 요구사항을 성공적으로 조율하여 원활한 국제 교류 프로그램을 구현했습니다.",
       category: "Global Event Management",
       year: "2024",
-      client: "글로벌 기업",
+      client: "삼성",
       role: "해외 행사 기획, 운영 총괄, 국제 업무 조율",
       tools: ["Global Event Planning", "International Protocol", "Multi-language Support", "Cross-cultural Communication"],
       images: [],
