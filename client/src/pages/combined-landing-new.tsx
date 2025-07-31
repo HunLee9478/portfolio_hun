@@ -2055,50 +2055,50 @@ export default function CombinedLanding() {
                     <div className="grid grid-cols-2 gap-4 mb-8">
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src="/assets/projects/jinair-new-1.png" 
+                          src={GalleryBeautyImage} 
                           alt="Jinair 프로모션 콘텐츠 기획"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: jinair-new-1.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: beauty.png")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src="/assets/projects/jinair-new-2.png" 
+                          src={PersonalPortfolioImage} 
                           alt="Jinair 마케팅 전략"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: jinair-new-2.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: personal-portfolio.png")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src="/assets/projects/jinair-new-3.png" 
+                          src={GalleryInterviewImage} 
                           alt="Jinair 콘텐츠 제작"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: jinair-new-3.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: interview.png")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src="/assets/projects/jinair-new-4.png" 
+                          src={LikelionHackathonImage} 
                           alt="Jinair 성과 분석"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: jinair-new-4.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: likelion-hackathon.png")}
                         />
                       </div>
                     </div>
@@ -2407,7 +2407,7 @@ export default function CombinedLanding() {
                               marginLeft: "16px"
                             }}
                           >
-                            진에어 측과 후속 프로젝트 진행을 위한<br />시즌2 기획 논의 성공적 확보
+                            진에어 측과 후속 프로젝트 진행을 위한 시즌2 기획 논의 성공적 확보
                           </AdvancedEditableText>
                         </div>
                       </>
