@@ -2301,40 +2301,7 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 6. 활용 기술 */}
-                    <div className="mb-8">
-                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
-                        활용 기술
-                      </h3>
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div>
-                          <h4 className="font-medium text-sm text-[#282623] mb-2">그래픽 제작</h4>
-                          <div className="flex flex-wrap gap-1">
-                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Photoshop</span>
-                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Midjourney</span>
-                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Stable Diffusion</span>
-                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">ComfyUI</span>
-                          </div>
-                        </div>
-                        <div>
-                          <h4 className="font-medium text-sm text-[#282623] mb-2">데이터 분석</h4>
-                          <div className="flex flex-wrap gap-1">
-                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">SnowFlake</span>
-                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Gather API</span>
-                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Python</span>
-                          </div>
-                        </div>
-                        <div>
-                          <h4 className="font-medium text-sm text-[#282623] mb-2">플랫폼 운영</h4>
-                          <div className="flex flex-wrap gap-1">
-                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Gather.town</span>
-                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">실시간 소통</span>
-                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">퀘스트 시스템</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+
                   </div>
                 )}
 
