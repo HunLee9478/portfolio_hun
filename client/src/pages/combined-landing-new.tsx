@@ -2407,7 +2407,7 @@ export default function CombinedLanding() {
                               marginLeft: "16px"
                             }}
                           >
-                            진에어 측과 후속 프로젝트 진행을 위한 시즌2 기획 논의 성공적 확보
+                            진에어 측과 후속 프로젝트 진행을 위한<br />시즌2 기획 논의 성공적 확보
                           </AdvancedEditableText>
                         </div>
                       </>
