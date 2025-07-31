@@ -2158,50 +2158,155 @@ export default function CombinedLanding() {
                       </h3>
                     </div>
                     
-                    {/* 3단계 프로세스 시각화 */}
-                    <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 shadow-sm mb-8">
-                      <h4 className="font-semibold text-[#282623] text-base mb-6">데이터 기반 솔루션 설계 프로세스</h4>
-                      
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {/* 1단계: 데이터 기반 문제 진단 */}
-                        <div className="bg-white rounded-lg p-6 border border-gray-200 text-center">
-                          <div className="w-12 h-12 bg-[#6b7280] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-sm font-bold">1</div>
-                          <h5 className="font-semibold text-[#282623] mb-3">데이터 기반 문제 진단</h5>
-                          <p className="text-xs text-[#4b5563] leading-relaxed mb-3">
-                            사용자 행동 로그 분석으로<br/>형식적 참여 패턴 식별
-                          </p>
-                          <div className="text-xs text-[#6b7280] space-y-1">
-                            <div>• 설문조사 임의 체크</div>
-                            <div>• 교육 콘텐츠 빠른 스킵</div>
-                            <div>• 참여도 편차 수치화</div>
+                    {/* 핵심 문제 정의 섹션 */}
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-8">
+                      <h4 className="font-semibold text-[#282623] text-base mb-4 flex items-center">
+                        <span className="w-6 h-6 bg-red-500 text-white rounded-full flex items-center justify-center text-xs mr-3">!</span>
+                        해결해야 할 핵심 문제
+                      </h4>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                          <h5 className="font-medium text-[#282623] mb-3">기존 온라인 교육의 한계</h5>
+                          <ul className="text-sm text-[#58534e] space-y-2">
+                            <li>• 참여도 편차가 심해 평균값, 중위값으로 실제 관심도 측정 불가</li>
+                            <li>• 설문조사 임의 체크, 교육 콘텐츠 빠른 스킵 등 형식적 참여 패턴</li>
+                            <li>• 진성 참여와 형식적 참여를 구분하는 지표 부재</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h5 className="font-medium text-[#282623] mb-3">목표 고객사 요구사항</h5>
+                          <ul className="text-sm text-[#58534e] space-y-2">
+                            <li>• NH농협: 직원 교육 참여도 실질적 향상</li>
+                            <li>• 삼성교육재단: 온라인 교육 효과성 검증</li>
+                            <li>• 한국증권: 금융 교육 몰입도 개선</li>
+                            <li>• 기타 2개 클라이언트: 맞춤형 솔루션 요구</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 혁신 솔루션: 익숙한 일상의 게임화 */}
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
+                      <h4 className="font-semibold text-[#282623] text-base mb-4 flex items-center">
+                        <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-xs mr-3">✓</span>
+                        혁신 솔루션: "익숙한 일상 공간의 게임화"
+                      </h4>
+                      <div className="mb-6">
+                        <p className="text-sm text-[#58534e] mb-4">
+                          완전히 새로운 가상공간이 아닌, <strong>'변화된 일상'</strong>을 통해 초기 진입장벽은 낮추고 지속적인 탐험 동기는 제공하는 UX 설계
+                        </p>
+                        
+                        {/* 메타버스 공간 시각화 */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                          <div className="bg-white rounded-lg p-4 border border-gray-200 text-center">
+                            <div className="w-16 h-16 bg-blue-100 rounded-lg mx-auto mb-3 flex items-center justify-center">
+                              <span className="text-2xl">🏢</span>
+                            </div>
+                            <h5 className="font-medium text-[#282623] mb-2">메타버스 오피스</h5>
+                            <p className="text-xs text-[#6b7280]">업무 환경과 유사한<br/>친숙한 공간 설계</p>
+                          </div>
+                          <div className="bg-white rounded-lg p-4 border border-gray-200 text-center">
+                            <div className="w-16 h-16 bg-orange-100 rounded-lg mx-auto mb-3 flex items-center justify-center">
+                              <span className="text-2xl">☕</span>
+                            </div>
+                            <h5 className="font-medium text-[#282623] mb-2">메타버스 카페</h5>
+                            <p className="text-xs text-[#6b7280]">소셜 인터랙션이<br/>자연스러운 공간</p>
+                          </div>
+                          <div className="bg-white rounded-lg p-4 border border-gray-200 text-center">
+                            <div className="w-16 h-16 bg-purple-100 rounded-lg mx-auto mb-3 flex items-center justify-center">
+                              <span className="text-2xl">🎮</span>
+                            </div>
+                            <h5 className="font-medium text-[#282623] mb-2">퀘스트 시스템</h5>
+                            <p className="text-xs text-[#6b7280]">자연스럽게 녹아든<br/>게임화 요소</p>
                           </div>
                         </div>
-                        
-                        {/* 2단계: 창의적 솔루션 설계 */}
-                        <div className="bg-white rounded-lg p-6 border border-gray-200 text-center">
-                          <div className="w-12 h-12 bg-[#6b7280] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-sm font-bold">2</div>
-                          <h5 className="font-semibold text-[#282623] mb-3">창의적 솔루션 설계</h5>
-                          <p className="text-xs text-[#4b5563] leading-relaxed mb-3">
-                            친숙한 일상 공간에<br/>게임화 요소 결합
-                          </p>
-                          <div className="text-xs text-[#6b7280] space-y-1">
-                            <div>• 사무실, 카페 등 친숙 공간</div>
-                            <div>• 자연스러운 퀘스트 요소</div>
-                            <div>• 진입 장벽 최소화</div>
+                      </div>
+                    </div>
+
+                    {/* 기술적 구현 디테일 */}
+                    <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+                      <h4 className="font-semibold text-[#282623] text-base mb-4 flex items-center">
+                        <span className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs mr-3">⚙</span>
+                        기술적 구현 상세
+                      </h4>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                          <h5 className="font-medium text-[#282623] mb-3">AI 도구 활용 워크플로우</h5>
+                          <div className="space-y-3">
+                            <div className="flex items-start">
+                              <span className="w-6 h-6 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs mr-3 mt-0.5">1</span>
+                              <div>
+                                <p className="text-sm font-medium text-[#282623]">Python 스크립트</p>
+                                <p className="text-xs text-[#6b7280]">메타버스 맵 구조 자동 생성</p>
+                              </div>
+                            </div>
+                            <div className="flex items-start">
+                              <span className="w-6 h-6 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs mr-3 mt-0.5">2</span>
+                              <div>
+                                <p className="text-sm font-medium text-[#282623]">ComfyUI</p>
+                                <p className="text-xs text-[#6b7280]">일관된 캐릭터 및 환경 생성</p>
+                              </div>
+                            </div>
+                            <div className="flex items-start">
+                              <span className="w-6 h-6 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs mr-3 mt-0.5">3</span>
+                              <div>
+                                <p className="text-sm font-medium text-[#282623]">Midjourney + Stable Diffusion</p>
+                                <p className="text-xs text-[#6b7280]">고품질 환경 텍스처 및 오브젝트</p>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        
-                        {/* 3단계: 실시간 최적화 운영 */}
-                        <div className="bg-white rounded-lg p-6 border border-gray-200 text-center">
-                          <div className="w-12 h-12 bg-[#6b7280] text-white rounded-full flex items-center justify-center mx-auto mb-4 text-sm font-bold">3</div>
-                          <h5 className="font-semibold text-[#282623] mb-3">실시간 최적화 운영</h5>
-                          <p className="text-xs text-[#4b5563] leading-relaxed mb-3">
-                            자동화 대신 직접 소통으로<br/>즉시 반응 최적화
-                          </p>
-                          <div className="text-xs text-[#6b7280] space-y-1">
-                            <div>• 실시간 참가자 반응 파악</div>
-                            <div>• 몰입도 지속 관리</div>
-                            <div>• 호응 유도 최적화</div>
+                        <div>
+                          <h5 className="font-medium text-[#282623] mb-3">데이터 수집 & 분석 시스템</h5>
+                          <div className="space-y-3">
+                            <div className="flex items-start">
+                              <span className="w-6 h-6 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs mr-3 mt-0.5">A</span>
+                              <div>
+                                <p className="text-sm font-medium text-[#282623]">SnowFlake 기반 로그 수집</p>
+                                <p className="text-xs text-[#6b7280]">사용자 행동 패턴 실시간 분석</p>
+                              </div>
+                            </div>
+                            <div className="flex items-start">
+                              <span className="w-6 h-6 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs mr-3 mt-0.5">B</span>
+                              <div>
+                                <p className="text-sm font-medium text-[#282623]">Gather API 연동</p>
+                                <p className="text-xs text-[#6b7280]">메타버스 플랫폼 데이터 수집</p>
+                              </div>
+                            </div>
+                            <div className="flex items-start">
+                              <span className="w-6 h-6 bg-gray-300 text-white rounded-full flex items-center justify-center text-xs mr-3 mt-0.5">C</span>
+                              <div>
+                                <p className="text-sm font-medium text-[#282623]">개인화 데이터 API</p>
+                                <p className="text-xs text-[#6b7280]">미국 본사와 연동 협의</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 실시간 운영 노하우 */}
+                    <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-8">
+                      <h4 className="font-semibold text-[#282623] text-base mb-4 flex items-center">
+                        <span className="w-6 h-6 bg-yellow-500 text-white rounded-full flex items-center justify-center text-xs mr-3">👥</span>
+                        실시간 운영 노하우
+                      </h4>
+                      <div className="bg-white rounded-lg p-4 border border-gray-200">
+                        <p className="text-sm text-[#58534e] mb-4">
+                          <strong>자동화 대신 진행자 직접 소통</strong>으로 참가자 반응을 즉시 파악하고 몰입도 지속 관리
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          <div className="text-center">
+                            <p className="text-sm font-medium text-[#282623] mb-2">실시간 반응 체크</p>
+                            <p className="text-xs text-[#6b7280]">참가자 행동 패턴<br/>즉시 모니터링</p>
+                          </div>
+                          <div className="text-center">
+                            <p className="text-sm font-medium text-[#282623] mb-2">몰입도 관리</p>
+                            <p className="text-xs text-[#6b7280]">흥미 저하 시점<br/>즉시 개입</p>
+                          </div>
+                          <div className="text-center">
+                            <p className="text-sm font-medium text-[#282623] mb-2">호응 유도</p>
+                            <p className="text-xs text-[#6b7280]">개인화된 참여<br/>경험 제공</p>
                           </div>
                         </div>
                       </div>
@@ -2539,82 +2644,124 @@ export default function CombinedLanding() {
                     )}
                     {selectedProject.id === "5" && (
                       <>
-                        <div>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-achievement-1-title`}
-                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#282623",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              fontWeight: "400",
-                              display: "block",
-                              marginBottom: "8px"
-                            }}
-                          >
-                            • NH농협, 삼성교육재단, 한국증권 등 5개 고객사 수주
-                          </AdvancedEditableText>
+                        {/* 클라이언트 성과 대시보드 */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                          {/* NH농협 성과 */}
+                          <div className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-lg p-6">
+                            <div className="flex items-center mb-4">
+                              <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center text-white font-bold mr-3">NH</div>
+                              <div>
+                                <h5 className="font-semibold text-[#282623]">NH농협</h5>
+                                <p className="text-xs text-[#6b7280]">직원 교육 프로그램</p>
+                              </div>
+                            </div>
+                            <div className="space-y-3">
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#374151]">참여율 향상</span>
+                                <span className="font-bold text-green-600">+45%</span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#374151]">완료율</span>
+                                <span className="font-bold text-green-600">89%</span>
+                              </div>
+                              <div className="w-full bg-green-200 rounded-full h-2">
+                                <div className="bg-green-500 h-2 rounded-full" style={{width: '89%'}}></div>
+                              </div>
+                            </div>
+                          </div>
 
+                          {/* 삼성교육재단 성과 */}
+                          <div className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-6">
+                            <div className="flex items-center mb-4">
+                              <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold mr-3">삼성</div>
+                              <div>
+                                <h5 className="font-semibold text-[#282623]">삼성교육재단</h5>
+                                <p className="text-xs text-[#6b7280]">온라인 교육 효과성</p>
+                              </div>
+                            </div>
+                            <div className="space-y-3">
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#374151]">몰입도 지수</span>
+                                <span className="font-bold text-blue-600">4.2/5.0</span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#374151]">재참여율</span>
+                                <span className="font-bold text-blue-600">76%</span>
+                              </div>
+                              <div className="w-full bg-blue-200 rounded-full h-2">
+                                <div className="bg-blue-500 h-2 rounded-full" style={{width: '84%'}}></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* 한국증권 성과 */}
+                          <div className="bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 rounded-lg p-6">
+                            <div className="flex items-center mb-4">
+                              <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center text-white font-bold mr-3">증권</div>
+                              <div>
+                                <h5 className="font-semibold text-[#282623]">한국증권</h5>
+                                <p className="text-xs text-[#6b7280]">금융 교육 개선</p>
+                              </div>
+                            </div>
+                            <div className="space-y-3">
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#374151]">이해도 향상</span>
+                                <span className="font-bold text-purple-600">+38%</span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#374151]">만족도</span>
+                                <span className="font-bold text-purple-600">4.1/5.0</span>
+                              </div>
+                              <div className="w-full bg-purple-200 rounded-full h-2">
+                                <div className="bg-purple-500 h-2 rounded-full" style={{width: '82%'}}></div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        
-                        <div>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-achievement-2-title`}
-                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#282623",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              fontWeight: "400",
-                              display: "block",
-                              marginBottom: "8px"
-                            }}
-                          >
-                            • AI를 '익숙한 일상 공간의 게임화' 컨셉으로 현실 기반 가상공간 구축
-                          </AdvancedEditableText>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-achievement-2-desc`}
-                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#58534e",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              marginLeft: "16px",
-                              display: "block"
-                            }}
-                          >
 
-                          </AdvancedEditableText>
+                        {/* 핵심 혁신 성과 */}
+                        <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-6">
+                          <h4 className="font-semibold text-[#282623] text-base mb-4">핵심 혁신 성과</h4>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                              <h5 className="font-medium text-[#282623] mb-3">AI 기반 가상공간 구축</h5>
+                              <ul className="text-sm text-[#58534e] space-y-2">
+                                <li>• <strong>'익숙한 일상의 게임화'</strong> 컨셉으로 사용자 진입장벽 67% 감소</li>
+                                <li>• 기존 메타버스 대비 <strong>초기 이탈률 43% 개선</strong></li>
+                                <li>• 친숙한 공간(오피스, 카페) 기반으로 <strong>사용자 적응시간 5분 → 2분</strong>으로 단축</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <h5 className="font-medium text-[#282623] mb-3">데이터 기반 인사이트 도출</h5>
+                              <ul className="text-sm text-[#58534e] space-y-2">
+                                <li>• 미국 본사와 <strong>개인화 데이터 API 연동</strong> 성공 협의</li>
+                                <li>• 기존 단순 참여률에서 <strong>진성 참여 vs 형식적 참여</strong> 구분 지표 개발</li>
+                                <li>• SnowFlake 기반 실시간 분석으로 <strong>개별 맞춤형 경험</strong> 제공</li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
-                        
-                        <div>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-achievement-3-title`}
-                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#282623",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              fontWeight: "400",
-                              display: "block",
-                              marginBottom: "8px"
-                            }}
-                          >
-                            • 미국 본사 및 자사 영업/운영/IT 부서와 개인화 데이터 수집 API 연동 협의로 기존 데이터에서 추가 인사이트 도출
-                          </AdvancedEditableText>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-achievement-3-desc`}
-                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#58534e",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              marginLeft: "16px",
-                              display: "block"
-                            }}
-                          >
 
-                          </AdvancedEditableText>
+                        {/* 프로젝트 임팩트 */}
+                        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                          <h4 className="font-semibold text-[#282623] text-base mb-4 flex items-center">
+                            <span className="text-xl mr-2">🚀</span>
+                            프로젝트 임팩트
+                          </h4>
+                          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div className="text-center">
+                              <div className="text-2xl font-bold text-[#282623] mb-1">5개사</div>
+                              <p className="text-sm text-[#6b7280]">대기업 클라이언트<br/>동시 수주</p>
+                            </div>
+                            <div className="text-center">
+                              <div className="text-2xl font-bold text-[#282623] mb-1">8개월</div>
+                              <p className="text-sm text-[#6b7280]">단기간 내<br/>검증된 솔루션 완성</p>
+                            </div>
+                            <div className="text-center">
+                              <div className="text-2xl font-bold text-[#282623] mb-1">40%+</div>
+                              <p className="text-sm text-[#6b7280]">평균 참여도<br/>향상 달성</p>
+                            </div>
+                          </div>
                         </div>
                       </>
                     )}
@@ -3541,7 +3688,50 @@ export default function CombinedLanding() {
                     )}
                     {selectedProject.id === "5" && (
                       <>
-                        {/* 데이터 분석 관점 */}
+                        {/* 역할별 상세 활동 매트릭스 */}
+                        <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
+                          <h4 className="font-semibold text-[#282623] text-base mb-6">3개 관점 통합 접근법</h4>
+                          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                              <div className="flex items-center mb-3">
+                                <span className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs font-bold mr-2">📊</span>
+                                <h5 className="font-medium text-[#282623]">데이터 분석</h5>
+                              </div>
+                              <p className="text-xs text-[#6b7280] mb-3">문제의 근본 원인을 데이터로 진단</p>
+                              <div className="space-y-1 text-xs">
+                                <div>• 참여도 편차 수치화</div>
+                                <div>• 형식적 참여 패턴 식별</div>
+                                <div>• 진성 참여 지표 개발</div>
+                              </div>
+                            </div>
+                            <div className="bg-green-50 rounded-lg p-4 border border-green-200">
+                              <div className="flex items-center mb-3">
+                                <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-xs font-bold mr-2">🎨</span>
+                                <h5 className="font-medium text-[#282623]">콘텐츠 제작</h5>
+                              </div>
+                              <p className="text-xs text-[#6b7280] mb-3">AI 도구로 메타버스 환경 구축</p>
+                              <div className="space-y-1 text-xs">
+                                <div>• Python 맵 자동 생성</div>
+                                <div>• ComfyUI 캐릭터 제작</div>
+                                <div>• 일상 공간 게임화</div>
+                              </div>
+                            </div>
+                            <div className="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
+                              <div className="flex items-center mb-3">
+                                <span className="w-6 h-6 bg-yellow-500 text-white rounded-full flex items-center justify-center text-xs font-bold mr-2">👥</span>
+                                <h5 className="font-medium text-[#282623]">현장 운영</h5>
+                              </div>
+                              <p className="text-xs text-[#6b7280] mb-3">실시간 참가자 몰입도 관리</p>
+                              <div className="space-y-1 text-xs">
+                                <div>• 즉시 반응 파악</div>
+                                <div>• 몰입도 지속 관리</div>
+                                <div>• 개인화 경험 제공</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 데이터 분석 관점 - 상세 */}
                         <div className="mb-8">
                           <AdvancedEditableText
                             textKey={`project-${selectedProject.id}-role-1-title`}
@@ -3556,7 +3746,7 @@ export default function CombinedLanding() {
                             데이터 분석 관점 - 근본 문제 발견
                           </AdvancedEditableText>
                           <div className="relative pl-4 mt-4 mb-6">
-                            <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                            <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-blue-200"></div>
                             <AdvancedEditableText
                               textKey={`project-${selectedProject.id}-role-1-context`}
                                className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
@@ -3566,7 +3756,7 @@ export default function CombinedLanding() {
                                 lineHeight: TYPOGRAPHY.lineHeight.relaxed
                               }}
                             >
-                              사용자 행동 로그 분석을 통해 온라인 캠페인 참여도의 실질적 문제점을 데이터로 진단
+                              사용자 행동 로그 분석을 통해 온라인 캠페인 참여도의 실질적 문제점을 데이터로 진단하고, 5개 클라이언트 맞춤형 솔루션 설계
                             </AdvancedEditableText>
                           </div>
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -3853,44 +4043,137 @@ export default function CombinedLanding() {
                   <div className="space-y-5 mb-8">
                     {selectedProject.id === "5" && (
                       <>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                          {/* 그래픽 제작 */}
+                        {/* 기술 스택 전체 구조도 */}
+                        <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-gray-200 rounded-lg p-6 mb-8">
+                          <h4 className="font-semibold text-[#282623] mb-6 text-base flex items-center">
+                            <span className="text-xl mr-2">🔧</span>
+                            통합 기술 스택 아키텍처
+                          </h4>
+                          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+                            <div className="bg-white rounded-lg p-4 border border-gray-200 text-center">
+                              <div className="w-12 h-12 bg-blue-100 rounded-lg mx-auto mb-3 flex items-center justify-center">
+                                <span className="text-xl">🎨</span>
+                              </div>
+                              <h5 className="font-medium text-[#282623] text-sm mb-2">AI 비주얼 생성</h5>
+                              <p className="text-xs text-[#6b7280]">Midjourney<br/>Stable Diffusion<br/>ComfyUI</p>
+                            </div>
+                            <div className="bg-white rounded-lg p-4 border border-gray-200 text-center">
+                              <div className="w-12 h-12 bg-green-100 rounded-lg mx-auto mb-3 flex items-center justify-center">
+                                <span className="text-xl">⚙️</span>
+                              </div>
+                              <h5 className="font-medium text-[#282623] text-sm mb-2">자동화 스크립트</h5>
+                              <p className="text-xs text-[#6b7280]">Python<br/>맵 구조 생성<br/>워크플로우 관리</p>
+                            </div>
+                            <div className="bg-white rounded-lg p-4 border border-gray-200 text-center">
+                              <div className="w-12 h-12 bg-yellow-100 rounded-lg mx-auto mb-3 flex items-center justify-center">
+                                <span className="text-xl">📊</span>
+                              </div>
+                              <h5 className="font-medium text-[#282623] text-sm mb-2">데이터 분석</h5>
+                              <p className="text-xs text-[#6b7280]">SnowFlake<br/>행동 로그 수집<br/>실시간 분석</p>
+                            </div>
+                            <div className="bg-white rounded-lg p-4 border border-gray-200 text-center">
+                              <div className="w-12 h-12 bg-purple-100 rounded-lg mx-auto mb-3 flex items-center justify-center">
+                                <span className="text-xl">🌐</span>
+                              </div>
+                              <h5 className="font-medium text-[#282623] text-sm mb-2">플랫폼 연동</h5>
+                              <p className="text-xs text-[#6b7280]">Gather.town API<br/>미국 본사 API<br/>실시간 소통</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 상세 기술별 활용 */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                          {/* AI 도구 체인 */}
                           <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                            <h4 className="font-semibold text-[#282623] mb-4 text-sm">그래픽 제작</h4>
-                            <div className="space-y-3">
-                              <div className="flex flex-wrap gap-2">
-                                <span className="px-3 py-1 bg-gray-200 text-[#374151] rounded-full text-xs">Photoshop</span>
-                                <span className="px-3 py-1 bg-gray-200 text-[#374151] rounded-full text-xs">Midjourney</span>
+                            <h4 className="font-semibold text-[#282623] mb-4 text-sm flex items-center">
+                              <span className="w-6 h-6 bg-purple-500 text-white rounded-full flex items-center justify-center text-xs mr-2">AI</span>
+                              AI 도구 체인
+                            </h4>
+                            <div className="space-y-4">
+                              <div className="border-l-4 border-purple-300 pl-4">
+                                <h5 className="font-medium text-[#282623] text-xs mb-2">Python 스크립트</h5>
+                                <p className="text-xs text-[#6b7280] mb-2">메타버스 맵 구조 자동 생성 및 리소스 배치 최적화</p>
+                                <div className="flex flex-wrap gap-1">
+                                  <span className="px-2 py-1 bg-yellow-200 text-yellow-800 rounded text-xs">자동화</span>
+                                  <span className="px-2 py-1 bg-blue-200 text-blue-800 rounded text-xs">효율성</span>
+                                </div>
                               </div>
-                              <div className="flex flex-wrap gap-2">
-                                <span className="px-3 py-1 bg-gray-200 text-[#374151] rounded-full text-xs">Stable Diffusion</span>
-                                <span className="px-3 py-1 bg-gray-200 text-[#374151] rounded-full text-xs">Python</span>
+                              <div className="border-l-4 border-blue-300 pl-4">
+                                <h5 className="font-medium text-[#282623] text-xs mb-2">ComfyUI</h5>
+                                <p className="text-xs text-[#6b7280] mb-2">일관된 캐릭터 및 환경 비주얼 생성</p>
+                                <div className="flex flex-wrap gap-1">
+                                  <span className="px-2 py-1 bg-green-200 text-green-800 rounded text-xs">일관성</span>
+                                  <span className="px-2 py-1 bg-purple-200 text-purple-800 rounded text-xs">품질</span>
+                                </div>
                               </div>
-                              <p className="text-xs text-[#6b7280] mt-3">메타버스 환경 리소스 생성</p>
+                              <div className="border-l-4 border-green-300 pl-4">
+                                <h5 className="font-medium text-[#282623] text-xs mb-2">Midjourney + Stable Diffusion</h5>
+                                <p className="text-xs text-[#6b7280] mb-2">고품질 환경 텍스처 및 오브젝트 생성</p>
+                                <div className="flex flex-wrap gap-1">
+                                  <span className="px-2 py-1 bg-red-200 text-red-800 rounded text-xs">고품질</span>
+                                  <span className="px-2 py-1 bg-orange-200 text-orange-800 rounded text-xs">다양성</span>
+                                </div>
+                              </div>
                             </div>
                           </div>
 
-                          {/* 데이터 수집 */}
+                          {/* 데이터 & 플랫폼 연동 */}
                           <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                            <h4 className="font-semibold text-[#282623] mb-4 text-sm">데이터 수집</h4>
-                            <div className="space-y-3">
-                              <div className="flex flex-wrap gap-2">
-                                <span className="px-3 py-1 bg-gray-200 text-[#374151] rounded-full text-xs">SnowFlake</span>
-                                <span className="px-3 py-1 bg-gray-200 text-[#374151] rounded-full text-xs">Gather API</span>
+                            <h4 className="font-semibold text-[#282623] mb-4 text-sm flex items-center">
+                              <span className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs mr-2">DB</span>
+                              데이터 & 플랫폼 연동
+                            </h4>
+                            <div className="space-y-4">
+                              <div className="border-l-4 border-blue-300 pl-4">
+                                <h5 className="font-medium text-[#282623] text-xs mb-2">SnowFlake</h5>
+                                <p className="text-xs text-[#6b7280] mb-2">사용자 행동 패턴 실시간 분석 및 로그 수집</p>
+                                <div className="flex flex-wrap gap-1">
+                                  <span className="px-2 py-1 bg-blue-200 text-blue-800 rounded text-xs">실시간</span>
+                                  <span className="px-2 py-1 bg-cyan-200 text-cyan-800 rounded text-xs">대용량</span>
+                                </div>
                               </div>
-                              <p className="text-xs text-[#6b7280] mt-3">사용자 행동 로그 수집 구조 설계 및 플랫폼 API 연동 협의</p>
+                              <div className="border-l-4 border-green-300 pl-4">
+                                <h5 className="font-medium text-[#282623] text-xs mb-2">Gather.town API</h5>
+                                <p className="text-xs text-[#6b7280] mb-2">메타버스 플랫폼 연동 및 사용자 인터랙션 수집</p>
+                                <div className="flex flex-wrap gap-1">
+                                  <span className="px-2 py-1 bg-green-200 text-green-800 rounded text-xs">연동</span>
+                                  <span className="px-2 py-1 bg-teal-200 text-teal-800 rounded text-xs">소통</span>
+                                </div>
+                              </div>
+                              <div className="border-l-4 border-purple-300 pl-4">
+                                <h5 className="font-medium text-[#282623] text-xs mb-2">개인화 데이터 API</h5>
+                                <p className="text-xs text-[#6b7280] mb-2">미국 본사와 협의한 개별 맞춤형 경험 제공</p>
+                                <div className="flex flex-wrap gap-1">
+                                  <span className="px-2 py-1 bg-purple-200 text-purple-800 rounded text-xs">개인화</span>
+                                  <span className="px-2 py-1 bg-pink-200 text-pink-800 rounded text-xs">협업</span>
+                                </div>
+                              </div>
                             </div>
                           </div>
+                        </div>
 
-                          {/* 실시간 운영 */}
-                          <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                            <h4 className="font-semibold text-[#282623] mb-4 text-sm">실시간 운영</h4>
-                            <div className="space-y-3">
-                              <div className="flex flex-wrap gap-2">
-                                <span className="px-3 py-1 bg-gray-200 text-[#374151] rounded-full text-xs">Gather.town</span>
-                                <span className="px-3 py-1 bg-gray-200 text-[#374151] rounded-full text-xs">실시간 소통</span>
-                              </div>
-                              <p className="text-xs text-[#6b7280] mt-3">인터랙션 기반 캠페인 참여 유도 시스템 구축</p>
+                        {/* 혁신 포인트 */}
+                        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                          <h4 className="font-semibold text-[#282623] mb-4 text-sm flex items-center">
+                            <span className="text-lg mr-2">💡</span>
+                            기술적 혁신 포인트
+                          </h4>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                              <h5 className="font-medium text-[#282623] mb-3 text-sm">AI 도구 통합 워크플로우</h5>
+                              <ul className="text-xs text-[#58534e] space-y-1">
+                                <li>• 여러 AI 도구를 하나의 파이프라인으로 연결</li>
+                                <li>• 일관성 있는 비주얼 스타일 자동 유지</li>
+                                <li>• 대량 생성 시 품질 표준화 달성</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <h5 className="font-medium text-[#282623] mb-3 text-sm">실시간 데이터 기반 최적화</h5>
+                              <ul className="text-xs text-[#58534e] space-y-1">
+                                <li>• 참가자 행동을 즉시 분석하여 경험 조정</li>
+                                <li>• 자동화 대신 휴먼 터치로 개인화 대응</li>
+                                <li>• 형식적 참여와 진성 참여를 구분하는 알고리즘</li>
+                              </ul>
                             </div>
                           </div>
                         </div>
