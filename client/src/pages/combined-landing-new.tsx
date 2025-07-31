@@ -1332,7 +1332,6 @@ export default function CombinedLanding() {
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Java</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>웹 콘텐츠 제작</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>콘텐츠 기획</span>
-                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>프로젝트 관리</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>정보처리기사</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Midjourney</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>영어 (업무 수준)</span>
