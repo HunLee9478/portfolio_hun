@@ -974,7 +974,7 @@ export default function CombinedLanding() {
             {/* Main About Section */}
             <div className={SPACING.sectionGap}>
               <div className="flex justify-between items-start mb-6">
-                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1cabe2]" style={{ color: COLORS.primary }}>
+                <h3 className="uppercase tracking-wide text-base font-semibold text-[#1cabe2]">
                   ABOUT Hun
                 </h3>
                 <span
@@ -1521,7 +1521,7 @@ export default function CombinedLanding() {
                         lineHeight: "1.1",
                         letterSpacing: "0.05em",
                         marginBottom: "2rem",
-                        color: COLORS.primary,
+                        color: "#1cabe2",
                       }}
                       initial={{ y: 50, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
