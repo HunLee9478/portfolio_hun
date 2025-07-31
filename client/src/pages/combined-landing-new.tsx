@@ -1392,7 +1392,7 @@ export default function CombinedLanding() {
                   const startX = e.pageX - slider.offsetLeft;
                   const scrollLeft = slider.scrollLeft;
                   
-                  const handleMouseMove = (e) => {
+                  const handleMouseMove = (e: MouseEvent) => {
                     const x = e.pageX - slider.offsetLeft;
                     const walk = (x - startX) * 2;
                     slider.scrollLeft = scrollLeft - walk;
@@ -2689,7 +2689,7 @@ export default function CombinedLanding() {
                               display: "block"
                             }}
                           >
-
+                            
                           </AdvancedEditableText>
                         </div>
                         
@@ -2719,7 +2719,7 @@ export default function CombinedLanding() {
                               display: "block"
                             }}
                           >
-
+                            
                           </AdvancedEditableText>
                         </div>
                       </>
