@@ -1383,46 +1383,87 @@ export default function CombinedLanding() {
                 <div className="separator-line h-px bg-gray-200"></div>
               </div>
 
-              {/* Portfolio Grid - 5 Items Layout */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
-                {portfolioItems.slice(0, 5).map((item, index) => (
-                  <motion.div
-                    key={item.id}
-                    className="group cursor-pointer"
-                    whileHover={{ scale: 1.05 }}
-                    onClick={() => openProjectModal(item)}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                  >
-                    {/* 프로젝트 이미지 카드 */}
-                    <div className="relative overflow-hidden bg-gray-100 rounded-lg aspect-[4/3]">
-                      <img
-                        src={item.src}
-                        alt={item.alt}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      {/* 호버 오버레이 */}
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-300">
-                        <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <span
-                            className={`company block ${FONT_SIZES.small} opacity-90 font-medium drop-shadow-lg`}
-                          >
-                            {item.description.split("\n")[0]}
-                          </span>
-                          <span
-                            className={`content block ${FONT_SIZES.subheading} font-medium drop-shadow-lg`}
-                          >
-                            {item.description.split("\n")[1]}
-                          </span>
+              {/* Portfolio Grid - Horizontal Scrollable Layout */}
+              <div 
+                className="overflow-x-auto overflow-y-hidden mb-8 cursor-grab active:cursor-grabbing"
+                onMouseDown={(e) => {
+                  e.preventDefault();
+                  const slider = e.currentTarget;
+                  const startX = e.pageX - slider.offsetLeft;
+                  const scrollLeft = slider.scrollLeft;
+                  
+                  const handleMouseMove = (e) => {
+                    const x = e.pageX - slider.offsetLeft;
+                    const walk = (x - startX) * 2;
+                    slider.scrollLeft = scrollLeft - walk;
+                  };
+                  
+                  const handleMouseUp = () => {
+                    document.removeEventListener('mousemove', handleMouseMove);
+                    document.removeEventListener('mouseup', handleMouseUp);
+                    slider.classList.remove('cursor-grabbing');
+                    slider.classList.add('cursor-grab');
+                  };
+                  
+                  document.addEventListener('mousemove', handleMouseMove);
+                  document.addEventListener('mouseup', handleMouseUp);
+                  slider.classList.remove('cursor-grab');
+                  slider.classList.add('cursor-grabbing');
+                }}
+                style={{ 
+                  scrollbarWidth: 'none',
+                  msOverflowStyle: 'none',
+                  WebkitOverflowScrolling: 'touch'
+                }}
+              >
+
+                <div className="flex gap-8 pb-4" style={{ width: 'max-content' }}>
+                  {portfolioItems.slice(0, 5).map((item, index) => (
+                    <motion.div
+                      key={item.id}
+                      className="group cursor-pointer flex-shrink-0"
+                      style={{ width: '320px' }}
+                      whileHover={{ scale: 1.05 }}
+                      onClick={(e) => {
+                        // 드래그 중이 아닐 때만 모달 열기
+                        if (!e.currentTarget.closest('[data-dragging="true"]')) {
+                          openProjectModal(item);
+                        }
+                      }}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                    >
+                      {/* 프로젝트 이미지 카드 */}
+                      <div className="relative overflow-hidden bg-gray-100 rounded-lg aspect-[4/3]">
+                        <img
+                          src={item.src}
+                          alt={item.alt}
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                          loading="lazy"
+                          decoding="async"
+                          draggable="false"
+                        />
+                        {/* 호버 오버레이 */}
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-300">
+                          <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span
+                              className={`company block ${FONT_SIZES.small} opacity-90 font-medium drop-shadow-lg`}
+                            >
+                              {item.description.split("\n")[0]}
+                            </span>
+                            <span
+                              className={`content block ${FONT_SIZES.subheading} font-medium drop-shadow-lg`}
+                            >
+                              {item.description.split("\n")[1]}
+                            </span>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </motion.div>
-                ))}
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -2149,35 +2190,129 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
-                {/* 메타버스 프로젝트 전용 상세 모달 */}
+                {/* 메타버스 프로젝트 전용 상세 모달 - 표준 순서 적용 */}
                 {selectedProject.id === "5" && (
                   <div className="mb-12">
-                    <div className="mb-6">
+                    {/* 1. 프로젝트 세부 활동 */}
+                    <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">1</span>
                         프로젝트 세부 활동
                       </h3>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                        <img 
-                          src="/attached_assets/image_1754001801926.png"
-                          alt="프로젝트 접근법 구조도"
-                          className="w-full h-auto rounded-lg mb-3"
-                        />
-                        <p className="text-sm text-[#6b7280] text-center">프로젝트 접근법 구조도</p>
-                      </div>
-                      
-                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                        <img 
-                          src="/attached_assets/image_1754001812785.png"
-                          alt="프로젝트 상세 정보"
-                          className="w-full h-auto rounded-lg mb-3"
-                        />
-                        <p className="text-sm text-[#6b7280] text-center">프로젝트 기간 및 성과 정보</p>
+                      <div className="text-sm text-[#58534e] leading-relaxed space-y-3">
+                        <p>픽셀 아트 스타일의 2D 메타버스 플랫폼 Gather를 활용하여 5개 주요 클라이언트 대상 게임형 디지털 캠페인을 기획·제작했습니다.</p>
+                        <p>사용자 행동 로그 분석을 통해 형식적 참여 패턴을 식별하고, 일상 공간 기반의 친숙한 환경과 게임화 요소를 결합한 솔루션을 설계했습니다.</p>
+                        <p>AI 도구(Midjourney, Stable Diffusion, ComfyUI)를 활용해 메타버스 맵을 제작하고, 실시간 소통 기반의 운영으로 참여도를 극대화했습니다.</p>
                       </div>
                     </div>
-                    <div className="text-center mb-8">
-                      <p className="text-sm text-[#58534e] italic">메타버스 기반 디지털 캠페인 구조 및 상세 정보</p>
+
+                    {/* 2. 이미지 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">2</span>
+                        이미지
+                      </h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <img 
+                            src="/attached_assets/image_1754001801926.png"
+                            alt="프로젝트 접근법 구조도"
+                            className="w-full h-auto rounded-lg mb-3"
+                          />
+                          <p className="text-sm text-[#6b7280] text-center">프로젝트 접근법 구조도</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <img 
+                            src="/attached_assets/image_1754001812785.png"
+                            alt="프로젝트 상세 정보"
+                            className="w-full h-auto rounded-lg mb-3"
+                          />
+                          <p className="text-sm text-[#6b7280] text-center">프로젝트 기간 및 성과 정보</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 3. 프로젝트 기간 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
+                        프로젝트 기간
+                      </h3>
+                      <div className="text-sm text-[#58534e] leading-relaxed">
+                        <p><strong>2023.02 - 2023.08 (8개월)</strong></p>
+                        <p>메타버스 플랫폼 구축 및 5개 클라이언트 대상 캠페인 운영</p>
+                      </div>
+                    </div>
+
+                    {/* 4. 주요 성과 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
+                        주요 성과
+                      </h3>
+                      <div className="text-sm text-[#58534e] leading-relaxed space-y-2">
+                        <p>• <strong>5개 주요 클라이언트</strong> 대상 메타버스 캠페인 성공적 운영 (NH농협, 삼성교육재단, 한국증권 등)</p>
+                        <p>• <strong>참여도 30% 향상</strong> - 기존 온라인 이벤트 대비 능동적 참여 증가</p>
+                        <p>• <strong>데이터 기반 최적화</strong> - 실시간 행동 분석을 통한 콘텐츠 개선</p>
+                        <p>• <strong>AI 도구 활용 효율화</strong> - 제작 시간 50% 단축 및 품질 향상</p>
+                      </div>
+                    </div>
+
+                    {/* 5. 주요 역할 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
+                        주요 역할
+                      </h3>
+                      <div className="text-sm text-[#58534e] leading-relaxed space-y-3">
+                        <div>
+                          <p className="font-medium text-[#282623] mb-1">• 데이터 분석 및 전략 수립</p>
+                          <p className="ml-4">참여도 편차 분석 및 진성/형식적 참여 패턴 구분 지표 개발</p>
+                        </div>
+                        <div>
+                          <p className="font-medium text-[#282623] mb-1">• AI 기반 환경 구현</p>
+                          <p className="ml-4">Midjourney, Stable Diffusion, ComfyUI 활용한 친숙한 일상 공간 기반 메타버스 맵 제작</p>
+                        </div>
+                        <div>
+                          <p className="font-medium text-[#282623] mb-1">• 실시간 운영 최적화</p>
+                          <p className="ml-4">자동화 대신 직접 소통을 통한 참가자 반응 파악 및 몰입도 관리</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 6. 활용 기술 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
+                        활용 기술
+                      </h3>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                          <h4 className="font-medium text-sm text-[#282623] mb-2">그래픽 제작</h4>
+                          <div className="flex flex-wrap gap-1">
+                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Photoshop</span>
+                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Midjourney</span>
+                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Stable Diffusion</span>
+                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">ComfyUI</span>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-sm text-[#282623] mb-2">데이터 분석</h4>
+                          <div className="flex flex-wrap gap-1">
+                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">SnowFlake</span>
+                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Gather API</span>
+                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Python</span>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-sm text-[#282623] mb-2">플랫폼 운영</h4>
+                          <div className="flex flex-wrap gap-1">
+                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">Gather.town</span>
+                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">실시간 소통</span>
+                            <span className="px-2 py-1 bg-gray-200 text-[#374151] rounded text-xs">퀘스트 시스템</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 )}
