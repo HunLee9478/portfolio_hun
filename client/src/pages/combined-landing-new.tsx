@@ -2271,18 +2271,32 @@ export default function CombinedLanding() {
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
                         주요 역할
                       </h3>
-                      <div className="text-sm text-[#58534e] leading-relaxed space-y-3">
-                        <div>
-                          <p className="font-medium text-[#282623] mb-1">• 데이터 분석 및 전략 수립</p>
-                          <p className="ml-4">참여도 편차 분석 및 진성/형식적 참여 패턴 구분 지표 개발</p>
+                      <div className="text-sm text-[#58534e] leading-relaxed space-y-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <p className="font-medium text-[#282623] mb-3">각 고객사별 특성 분석 → 맞춤형 가상공간 설계 → AI 도구 활용한 콘텐츠 생성 → 게임화 요소 통합</p>
                         </div>
+                        
                         <div>
-                          <p className="font-medium text-[#282623] mb-1">• AI 기반 환경 구현</p>
-                          <p className="ml-4">Midjourney, Stable Diffusion, ComfyUI 활용한 친숙한 일상 공간 기반 메타버스 맵 제작</p>
+                          <p className="font-medium text-[#282623] mb-2">• 데이터 분석 관점 - 근본 문제 발견:</p>
+                          <div className="ml-4 space-y-1">
+                            <p>1. 사용자 행동 로그 분석을 통해 온라인 캠페인 참여도 편차가 심해 기존 평균값이나 중위값으로는 실제 관심도를 측정할 수 없음을 확인</p>
+                            <p>2. 설문조사 임의 체크, 교육 콘텐츠 빠른 스킵 등 형식적 참여 패턴을 수치로 확인하여 진성 참여 유도 전략의 필요성 도출</p>
+                          </div>
                         </div>
+                        
                         <div>
-                          <p className="font-medium text-[#282623] mb-1">• 실시간 운영 최적화</p>
-                          <p className="ml-4">자동화 대신 직접 소통을 통한 참가자 반응 파악 및 몰입도 관리</p>
+                          <p className="font-medium text-[#282623] mb-2">• 콘텐츠 제작 관점 - 혁신적 환경 구현:</p>
+                          <div className="ml-4 space-y-1">
+                            <p>1. Python, ComfyUI, Midjourney, Stable Diffusion을 활용해 사무실, 카페 등 친숙한 일상 공간에 퀘스트 요소를 자연스럽게 결합한 메타버스 맵 직접 제작</p>
+                            <p>2. 완전히 새로운 공간이 아닌 '변화된 일상'을 통해 초기 진입 장벽은 낮추면서 지속적인 탐험 동기는 제공하는 UX 설계</p>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <p className="font-medium text-[#282623] mb-2">• 현장 운영 관점 - 실시간 소통 최적화:</p>
+                          <div className="ml-4">
+                            <p>퀘스트를 자동화하지 않고 진행자가 직접 실시간 소통으로 참가자 반응을 즉시 파악하고 온라인 캠페인, 행사 호응 유도</p>
+                          </div>
                         </div>
                       </div>
                     </div>
