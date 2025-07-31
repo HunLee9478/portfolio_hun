@@ -1358,9 +1358,9 @@ export default function CombinedLanding() {
                 <div className="separator-line h-px bg-gray-200"></div>
               </div>
 
-              {/* Portfolio Grid - 2x2 Larger Layout */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-                {portfolioItems.slice(0, 4).map((item, index) => (
+              {/* Portfolio Grid - 3 Items Layout */}
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                {portfolioItems.slice(0, 3).map((item, index) => (
                   <motion.div
                     key={item.id}
                     className="group cursor-pointer"
@@ -1372,7 +1372,7 @@ export default function CombinedLanding() {
                     viewport={{ once: true }}
                   >
                     {/* 프로젝트 이미지 카드 */}
-                    <div className="relative overflow-hidden bg-gray-100 rounded-lg aspect-[21/9]">
+                    <div className="relative overflow-hidden bg-gray-100 rounded-lg aspect-[4/3]">
                       <img
                         src={item.src}
                         alt={item.alt}
@@ -2407,7 +2407,7 @@ export default function CombinedLanding() {
                               marginLeft: "16px"
                             }}
                           >
-                            진에어 측과 후속 프로젝트 진행을 위한<br />시즌2 기획 논의 성공적 확보
+                            진에어 측과 후속 프로젝트 진행을 위한 시즌2 기획 논의 성공적 확보
                           </AdvancedEditableText>
                         </div>
                       </>
