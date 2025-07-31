@@ -1358,9 +1358,9 @@ export default function CombinedLanding() {
                 <div className="separator-line h-px bg-gray-200"></div>
               </div>
 
-              {/* Portfolio Grid - 2x2 Larger Layout */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-                {portfolioItems.slice(0, 4).map((item, index) => (
+              {/* Portfolio Grid - 3 Items Layout */}
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                {portfolioItems.slice(0, 3).map((item, index) => (
                   <motion.div
                     key={item.id}
                     className="group cursor-pointer"
@@ -1372,7 +1372,7 @@ export default function CombinedLanding() {
                     viewport={{ once: true }}
                   >
                     {/* 프로젝트 이미지 카드 */}
-                    <div className="relative overflow-hidden bg-gray-100 rounded-lg aspect-[21/9]">
+                    <div className="relative overflow-hidden bg-gray-100 rounded-lg aspect-[4/3]">
                       <img
                         src={item.src}
                         alt={item.alt}
@@ -2055,50 +2055,50 @@ export default function CombinedLanding() {
                     <div className="grid grid-cols-2 gap-4 mb-8">
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src={GalleryBeautyImage} 
+                          src="/assets/projects/jinair-new-1.png" 
                           alt="Jinair 프로모션 콘텐츠 기획"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: beauty.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: jinair-new-1.png")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src={PersonalPortfolioImage} 
+                          src="/assets/projects/jinair-new-2.png" 
                           alt="Jinair 마케팅 전략"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: personal-portfolio.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: jinair-new-2.png")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src={GalleryInterviewImage} 
+                          src="/assets/projects/jinair-new-3.png" 
                           alt="Jinair 콘텐츠 제작"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: interview.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: jinair-new-3.png")}
                         />
                       </div>
                       <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                         <img 
-                          src={LikelionHackathonImage} 
+                          src="/assets/projects/jinair-new-4.png" 
                           alt="Jinair 성과 분석"
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             console.error("이미지 로딩 실패:", e.currentTarget.src);
                             e.currentTarget.style.backgroundColor = "#ff6b6b";
                           }}
-                          onLoad={() => console.log("이미지 로딩 성공: likelion-hackathon.png")}
+                          onLoad={() => console.log("이미지 로딩 성공: jinair-new-4.png")}
                         />
                       </div>
                     </div>
