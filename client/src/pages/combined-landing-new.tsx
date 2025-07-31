@@ -2215,19 +2215,19 @@ export default function CombinedLanding() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <img 
-                            src="/attached_assets/image_1754001801926.png"
-                            alt="프로젝트 접근법 구조도"
+                            src="/assets/projects/Gather_01.png"
+                            alt="Gather 메타버스 환경 1"
                             className="w-full h-auto rounded-lg mb-3"
                           />
-                          <p className="text-sm text-[#6b7280] text-center">프로젝트 접근법 구조도</p>
+                          <p className="text-sm text-[#6b7280] text-center">Gather 메타버스 환경 1</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <img 
-                            src="/attached_assets/image_1754001812785.png"
-                            alt="프로젝트 상세 정보"
+                            src="/assets/projects/Gather_02.png"
+                            alt="Gather 메타버스 환경 2"
                             className="w-full h-auto rounded-lg mb-3"
                           />
-                          <p className="text-sm text-[#6b7280] text-center">프로젝트 기간 및 성과 정보</p>
+                          <p className="text-sm text-[#6b7280] text-center">Gather 메타버스 환경 2</p>
                         </div>
                       </div>
                     </div>
