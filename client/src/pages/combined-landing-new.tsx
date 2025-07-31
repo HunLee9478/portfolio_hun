@@ -42,6 +42,13 @@ const JinairFanEvent = "/assets/projects/jinair-fan-event.png";
 const JinairShillaBeauty = "/assets/projects/jinair-shilla-beauty.png";
 const JinairShillaStore = "/assets/projects/jinair-shilla-store.png";
 
+// Metaverse Project images
+import MetaverseMainImage from '@assets/generated_images/Metaverse_campaign_hero_cb01be69.png';
+import MetaverseOfficeSpace from '@assets/generated_images/Metaverse_office_space_76121093.png';
+import MetaverseCafeSpace from '@assets/generated_images/Virtual_cafe_space_f25d46e9.png';
+import MetaverseAnalytics from '@assets/generated_images/Metaverse_analytics_dashboard_e9fe9d5b.png';
+import MetaverseQuest from '@assets/generated_images/Gaming_quest_system_416737f3.png';
+
 gsap.registerPlugin(ScrollTrigger);
 
 // Portfolio item interface
@@ -454,6 +461,25 @@ export default function CombinedLanding() {
         JinairFanEvent,
         JinairShillaBeauty,
         JinairShillaStore,
+      ],
+    },
+    {
+      id: "5",
+      src: MetaverseMainImage,
+      alt: "메타버스 기반 게임형 디지털 캠페인",
+      title: "메타버스 기반 게임형 디지털 캠페인",
+      subtitle: "AI 활용 메타버스 환경 구축",
+      description: "METAVERSE CAMPAIGN\n게임형 디지털 캠페인 기획·제작",
+      category: "Metaverse & AI",
+      year: "2023",
+      client: "NH농협, 삼성교육재단, 한국증권 외 2개사",
+      role: "AI 기획, 메타버스 환경 구축",
+      tools: ["Python", "ComfyUI", "Midjourney", "Stable Diffusion", "SnowFlake", "Gather API"],
+      images: [
+        MetaverseOfficeSpace,
+        MetaverseCafeSpace,
+        MetaverseAnalytics,
+        MetaverseQuest,
       ],
     },
   ];
@@ -1357,9 +1383,9 @@ export default function CombinedLanding() {
                 <div className="separator-line h-px bg-gray-200"></div>
               </div>
 
-              {/* Portfolio Grid - 3 Items Layout */}
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-                {portfolioItems.slice(0, 3).map((item, index) => (
+              {/* Portfolio Grid - 4 Items Layout */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                {portfolioItems.slice(0, 4).map((item, index) => (
                   <motion.div
                     key={item.id}
                     className="group cursor-pointer"
@@ -1842,6 +1868,22 @@ export default function CombinedLanding() {
                           Jinair의 베트남 인플루언서 프로모션 콘텐츠 제작을 통해 현지 시장에 맞춤화된 마케팅 콘텐츠를 기획하고 제작했습니다. 문화적 특성을 고려한 크리에이티브 전략으로 브랜드 인지도를 높이고 현지 고객들의 관심을 성공적으로 유도했습니다.
                         </AdvancedEditableText>
                       )}
+                      {selectedProject.id === "5" && (
+                        <AdvancedEditableText
+                          textKey={`project-${selectedProject.id}-description`}
+                          className="text-[#282623] text-sm tracking-tight leading-relaxed"
+                          isTextArea={true}
+                          style={{
+                            fontSize: TYPOGRAPHY.fontSize.small,
+                            lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                            color: "#282623",
+                            minHeight: "80px",
+                            width: "100%"
+                          }}
+                        >
+                          AI를 활용한 '익숙한 일상 공간의 게임화' 컨셉으로 메타버스 기반 디지털 캠페인을 기획·제작했습니다. 데이터 분석을 통한 문제 진단부터 창의적 솔루션 설계, 실시간 최적화 운영까지 전 과정을 담당하며 5개 고객사 수주 성과를 달성했습니다.
+                        </AdvancedEditableText>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -2107,6 +2149,264 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
+                {/* 메타버스 프로젝트 전용 상세 모달 */}
+                {selectedProject.id === "5" && (
+                  <div className="mb-12">
+                    {/* 프로젝트 소개 섹션 */}
+                    <div className="mb-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-6 border-l-4 border-blue-500">
+                      <h3 className="text-lg font-medium text-[#282623] mb-4">🌐 Gather 플랫폼 기반 메타버스 캠페인</h3>
+                      <p className="text-sm text-[#58534e] leading-relaxed mb-4">
+                        픽셀 아트 스타일의 2D 메타버스 플랫폼 Gather를 활용하여 사용자들이 아바타를 통해 가상 공간에서 자연스럽게 소통할 수 있는 게임형 디지털 캠페인을 기획·제작했습니다.
+                      </p>
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="bg-white p-4 rounded-lg">
+                          <h4 className="font-medium text-sm text-[#282623] mb-2">🏢 실시간 화상회의</h4>
+                          <p className="text-xs text-[#58534e]">오피스 환경에서 자연스러운 화상 소통이 가능한 메타버스 플랫폼</p>
+                        </div>
+                        <div className="bg-white p-4 rounded-lg">
+                          <h4 className="font-medium text-sm text-[#282623] mb-2">🌐 다양한 가상공간</h4>
+                          <p className="text-xs text-[#58534e]">카페, 오피스, 회의실 등 목적에 맞는 가상 공간 구현</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 프로젝트 진행 과정 */}
+                    <div className="mb-12">
+                      <h3 className="text-base text-[#282623] font-medium mb-6 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">0</span>프로젝트 진행 과정
+                      </h3>
+                      
+                      <div className="space-y-8">
+                        {/* 1. 데이터 기반 문제 진단 */}
+                        <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-400">
+                          <h4 className="font-semibold text-base text-red-800 mb-3">📊 1. 데이터 기반 문제 진단</h4>
+                          <div className="space-y-3">
+                            <div className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <p className="text-sm text-red-700">사용자 행동 로그 분석으로 기존 온라인 교육의 형식적 참여 패턴 도출</p>
+                            </div>
+                            <div className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <p className="text-sm text-red-700">설문조사 임의 체크, 교육 콘텐츠 빠른 스킵 등 형식적 참여를 수치로 확인</p>
+                            </div>
+                            <div className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <p className="text-sm text-red-700">진성 참여와 형식적 참여를 구분하는 지표 개발</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 2. 창의적 솔루션 설계 */}
+                        <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-400">
+                          <h4 className="font-semibold text-base text-green-800 mb-3">🎨 2. 창의적 솔루션 설계</h4>
+                          <div className="space-y-3">
+                            <div className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <p className="text-sm text-green-700">'익숙한 일상 공간의 게임화' 컨셉으로 친숙함과 호기심을 동시에 자극</p>
+                            </div>
+                            <div className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <p className="text-sm text-green-700">사무실, 카페 등 일상 공간에 퀘스트 요소를 자연스럽게 결합</p>
+                            </div>
+                            <div className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <p className="text-sm text-green-700">초기 진입 장벽은 낮추고 지속적인 탐험 동기는 높이는 UX 설계</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 3. 실시간 최적화 운영 */}
+                        <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-400">
+                          <h4 className="font-semibold text-base text-blue-800 mb-3">⚡ 3. 실시간 최적화 운영</h4>
+                          <div className="space-y-3">
+                            <div className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <p className="text-sm text-blue-700">자동화 대신 진행자가 직접 실시간 소통으로 참가자 반응 즉시 파악</p>
+                            </div>
+                            <div className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <p className="text-sm text-blue-700">인터랙션 기반 캠페인 참여 유도 시스템 구축</p>
+                            </div>
+                            <div className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <p className="text-sm text-blue-700">참가자 몰입도를 지속적으로 관리하고 최적화</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 역할별 상세 기여도 */}
+                    <div className="mb-12">
+                      <h3 className="text-base text-[#282623] font-medium mb-6 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">R</span>역할별 상세 기여도
+                      </h3>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {/* 데이터 분석 관점 */}
+                        <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-6 border border-purple-200">
+                          <h4 className="font-semibold text-purple-800 mb-4 flex items-center gap-2">
+                            📈 데이터 분석 관점
+                          </h4>
+                          <div className="space-y-3">
+                            <div>
+                              <h5 className="font-medium text-sm text-purple-700 mb-1">근본 문제 발견</h5>
+                              <p className="text-xs text-purple-600 leading-relaxed">사용자 행동 로그 분석을 통해 온라인 캠페인 참여도 편차가 심해 기존 평균값이나 중위값으로는 실제 관심도를 측정할 수 없음을 확인</p>
+                            </div>
+                            <div>
+                              <h5 className="font-medium text-sm text-purple-700 mb-1">전략 수립</h5>
+                              <p className="text-xs text-purple-600 leading-relaxed">형식적 참여 패턴을 수치로 확인하여 진성 참여 유도 전략의 필요성 도출</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 콘텐츠 제작 관점 */}
+                        <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-lg p-6 border border-green-200">
+                          <h4 className="font-semibold text-green-800 mb-4 flex items-center gap-2">
+                            🎨 콘텐츠 제작 관점
+                          </h4>
+                          <div className="space-y-3">
+                            <div>
+                              <h5 className="font-medium text-sm text-green-700 mb-1">혁신적 환경 구현</h5>
+                              <p className="text-xs text-green-600 leading-relaxed">Python, ComfyUI, Midjourney, Stable Diffusion을 활용해 메타버스 맵 직접 제작</p>
+                            </div>
+                            <div>
+                              <h5 className="font-medium text-sm text-green-700 mb-1">UX 설계</h5>
+                              <p className="text-xs text-green-600 leading-relaxed">'변화된 일상'을 통해 초기 진입 장벽은 낮추면서 지속적인 탐험 동기 제공</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 현장 운영 관점 */}
+                        <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-lg p-6 border border-orange-200">
+                          <h4 className="font-semibold text-orange-800 mb-4 flex items-center gap-2">
+                            🎯 현장 운영 관점
+                          </h4>
+                          <div className="space-y-3">
+                            <div>
+                              <h5 className="font-medium text-sm text-orange-700 mb-1">실시간 소통 최적화</h5>
+                              <p className="text-xs text-orange-600 leading-relaxed">퀘스트를 자동화하지 않고 진행자가 직접 실시간 소통으로 참가자 반응을 즉시 파악</p>
+                            </div>
+                            <div>
+                              <h5 className="font-medium text-sm text-orange-700 mb-1">참여 유도</h5>
+                              <p className="text-xs text-orange-600 leading-relaxed">온라인 캠페인, 행사 호응 유도 및 지속적인 몰입도 관리</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 기술 스택 */}
+                    <div className="mb-12">
+                      <h3 className="text-base text-[#282623] font-medium mb-6 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">T</span>사용 기술 스택
+                      </h3>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="bg-gray-50 rounded-lg p-4 border">
+                          <h4 className="font-semibold text-gray-800 mb-3">🎨 그래픽 제작</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Photoshop</span>
+                            <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Midjourney</span>
+                            <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Stable Diffusion</span>
+                            <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">Python</span>
+                          </div>
+                        </div>
+                        
+                        <div className="bg-gray-50 rounded-lg p-4 border">
+                          <h4 className="font-semibold text-gray-800 mb-3">📊 데이터 수집</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">SnowFlake</span>
+                            <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">Gather Platform API</span>
+                            <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs">사용자 행동 로그 분석</span>
+                          </div>
+                        </div>
+                        
+                        <div className="bg-gray-50 rounded-lg p-4 border">
+                          <h4 className="font-semibold text-gray-800 mb-3">🌐 플랫폼 운영</h4>
+                          <div className="flex flex-wrap gap-2">
+                            <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">Gather.town</span>
+                            <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">실시간 소통</span>
+                            <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">퀘스트 시스템</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 프로젝트 이미지 갤러리 */}
+                    <div className="mb-12">
+                      <h3 className="text-base text-[#282623] font-medium mb-6 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">G</span>프로젝트 시각화
+                      </h3>
+                      <div className="grid grid-cols-2 gap-4 mb-8">
+                        <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                          <img 
+                            src={MetaverseOfficeSpace} 
+                            alt="메타버스 오피스 공간"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: metaverse-office.png")}
+                          />
+                          <div className="absolute bottom-2 left-2 bg-black/60 backdrop-blur text-white text-xs px-2 py-1 rounded">
+                            오피스 메타버스 환경
+                          </div>
+                        </div>
+                        <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                          <img 
+                            src={MetaverseCafeSpace} 
+                            alt="메타버스 카페 공간"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: metaverse-cafe.png")}
+                          />
+                          <div className="absolute bottom-2 left-2 bg-black/60 backdrop-blur text-white text-xs px-2 py-1 rounded">
+                            카페 소셜 공간
+                          </div>
+                        </div>
+                        <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                          <img 
+                            src={MetaverseAnalytics} 
+                            alt="메타버스 분석 대시보드"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: metaverse-analytics.png")}
+                          />
+                          <div className="absolute bottom-2 left-2 bg-black/60 backdrop-blur text-white text-xs px-2 py-1 rounded">
+                            데이터 분석 대시보드
+                          </div>
+                        </div>
+                        <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                          <img 
+                            src={MetaverseQuest} 
+                            alt="메타버스 퀘스트 시스템"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: metaverse-quest.png")}
+                          />
+                          <div className="absolute bottom-2 left-2 bg-black/60 backdrop-blur text-white text-xs px-2 py-1 rounded">
+                            게임화 퀘스트 시스템
+                          </div>
+                        </div>
+                      </div>
+                      <div className="text-center mb-8">
+                        <p className="text-sm text-[#58534e] italic">AI 기반 메타버스 캠페인 환경 구축 과정</p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 {/* 프로젝트 기간 */}
                 <div className="mb-12">
                   <div className="mb-6">
@@ -2122,6 +2422,7 @@ export default function CombinedLanding() {
                         {selectedProject.id === "2" && "2022.01 ~ 2022.07 (7개월)"}
                         {selectedProject.id === "3" && "2023.02 ~ 2023.08 (7개월)"}
                         {selectedProject.id === "4" && "2019.05 ~ 2019.06 (2개월)"}
+                        {selectedProject.id === "5" && "2023.02 ~ 2023.08 (8개월)"}
                       </span>
                     </div>
                   </div>
@@ -2407,6 +2708,99 @@ export default function CombinedLanding() {
                             }}
                           >
                             진에어 측과 후속 프로젝트 진행을 위한 시즌2 기획 논의 성공적 확보
+                          </AdvancedEditableText>
+                        </div>
+                      </>
+                    )}
+                    {selectedProject.id === "5" && (
+                      <>
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-1-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 5개 고객사 수주 성공
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-1-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            NH농협, 삼성교육재단, 한국증권 등 5개 고객사 성공적 수주
+                          </AdvancedEditableText>
+                        </div>
+                        
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 혁신적 솔루션 구현
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            '익숙한 일상 공간의 게임화' 컨셉으로 현실 기반 가상공간 구축
+                          </AdvancedEditableText>
+                        </div>
+                        
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 개인화 데이터 수집 API 연동
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            미국 본사 및 자사 부서와 협의로 기존 데이터에서 추가 인사이트 도출
                           </AdvancedEditableText>
                         </div>
                       </>
@@ -3332,6 +3726,243 @@ export default function CombinedLanding() {
                         </div>
                       </>
                     )}
+                    {selectedProject.id === "5" && (
+                      <>
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-role-1-title`}
+                            className="text-sm font-medium text-[#282623] mb-4 tracking-tight leading-relaxed"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "500"
+                            }}
+                          >
+                            AI 기반 메타버스 환경 설계
+                          </AdvancedEditableText>
+                          <div className="relative pl-4 mt-4 mb-6">
+                            <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                            <AdvancedEditableText
+                              textKey={`project-${selectedProject.id}-role-1-context`}
+                               className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                              style={{
+                                fontSize: TYPOGRAPHY.fontSize.small,
+                                color: "#58534e",
+                                lineHeight: TYPOGRAPHY.lineHeight.relaxed
+                              }}
+                            >
+                              각 고객사별 특성 분석 → 맞춤형 가상공간 설계 → AI 도구 활용한 콘텐츠 생성 → 게임화 요소 통합
+                            </AdvancedEditableText>
+                          </div>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                              <AdvancedEditableText
+                                textKey={`project-${selectedProject.id}-role-1-sub-1-title`}
+                                 className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                                style={{
+                                  fontSize: TYPOGRAPHY.fontSize.small,
+                                  color: "#282623",
+                                  lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                  fontWeight: "500",
+                                  marginBottom: "16px"
+                                }}
+                              >
+                                AI 도구 활용
+                              </AdvancedEditableText>
+                              <div className="space-y-2">
+                                <div>
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-role-1-sub-1-item-1-title`}
+                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
+                                    style={{
+                                      fontSize: TYPOGRAPHY.fontSize.small,
+                                      color: "#58534e",
+                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                      display: "block",
+                                      marginBottom: "4px"
+                                    }}
+                                  >
+                                    • ComfyUI: 일관된 캐릭터 생성
+
+                                  </AdvancedEditableText>
+                              
+                                </div>
+                                <div>
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-role-1-sub-1-item-2-title`}
+                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
+                                    style={{
+                                      fontSize: TYPOGRAPHY.fontSize.small,
+                                      color: "#58534e",
+                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                      display: "block",
+                                      marginBottom: "4px"
+                                    }}
+                                  >
+                                    • Midjourney: 환경 디자인 컨셉
+                                  </AdvancedEditableText>
+
+                                </div>
+                                <div>
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-role-1-sub-1-item-3-title`}
+                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
+                                    style={{
+                                      fontSize: TYPOGRAPHY.fontSize.small,
+                                      color: "#58534e",
+                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                      display: "block",
+                                      marginBottom: "4px"
+                                    }}
+                                  >
+                                    • Stable Diffusion: 세부 요소 제작
+                                  </AdvancedEditableText>
+
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <AdvancedEditableText
+                                textKey={`project-${selectedProject.id}-role-1-sub-2-title`}
+                                 className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                                style={{
+                                  fontSize: TYPOGRAPHY.fontSize.small,
+                                  color: "#282623",
+                                  lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                  fontWeight: "500",
+                                  marginBottom: "16px"
+                                }}
+                              >
+                                데이터 연동
+                              </AdvancedEditableText>
+                              <div className="space-y-2">
+                                <div>
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-role-1-sub-2-item-1-title`}
+                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
+                                    style={{
+                                      fontSize: TYPOGRAPHY.fontSize.small,
+                                      color: "#58534e",
+                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                      display: "block",
+                                      marginBottom: "4px"
+                                    }}
+                                  >
+                                    • SnowFlake: 사용자 행동 데이터 분석
+
+                                  </AdvancedEditableText>
+                              
+                                </div>
+                                <div>
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-role-1-sub-2-item-2-title`}
+                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
+                                    style={{
+                                      fontSize: TYPOGRAPHY.fontSize.small,
+                                      color: "#58534e",
+                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                      display: "block",
+                                      marginBottom: "4px"
+                                    }}
+                                  >
+                                    • Gather API: 실시간 상호작용 기능
+                                  </AdvancedEditableText>
+
+                                </div>
+                                <div>
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-role-1-sub-2-item-3-title`}
+                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
+                                    style={{
+                                      fontSize: TYPOGRAPHY.fontSize.small,
+                                      color: "#58534e",
+                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                      display: "block",
+                                      marginBottom: "4px"
+                                    }}
+                                  >
+                                    • Python: 자동화 스크립트 개발
+                                  </AdvancedEditableText>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-role-2-title`}
+                            className="text-sm font-medium text-[#282623] mb-4 tracking-tight leading-relaxed"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "500"
+                            }}
+                          >
+                            게임화 시스템 설계
+                          </AdvancedEditableText>
+                          <div className="text-sm text-[#58534e] tracking-tight leading-relaxed space-y-4">
+                            <p><strong>익숙한 일상 공간의 게임화 컨셉:</strong></p>
+                            
+                            {/* 게임화 시스템 도식 */}
+                            <div className="bg-white border border-gray-200 p-4 rounded-lg">
+                              <div className="text-center mb-3">
+                                <h4 className="text-sm font-medium text-[#282623] mb-1">메타버스 게임화 시스템</h4>
+                                <p className="text-xs text-[#58534e]">일상 공간 → 가상 환경 → 게임 요소 통합</p>
+                              </div>
+                              <svg width="100%" height="160" viewBox="0 0 600 160" className="overflow-visible">
+                                {/* 오피스 공간 */}
+                                <rect x="50" y="30" width="120" height="50" fill="#1CABE2" opacity="0.1" stroke="#1CABE2" strokeWidth="1" rx="6"/>
+                                <text x="110" y="50" textAnchor="middle" className="text-xs fill-[#374151] font-medium">오피스 공간</text>
+                                <text x="110" y="65" textAnchor="middle" className="text-xs fill-[#6b7280]">업무 환경</text>
+                                <line x1="170" y1="55" x2="210" y2="55" stroke="#374151" strokeWidth="2" markerEnd="url(#metaArrow1)"/>
+                                
+                                {/* 카페 공간 */}
+                                <rect x="50" y="100" width="120" height="50" fill="#1CABE2" opacity="0.1" stroke="#1CABE2" strokeWidth="1" rx="6"/>
+                                <text x="110" y="120" textAnchor="middle" className="text-xs fill-[#374151] font-medium">카페 공간</text>
+                                <text x="110" y="135" textAnchor="middle" className="text-xs fill-[#6b7280]">소셜 환경</text>
+                                <line x1="170" y1="125" x2="210" y2="125" stroke="#374151" strokeWidth="2" markerEnd="url(#metaArrow2)"/>
+                                
+                                {/* 게임화 요소 */}
+                                <rect x="220" y="65" width="120" height="50" fill="#10b981" opacity="0.1" stroke="#10b981" strokeWidth="1" rx="6"/>
+                                <text x="280" y="85" textAnchor="middle" className="text-xs fill-[#374151] font-medium">퀘스트 시스템</text>
+                                <text x="280" y="100" textAnchor="middle" className="text-xs fill-[#6b7280]">미션 & 보상</text>
+                                <line x1="340" y1="90" x2="380" y2="90" stroke="#374151" strokeWidth="2" markerEnd="url(#metaArrow3)"/>
+                                
+                                {/* 데이터 수집 */}
+                                <rect x="390" y="65" width="120" height="50" fill="#f59e0b" opacity="0.1" stroke="#f59e0b" strokeWidth="1" rx="6"/>
+                                <text x="450" y="85" textAnchor="middle" className="text-xs fill-[#374151] font-medium">데이터 수집</text>
+                                <text x="450" y="100" textAnchor="middle" className="text-xs fill-[#6b7280]">행동 분석</text>
+                                
+                                {/* 화살표 마커 정의 */}
+                                <defs>
+                                  <marker id="metaArrow1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+                                  </marker>
+                                  <marker id="metaArrow2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+                                  </marker>
+                                  <marker id="metaArrow3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+                                  </marker>
+                                </defs>
+                              </svg>
+                            </div>
+                            
+                            <div className="space-y-2 text-sm">
+                              <p className="text-[#282623] font-medium">핵심 설계 원칙:</p>
+                              <p>- 현실 공간의 친숙함과 가상 환경의 상호작용성 결합</p>
+                              <p>- 자연스러운 사용자 참여를 유도하는 퀘스트 시스템</p>
+                              <p>- 실시간 데이터 수집을 통한 개인화된 경험 제공</p>
+                              <p>- 고객사별 맞춤 브랜딩과 메시지 전달</p>
+                            </div>
+                          </div>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
 
@@ -3434,6 +4065,34 @@ export default function CombinedLanding() {
                       <div>
                         <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">촬영 장비</div>
                         <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">핸디캠 활용 자연스러운 촬영</div>
+                      </div>
+                    </>
+                  )}
+                  {selectedProject.id === "5" && (
+                    <>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Python</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">자동화 스크립트 및 데이터 처리</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">ComfyUI</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">일관된 캐릭터 및 환경 생성</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Midjourney</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">고품질 컨셉 아트 및 환경 디자인</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Stable Diffusion</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">맞춤형 이미지 생성 및 편집</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">SnowFlake</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">대용량 데이터 분석 및 처리</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Gather API</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">메타버스 플랫폼 연동 및 제어</div>
                       </div>
                     </>
                   )}
