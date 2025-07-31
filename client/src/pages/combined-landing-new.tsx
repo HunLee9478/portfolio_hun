@@ -2230,6 +2230,16 @@ export default function CombinedLanding() {
                           <p className="text-sm text-[#6b7280] text-center">Gather 메타버스 환경 2</p>
                         </div>
                       </div>
+                      
+                      {/* Gather 서비스 설명 */}
+                      <div className="bg-blue-50 rounded-lg p-4 border border-blue-200 mb-4">
+                        <h4 className="font-medium text-sm text-[#282623] mb-3">💡 Gather란?</h4>
+                        <div className="text-sm text-[#58534e] leading-relaxed space-y-2">
+                          <p><strong>Gather</strong>는 픽셀 아트 스타일의 2D 메타버스 플랫폼으로, 실제 오피스나 카페 같은 친숙한 공간을 가상으로 재현합니다.</p>
+                          <p>사용자들이 아바타로 자유롭게 이동하며 실시간 음성/영상 소통이 가능하고, 근접 기반 대화 시스템으로 자연스러운 상호작용을 제공합니다.</p>
+                          <p>원격 근무, 온라인 이벤트, 교육 등 다양한 목적으로 활용되며, 기존 화상회의 도구보다 몰입도가 높은 협업 환경을 만들어줍니다.</p>
+                        </div>
+                      </div>
                     </div>
 
                     {/* 3. 프로젝트 기간 */}
