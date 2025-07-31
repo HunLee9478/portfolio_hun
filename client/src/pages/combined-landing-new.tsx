@@ -2152,63 +2152,30 @@ export default function CombinedLanding() {
                 {/* 메타버스 프로젝트 전용 상세 모달 */}
                 {selectedProject.id === "5" && (
                   <div className="mb-12">
-                    {/* Gather 플랫폼 소개 섹션 */}
-                    <div className="mb-12 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-8 border border-gray-200 shadow-sm">
-                      <div className="text-center mb-8">
-                        <h3 className="text-2xl font-semibold text-[#282623] mb-4">Gather 플랫폼이란?</h3>
-                        <p className="text-base text-[#58534e] leading-relaxed max-w-3xl mx-auto">
-                          픽셀 아트 스타일의 2D 메타버스 플랫폼으로, 아바타를 통해 가상 공간에서 자연스러운 화상 소통과 협업이 가능한 혁신적인 온라인 워크스페이스입니다.
-                        </p>
-                      </div>
+                    {/* 협업 플랫폼 섹션 */}
+                    <div className="mb-12 bg-gray-50 rounded-lg p-6 border border-gray-200 shadow-sm">
+                      <h3 className="text-lg font-semibold text-[#282623] mb-4">Gather 플랫폼 협업</h3>
+                      <p className="text-sm text-[#58534e] leading-relaxed mb-6">
+                        픽셀 아트 스타일의 2D 메타버스 플랫폼 Gather를 활용하여 5개 주요 클라이언트 대상 게임형 디지털 캠페인을 기획·제작했습니다.
+                      </p>
                       
-                      {/* Gather 플랫폼 이미지 갤러리 */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                        <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                      {/* 이미지와 협업 정보 */}
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="bg-white rounded-lg p-3 border border-gray-200">
                           <img 
-                            src="/attached_assets/64227fdba423b01d81e84b61_632b3b6cccd76f4096446620_Asset%201_1754000447714.png"
-                            alt="Gather 플랫폼 오피스 환경"
-                            className="w-full h-48 object-cover rounded-lg mb-4"
+                            src="/attached_assets/64227fdba423b01d81e84b61_632b3b6cccd76f4096446620_Asset%201_1754000782919.png"
+                            alt="Gather 오피스 환경"
+                            className="w-full h-32 object-cover rounded-lg mb-3"
                           />
-                          <h4 className="font-semibold text-[#282623] mb-2">픽셀 아트 기반 오피스 환경</h4>
-                          <p className="text-sm text-[#6b7280] leading-relaxed">
-                            게임 같은 인터페이스로 친근하게 접근 가능한 가상 오피스 공간에서 실시간 화상 소통
-                          </p>
+                          <p className="text-xs text-[#6b7280]">픽셀 아트 기반 가상 오피스 환경</p>
                         </div>
-                        <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                        <div className="bg-white rounded-lg p-3 border border-gray-200">
                           <img 
-                            src="/attached_assets/642a534399a0eb82a0d39f73_62fafdd5f20e0c7eaae4b8d3_meeting%20experience%20all%20new%20blog%201060x636%20(1)_1754000447716.png"
-                            alt="Gather 플랫폼 다양한 공간"
-                            className="w-full h-48 object-cover rounded-lg mb-4"
+                            src="/attached_assets/642a534399a0eb82a0d39f73_62fafdd5f20e0c7eaae4b8d3_meeting%20experience%20all%20new%20blog%201060x636%20(1)_1754000782920.png"
+                            alt="Gather 다양한 공간"
+                            className="w-full h-32 object-cover rounded-lg mb-3"
                           />
-                          <h4 className="font-semibold text-[#282623] mb-2">다목적 가상 공간</h4>
-                          <p className="text-sm text-[#6b7280] leading-relaxed">
-                            카페, 회의실, 라운지 등 용도별 맞춤 공간에서 자유로운 이동과 상호작용 가능
-                          </p>
-                        </div>
-                      </div>
-
-                      {/* 핵심 특징 */}
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div className="bg-white p-4 rounded-lg border border-gray-200 text-center">
-                          <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <span className="text-xl">🎮</span>
-                          </div>
-                          <h5 className="font-medium text-[#282623] mb-2">게임형 인터페이스</h5>
-                          <p className="text-xs text-[#6b7280]">직관적이고 친근한 픽셀 아트 스타일</p>
-                        </div>
-                        <div className="bg-white p-4 rounded-lg border border-gray-200 text-center">
-                          <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <span className="text-xl">💬</span>
-                          </div>
-                          <h5 className="font-medium text-[#282623] mb-2">자연스러운 소통</h5>
-                          <p className="text-xs text-[#6b7280]">근접 시 자동 화상통화 연결</p>
-                        </div>
-                        <div className="bg-white p-4 rounded-lg border border-gray-200 text-center">
-                          <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                            <span className="text-xl">🏢</span>
-                          </div>
-                          <h5 className="font-medium text-[#282623] mb-2">맞춤형 공간</h5>
-                          <p className="text-xs text-[#6b7280]">용도에 따른 다양한 가상 환경 구축</p>
+                          <p className="text-xs text-[#6b7280]">다목적 가상 공간 구성</p>
                         </div>
                       </div>
                     </div>
