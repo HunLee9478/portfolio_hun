@@ -1383,9 +1383,9 @@ export default function CombinedLanding() {
                 <div className="separator-line h-px bg-gray-200"></div>
               </div>
 
-              {/* Portfolio Grid - 4 Items Layout */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                {portfolioItems.slice(0, 4).map((item, index) => (
+              {/* Portfolio Grid - 5 Items Layout */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
+                {portfolioItems.slice(0, 5).map((item, index) => (
                   <motion.div
                     key={item.id}
                     className="group cursor-pointer"
