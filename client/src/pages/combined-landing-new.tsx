@@ -2210,7 +2210,7 @@ export default function CombinedLanding() {
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">2</span>
-                        이미지
+                        프로젝트 상세
                       </h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
@@ -2324,26 +2324,7 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
-                {/* 프로젝트 기간 */}
-                <div className="mb-12">
-                  <div className="mb-6">
-                    <h2 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                      <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">1</span>
-                      프로젝트 기간
-                    </h2>
-                  </div>
-                  <div className="space-y-5 mb-8">
-                    <div>
-                      <span className="text-sm text-[#282623] tracking-tight leading-relaxed" style={{ fontSize: "14px", color: "rgb(40, 38, 35)", lineHeight: "1.6", letterSpacing: "0px", fontFamily: "inherit", fontWeight: "400" }}>
-                        전체 기간: {selectedProject.id === "1" && "2023.03 ~ 2024.11 (21개월)"}
-                        {selectedProject.id === "2" && "2022.01 ~ 2022.07 (7개월)"}
-                        {selectedProject.id === "3" && "2023.02 ~ 2023.08 (7개월)"}
-                        {selectedProject.id === "4" && "2019.05 ~ 2019.06 (2개월)"}
-                        {selectedProject.id === "5" && "2023.02 ~ 2023.08 (8개월)"}
-                      </span>
-                    </div>
-                  </div>
-                </div>
+
 
                 {/* 주요 성과 */}
                 <div className="mb-12">
