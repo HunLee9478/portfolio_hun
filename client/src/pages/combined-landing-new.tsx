@@ -5205,7 +5205,7 @@ export default function CombinedLanding() {
                           <div className="flex justify-center">
                             <div className="bg-[#58534e] text-white px-6 py-3 rounded-lg text-center" style={{width: "300px"}}>
                               <div className="text-xs font-bold mb-1">전문 도메인 대응</div>
-                              <div className="text-xs opacity-80">컴플라이언스·핵심역량·안전교육</div>
+                              <div className="opacity-80 text-[14px]">컴플라이언스·핵심역량·안전교육</div>
                             </div>
                           </div>
                           
@@ -5217,7 +5217,7 @@ export default function CombinedLanding() {
                           {/* 1단계: 다양한 유형의 캠페인 통합 운영 */}
                           <div className="flex justify-center">
                             <div className="bg-[#6b7280] text-white px-6 py-3 rounded-lg text-center" style={{width: "400px"}}>
-                              <div className="text-xs font-bold mb-1">다양한 유형 캠페인 운영</div>
+                              <div className="font-bold mb-1 text-[14px]">다양한 유형 캠페인 운영</div>
                               <div className="opacity-80 text-[14px]">본사~글로벌법인, 컴플라이언스~안전교육</div>
                             </div>
                           </div>
