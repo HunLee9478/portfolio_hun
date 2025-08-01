@@ -5241,7 +5241,7 @@ export default function CombinedLanding() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                           <div className="bg-white rounded-lg p-4 border border-gray-300">
                             <div className="text-sm font-medium text-[#282623] mb-1">통합 기획</div>
-                            <div className="text-xs text-[#58534e]">다양한 유형 관리</div>
+                            <div className="text-[#58534e] text-[14px]">다양한 유형 관리</div>
                           </div>
                           <div className="bg-white rounded-lg p-4 border border-gray-300">
                             <div className="text-sm font-medium text-[#282623] mb-1">실시간 운영</div>
@@ -5298,7 +5298,7 @@ export default function CombinedLanding() {
                                 </div>
                                 <div className="text-gray-400 text-lg">→</div>
                                 <div className="bg-green-100 border border-green-300 rounded-lg p-2 flex-1 mx-1">
-                                  <div className="text-xs font-medium text-green-800">완벽 대응</div>
+                                  <div className="font-medium text-green-800 text-[14px]">완벽 대응</div>
                                   <div className="text-green-600 text-[14px]">캠페인 완주<br/>신뢰 유지</div>
                                 </div>
                               </div>
