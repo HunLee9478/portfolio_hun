@@ -3918,19 +3918,19 @@ export default function CombinedLanding() {
                       <div className="grid grid-cols-2 gap-4 mb-8">
                         <div className="aspect-[4/3] bg-[#f5f5f5] overflow-hidden rounded-lg relative">
                           <img 
-                            src="/assets/projects/samsung-education-studio.png" 
+                            src={SamsungEducationStudio} 
                             alt="삼성물산 컴플라이언스 캠페인"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             onError={(e) => {
                               console.error("이미지 로딩 실패:", e.currentTarget.src);
                               e.currentTarget.style.backgroundColor = "#ff6b6b";
                             }}
-                            onLoad={() => console.log("이미지 로딩 성공: samsung-education-studio.png")}
+                            onLoad={() => console.log("이미지 로딩 성공: samsung-education-studio.jpg")}
                           />
                         </div>
                         <div className="aspect-[4/3] bg-[#f5f5f5] overflow-hidden rounded-lg relative">
                           <img 
-                            src="/assets/projects/samsung-education-filming.jpg" 
+                            src={SamsungEducationFilming} 
                             alt="디지털 환경 기반 콘텐츠"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             onError={(e) => {
@@ -3942,7 +3942,7 @@ export default function CombinedLanding() {
                         </div>
                         <div className="aspect-[4/3] bg-[#f5f5f5] overflow-hidden rounded-lg relative">
                           <img 
-                            src="/assets/projects/samsung-education-screenlife.jpg" 
+                            src={SamsungEducationScreenLife} 
                             alt="화면 중심 촬영 기법"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             onError={(e) => {
@@ -3954,7 +3954,7 @@ export default function CombinedLanding() {
                         </div>
                         <div className="aspect-[4/3] bg-[#f5f5f5] overflow-hidden rounded-lg relative">
                           <img 
-                            src="/assets/projects/samsung-education-multiscreen.jpg" 
+                            src={SamsungEducationMultiscreen} 
                             alt="다국어 콘텐츠 제작"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             onError={(e) => {
