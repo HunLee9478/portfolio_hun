@@ -5296,7 +5296,7 @@ export default function CombinedLanding() {
                           <div className="p-4 bg-white space-y-4">
                             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                               <h6 className="text-sm font-medium text-gray-800 mb-2">50회 이상 캠페인 전과정 담당</h6>
-                              <p className="text-sm text-gray-600 leading-relaxed">본사부터 아시아, 유럽, 아메리카 전 지역 해외법인 대상 캠페인 기획부터 운영까지 완전 통합 관리</p>
+                              <p className="text-sm text-gray-600 leading-relaxed">본사부터 아시아, 유럽, 아메리카 전 지역 해외법인 대상 캠페인 기획부터 운영까지 통합 기</p>
                             </div>
                             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                               <h6 className="text-sm font-medium text-gray-800 mb-2">규모별 맞춤형 캠페인 설계</h6>
