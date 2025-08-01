@@ -2072,7 +2072,7 @@ export default function CombinedLanding() {
                       <div className="space-y-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">1. 50회 이상 캠페인에서 NPS 4.5 이상 지속 달성</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">글로벌 규모의 다양한 캠페인에서 일관된 고품질 서비스 제공을 통해 참가자 만족도 최고 수준 유지</p>
+                          <p className="text-sm text-[#58534e] leading-relaxed">컴플라이언스, 핵심역량, 안전교육 등 다양한 유형의 캠페인에서 일관된 고품질 서비스 제공을 통해 참가자 만족도 최고 수준 유지</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">2. 출연자 불참, 시스템 오류 등 돌발 상황 발생 시 즉석 대응으로 캠페인 중단 없이 완주</h4>
@@ -2080,7 +2080,7 @@ export default function CombinedLanding() {
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">3. 아시아, 유럽, 아메리카 전 지역 해외법인 대상 다국어 캠페인 성공적 운영</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">통역 협업을 통한 전문 도메인 완벽 소통으로 글로벌 스케일 캠페인의 효과적 메시지 전달 달성</p>
+                          <p className="text-sm text-[#58534e] leading-relaxed">통역 협업을 통한 전문 도메인 완벽 소통으로 다양한 유형 캠페인의 효과적 메시지 전달 달성</p>
                         </div>
                       </div>
                     </div>
@@ -2095,7 +2095,7 @@ export default function CombinedLanding() {
                       {/* 피라미드 구조 시각화 */}
                       <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 mb-4">
                         <div className="text-center mb-4">
-                          <h4 className="text-sm font-medium text-[#282623] mb-2">글로벌 캠페인 운영 구조</h4>
+                          <h4 className="text-sm font-medium text-[#282623] mb-2">다양한 유형 캠페인 운영 구조</h4>
                         </div>
                         
                         <div className="space-y-4">
@@ -2115,11 +2115,11 @@ export default function CombinedLanding() {
                             </div>
                           </div>
                           
-                          {/* 기반: 글로벌 스케일 운영 */}
+                          {/* 기반: 다양한 유형 캠페인 운영 */}
                           <div className="flex justify-center">
                             <div className="bg-[#6b7280] text-white px-6 py-3 rounded-lg text-center" style={{ width: "400px" }}>
-                              <div className="text-xs font-bold mb-1">글로벌 스케일 운영</div>
-                              <div className="text-xs opacity-80">본사 ~ 해외법인, 워크숍 ~ 웨비나</div>
+                              <div className="text-xs font-bold mb-1">다양한 유형 캠페인 운영</div>
+                              <div className="text-xs opacity-80">컴플라이언스 ~ 안전교육, 워크숍 ~ 웨비나</div>
                             </div>
                           </div>
                         </div>
@@ -2127,8 +2127,8 @@ export default function CombinedLanding() {
 
                       <div className="space-y-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 글로벌 스케일 운영</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">본사 임직원부터 전 세계 해외법인, 그룹사 직원까지 소규모 리더십 워크숍부터 대규모 온라인 웨비나까지 다양한 규모의 캠페인 통합 관리</p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 다양한 유형 캠페인 운영</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">컴플라이언스, 핵심역량, 안전교육 등 다양한 교육 도메인과 소규모 리더십 워크숍부터 대규모 온라인 웨비나까지 다양한 규모의 캠페인 통합 관리</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">2. 전문 도메인 대응</h4>
@@ -2164,7 +2164,7 @@ export default function CombinedLanding() {
                           <div className="text-center">
                             <div className="bg-[#6b7280] text-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">3</div>
                             <h5 className="text-sm font-medium text-[#282623] mb-2">기술 통합</h5>
-                            <p className="text-xs text-[#58534e]">글로벌 인프라</p>
+                            <p className="text-xs text-[#58534e]">제작-운영 연계</p>
                           </div>
                         </div>
                       </div>
@@ -2174,14 +2174,14 @@ export default function CombinedLanding() {
                           <div className="bg-[#6b7280] text-white p-3">
                             <div className="flex items-center">
                               <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
-                              <span className="font-medium">통합 캠페인 기획 관점 - 글로벌 스케일 관리</span>
+                              <span className="font-medium">통합 캠페인 기획 관점 - 다양한 유형의 캠페인 기획·관리</span>
                             </div>
                           </div>
                           <div className="p-4 bg-white">
                             <div className="space-y-4">
                               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                <h6 className="text-sm font-medium text-[#282623] mb-2">본사부터 해외법인까지 전 과정 담당</h6>
-                                <p className="text-sm text-[#58534e] leading-relaxed">아시아, 유럽, 아메리카 전 지역 해외법인 대상 50회 이상 캠페인 기획부터 운영까지 전 과정 담당</p>
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">50회 이상 캠페인 전과정 담당</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">컴플라이언스, 핵심역량, 안전교육 등 다양한 유형의 캠페인을 기획부터 운영까지 완전 통합 관리</p>
                               </div>
                               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                                 <h6 className="text-sm font-medium text-[#282623] mb-2">규모별 맞춤형 캠페인 설계</h6>
