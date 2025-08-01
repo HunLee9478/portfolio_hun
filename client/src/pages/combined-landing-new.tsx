@@ -2541,7 +2541,7 @@ export default function CombinedLanding() {
                                       <strong>친숙함과 호기심을 동시에 자극하는 메타버스 환경</strong>을 만들어 초기 진입 장벽은 낮추고 지속적인 탐험 동기는 높임
                                     </p>
                                     <div className="ml-3 space-y-1 text-[#58534e] text-xs">
-                                      <p>→ 완전히 새로운 공간이 아닌 <strong>'변화된 일상'</strong>을 통해 UX 설계</p>
+                                      <p className="text-[14px]">→ 완전히 새로운 공간이 아닌 <strong>'변화된 일상'</strong>을 통해 UX 설계</p>
                                       <p>→ 오피스/카페 등 익숙한 공간에 게임 요소를 자연스럽게 통합</p>
                                       <p>→ 사용자가 이미 알고 있는 공간에서 새로운 경험 제공</p>
                                     </div>
