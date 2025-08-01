@@ -5245,7 +5245,7 @@ export default function CombinedLanding() {
                           </div>
                           <div className="bg-white rounded-lg p-4 border border-gray-300">
                             <div className="text-sm font-medium text-[#282623] mb-1">실시간 운영</div>
-                            <div className="text-xs text-[#58534e]">위기 대응</div>
+                            <div className="text-[#58534e] text-[14px]">위기 대응</div>
                           </div>
                           <div className="bg-white rounded-lg p-4 border border-gray-300">
                             <div className="text-sm font-medium text-[#282623] mb-1">기술 통합</div>
