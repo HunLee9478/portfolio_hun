@@ -1859,7 +1859,7 @@ export default function CombinedLanding() {
                             width: "100%"
                           }}
                         >
-                          삼성 그룹의 온·오프라인 캠페인 기획·진행 프로젝트를 담당했습니다. 진행과 동시에 콘텐츠 제작 기반의 기술 이슈 대응, 커뮤니케이션을 주도하여 고객 만족도 NPS 4.5+를 달성하였습니다.
+                          23개월간 50회 이상의 글로벌 캠페인을 기획부터 운영까지 전담하며 NPS 4.5 이상을 지속 달성했습니다. 돌발 상황 발생 시 즉석 대응으로 캠페인 중단 없이 완주하고, 아시아·유럽·아메리카 전 지역 해외법인 대상 다국어 캠페인을 성공적으로 운영한 프로젝트입니다.
                         </AdvancedEditableText>
                       )}
                       {selectedProject.id === "2" && (
@@ -1978,7 +1978,7 @@ export default function CombinedLanding() {
                       </h3>
                       <div>
                         <span className="text-sm text-[#282623] tracking-tight leading-relaxed" style={{ fontSize: "14px", color: "rgb(40, 38, 35)", lineHeight: "1.6", letterSpacing: "0px", fontFamily: "inherit", fontWeight: "400" }}>
-                          2023.02 - 2023.08 (6개월)
+                          2023.01 ~ 2024.11 (23개월)
                         </span>
                       </div>
                     </div>
@@ -2044,90 +2044,80 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 3. 내용 */}
+                    {/* 3. 주요 성과 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
-                        내용
+                        주요 성과
                       </h3>
                       <div className="space-y-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 사용자 중심 분석</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            뎁스 인터뷰, 페르소나, 유저시나리오를 통해 ALT+TAB 화면 전환 패턴의 심리적 저항 원인을 발견하고 이를 활용한 역발상 전략 수립
-                          </p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 50회 이상 캠페인에서 NPS 4.5 이상 지속 달성</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">글로벌 규모의 다양한 캠페인에서 일관된 고품질 서비스 제공을 통해 참가자 만족도 최고 수준 유지</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">2. 친숙한 디지털 환경 활용</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            메신저, 브라우저, 문서 등 일상적으로 사용하는 화면 구성을 통해 소리 없이도 완전한 메시지 전달이 가능한 콘텐츠 구조 설계
-                          </p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">2. 출연자 불참, 시스템 오류 등 돌발 상황 발생 시 즉석 대응으로 캠페인 중단 없이 완주</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 진행과 참가자 신뢰 확보</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 효율적 제작 시스템</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            고정 화면 중심 연출을 통해 다국어 버전 제작의 효율성을 극대화하고 글로벌 전개 기반 마련
-                          </p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 아시아, 유럽, 아메리카 전 지역 해외법인 대상 다국어 캠페인 성공적 운영</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">통역 협업을 통한 전문 도메인 완벽 소통으로 글로벌 스케일 캠페인의 효과적 메시지 전달 달성</p>
                         </div>
                       </div>
                     </div>
 
-                    {/* 4. 주요 성과 */}
+                    {/* 4. 내용 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
-                        주요 성과
+                        내용
                       </h3>
-                      <div className="space-y-5">
-                        <div>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-achievement-1-title`}
-                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#282623",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              fontWeight: "400",
-                              display: "block",
-                              marginBottom: "8px"
-                            }}
-                          >
-                            • 경쟁사 대비 30% 높은 단가로 수주 성공
-                          </AdvancedEditableText>
+                      
+                      {/* 피라미드 구조 시각화 */}
+                      <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 mb-4">
+                        <div className="text-center mb-4">
+                          <h4 className="text-sm font-medium text-[#282623] mb-2">글로벌 캠페인 운영 구조</h4>
                         </div>
                         
-                        <div>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-achievement-2-title`}
-                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#282623",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              fontWeight: "400",
-                              display: "block",
-                              marginBottom: "8px"
-                            }}
-                          >
-                            • 사용자 화면 전환 회피 행동을 역이용한 메신저·브라우저 기반 콘텐츠 포맷 개발
-                          </AdvancedEditableText>
+                        <div className="space-y-4">
+                          {/* 최상단: 실시간 위기 관리 */}
+                          <div className="flex justify-center">
+                            <div className="bg-[#282623] text-white px-6 py-3 rounded-lg text-center" style={{ width: "200px" }}>
+                              <div className="text-xs font-bold mb-1">실시간 위기 관리</div>
+                              <div className="text-xs opacity-80">즉시 대응력</div>
+                            </div>
+                          </div>
+                          
+                          {/* 중간: 전문 도메인 대응 */}
+                          <div className="flex justify-center">
+                            <div className="bg-[#58534e] text-white px-6 py-3 rounded-lg text-center" style={{ width: "300px" }}>
+                              <div className="text-xs font-bold mb-1">전문 도메인 대응</div>
+                              <div className="text-xs opacity-80">컴플라이언스·핵심역량·안전교육</div>
+                            </div>
+                          </div>
+                          
+                          {/* 기반: 글로벌 스케일 운영 */}
+                          <div className="flex justify-center">
+                            <div className="bg-[#6b7280] text-white px-6 py-3 rounded-lg text-center" style={{ width: "400px" }}>
+                              <div className="text-xs font-bold mb-1">글로벌 스케일 운영</div>
+                              <div className="text-xs opacity-80">본사 ~ 해외법인, 워크숍 ~ 웨비나</div>
+                            </div>
+                          </div>
                         </div>
-                        
-                        <div>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-achievement-3-title`}
-                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#282623",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              fontWeight: "400",
-                              display: "block",
-                              marginBottom: "8px"
-                            }}
-                          >
-                            • 고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축으로 5개국어 다국어 콘텐츠 개발
-                          </AdvancedEditableText>
+                      </div>
+
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 글로벌 스케일 운영</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">본사 임직원부터 전 세계 해외법인, 그룹사 직원까지 소규모 리더십 워크숍부터 대규모 온라인 웨비나까지 다양한 규모의 캠페인 통합 관리</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">2. 전문 도메인 대응</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">컴플라이언스·핵심역량·안전교육 등 전문 영역에서 통역 협업을 통한 완벽한 다국어 소통 구현</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 실시간 위기 관리</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 완주 달성</p>
                         </div>
                       </div>
                     </div>
@@ -2138,136 +2128,132 @@ export default function CombinedLanding() {
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
                         역할
                       </h3>
-                      {/* 컴플라이언스 프로젝트 구조도 */}
-                      <div className="bg-gray-100 rounded-lg p-6 border border-gray-300">
-                        {/* 메인 플로우 */}
+                      
+                      {/* 원형 프로세스 다이어그램 */}
+                      <div className="bg-gray-100 rounded-lg p-6 border border-gray-300 mb-6">
                         <div className="text-center mb-6">
-                          <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">
-                            컴플라이언스 캠페인 프로세스
-                          </div>
+                          <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">3개 관점 통합 운영</div>
                         </div>
                         
-                        {/* 3단계 구조 */}
-                        <div className="grid grid-cols-3 gap-4 mb-8">
-                          {/* 1단계: 사용자 리서치 */}
-                          <div className="text-center">
-                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
-                              1
-                            </div>
-                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
-                              <h5 className="text-sm font-bold text-[#282623] mb-2">사용자 리서치</h5>
-                              <div className="text-xs text-[#58534e] space-y-1">
-                                <div>• 20명 뎁스 인터뷰</div>
-                                <div>• 3개 페르소나 도출</div>
-                                <div>• ALT+TAB 패턴 분석</div>
-                              </div>
+                        <div className="relative" style={{ height: "200px" }}>
+                          <svg width="100%" height="200" viewBox="0 0 500 200" className="overflow-visible">
+                            {/* 중앙 핵심 원 */}
+                            <circle cx="250" cy="100" r="40" fill="#374151" opacity="0.1" stroke="#374151" strokeWidth="2"/>
+                            <text x="250" y="95" textAnchor="middle" className="text-xs fill-gray-800 font-medium">글로벌</text>
+                            <text x="250" y="108" textAnchor="middle" className="text-xs fill-gray-800 font-medium">캠페인</text>
+                            
+                            {/* 3개 관점 원들 */}
+                            {/* 통합 기획 (상단) */}
+                            <circle cx="250" cy="30" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
+                            <text x="250" y="27" textAnchor="middle" className="text-xs fill-gray-700 font-medium">통합 기획</text>
+                            <text x="250" y="38" textAnchor="middle" className="text-xs fill-gray-700 font-medium">관점</text>
+                            
+                            {/* 실시간 운영 (좌하) */}
+                            <circle cx="180" cy="150" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
+                            <text x="180" y="147" textAnchor="middle" className="text-xs fill-gray-700 font-medium">실시간 운영</text>
+                            <text x="180" y="158" textAnchor="middle" className="text-xs fill-gray-700 font-medium">관점</text>
+                            
+                            {/* 기술 통합 (우하) */}
+                            <circle cx="320" cy="150" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
+                            <text x="320" y="147" textAnchor="middle" className="text-xs fill-gray-700 font-medium">기술 통합</text>
+                            <text x="320" y="158" textAnchor="middle" className="text-xs fill-gray-700 font-medium">관점</text>
+                            
+                            {/* 연결선들 */}
+                            <line x1="250" y1="60" x2="250" y2="100" stroke="#6b7280" strokeWidth="1" opacity="0.5"/>
+                            <line x1="210" y1="130" x2="230" y2="110" stroke="#6b7280" strokeWidth="1" opacity="0.5"/>
+                            <line x1="290" y1="130" x2="270" y2="110" stroke="#6b7280" strokeWidth="1" opacity="0.5"/>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div className="space-y-6">
+                        <div className="border border-gray-300 rounded-lg overflow-hidden">
+                          <div className="bg-[#6b7280] text-white p-3">
+                            <div className="flex items-center">
+                              <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                              <span className="font-medium">통합 기획 관점 - 아키텍처 설계부터 참가자 여정까지</span>
                             </div>
                           </div>
-                          
-                          {/* 2단계: 콘텐츠 기획 */}
-                          <div className="text-center">
-                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
-                              2
-                            </div>
-                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
-                              <h5 className="text-sm font-bold text-[#282623] mb-2">콘텐츠 기획</h5>
-                              <div className="text-xs text-[#58534e] space-y-1">
-                                <div>• 웹툰형 시각 구성</div>
-                                <div>• 디지털 환경 활용</div>
-                                <div>• 혁신적 포맷 개발</div>
+                          <div className="p-4 bg-white">
+                            <div className="space-y-4">
+                              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">전체 아키텍처 설계</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">글로벌 규모의 다양한 캠페인 형태(워크숍, 웨비나, 하이브리드)에 맞는 기술 스택과 운영 프로세스 통합 설계</p>
                               </div>
-                            </div>
-                          </div>
-                          
-                          {/* 3단계: 제작 효율화 */}
-                          <div className="text-center">
-                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
-                              3
-                            </div>
-                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
-                              <h5 className="text-sm font-bold text-[#282623] mb-2">제작 효율화</h5>
-                              <div className="text-xs text-[#58534e] space-y-1">
-                                <div>• 고정 화면 중심 연출</div>
-                                <div>• 5개국어 동시 제작</div>
-                                <div>• 글로벌 확장 전략</div>
+                              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">참가자 여정 설계</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">사전 등록부터 사후 피드백까지 전체 참가자 경험을 일관되게 관리하는 시스템 구축</p>
                               </div>
                             </div>
                           </div>
                         </div>
 
-                        {/* 세부 역할 설명 */}
-                        <div className="space-y-4">
-                          <div className="bg-white rounded-lg p-4 border border-gray-200">
-                            <h5 className="text-sm font-bold text-[#282623] mb-2">사용자 리서치 관점 - 행동 패턴 심층 분석</h5>
-                            <div className="text-xs text-[#58534e] space-y-1">
-                              <div>1. 20명 대상 뎁스 인터뷰를 통해 법정 교육에 대한 '의무감'과 '거부감' 사이의 심리적 갈등 구조 파악</div>
-                              <div>2. 3개 페르소나(적극 참여형, 소극 참여형, 회피형) 도출 및 각 유형별 학습 동기와 회피 패턴 분석</div>
-                              <div>3. 유저시나리오 기반으로 ALT+TAB 사용률 90% 발생 시점과 트리거 요인을 구체적으로 식별</div>
+                        <div className="border border-gray-300 rounded-lg overflow-hidden">
+                          <div className="bg-[#6b7280] text-white p-3">
+                            <div className="flex items-center">
+                              <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                              <span className="font-medium">실시간 운영 관점 - 라이브 대응력과 품질 관리</span>
                             </div>
                           </div>
-                          
-                          <div className="bg-white rounded-lg p-4 border border-gray-200">
-                            <h5 className="text-sm font-bold text-[#282623] mb-2">콘텐츠 기획 관점 - 혁신적 포맷 개발</h5>
-                            <div className="text-xs text-[#58534e] space-y-1">
-                              <div>1. 페르소나별 선호 디지털 환경(메신저, 브라우저, 문서)을 활용한 웹툰형 시각 구성으로 기존 강의형 콘텐츠의 한계 극복</div>
-                              <div>2. 유저시나리오에서 도출한 화면 전환 순간을 활용하여 임팩트 있는 메시지를 배치, 회피 행동을 학습 효과로 전환하는 구조 설계</div>
+                          <div className="p-4 bg-white">
+                            <div className="space-y-4">
+                              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">즉석 위기 대응</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">출연자 불참, 시스템 오류 등 예측 불가능한 변수 발생 시 즉시 대안 실행으로 캠페인 중단 없이 완주</p>
+                              </div>
+                              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">실시간 품질 모니터링</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">참가자 피드백과 시스템 성능을 실시간으로 추적하여 50회 이상 캠페인에서 NPS 4.5 이상 지속 달성</p>
+                              </div>
                             </div>
                           </div>
+                        </div>
 
-                          <div className="bg-white rounded-lg p-4 border border-gray-200">
-                            <h5 className="text-sm font-bold text-[#282623] mb-2">제작 효율화 관점 - 글로벌 확장 전략</h5>
-                            <div className="text-xs text-[#58534e] space-y-1">
-                              <div>1. 고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축하여 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 버전 동시 제작</div>
-                              <div>2. 페르소나 분석을 통해 언어와 상관없이 직관적으로 이해 가능한 시각적 학습 환경 구현</div>
+                        <div className="border border-gray-300 rounded-lg overflow-hidden">
+                          <div className="bg-[#6b7280] text-white p-3">
+                            <div className="flex items-center">
+                              <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                              <span className="font-medium">기술 통합 관점 - 다국어 환경과 글로벌 인프라</span>
+                            </div>
+                          </div>
+                          <div className="p-4 bg-white">
+                            <div className="space-y-4">
+                              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">통역 시스템 통합</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">전문 도메인(컴플라이언스, 핵심역량, 안전교육) 통역 협업을 통한 완벽한 다국어 소통 환경 구축</p>
+                              </div>
+                              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">글로벌 인프라 운영</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">아시아·유럽·아메리카 전 지역 해외법인을 대상으로 안정적인 기술 환경과 네트워크 인프라 제공</p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    {/* 6. 기술 */}
+                    {/* 6. 활용 기술 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
-                        기술
+                        활용 기술
                       </h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">영상 제작</h5>
-                          <p className="text-xs text-[#58534e]">Premiere Pro, After Effects를 활용한 디지털 화면 기반 포맷 및 모션 그래픽 제작</p>
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">캠페인 플랫폼</h5>
+                          <p className="text-xs text-[#58534e]">Zoom, Teams, WebEx 등 다양한 플랫폼 통합 운영 및 하이브리드 환경 구축</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">그래픽 리소스</h5>
-                          <p className="text-xs text-[#58534e]">Photoshop, Stable Diffusion, Midjourney로 UI 기반 화면 요소 및 시각 자료 생성</p>
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">다국어 통역 시스템</h5>
+                          <p className="text-xs text-[#58534e]">실시간 통역 도구와 전문 통역사 협업을 통한 글로벌 소통 환경 제공</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">사용자 리서치</h5>
-                          <p className="text-xs text-[#58534e]">뎁스 인터뷰, 페르소나 설계, 유저시나리오 분석을 통한 사용자 중심 콘텐츠 기획</p>
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">실시간 모니터링</h5>
+                          <p className="text-xs text-[#58534e]">참가자 피드백 시스템과 성능 추적 도구를 활용한 품질 관리</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">다국어 최적화</h5>
-                          <p className="text-xs text-[#58534e]">고정 화면 구조를 활용한 효율적 다국어 버전 제작 시스템 구축</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* 7. 철학 */}
-                    <div className="mb-8">
-                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">7</span>
-                        데이터 그 너머에 숨겨진 이용자들의 마음
-                      </h3>
-                      <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                        <div className="space-y-4">
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            숫자 뒤에 숨은 사람들의 진짜 마음을 읽어냅니다. 삼성물산 컴플라이언스 캠페인에서 임직원들이 ALT+TAB으로 화면을 회피하는 패턴을 발견했을 때, 단순한 무관심이 아닌 '강제성에 대한 심리적 저항'임을 뎁스 인터뷰로 검증했습니다.
-                          </p>
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            이 인사이트를 역이용해 화면 이탈 순간에 임팩트 있는 메시지를 배치하고 오디오만으로도 완전한 이해가 가능한 시나리오를 구성한 결과, 경쟁사 대비 30-40% 높은 단가임에도 성공적으로 콘텐츠를 수주했습니다.
-                          </p>
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            단순한 수치 분석을 넘어 행동 패턴 뒤에 숨은 심리적 동기를 파악하여 전략적으로 활용하는 것이 저의 차별화된 강점입니다. 유니세프에서는 후원자들의 진정한 관심사와 감정적 동기를 데이터로 읽어내어, 아동권리가 '해야 할 일'이 아닌 '자연스럽게 하게 된 일'이 될 수 있는 개인의 숨겨진 마음과 환경까지 고려한 캠페인을 설계하겠습니다.
-                          </p>
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">위기 대응 시스템</h5>
+                          <p className="text-xs text-[#58534e]">예비 시나리오와 백업 시스템을 통한 즉석 대응 체계 구축</p>
                         </div>
                       </div>
                     </div>
