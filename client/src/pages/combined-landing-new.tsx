@@ -4014,27 +4014,7 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 7. 철학 */}
-                    <div className="mb-8">
-                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">7</span>
-                        철학
-                      </h3>
-                      <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                        <h4 className="text-base font-medium text-[#282623] mb-4">"데이터 그 너머에 숨겨진 이용자들의 마음"</h4>
-                        <div className="space-y-4 text-sm text-[#58534e] leading-relaxed">
-                          <p>
-                            숫자 뒤에 숨은 사용자들의 진짜 마음을 읽어냅니다. 삼성물산 컴플라이언스 캠페인에서 임직원들이 ALT+TAB으로 화면을 회피하는 패턴을 발견했을 때, 단순한 무관심이 아닌 '강제성에 대한 심리적 저항'임을 뎁스 인터뷰로 검증했습니다.
-                          </p>
-                          <p>
-                            이 인사이트를 역이용해 화면 이탈 순간에 임팩트 있는 메시지를 배치하고 오디오만으로도 완전한 이해가 가능한 시나리오를 구성한 결과, 경쟁사 대비 30-40% 높은 단가임에도 성공적으로 콘텐츠를 수주했습니다.
-                          </p>
-                          <p>
-                            단순한 수치 분석을 넘어 행동 패턴 뒤에 숨은 심리적 동기를 파악하여 전략적으로 활용하는 것이 저의 차별화된 강점입니다.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+
                   </div>
                 )}
 
