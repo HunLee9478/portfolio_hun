@@ -5218,7 +5218,7 @@ export default function CombinedLanding() {
                           <div className="flex justify-center">
                             <div className="bg-[#6b7280] text-white px-6 py-3 rounded-lg text-center" style={{width: "400px"}}>
                               <div className="text-xs font-bold mb-1">다양한 유형 캠페인 운영</div>
-                              <div className="text-xs opacity-80">본사~글로벌법인, 컴플라이언스~안전교육</div>
+                              <div className="opacity-80 text-[14px]">본사~글로벌법인, 컴플라이언스~안전교육</div>
                             </div>
                           </div>
                         </div>
