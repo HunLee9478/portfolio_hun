@@ -4777,7 +4777,7 @@ export default function CombinedLanding() {
                 )}
 
                 {/* 활용 기술 섹션 - 모든 프로젝트에 대해 새로운 스타일로 통일 */}
-                {selectedProject.id !== "5" && selectedProject.id !== "6" && (
+                {selectedProject.id !== "6" && (
                   <div className="mb-12">
                     <div className="mb-6">
                       <h2 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
@@ -5008,6 +5008,90 @@ export default function CombinedLanding() {
                                   <div className="flex justify-between items-center">
                                     <span className="text-sm text-gray-700">Illustrator</span>
                                     <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">로고 디자인</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </>
+                        )}
+
+                        {selectedProject.id === "5" && (
+                          <>
+                            <div className="space-y-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
+                                  🎬 영상 제작
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-[#58534e]">Premiere Pro</span>
+                                    <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">영상 편집</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-[#58534e]">After Effects</span>
+                                    <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">모션 그래픽</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-[#58534e]">OBS Studio</span>
+                                    <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">실시간 녹화</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
+                                  🤖 AI 기술
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-[#58534e]">ComfyUI</span>
+                                    <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">일관된 캐릭터</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-[#58534e]">Midjourney</span>
+                                    <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">환경 디자인</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-[#58534e]">Stable Diffusion</span>
+                                    <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">세부 요소</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="space-y-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
+                                  🌐 메타버스 플랫폼
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-[#58534e]">Gather</span>
+                                    <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">가상 공간</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-[#58534e]">맞춤형 맵</span>
+                                    <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">환경 설계</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-[#58534e]">게임화 요소</span>
+                                    <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">상호작용</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
+                                  📊 자동화 & 분석
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-[#58534e]">Python</span>
+                                    <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">자동화 스크립트</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-[#58534e]">데이터 분석</span>
+                                    <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">사용자 행동</span>
                                   </div>
                                 </div>
                               </div>
