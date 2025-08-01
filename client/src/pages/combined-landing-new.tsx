@@ -3452,8 +3452,8 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
-                {/* 메타버스 프로젝트는 주요 역할 섹션 생략 - 콘텐츠 섹션에서 충분히 다뤄짐 */}
-                {selectedProject.id !== "5" && (
+                {/* 메타버스(5번)와 삼성물산 컴플라이언스(6번) 프로젝트는 주요 역할 섹션 생략 - 콘텐츠 섹션에서 충분히 다뤄짐 */}
+                {selectedProject.id !== "5" && selectedProject.id !== "6" && (
                   <div className="mb-12">
                    
                     <div className="space-y-4 mb-8">
@@ -3983,10 +3983,10 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 6. 핵심 기술 */}
+                    {/* 5. 핵심 기술 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
                         핵심 기술
                       </h3>
                       <div className="grid grid-cols-2 gap-4">
@@ -4010,102 +4010,7 @@ export default function CombinedLanding() {
                     </div>
 
 
-                    {/* 5. 역할 */}
-                    <div className="mb-8">
-                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
-                        역할
-                      </h3>
-                      <div className="space-y-6">
-                        <div>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-role-1-title`}
-                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#282623",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              fontWeight: "400",
-                              display: "block",
-                              marginBottom: "8px"
-                            }}
-                          >
-                            • 사용자 리서치 관점 - 행동 패턴 심층 분석
-                          </AdvancedEditableText>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-role-1-desc`}
-                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#58534e",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              marginLeft: "16px",
-                              display: "block"
-                            }}
-                          >
-                            20명 대상 뎁스 인터뷰를 통해 법정 교육에 대한 '의무감'과 '거부감' 사이의 심리적 갈등 구조 파악. 3개 페르소나 도출 및 ALT+TAB 사용률 90% 발생 시점과 트리거 요인을 구체적으로 식별
-                          </AdvancedEditableText>
-                        </div>
-                        <div>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-role-2-title`}
-                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#282623",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              fontWeight: "400",
-                              display: "block",
-                              marginBottom: "8px"
-                            }}
-                          >
-                            • 콘텐츠 기획 관점 - 혁신적 포맷 개발
-                          </AdvancedEditableText>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-role-2-desc`}
-                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#58534e",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              marginLeft: "16px",
-                              display: "block"
-                            }}
-                          >
-                            페르소나별 선호 디지털 환경(메신저, 브라우저, 문서)을 활용한 웹툰형 시각 구성으로 기존 강의형 콘텐츠의 한계 극복. 화면 전환 순간을 활용하여 회피 행동을 학습 효과로 전환하는 구조 설계
-                          </AdvancedEditableText>
-                        </div>
-                        <div>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-role-3-title`}
-                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#282623",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              fontWeight: "400",
-                              display: "block",
-                              marginBottom: "8px"
-                            }}
-                          >
-                            • 제작 효율화 관점 - 글로벌 확장 전략
-                          </AdvancedEditableText>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-role-3-desc`}
-                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#58534e",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              marginLeft: "16px",
-                              display: "block"
-                            }}
-                          >
-                            고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축하여 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 버전 동시 제작. 언어와 상관없이 직관적으로 이해 가능한 시각적 학습 환경 구현
-                          </AdvancedEditableText>
-                        </div>
-                      </div>
-                    </div>
+
 
                   </div>
                 )}
