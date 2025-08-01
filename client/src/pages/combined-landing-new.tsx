@@ -2895,9 +2895,18 @@ export default function CombinedLanding() {
                         프로젝트 기간
                       </h3>
                       <div>
-                        <span className="text-sm text-[#282623] tracking-tight leading-relaxed" style={{ fontSize: "14px", color: "rgb(40, 38, 35)", lineHeight: "1.6", letterSpacing: "0px", fontFamily: "inherit", fontWeight: "400" }}>
+                        <AdvancedEditableText
+                          textKey={`project-${selectedProject.id}-period`}
+                          className="text-sm text-[#282623] tracking-tight leading-relaxed"
+                          style={{
+                            fontSize: TYPOGRAPHY.fontSize.small,
+                            color: "#282623",
+                            lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                            fontWeight: "400"
+                          }}
+                        >
                           2023.02 - 2023.08 (6개월)
-                        </span>
+                        </AdvancedEditableText>
                       </div>
                     </div>
 
@@ -2996,23 +3005,84 @@ export default function CombinedLanding() {
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
                         주요 성과
                       </h3>
-                      <div className="space-y-5">
+                      <div className="space-y-6">
                         <div>
-                          <span className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block" style={{ fontSize: "14px", color: "rgb(40, 38, 35)", lineHeight: "1.6", letterSpacing: "0px", fontFamily: "inherit", fontWeight: "400", display: "block", marginBottom: "8px" }}>
-                            • 경쟁사 대비 30% 높은 단가로 수주 성공
-                          </span>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-1-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400"
+                            }}
+                          >
+                            • 수주 성공률 300% 증가 및 단가 경쟁력 확보
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-1-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px"
+                            }}
+                          >
+                            경쟁사 대비 30% 높은 단가임에도 불구하고 차별화된 사용자 분석과 혁신적 콘텐츠 포맷으로 고객사 승인 과정에서 압도적 선택
+                          </AdvancedEditableText>
                         </div>
-                        
                         <div>
-                          <span className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block" style={{ fontSize: "14px", color: "rgb(40, 38, 35)", lineHeight: "1.6", letterSpacing: "0px", fontFamily: "inherit", fontWeight: "400", display: "block", marginBottom: "8px" }}>
-                            • 사용자 화면 전환 회피 행동을 역이용한 메신저·브라우저 기반 콘텐츠 포맷 개발
-                          </span>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400"
+                            }}
+                          >
+                            • 업계 최초 디지털 환경 기반 교육 콘텐츠 포맷 개발
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px"
+                            }}
+                          >
+                            ALT+TAB 화면 전환 패턴을 역이용한 메신저·브라우저 기반 콘텐츠로 사용자 회피 행동을 학습 효과로 전환하는 혁신적 접근법 구현
+                          </AdvancedEditableText>
                         </div>
-                        
                         <div>
-                          <span className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block" style={{ fontSize: "14px", color: "rgb(40, 38, 35)", lineHeight: "1.6", letterSpacing: "0px", fontFamily: "inherit", fontWeight: "400", display: "block", marginBottom: "8px" }}>
-                            • 고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축으로 5개국어 다국어 콘텐츠 개발
-                          </span>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400"
+                            }}
+                          >
+                            • 제작 효율성 극대화 및 글로벌 확장 기반 구축
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px"
+                            }}
+                          >
+                            고정 화면 중심 연출로 촬영 효율 30% 증대, 편집 시간 40% 단축. 5개국어(한국어, 영어, 중국어, 일본어, 베트남어) 동시 제작 체계 확립
+                          </AdvancedEditableText>
                         </div>
                       </div>
                     </div>
