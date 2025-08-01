@@ -5161,15 +5161,15 @@ export default function CombinedLanding() {
                       <div className="space-y-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-gray-800 mb-3">1. 50회 이상 캠페인에서 NPS 4.5 이상 지속 달성</h4>
-                          <p className="text-sm text-gray-600 leading-relaxed">글로벌 규모의 다양한 캠페인에서 일관된 고품질 서비스 제공을 통해 참가자 만족도 최고 수준 유지</p>
+                          <p className="text-sm text-gray-600 leading-relaxed">소규모부터 대규모까지 다양한 캠페인 유형에서 일관된 높은 품질 관리와 참가자 만족도 확보</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-gray-800 mb-3">2. 출연자 불참, 시스템 오류 등 돌발 상황 발생 시 즉석 대응으로 캠페인 중단 없이 완주</h4>
-                          <p className="text-sm text-gray-600 leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 진행과 참가자 신뢰 확보</p>
+                          <p className="text-sm text-gray-600 leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 신뢰성과 완주율 100% 달성</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-gray-800 mb-3">3. 아시아, 유럽, 아메리카 전 지역 해외법인 대상 다국어 캠페인 성공적 운영</h4>
-                          <p className="text-sm text-gray-600 leading-relaxed">통역 협업을 통한 전문 도메인 완벽 소통으로 글로벌 스케일 캠페인의 효과적 메시지 전달 달성</p>
+                          <h4 className="text-sm font-medium text-gray-800 mb-3">3. 국내외 다양한 대상을 포함한 통합 캠페인 운영 체계 구축</h4>
+                          <p className="text-sm text-gray-600 leading-relaxed">본사 임직원부터 해외법인까지 아시아, 유럽, 아메리카 전 지역 대상 다국어 캠페인 성공적 운영</p>
                         </div>
                       </div>
                     </div>
@@ -5182,50 +5182,45 @@ export default function CombinedLanding() {
                       </h3>
                       
                       {/* 피라미드 구조 시각화 */}
-                      <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 mb-4">
-                        <div className="text-center mb-4">
-                          <h4 className="text-sm font-medium text-gray-800 mb-2">글로벌 캠페인 운영 구조</h4>
+                      <div className="bg-gray-100 rounded-lg p-8 border border-gray-300 mb-6">
+                        <div className="text-center mb-6">
+                          <div className="inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded-md text-sm font-medium">다양한 유형의 캠페인 통합 관리 체계</div>
                         </div>
                         
-                        <div className="space-y-4">
-                          {/* 최상단: 실시간 위기 관리 */}
+                        <div className="space-y-6">
+                          {/* 3단계: 실시간 위기 관리 */}
                           <div className="flex justify-center">
-                            <div className="bg-gray-800 text-white px-6 py-3 rounded-lg text-center" style={{width: "200px"}}>
-                              <div className="text-xs font-bold mb-1">실시간 위기 관리</div>
-                              <div className="text-xs opacity-80">즉시 대응력</div>
+                            <div className="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style={{width: "320px"}}>
+                              <h5 className="text-sm font-bold text-gray-800 mb-3">3. 실시간 위기 관리</h5>
+                              <p className="text-xs text-gray-600 leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 완주 달성</p>
                             </div>
                           </div>
                           
-                          {/* 중간: 전문 도메인 대응 */}
+                          {/* 화살표 */}
                           <div className="flex justify-center">
-                            <div className="bg-gray-600 text-white px-6 py-3 rounded-lg text-center" style={{width: "300px"}}>
-                              <div className="text-xs font-bold mb-1">전문 도메인 대응</div>
-                              <div className="text-xs opacity-80">컴플라이언스·핵심역량·안전교육</div>
+                            <div className="text-gray-500 text-2xl">↑</div>
+                          </div>
+                          
+                          {/* 2단계: 전문 도메인 대응 */}
+                          <div className="flex justify-center">
+                            <div className="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style={{width: "400px"}}>
+                              <h5 className="text-sm font-bold text-gray-800 mb-3">2. 전문 도메인 대응</h5>
+                              <p className="text-xs text-gray-600 leading-relaxed">컴플라이언스·핵심역량·안전교육 등 전문 영역에서 통역 협업을 통한 완벽한 다국어 소통 구현</p>
                             </div>
                           </div>
                           
-                          {/* 기반: 다양한 유형 캠페인 기획 */}
+                          {/* 화살표 */}
                           <div className="flex justify-center">
-                            <div className="bg-gray-500 text-white px-6 py-3 rounded-lg text-center" style={{width: "400px"}}>
-                              <div className="text-xs font-bold mb-1">다양한 유형 캠페인 기획</div>
-                              <div className="text-xs opacity-80">컴플라이언스 ~ 안전교육, 워크숍 ~ 웨비나</div>
+                            <div className="text-gray-500 text-2xl">↑</div>
+                          </div>
+                          
+                          {/* 1단계: 다양한 유형의 캠페인 통합 운영 */}
+                          <div className="flex justify-center">
+                            <div className="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style={{width: "480px"}}>
+                              <h5 className="text-sm font-bold text-gray-800 mb-3">1. 다양한 유형의 캠페인 통합 운영</h5>
+                              <p className="text-xs text-gray-600 leading-relaxed">소규모 리더십 워크숍부터 대규모 온라인 웨비나, 국내 캠페인부터 글로벌 다국어 캠페인까지 다양한 규모와 유형의 캠페인 통합 관리</p>
                             </div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div className="space-y-4">
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-gray-800 mb-3">1. 글로벌 스케일 운영</h4>
-                          <p className="text-sm text-gray-600 leading-relaxed">본사 임직원부터 전 세계 해외법인, 그룹사 직원까지 소규모 리더십 워크숍부터 대규모 온라인 웨비나까지 다양한 규모의 캠페인 통합 관리</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-gray-800 mb-3">2. 전문 도메인 대응</h4>
-                          <p className="text-sm text-gray-600 leading-relaxed">컴플라이언스·핵심역량·안전교육 등 전문 영역에서 통역 협업을 통한 완벽한 다국어 소통 구현</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-gray-800 mb-3">3. 실시간 위기 관리</h4>
-                          <p className="text-sm text-gray-600 leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 완주 달성</p>
                         </div>
                       </div>
                     </div>

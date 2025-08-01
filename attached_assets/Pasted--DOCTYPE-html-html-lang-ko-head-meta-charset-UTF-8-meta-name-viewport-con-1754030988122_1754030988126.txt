@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 유형의 온·오프라인 캠페인 기획·운영</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @media print {
+            body { margin: 0; padding: 0; }
+            .no-print { display: none; }
+        }
+        .tracking-tight { letter-spacing: -0.025em; }
+        .leading-relaxed { line-height: 1.6; }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="min-h-screen bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-2xl relative tracking-tight leading-relaxed overflow-hidden" style="width: 90vw; max-width: 1200px; min-width: 800px;">
+            <div class="h-full">
+                <div class="px-8 lg:px-16 pb-2 pt-16">
+                    <div class="mb-8">
+                        <button class="no-print text-sm text-gray-600 hover:text-gray-800 transition-colors flex items-center gap-1">← Back To All Work</button>
+                    </div>
+
+                    <div class="mb-12">
+                        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                            <div class="lg:col-span-3">
+                                <h1 class="text-4xl lg:text-5xl text-gray-800 leading-tight mb-0 font-semibold">다양한 유형의 온·오프라인 캠페인 기획·운영</h1>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                                <div>
+                                    <h5 class="opacity-50 text-base font-normal mb-2">Categories</h5>
+                                    <span class="text-sm text-gray-800">캠페인 기획·운영</span>
+                                </div>
+                                <div>
+                                    <h5 class="opacity-50 text-base font-normal mb-2">Client</h5>
+                                    <span class="text-sm text-gray-800">글로벌 IT기업</span>
+                                </div>
+                                <div>
+                                    <h5 class="opacity-50 text-base font-normal mb-2">Role</h5>
+                                    <span class="text-sm text-gray-800">통합 캠페인 기획, 실시간 운영, 기술 통합</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-gray-800 text-sm tracking-tight leading-relaxed">
+                                    소규모 워크숍부터 대규모 웨비나, 국내 캠페인부터 글로벌 다국어 캠페인까지 다양한 유형과 규모의 캠페인을 통합 기획·운영하며 50회 이상 NPS 4.5 이상 달성과 실시간 위기 대응 능력을 통해 모든 캠페인의 안정적 완주를 실현한 프로젝트입니다.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-8 lg:px-16 pb-12">
+                    <div class="mb-12">
+                        <div class="mb-8">
+                            <h3 class="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">1</span>프로젝트 기간
+                            </h3>
+                            <div>
+                                <span class="text-sm text-gray-800 tracking-tight leading-relaxed">2023.01 ~ 2024.11 (23개월)</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">2</span>주요 성과
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                    <h4 class="text-sm font-medium text-gray-800 mb-3">1. 50회 이상 캠페인에서 NPS 4.5 이상 지속 달성</h4>
+                                    <p class="text-sm text-gray-600 leading-relaxed">소규모부터 대규모까지 다양한 캠페인 유형에서 일관된 높은 품질 관리와 참가자 만족도 확보</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                    <h4 class="text-sm font-medium text-gray-800 mb-3">2. 출연자 불참, 시스템 오류 등 돌발 상황 발생 시 즉석 대응으로 캠페인 중단 없이 완주</h4>
+                                    <p class="text-sm text-gray-600 leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 신뢰성과 완주율 100% 달성</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                    <h4 class="text-sm font-medium text-gray-800 mb-3">3. 국내외 다양한 대상을 포함한 통합 캠페인 운영 체계 구축</h4>
+                                    <p class="text-sm text-gray-600 leading-relaxed">본사 임직원부터 해외법인까지 아시아, 유럽, 아메리카 전 지역 대상 다국어 캠페인 성공적 운영</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">3</span>내용
+                            </h3>
+                            
+                            <!-- 피라미드 구조 시각화 -->
+                            <div class="bg-gray-100 rounded-lg p-8 border border-gray-300 mb-6">
+                                <div class="text-center mb-6">
+                                    <div class="inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded-md text-sm font-medium">다양한 유형의 캠페인 통합 관리 체계</div>
+                                </div>
+                                
+                                <div class="space-y-6">
+                                    <!-- 3단계: 실시간 위기 관리 -->
+                                    <div class="flex justify-center">
+                                        <div class="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style="width: 320px;">
+                                            <h5 class="text-sm font-bold text-gray-800 mb-3">3. 실시간 위기 관리</h5>
+                                            <p class="text-xs text-gray-600 leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 완주 달성</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 화살표 -->
+                                    <div class="flex justify-center">
+                                        <div class="text-gray-500 text-2xl">↑</div>
+                                    </div>
+                                    
+                                    <!-- 2단계: 전문 도메인 대응 -->
+                                    <div class="flex justify-center">
+                                        <div class="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style="width: 400px;">
+                                            <h5 class="text-sm font-bold text-gray-800 mb-3">2. 전문 도메인 대응</h5>
+                                            <p class="text-xs text-gray-600 leading-relaxed">컴플라이언스·핵심역량·안전교육 등 전문 영역에서 통역 협업을 통한 완벽한 다국어 소통 구현</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 화살표 -->
+                                    <div class="flex justify-center">
+                                        <div class="text-gray-500 text-2xl">↑</div>
+                                    </div>
+                                    
+                                    <!-- 1단계: 다양한 유형의 캠페인 통합 운영 -->
+                                    <div class="flex justify-center">
+                                        <div class="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style="width: 480px;">
+                                            <h5 class="text-sm font-bold text-gray-800 mb-3">1. 다양한 유형의 캠페인 통합 운영</h5>
+                                            <p class="text-xs text-gray-600 leading-relaxed">소규모 리더십 워크숍부터 대규모 온라인 웨비나, 국내 캠페인부터 글로벌 다국어 캠페인까지 다양한 규모와 유형의 캠페인 통합 관리</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">4</span>역할
+                            </h3>
+                            
+                            <div class="bg-gray-100 rounded-lg p-6 border border-gray-300 mb-6">
+                                <div class="text-center mb-6">
+                                    <div class="inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded-md text-sm font-medium">다양한 캠페인 유형별 통합 관리 프로세스</div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 mb-6">
+                                    <div class="text-center">
+                                        <div class="bg-gray-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">1</div>
+                                        <div class="bg-white border-2 border-gray-500 rounded-lg p-4 min-h-[120px]">
+                                            <h5 class="text-sm font-bold text-gray-800 mb-2">통합 캠페인 기획</h5>
+                                            <div class="text-xs text-gray-600 space-y-1">
+                                                <div>• 다양한 규모 설계</div>
+                                                <div>• 유형별 맞춤 기획</div>
+                                                <div>• NPS 4.5+ 품질 관리</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="bg-gray-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">2</div>
+                                        <div class="bg-white border-2 border-gray-500 rounded-lg p-4 min-h-[120px]">
+                                            <h5 class="text-sm font-bold text-gray-800 mb-2">실시간 운영</h5>
+                                            <div class="text-xs text-gray-600 space-y-1">
+                                                <div>• 위기 상황 즉시 대응</div>
+                                                <div>• 현장 변수 관리</div>
+                                                <div>• 라이브 진행 최적화</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="bg-gray-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">3</div>
+                                        <div class="bg-white border-2 border-gray-500 rounded-lg p-4 min-h-[120px]">
+                                            <h5 class="text-sm font-bold text-gray-800 mb-2">기술 통합</h5>
+                                            <div class="text-xs text-gray-600 space-y-1">
+                                                <div>• 제작-운영 연계</div>
+                                                <div>• 기술적 이슈 해결</div>
+                                                <div>• 역할 유연 전환</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <div class="border border-gray-300 rounded-lg overflow-hidden">
+                                    <div class="bg-gray-500 text-white p-3">
+                                        <div class="flex items-center">
+                                            <span class="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                                            <span class="font-medium">통합 캠페인 기획 관점 - 다양한 유형의 캠페인 관리</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 bg-white">
+                                        <!-- 스케일 확장 다이어그램 -->
+                                        <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 mb-4">
+                                            <h6 class="text-sm font-medium text-gray-800 mb-4 text-center">캠페인 규모 및 유형별 통합 관리</h6>
+                                            <div class="grid grid-cols-2 gap-4">
+                                                <div class="space-y-3">
+                                                    <div class="bg-white border border-gray-300 rounded p-3 text-center">
+                                                        <div class="text-xs font-medium text-gray-800">소규모 워크숍</div>
+                                                        <div class="text-xs text-gray-600">리더십 트레이닝</div>
+                                                    </div>
+                                                    <div class="bg-white border border-gray-300 rounded p-3 text-center">
+                                                        <div class="text-xs font-medium text-gray-800">국내 캠페인</div>
+                                                        <div class="text-xs text-gray-600">본사 임직원 대상</div>
+                                                    </div>
+                                                </div>
+                                                <div class="space-y-3">
+                                                    <div class="bg-white border border-gray-300 rounded p-3 text-center">
+                                                        <div class="text-xs font-medium text-gray-800">대규모 웨비나</div>
+                                                        <div class="text-xs text-gray-600">온라인 통합 행사</div>
+                                                    </div>
+                                                    <div class="bg-white border border-gray-300 rounded p-3 text-center">
+                                                        <div class="text-xs font-medium text-gray-800">글로벌 캠페인</div>
+                                                        <div class="text-xs text-gray-600">해외법인 다국어</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-4">
+                                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                                <h6 class="text-sm font-medium text-gray-800 mb-2">50회 이상 캠페인 전 과정 담당</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed">본사 임직원부터 해외법인, 그룹사 직원까지 다양한 대상과 규모의 캠페인 기획부터 운영까지 통합 관리</p>
+                                            </div>
+                                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                                <h6 class="text-sm font-medium text-gray-800 mb-2">규모별 맞춤형 설계 및 품질 관리</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed">소규모 리더십 워크숍부터 대규모 온라인 웨비나까지 각 유형에 최적화된 캠페인 설계 및 NPS 4.5 이상 품질 관리</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="border border-gray-300 rounded-lg overflow-hidden">
+                                    <div class="bg-gray-500 text-white p-3">
+                                        <div class="flex items-center">
+                                            <span class="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                                            <span class="font-medium">실시간 운영 관점 - 위기 대응 및 현장 감각</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 bg-white">
+                                        <!-- 위기 대응 플로우 -->
+                                        <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 mb-4">
+                                            <h6 class="text-sm font-medium text-gray-800 mb-4 text-center">실시간 위기 대응 시스템</h6>
+                                            <div class="flex items-center justify-between">
+                                                <div class="bg-red-100 border border-red-300 rounded-lg p-3 text-center flex-1 mx-1">
+                                                    <div class="text-xs font-medium text-red-800">위기 상황 발생</div>
+                                                    <div class="text-xs text-red-600 mt-1">출연자 불참<br/>시스템 오류</div>
+                                                </div>
+                                                <div class="text-gray-500 mx-2">→</div>
+                                                <div class="bg-yellow-100 border border-yellow-300 rounded-lg p-3 text-center flex-1 mx-1">
+                                                    <div class="text-xs font-medium text-yellow-800">즉석 대응</div>
+                                                    <div class="text-xs text-yellow-600 mt-1">대체 진행<br/>기술 해결</div>
+                                                </div>
+                                                <div class="text-gray-500 mx-2">→</div>
+                                                <div class="bg-green-100 border border-green-300 rounded-lg p-3 text-center flex-1 mx-1">
+                                                    <div class="text-xs font-medium text-green-800">안정적 완주</div>
+                                                    <div class="text-xs text-green-600 mt-1">중단 없이<br/>품질 유지</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-4">
+                                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                                <h6 class="text-sm font-medium text-gray-800 mb-2">돌발 상황 즉석 대응</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed">출연자 돌발 불참 시 즉석 대체 진행 담당 및 기술 오류 발생 시 제작 역량 기반 즉시 해결 방안 제시</p>
+                                            </div>
+                                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                                <h6 class="text-sm font-medium text-gray-800 mb-2">실시간 캠페인 흐름 최적화</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed">실시간 큐시트 수정과 참가자 반응 모니터링을 통한 캠페인 흐름 최적화로 라이브 진행의 신뢰성 확보</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="border border-gray-300 rounded-lg overflow-hidden">
+                                    <div class="bg-gray-500 text-white p-3">
+                                        <div class="flex items-center">
+                                            <span class="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                                            <span class="font-medium">기술 통합 관점 - 제작-운영 연계</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 bg-white">
+                                        <!-- 역할 전환 매트릭스 -->
+                                        <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 mb-4">
+                                            <h6 class="text-sm font-medium text-gray-800 mb-4 text-center">진행자 ↔ 운영자 역할 전환 시스템</h6>
+                                            <div class="grid grid-cols-2 gap-4">
+                                                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
+                                                    <div class="text-sm font-medium text-blue-800 mb-2">평상시 모드</div>
+                                                    <div class="text-xs text-blue-600 space-y-1">
+                                                        <div>• 진행자 역할</div>
+                                                        <div>• 참가자 소통</div>
+                                                        <div>• 콘텐츠 전달</div>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-orange-50 border border-orange-200 rounded-lg p-4 text-center">
+                                                    <div class="text-sm font-medium text-orange-800 mb-2">위기 상황 모드</div>
+                                                    <div class="text-xs text-orange-600 space-y-1">
+                                                        <div>• 운영자 전환</div>
+                                                        <div>• 기술적 대응</div>
+                                                        <div>• 신뢰 유지</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-4">
+                                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                                <h6 class="text-sm font-medium text-gray-800 mb-2">제작 기술 역량 활용</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed">송출, 그래픽 리소스 제작, 벤더사 및 셀럽 커뮤니케이션 등 제작 기술 역량을 활용한 라이브 진행 중 기술적 이슈 즉시 대응</p>
+                                            </div>
+                                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                                <h6 class="text-sm font-medium text-gray-800 mb-2">유연한 역할 전환</h6>
+                                                <p class="text-sm text-gray-600 leading-relaxed">평상시 진행자 역할에서 위기 상황 시 운영자-진행자 전환으로 참가자 신뢰 유지</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h2 class="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">5</span>활용 기술
+                            </h2>
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h4 class="text-sm font-medium text-gray-800 mb-3">실시간 운영</h4>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <div>• <strong>라이브 진행 중 위기 대응</strong></div>
+                                    <div>• <strong>즉석 큐시트 수정</strong></div>
+                                    <div>• <strong>참가자 반응 실시간 분석</strong></div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h4 class="text-sm font-medium text-gray-800 mb-3">기술 통합</h4>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <div>• <strong>송출 시스템</strong></div>
+                                    <div>• <strong>그래픽 제작</strong></div>
+                                    <div>• <strong>벤더 커뮤니케이션</strong></div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h4 class="text-sm font-medium text-gray-800 mb-3">다국어 소통</h4>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <div>• <strong>통역 협업 시스템</strong></div>
+                                    <div>• <strong>전문 도메인 소통</strong></div>
+                                    <div>• <strong>글로벌 캠페인 운영</strong></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pb-8"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="no-print absolute top-6 right-6 w-10 h-10 bg-white bg-opacity-80 hover:bg-white text-gray-600 hover:text-gray-800 rounded-full flex items-center justify-center transition-all shadow-lg z-10">
+                <span class="text-xl leading-none">×</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
