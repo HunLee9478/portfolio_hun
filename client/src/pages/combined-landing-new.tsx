@@ -5204,11 +5204,11 @@ export default function CombinedLanding() {
                             </div>
                           </div>
                           
-                          {/* 기반: 글로벌 스케일 운영 */}
+                          {/* 기반: 다양한 유형 캠페인 기획 */}
                           <div className="flex justify-center">
                             <div className="bg-gray-500 text-white px-6 py-3 rounded-lg text-center" style={{width: "400px"}}>
-                              <div className="text-xs font-bold mb-1">글로벌 스케일 운영</div>
-                              <div className="text-xs opacity-80">본사 ~ 해외법인, 워크숍 ~ 웨비나</div>
+                              <div className="text-xs font-bold mb-1">다양한 유형 캠페인 기획</div>
+                              <div className="text-xs opacity-80">컴플라이언스 ~ 안전교육, 워크숍 ~ 웨비나</div>
                             </div>
                           </div>
                         </div>
