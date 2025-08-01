@@ -1977,6 +1977,22 @@ export default function CombinedLanding() {
                           사용자 화면 전환 회피 행동을 역이용한 혁신적 메신저·브라우저 기반 콘텐츠 포맷을 개발하여 경쟁사 대비 30% 높은 단가로 수주하고, 고정 화면 중심 연출로 제작 효율성을 극대화한 5개국어 다국어 콘텐츠 제작 프로젝트입니다.
                         </AdvancedEditableText>
                       )}
+                      {selectedProject.id === "8" && (
+                        <AdvancedEditableText
+                          textKey={`project-${selectedProject.id}-description`}
+                          className="text-[#282623] text-sm tracking-tight leading-relaxed"
+                          isTextArea={true}
+                          style={{
+                            fontSize: TYPOGRAPHY.fontSize.small,
+                            lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                            color: "#282623",
+                            minHeight: "80px",
+                            width: "100%"
+                          }}
+                        >
+                          글로벌 IT기업의 온·오프라인 캠페인을 23개월간 기획·운영했습니다. 50회 이상 캠페인에서 NPS 4.5 이상을 달성하고, 출연자 불참이나 시스템 오류 등 돌발 상황에서도 즉석 대응으로 캠페인을 완주했습니다. 본사부터 해외법인까지 다국어 캠페인과 메타버스 플랫폼을 활용한 혁신적 캠페인 운영을 성공적으로 수행했습니다.
+                        </AdvancedEditableText>
+                      )}
                     </div>
                   </div>
                 </div>
