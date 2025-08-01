@@ -5187,38 +5187,38 @@ export default function CombinedLanding() {
                           <h4 className="text-sm font-medium text-[#282623] mb-2">다양한 유형의 캠페인 통합 관리 체계</h4>
                         </div>
                         
-                        <div className="space-y-4">
+                        <div className="space-y-6">
                           {/* 3단계: 실시간 위기 관리 */}
                           <div className="flex justify-center">
-                            <div className="bg-[#282623] text-white px-6 py-3 rounded-lg text-center" style={{width: "200px"}}>
-                              <div className="font-bold mb-1 text-[14px]">실시간 위기 관리</div>
-                              <div className="opacity-80 text-[14px]">즉시 대응가능</div>
+                            <div className="bg-[#282623] text-white px-4 py-4 rounded-lg text-center" style={{width: "220px", minHeight: "70px"}}>
+                              <div className="text-sm font-medium mb-2">실시간 위기 관리</div>
+                              <div className="opacity-80 text-xs">즉시 대응가능</div>
                             </div>
                           </div>
                           
                           {/* 화살표 */}
-                          <div className="flex justify-center">
-                            <div className="text-gray-500 text-2xl">↑</div>
+                          <div className="flex justify-center py-2">
+                            <div className="text-gray-400 text-xl">↑</div>
                           </div>
                           
                           {/* 2단계: 전문 도메인 대응 */}
                           <div className="flex justify-center">
-                            <div className="bg-[#58534e] text-white px-6 py-3 rounded-lg text-center" style={{width: "300px"}}>
-                              <div className="font-bold mb-1 text-[14px]">전문 도메인 대응</div>
-                              <div className="opacity-80 text-[14px]">컴플라이언스·핵심역량·안전교육</div>
+                            <div className="bg-[#58534e] text-white px-4 py-4 rounded-lg text-center" style={{width: "320px", minHeight: "70px"}}>
+                              <div className="text-sm font-medium mb-2">전문 도메인 대응</div>
+                              <div className="opacity-80 text-xs">컴플라이언스·핵심역량·안전교육</div>
                             </div>
                           </div>
                           
                           {/* 화살표 */}
-                          <div className="flex justify-center">
-                            <div className="text-gray-500 text-2xl">↑</div>
+                          <div className="flex justify-center py-2">
+                            <div className="text-gray-400 text-xl">↑</div>
                           </div>
                           
                           {/* 1단계: 다양한 유형의 캠페인 통합 운영 */}
                           <div className="flex justify-center">
-                            <div className="bg-[#6b7280] text-white px-6 py-3 rounded-lg text-center" style={{width: "400px"}}>
-                              <div className="font-bold mb-1 text-[14px]">다양한 유형 캠페인 운영</div>
-                              <div className="opacity-80 text-[14px]">본사~글로벌법인, 컴플라이언스~안전교육</div>
+                            <div className="bg-[#6b7280] text-white px-4 py-4 rounded-lg text-center" style={{width: "420px", minHeight: "70px"}}>
+                              <div className="text-sm font-medium mb-2">다양한 유형 캠페인 운영</div>
+                              <div className="opacity-80 text-xs">본사~글로벌법인, 컴플라이언스~안전교육</div>
                             </div>
                           </div>
                         </div>
