@@ -4717,199 +4717,248 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
-                {/* 활용 기술 */}
-                <div className="mb-6">
-                  <h2 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                    <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">{selectedProject.id === "5" ? "4" : selectedProject.id === "1" ? "4" : selectedProject.id === "3" ? "6" : "5"}</span>
-                    활용 기술
-                  </h2>
-                </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mb-8">
-                  {selectedProject.id === "1" && (
-                    <>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Adobe Creative Suite</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">Premiere Pro, After Effects, Photoshop</div>
+                {/* 활용 기술 섹션 - 모든 프로젝트에 대해 새로운 스타일로 통일 */}
+                {selectedProject.id !== "5" && selectedProject.id !== "6" && (
+                  <div className="mb-12">
+                    <div className="mb-6">
+                      <h2 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">
+                          {selectedProject.id === "1" ? "4" : selectedProject.id === "2" ? "5" : selectedProject.id === "3" ? "6" : selectedProject.id === "4" ? "4" : "5"}
+                        </span>
+                        활용 기술
+                      </h2>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {selectedProject.id === "1" && (
+                          <>
+                            <div className="space-y-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  🎬 영상 제작
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Premiere Pro</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">영상 편집</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">After Effects</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">모션 그래픽</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Photoshop</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">그래픽 편집</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  🤖 AI 기술
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Midjourney</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">이미지 생성</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Stable Diffusion</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">ComfyUI</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="space-y-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  ⚙️ 자동화
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Python</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">스크립트</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">OCR</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">화면 인식</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  📊 데이터
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">SnowFlake</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">데이터웨어</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">API 연동</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">통합</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </>
+                        )}
+
+                        {selectedProject.id === "2" && (
+                          <>
+                            <div className="space-y-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  🎥 촬영 장비
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">BMPCC 6K</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">시네마급</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">브랜드 LUT</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">컬러 그레이딩</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  🎬 편집 도구
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Premiere Pro</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">편집</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">DaVinci Resolve</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">색상 보정</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">After Effects</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">모션 그래픽</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="space-y-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  ⚙️ 자동화 시스템
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Python</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">워크플로우</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">FFmpeg</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">비디오 처리</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  🎨 그래픽 도구
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Photoshop</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">이미지 편집</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Illustrator</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">벡터 디자인</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </>
+                        )}
+
+                        {selectedProject.id === "4" && (
+                          <>
+                            <div className="space-y-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  🎬 영상 제작
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Premiere Pro</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">영상 편집</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">After Effects</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">모션 그래픽</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">DaVinci Resolve</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">색상 보정</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  🌍 현지화
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">베트남어 번역</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">현지 협력</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">문화 적응</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">로컬라이제이션</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="space-y-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  📱 소셜 미디어
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">YouTube</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">동영상 플랫폼</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Instagram</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">비주얼 콘텐츠</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                                <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                                  🎨 그래픽 디자인
+                                </h3>
+                                <div className="space-y-2">
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Photoshop</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">이미지 편집</span>
+                                  </div>
+                                  <div className="flex justify-between items-center">
+                                    <span className="text-sm text-gray-700">Illustrator</span>
+                                    <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">로고 디자인</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </>
+                        )}
                       </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">생성형 AI</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">Midjourney, Stable Diffusion ComfyUI</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">자동화 개발</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">Python, OCR 화면 인식</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">데이터 설계</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">SnowFlake, API 연동</div>
-                      </div>
-                    </>
-                  )}
-                  {selectedProject.id === "2" && (
-                    <>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">BMPCC 6K</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">시네마틱 품질 촬영 장비</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">브랜드 LUT</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">전용 컬러 그레이딩 시스템</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Python</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">대규모 편집 워크플로우 자동화</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">FFmpeg</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">오픈소스 비디오 처리 엔진</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">DaVinci Resolve</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">전문 색상 보정 도구</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Premiere Pro</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">영상 편집 및 구성</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">After Effects</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">모션 그래픽 및 합성</div>
-                      </div>
-                    </>
-                  )}
-                  {selectedProject.id === "3" && (
-                    <>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Found Footage</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">Screen Life 기법의 핵심 도구<br/>실제 화면 녹화 및 편집</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Photoshop</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">이미지 편집 및 합성</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">After Effects</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">모션 그래픽 및 애니메이션</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Premiere Pro</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">영상 편집 및 사운드</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Stable Diffusion</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">사용자 리서치 기반 시각 자료 생성</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">User Research</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">뎁스 인터뷰, 페르소나, 유저시나리오</div>
-                      </div>
-                    </>
-                  )}
-                  {selectedProject.id === "4" && (
-                    <>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">영상 편집</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">Premiere Pro</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">모션 그래픽</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">After Effects</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">현장 커뮤니케이션</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">베트남 인플루언서 소통</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">촬영 장비</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">핸디캠 활용 자연스러운 촬영</div>
-                      </div>
-                    </>
-                  )}
-                  {selectedProject.id === "5" && (
-                    <>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Python</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">자동화 스크립트 및 데이터 처리</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">ComfyUI</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">일관된 캐릭터 및 환경 생성</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Midjourney</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">고품질 컨셉 아트 및 환경 디자인</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Stable Diffusion</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">맞춤형 이미지 생성 및 편집</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">SnowFlake</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">대용량 데이터 분석 및 처리</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Gather API</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">메타버스 플랫폼 연동 및 제어</div>
-                      </div>
-                    </>
-                  )}
-                  {selectedProject.id === "6" && (
-                    <>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Premiere Pro</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">디지털 화면 기반 영상 편집</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">After Effects</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">모션 그래픽 및 화면 전환 효과</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Photoshop</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">UI 기반 화면 요소 제작</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Stable Diffusion</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">사용자 리서치 기반 시각 자료 생성</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Midjourney</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">디지털 환경 시각화</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">User Research</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">뎁스 인터뷰, 페르소나, 유저시나리오</div>
-                      </div>
-                    </>
-                  )}
-                  {selectedProject.id === "7" && (
-                    <>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Found Footage</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">Screen Life 기법의 핵심 도구<br/>실제 화면 녹화 및 편집</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Photoshop</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">화면 요소 편집 및 UI 디자인</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">After Effects</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">고정 화면 중심 모션 그래픽</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Premiere Pro</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">메신저·브라우저 환경 영상 편집</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Stable Diffusion</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">효율적 시각 자료 생성</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">User Research</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">화면 전환 회피 행동 분석</div>
-                      </div>
-                    </>
-                  )}
-                </div>
+                    </div>
+                  </div>
+                )}
 
                 {/* PM & 성과 (삼성 프로젝트만) */}
                 {selectedProject.id === "3" && (
