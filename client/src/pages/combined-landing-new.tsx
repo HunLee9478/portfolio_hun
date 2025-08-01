@@ -4777,7 +4777,7 @@ export default function CombinedLanding() {
                 )}
 
                 {/* 활용 기술 섹션 - 모든 프로젝트에 대해 새로운 스타일로 통일 */}
-                {selectedProject.id !== "6" && (
+                {selectedProject.id !== "6" && selectedProject.id !== "7" && (
                   <div className="mb-12">
                     <div className="mb-6">
                       <h2 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
