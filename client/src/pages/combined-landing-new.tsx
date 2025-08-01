@@ -469,14 +469,14 @@ export default function CombinedLanding() {
     {
       id: "5",
       src: MetaverseMainImage,
-      alt: "메타버스 기반 게임형 디지털 캠페인",
-      title: "메타버스 기반 게임형 디지털 캠페인",
+      alt: "Gather, 게임형 메타버스 캠페인",
+      title: "Gather, 게임형 메타버스 캠페인",
       subtitle: "AI 활용 메타버스 환경 구축",
-      description: "METAVERSE CAMPAIGN\n게임형 디지털 캠페인 기획·제작",
-      category: "Metaverse & AI",
+      description: "METAVERSE Campagin\n게임형 디지털 캠페인 기획·제작",
+      category: "Metaverse & Campagin",
       year: "2023",
-      client: "NH농협, 삼성교육재단, 한국증권 외 2개사",
-      role: "AI 기획, 메타버스 환경 구축",
+      client: "NH농협, 삼성교육재단 외 3개사",
+      role: "캠페인 기획, 메타버스 환경 구축",
       tools: ["Python", "ComfyUI", "Midjourney", "Stable Diffusion", "SnowFlake", "Gather API"],
       images: [
         MetaverseOfficeSpace,
@@ -1771,7 +1771,7 @@ export default function CombinedLanding() {
       {/* 프로젝트 모달 - 이전 코드 구조 적용 */}
       {showProjectModal && selectedProject && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white w-full max-w-5xl h-[90vh] rounded-xl shadow-2xl relative tracking-tight leading-relaxed overflow-hidden">
+          <div className="bg-white rounded-xl shadow-2xl relative tracking-tight leading-relaxed overflow-hidden" style={{ width: "90vw", height: "50.625vw", maxWidth: "1440px", maxHeight: "810px", minWidth: "800px", minHeight: "450px" }}>
             <div className="h-full overflow-y-scroll">
               <div className="px-8 lg:px-16 pb-2 pt-16">
                 {/* Back 버튼 */}
