@@ -2494,24 +2494,24 @@ export default function CombinedLanding() {
                             </div>
                           </div>
                           <div className="p-4 bg-white">
-                            <div className="flex flex-col items-center space-y-3">
+                            <div className="flex flex-col items-center space-y-2 max-w-2xl mx-auto">
                               {/* 최상단 */}
-                              <div className="bg-yellow-100 border-2 border-yellow-300 rounded-lg p-4 w-80 text-center hover:transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg">
-                                <div className="text-sm font-bold text-gray-800 mb-2">
+                              <div className="bg-yellow-100 border-2 border-yellow-300 rounded-lg p-3 w-64 text-center hover:transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg">
+                                <div className="text-sm font-bold text-gray-800 mb-1">
                                   👑 학습 효과 전환
                                 </div>
                                 <div className="text-xs text-gray-600">회피 행동을 학습 효과로 전환하는 구조 설계</div>
                               </div>
                               {/* 중간단 */}
-                              <div className="bg-blue-100 border-2 border-blue-300 rounded-lg p-4 w-96 text-center hover:transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg">
-                                <div className="text-sm font-bold text-gray-800 mb-2">
+                              <div className="bg-blue-100 border-2 border-blue-300 rounded-lg p-3 w-80 text-center hover:transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg">
+                                <div className="text-sm font-bold text-gray-800 mb-1">
                                   🎨 웹툰형 시각 구성
                                 </div>
                                 <div className="text-xs text-gray-600">페르소나별 선호 디지털 환경(메신저, 브라우저, 문서)을 활용한 혁신적 구성</div>
                               </div>
                               {/* 기반 */}
-                              <div className="bg-green-100 border-2 border-green-300 rounded-lg p-4 w-full text-center hover:transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg">
-                                <div className="text-sm font-bold text-gray-800 mb-2">
+                              <div className="bg-green-100 border-2 border-green-300 rounded-lg p-3 w-96 text-center hover:transform hover:-translate-y-1 transition-all duration-300 hover:shadow-lg">
+                                <div className="text-sm font-bold text-gray-800 mb-1">
                                   🏗️ 기존 강의형 콘텐츠 한계 극복
                                 </div>
                                 <div className="text-xs text-gray-600">화면 전환 순간을 활용하여 임팩트 있는 메시지 배치</div>
