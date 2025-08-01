@@ -233,8 +233,8 @@ export default function CombinedLanding() {
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0);
   const [isClosingGallery, setIsClosingGallery] = useState(false);
 
-  // 상세 섹션 확장 상태
-  const [expandedSection, setExpandedSection] = useState<string | null>(null);
+  // 상세 섹션 확장 상태 - 모든 섹션 기본적으로 열린 상태
+  const [expandedSection, setExpandedSection] = useState<string | null>('all');
 
   // 개발자 모드 상태
   const [clickCount, setClickCount] = useState(0);
@@ -2434,9 +2434,9 @@ export default function CombinedLanding() {
                               <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
                               <span className="font-medium">데이터 분석 관점 - 상세 프로세스</span>
                             </div>
-                            <span className="text-lg">{expandedSection === 'data-analysis' ? '−' : '+'}</span>
+                            <span className="text-lg">{(expandedSection === 'data-analysis' || expandedSection === 'all') ? '−' : '+'}</span>
                           </div>
-                          {expandedSection === 'data-analysis' && (
+                          {(expandedSection === 'data-analysis' || expandedSection === 'all') && (
                             <div className="p-4 bg-white space-y-4">
                               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                                 <h6 className="text-sm font-medium text-[#282623] mb-2">상황 분석</h6>
@@ -2462,9 +2462,9 @@ export default function CombinedLanding() {
                               <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
                               <span className="font-medium">콘텐츠 제작 관점 - 기술 구현</span>
                             </div>
-                            <span className="text-lg">{expandedSection === 'content-creation' ? '−' : '+'}</span>
+                            <span className="text-lg">{(expandedSection === 'content-creation' || expandedSection === 'all') ? '−' : '+'}</span>
                           </div>
-                          {expandedSection === 'content-creation' && (
+                          {(expandedSection === 'content-creation' || expandedSection === 'all') && (
                             <div className="p-4 bg-white space-y-6">
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
@@ -2556,9 +2556,9 @@ export default function CombinedLanding() {
                               <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
                               <span className="font-medium">현장 운영 관점 - 실시간 최적화</span>
                             </div>
-                            <span className="text-lg">{expandedSection === 'live-operation' ? '−' : '+'}</span>
+                            <span className="text-lg">{(expandedSection === 'live-operation' || expandedSection === 'all') ? '−' : '+'}</span>
                           </div>
-                          {expandedSection === 'live-operation' && (
+                          {(expandedSection === 'live-operation' || expandedSection === 'all') && (
                             <div className="p-4 bg-white">
                               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                                 <h6 className="text-sm font-medium text-[#282623] mb-2">실시간 소통 전략</h6>
