@@ -5237,51 +5237,25 @@ export default function CombinedLanding() {
                         역할
                       </h3>
                       
-                      {/* 원형 프로세스 다이어그램 */}
+                      {/* 간단한 3개 관점 다이어그램 */}
                       <div className="bg-gray-100 rounded-lg p-6 border border-gray-300 mb-6">
-                        <div className="text-center mb-6">
+                        <div className="text-center mb-4">
                           <div className="inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded-md text-sm font-medium">3개 관점 통합 운영</div>
                         </div>
                         
-                        <div className="relative" style={{height: "200px"}}>
-                          <svg width="100%" height="200" viewBox="0 0 500 200" className="overflow-visible">
-                            {/* 중앙 핵심 원 */}
-                            <circle cx="250" cy="100" r="40" fill="#374151" opacity="0.1" stroke="#374151" strokeWidth="2"/>
-                            <text x="250" y="95" textAnchor="middle" className="text-xs fill-gray-800 font-medium">글로벌</text>
-                            <text x="250" y="108" textAnchor="middle" className="text-xs fill-gray-800 font-medium">캠페인</text>
-                            
-                            {/* 3개 관점 원들 */}
-                            {/* 통합 기획 (상단) */}
-                            <circle cx="250" cy="30" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
-                            <text x="250" y="27" textAnchor="middle" className="text-xs fill-gray-700 font-medium">통합 기획</text>
-                            <text x="250" y="38" textAnchor="middle" className="text-xs fill-gray-600">글로벌 관리</text>
-                            
-                            {/* 실시간 운영 (좌하) */}
-                            <circle cx="180" cy="150" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
-                            <text x="180" y="147" textAnchor="middle" className="text-xs fill-gray-700 font-medium">실시간 운영</text>
-                            <text x="180" y="158" textAnchor="middle" className="text-xs fill-gray-600">위기 대응</text>
-                            
-                            {/* 기술 통합 (우하) */}
-                            <circle cx="320" cy="150" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
-                            <text x="320" y="147" textAnchor="middle" className="text-xs fill-gray-700 font-medium">기술 통합</text>
-                            <text x="320" y="158" textAnchor="middle" className="text-xs fill-gray-600">제작-운영</text>
-                            
-                            {/* 연결선들 */}
-                            <line x1="250" y1="70" x2="250" y2="60" stroke="#374151" strokeWidth="2"/>
-                            <line x1="220" y1="120" x2="210" y2="140" stroke="#374151" strokeWidth="2"/>
-                            <line x1="280" y1="120" x2="290" y2="140" stroke="#374151" strokeWidth="2"/>
-                            
-                            {/* 화살표 마커 */}
-                            <defs>
-                              <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                                <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
-                              </marker>
-                            </defs>
-                            
-                            <line x1="250" y1="70" x2="250" y2="60" stroke="#374151" strokeWidth="2" markerEnd="url(#arrow)"/>
-                            <line x1="220" y1="120" x2="210" y2="140" stroke="#374151" strokeWidth="2" markerEnd="url(#arrow)"/>
-                            <line x1="280" y1="120" x2="290" y2="140" stroke="#374151" strokeWidth="2" markerEnd="url(#arrow)"/>
-                          </svg>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                          <div className="bg-white rounded-lg p-4 border border-gray-300">
+                            <div className="text-sm font-medium text-gray-800 mb-1">통합 기획</div>
+                            <div className="text-xs text-gray-600">글로벌 관리</div>
+                          </div>
+                          <div className="bg-white rounded-lg p-4 border border-gray-300">
+                            <div className="text-sm font-medium text-gray-800 mb-1">실시간 운영</div>
+                            <div className="text-xs text-gray-600">위기 대응</div>
+                          </div>
+                          <div className="bg-white rounded-lg p-4 border border-gray-300">
+                            <div className="text-sm font-medium text-gray-800 mb-1">기술 통합</div>
+                            <div className="text-xs text-gray-600">제작-운영</div>
+                          </div>
                         </div>
                       </div>
 
@@ -5389,74 +5363,74 @@ export default function CombinedLanding() {
                       </h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="space-y-4">
-                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-32">
+                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-36">
                             <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                               🎯 실시간 운영
                             </h3>
                             <div className="space-y-2">
                               <div className="flex justify-between items-center">
-                                <span className="text-sm text-[#58534e]">라이브 위기 대응</span>
+                                <span className="text-xs text-[#58534e]">라이브 위기 대응</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">즉시 해결</span>
                               </div>
                               <div className="flex justify-between items-center">
-                                <span className="text-sm text-[#58534e]">큐시트 수정</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">실시간 최적화</span>
+                                <span className="text-xs text-[#58534e]">큐시트 수정</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">최적화</span>
                               </div>
                               <div className="flex justify-between items-center">
-                                <span className="text-sm text-[#58534e]">참가자 반응 분석</span>
+                                <span className="text-xs text-[#58534e]">참가자 반응 분석</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">모니터링</span>
                               </div>
                             </div>
                           </div>
 
-                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
+                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-28">
                             <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                               🌐 다국어 소통
                             </h3>
                             <div className="space-y-2">
                               <div className="flex justify-between items-center">
-                                <span className="text-sm text-[#58534e]">통역 협업</span>
+                                <span className="text-xs text-[#58534e]">통역 협업</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">전문 도메인</span>
                               </div>
                               <div className="flex justify-between items-center">
-                                <span className="text-sm text-[#58534e]">글로벌 소통</span>
+                                <span className="text-xs text-[#58534e]">글로벌 소통</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">완벽 구현</span>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div className="space-y-4">
-                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-32">
+                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-36">
                             <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                               🔧 기술 통합
                             </h3>
                             <div className="space-y-2">
                               <div className="flex justify-between items-center">
-                                <span className="text-sm text-[#58534e]">송출 시스템</span>
+                                <span className="text-xs text-[#58534e]">송출 시스템</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">안정적 방송</span>
                               </div>
                               <div className="flex justify-between items-center">
-                                <span className="text-sm text-[#58534e]">그래픽 제작</span>
+                                <span className="text-xs text-[#58534e]">그래픽 제작</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">비주얼 지원</span>
                               </div>
                               <div className="flex justify-between items-center">
-                                <span className="text-sm text-[#58534e]">벤더 커뮤니케이션</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">통합 관리</span>
+                                <span className="text-xs text-[#58534e]">벤더 커뮤니케이션</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-1 py-1 rounded">통합 관리</span>
                               </div>
                             </div>
                           </div>
 
-                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
+                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-28">
                             <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                               🔄 역할 전환
                             </h3>
                             <div className="space-y-2">
                               <div className="flex justify-between items-center">
-                                <span className="text-sm text-[#58534e]">진행자-운영자</span>
+                                <span className="text-xs text-[#58534e]">진행자-운영자</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">이중 역할</span>
                               </div>
                               <div className="flex justify-between items-center">
-                                <span className="text-sm text-[#58534e]">신뢰성 확보</span>
+                                <span className="text-xs text-[#58534e]">신뢰성 확보</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">위기 대응</span>
                               </div>
                             </div>
