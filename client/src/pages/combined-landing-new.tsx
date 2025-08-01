@@ -2267,65 +2267,11 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 4. 역할 */}
-                    <div className="mb-8">
-                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
-                        역할
-                      </h3>
-                      <div className="space-y-6">
-                        {/* 데이터 분석 관점 */}
-                        <div>
-                          <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
-                            <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                            데이터 분석 관점 - 근본 문제 발견
-                          </h4>
-                          <div className="ml-4 space-y-2">
-                            <div className="text-sm text-[#58534e] leading-relaxed">
-                              <span className="font-medium text-[#282623]">1.</span> 사용자 행동 로그 분석 → 온라인 캠페인 참여도 편차가 심해 기존 평균값이나 중위값으로는 실제 관심도를 측정할 수 없음을 확인
-                            </div>
-                            <div className="text-sm text-[#58534e] leading-relaxed">
-                              <span className="font-medium text-[#282623]">2.</span> 설문조사 임의 체크, 교육 콘텐츠 빠른 스킵 등 형식적 참여 패턴을 수치로 확인하여 진성 참여 유도 전략의 필요성 도출
-                            </div>
-                          </div>
-                        </div>
-
-                        {/* 콘텐츠 제작 관점 */}
-                        <div>
-                          <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
-                            <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                            콘텐츠 제작 관점 - 혁신적 환경 구현
-                          </h4>
-                          <div className="ml-4 space-y-2">
-                            <div className="text-sm text-[#58534e] leading-relaxed">
-                              <span className="font-medium text-[#282623]">1.</span> Python, ComfyUI, Midjourney, Stable Diffusion을 활용해 사무실, 카페 등 친숙한 일상 공간에 퀘스트 요소를 자연스럽게 결합한 메타버스 맵 직접 제작
-                            </div>
-                            <div className="text-sm text-[#58534e] leading-relaxed">
-                              <span className="font-medium text-[#282623]">2.</span> 완전히 새로운 공간이 아닌 '변화된 일상'을 통해 초기 진입 장벽은 낮추면서 지속적인 탐험 동기는 제공하는 UX 설계
-                            </div>
-                          </div>
-                        </div>
-
-                        {/* 현장 운영 관점 */}
-                        <div>
-                          <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
-                            <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                            현장 운영 관점 - 실시간 소통 최적화
-                          </h4>
-                          <div className="ml-4">
-                            <div className="text-sm text-[#58534e] leading-relaxed">
-                              퀘스트를 자동화하지 않고 진행자가 직접 실시간 소통으로 참가자 반응을 즉시 파악하고 온라인 캠페인, 행사 호응 유도
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
                     {/* 메타버스 프로젝트 주요 성과 */}
                     {selectedProject.id === "5" && (
                       <div className="mb-8">
                         <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                          <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
+                          <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
                           주요 성과
                         </h3>
                         <div className="space-y-5">
@@ -2408,6 +2354,60 @@ export default function CombinedLanding() {
                         </div>
                       </div>
                     )}
+
+                    {/* 5. 역할 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
+                        역할
+                      </h3>
+                      <div className="space-y-6">
+                        {/* 데이터 분석 관점 */}
+                        <div>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                            데이터 분석 관점 - 근본 문제 발견
+                          </h4>
+                          <div className="ml-4 space-y-2">
+                            <div className="text-sm text-[#58534e] leading-relaxed">
+                              <span className="font-medium text-[#282623]">1.</span> 사용자 행동 로그 분석 → 온라인 캠페인 참여도 편차가 심해 기존 평균값이나 중위값으로는 실제 관심도를 측정할 수 없음을 확인
+                            </div>
+                            <div className="text-sm text-[#58534e] leading-relaxed">
+                              <span className="font-medium text-[#282623]">2.</span> 설문조사 임의 체크, 교육 콘텐츠 빠른 스킵 등 형식적 참여 패턴을 수치로 확인하여 진성 참여 유도 전략의 필요성 도출
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 콘텐츠 제작 관점 */}
+                        <div>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
+                            <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            콘텐츠 제작 관점 - 혁신적 환경 구현
+                          </h4>
+                          <div className="ml-4 space-y-2">
+                            <div className="text-sm text-[#58534e] leading-relaxed">
+                              <span className="font-medium text-[#282623]">1.</span> Python, ComfyUI, Midjourney, Stable Diffusion을 활용해 사무실, 카페 등 친숙한 일상 공간에 퀘스트 요소를 자연스럽게 결합한 메타버스 맵 직접 제작
+                            </div>
+                            <div className="text-sm text-[#58534e] leading-relaxed">
+                              <span className="font-medium text-[#282623]">2.</span> 완전히 새로운 공간이 아닌 '변화된 일상'을 통해 초기 진입 장벽은 낮추면서 지속적인 탐험 동기는 제공하는 UX 설계
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 현장 운영 관점 */}
+                        <div>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
+                            <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                            현장 운영 관점 - 실시간 소통 최적화
+                          </h4>
+                          <div className="ml-4">
+                            <div className="text-sm text-[#58534e] leading-relaxed">
+                              퀘스트를 자동화하지 않고 진행자가 직접 실시간 소통으로 참가자 반응을 즉시 파악하고 온라인 캠페인, 행사 호응 유도
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                   </div>
                 )}
