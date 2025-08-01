@@ -5246,7 +5246,7 @@ export default function CombinedLanding() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                           <div className="bg-white rounded-lg p-4 border border-gray-300">
                             <div className="text-sm font-medium text-gray-800 mb-1">통합 기획</div>
-                            <div className="text-xs text-gray-600">글로벌 관리</div>
+                            <div className="text-xs text-gray-600">다양한 유형 관리</div>
                           </div>
                           <div className="bg-white rounded-lg p-4 border border-gray-300">
                             <div className="text-sm font-medium text-gray-800 mb-1">실시간 운영</div>
@@ -5264,13 +5264,13 @@ export default function CombinedLanding() {
                           <div className="bg-gray-500 text-white p-3">
                             <div className="flex items-center">
                               <span className="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
-                              <span className="font-medium">통합 캠페인 기획 관점 - 글로벌 스케일 관리</span>
+                              <span className="font-medium">통합 캠페인 기획 관점 - 다양한 유형의 캠페인 기획·관리</span>
                             </div>
                           </div>
                           <div className="p-4 bg-white space-y-4">
                             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                               <h6 className="text-sm font-medium text-gray-800 mb-2">50회 이상 캠페인 전과정 담당</h6>
-                              <p className="text-sm text-gray-600 leading-relaxed">본사부터 관계사 등 아시아, 유럽 등 해외법인 대상 50회 이상 캠페인 기획부터 운영까지 통합 관리</p>
+                              <p className="text-sm text-gray-600 leading-relaxed">컴플라이언스, 핵심역량, 안전교육 등 다양한 유형의 캠페인을 기획부터 운영까지 완전 통합 관리</p>
                             </div>
                             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                               <h6 className="text-sm font-medium text-gray-800 mb-2">규모별 맞춤형 캠페인 설계</h6>
