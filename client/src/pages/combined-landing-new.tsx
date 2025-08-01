@@ -3905,19 +3905,19 @@ export default function CombinedLanding() {
                   <div className="mb-12">
                     {/* 1. 프로젝트 기간 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">1</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">1</span>
                         프로젝트 기간
                       </h3>
-                      <div className="text-sm text-[#6b7280] tracking-tight leading-relaxed">
+                      <div className="text-sm text-[#282623] tracking-tight leading-relaxed">
                         2023.02 ~ 2023.08 (6개월)
                       </div>
                     </div>
 
                     {/* 2. 프로젝트 상세 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">2</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">2</span>
                         프로젝트 상세
                       </h3>
                       <div className="grid grid-cols-2 gap-4 mb-8">
@@ -3940,26 +3940,26 @@ export default function CombinedLanding() {
 
                     {/* 3. 프로젝트 내용 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">3</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
                         프로젝트 내용
                       </h3>
                       <div className="space-y-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#6b7280] mb-3">1. 사용자 중심 분석</h4>
-                          <p className="text-sm text-[#6b7280] leading-relaxed">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 사용자 중심 분석</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
                             뎁스 인터뷰, 페르소나, 유저시나리오를 통해 ALT+TAB 화면 전환 패턴의 심리적 저항 원인을 발견하고 이를 활용한 역발상 전략 수립
                           </p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#6b7280] mb-3">2. 친숙한 디지털 환경 활용</h4>
-                          <p className="text-sm text-[#6b7280] leading-relaxed">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">2. 친숙한 디지털 환경 활용</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
                             메신저, 브라우저, 문서 등 일상적으로 사용하는 화면 구성을 통해 소리 없이도 완전한 메시지 전달이 가능한 콘텐츠 구조 설계
                           </p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#6b7280] mb-3">3. 효율적 제작 시스템</h4>
-                          <p className="text-sm text-[#6b7280] leading-relaxed">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 효율적 제작 시스템</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
                             고정 화면 중심 연출을 통해 다국어 버전 제작의 효율성을 극대화하고 글로벌 전개 기반 마련
                           </p>
                         </div>
@@ -3968,61 +3968,61 @@ export default function CombinedLanding() {
 
                     {/* 4. 주요 성과 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">4</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
                         주요 성과
                       </h3>
                       <div className="space-y-3">
                         <div className="flex items-start">
-                          <span className="text-sm text-[#6b7280] font-medium mr-2">1.</span>
-                          <span className="text-sm text-[#6b7280] leading-relaxed">경쟁사 대비 30% 높은 단가로 수주 성공</span>
+                          <span className="text-sm text-[#282623] font-medium mr-2">1.</span>
+                          <span className="text-sm text-[#58534e] leading-relaxed">경쟁사 대비 30% 높은 단가로 수주 성공</span>
                         </div>
                         <div className="flex items-start">
-                          <span className="text-sm text-[#6b7280] font-medium mr-2">2.</span>
-                          <span className="text-sm text-[#6b7280] leading-relaxed">사용자 화면 전환 회피 행동을 역이용한 메신저·브라우저 기반 콘텐츠 포맷 개발</span>
+                          <span className="text-sm text-[#282623] font-medium mr-2">2.</span>
+                          <span className="text-sm text-[#58534e] leading-relaxed">사용자 화면 전환 회피 행동을 역이용한 메신저·브라우저 기반 콘텐츠 포맷 개발</span>
                         </div>
                         <div className="flex items-start">
-                          <span className="text-sm text-[#6b7280] font-medium mr-2">3.</span>
-                          <span className="text-sm text-[#6b7280] leading-relaxed">고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축으로 5개국어 다국어 콘텐츠 개발</span>
+                          <span className="text-sm text-[#282623] font-medium mr-2">3.</span>
+                          <span className="text-sm text-[#58534e] leading-relaxed">고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축으로 5개국어 다국어 콘텐츠 개발</span>
                         </div>
                       </div>
                     </div>
 
                     {/* 6. 핵심 기술 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">6</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
                         핵심 기술
                       </h3>
                       <div className="grid grid-cols-2 gap-4">
                         <div>
-                          <h4 className="text-sm font-medium text-[#6b7280] mb-2">영상 제작</h4>
-                          <p className="text-sm text-[#6b7280] leading-relaxed">Premiere Pro, After Effects를 활용한 디지털 화면 기반 포맷 및 모션 그래픽 제작</p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-2">영상 제작</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">Premiere Pro, After Effects를 활용한 디지털 화면 기반 포맷 및 모션 그래픽 제작</p>
                         </div>
                         <div>
-                          <h4 className="text-sm font-medium text-[#6b7280] mb-2">그래픽 리소스</h4>
-                          <p className="text-sm text-[#6b7280] leading-relaxed">Photoshop, Stable Diffusion, Midjourney로 UI 기반 화면 요소 및 시각 자료 생성</p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-2">그래픽 리소스</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">Photoshop, Stable Diffusion, Midjourney로 UI 기반 화면 요소 및 시각 자료 생성</p>
                         </div>
                         <div>
-                          <h4 className="text-sm font-medium text-[#6b7280] mb-2">사용자 리서치</h4>
-                          <p className="text-sm text-[#6b7280] leading-relaxed">뎁스 인터뷰, 페르소나 설계, 유저시나리오 분석을 통한 사용자 중심 콘텐츠 기획</p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-2">사용자 리서치</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">뎁스 인터뷰, 페르소나 설계, 유저시나리오 분석을 통한 사용자 중심 콘텐츠 기획</p>
                         </div>
                         <div>
-                          <h4 className="text-sm font-medium text-[#6b7280] mb-2">다국어 최적화</h4>
-                          <p className="text-sm text-[#6b7280] leading-relaxed">고정 화면 구조를 활용한 효율적 다국어 버전 제작 시스템 구축</p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-2">다국어 최적화</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">고정 화면 구조를 활용한 효율적 다국어 버전 제작 시스템 구축</p>
                         </div>
                       </div>
                     </div>
 
                     {/* 7. 철학 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">7</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">7</span>
                         철학
                       </h3>
                       <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-                        <h4 className="text-base font-medium text-[#6b7280] mb-4">"데이터 그 너머에 숨겨진 이용자들의 마음"</h4>
-                        <div className="space-y-4 text-sm text-[#6b7280] leading-relaxed">
+                        <h4 className="text-base font-medium text-[#282623] mb-4">"데이터 그 너머에 숨겨진 이용자들의 마음"</h4>
+                        <div className="space-y-4 text-sm text-[#58534e] leading-relaxed">
                           <p>
                             숫자 뒤에 숨은 사용자들의 진짜 마음을 읽어냅니다. 삼성물산 컴플라이언스 캠페인에서 임직원들이 ALT+TAB으로 화면을 회피하는 패턴을 발견했을 때, 단순한 무관심이 아닌 '강제성에 대한 심리적 저항'임을 뎁스 인터뷰로 검증했습니다.
                           </p>
