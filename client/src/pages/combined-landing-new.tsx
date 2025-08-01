@@ -3797,7 +3797,7 @@ export default function CombinedLanding() {
                         </div>
                       </>
                     )}
-                    {selectedProject.id === "5" && (
+                    {selectedProject.id === "5" && false && (
                       <>
                         <div>
                           <AdvancedEditableText
