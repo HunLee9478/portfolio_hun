@@ -1205,7 +1205,7 @@ export default function CombinedLanding() {
                   </h5>
                   <p
                     className={`text-gray-900 font-medium ${FONT_SIZES.small}`}
-                  >콘텐츠 기획, 제작, 운영</p>
+                  >캠페인 콘텐츠 기획, 제작, 운영</p>
                 </div>
 
                 <div>
