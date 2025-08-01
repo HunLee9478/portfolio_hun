@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼성물산 컴플라이언스 캠페인 콘텐츠 기획·제작</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        @media print {
+            body { margin: 0; padding: 0; }
+            .no-print { display: none; }
+        }
+        .tracking-tight { letter-spacing: -0.025em; }
+        .leading-relaxed { line-height: 1.6; }
+        
+        /* 원형 프로세스 애니메이션 */
+        .circle-process {
+            animation: rotate 20s linear infinite;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        /* 피라미드 구조 */
+        .pyramid-level {
+            transition: all 0.3s ease;
+        }
+        .pyramid-level:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        /* 트리 다이어그램 */
+        .tree-branch {
+            position: relative;
+        }
+        .tree-branch::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            width: 15px;
+            height: 2px;
+            background: #6b7280;
+        }
+        .tree-branch::after {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: 2px;
+            height: 50%;
+            background: #6b7280;
+        }
+        
+        /* 타임라인 */
+        .timeline-item {
+            position: relative;
+            padding-left: 40px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: -20px;
+            width: 2px;
+            background: #6b7280;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #374151;
+        }
+        .timeline-item:last-child::before {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="min-h-screen bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-2xl relative tracking-tight leading-relaxed overflow-hidden" style="width: 90vw; max-width: 1200px; min-width: 800px;">
+            <div class="h-full">
+                <div class="px-8 lg:px-16 pb-2 pt-16">
+                    <div class="mb-8">
+                        <button class="no-print text-sm text-gray-600 hover:text-gray-800 transition-colors flex items-center gap-1">← Back To All Work</button>
+                    </div>
+
+                    <div class="mb-12">
+                        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                            <div class="lg:col-span-3">
+                                <h1 class="text-4xl lg:text-5xl text-gray-800 leading-tight mb-0 font-semibold">삼성물산 컴플라이언스 캠페인 콘텐츠 기획·제작</h1>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                                <div>
+                                    <h5 class="opacity-50 text-base font-normal mb-2">Categories</h5>
+                                    <span class="text-sm text-gray-800">콘텐츠 기획·제작</span>
+                                </div>
+                                <div>
+                                    <h5 class="opacity-50 text-base font-normal mb-2">Client</h5>
+                                    <span class="text-sm text-gray-800">삼성물산</span>
+                                </div>
+                                <div>
+                                    <h5 class="opacity-50 text-base font-normal mb-2">Role</h5>
+                                    <span class="text-sm text-gray-800">사용자 리서치, 콘텐츠 기획, 제작 효율화</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-gray-800 text-sm tracking-tight leading-relaxed">
+                                    사용자 화면 전환 회피 행동을 역이용한 혁신적 메신저·브라우저 기반 콘텐츠 포맷을 개발하여 경쟁사 대비 30% 높은 단가로 수주하고, 고정 화면 중심 연출로 제작 효율성을 극대화한 5개국어 다국어 콘텐츠 제작 프로젝트입니다.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-8 lg:px-16 pb-12">
+                    <div class="mb-12">
+                        <!-- 1. 프로젝트 기간 - 타임라인 -->
+                        <div class="mb-8">
+                            <h3 class="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">1</span>프로젝트 기간
+                            </h3>
+                            <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                                <div class="flex items-center justify-center">
+                                    <div class="flex items-center space-x-8">
+                                        <div class="text-center">
+                                            <div class="w-3 h-3 bg-gray-800 rounded-full mx-auto mb-2"></div>
+                                            <div class="text-xs text-gray-600 mb-1">시작</div>
+                                            <div class="text-sm font-medium text-gray-800">2023.02</div>
+                                        </div>
+                                        <div class="flex-1 h-0.5 bg-gray-300 relative" style="width: 200px;">
+                                            <div class="absolute inset-0 bg-gray-800 rounded" style="width: 100%;"></div>
+                                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-2 py-1 text-xs text-gray-600 border border-gray-300 rounded">6개월</div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="w-3 h-3 bg-gray-800 rounded-full mx-auto mb-2"></div>
+                                            <div class="text-xs text-gray-600 mb-1">완료</div>
+                                            <div class="text-sm font-medium text-gray-800">2023.08</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. 주요성과 - 텍스트 박스 -->
+                        <div class="mb-8">
+                            <h3 class="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">2</span>주요 성과
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                    <h4 class="text-sm font-medium text-gray-800 mb-3">1. 경쟁사 대비 30% 높은 단가로 수주 성공</h4>
+                                    <p class="text-sm text-gray-600 leading-relaxed">혁신적인 콘텐츠 포맷 개발을 통해 기존 강의형 교육 대비 차별화된 가치 제안으로 프리미엄 단가 확보</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                    <h4 class="text-sm font-medium text-gray-800 mb-3">2. 사용자 화면 전환 회피 행동을 역이용한 메신저·브라우저 기반 콘텐츠 포맷 개발</h4>
+                                    <p class="text-sm text-gray-600 leading-relaxed">ALT+TAB 화면 전환 패턴을 학습 효과로 전환하는 창의적 접근법으로 새로운 교육 콘텐츠 포맷 창조</p>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                    <h4 class="text-sm font-medium text-gray-800 mb-3">3. 고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축</h4>
+                                    <p class="text-sm text-gray-600 leading-relaxed">효율적 제작 시스템을 통해 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 다국어 콘텐츠 동시 개발 달성</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. 내용 - 원형 프로세스 -->
+                        <div class="mb-8">
+                            <h3 class="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">3</span>내용
+                            </h3>
+                            <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                                <div class="flex justify-center items-center" style="height: 300px;">
+                                    <div class="relative" style="width: 250px; height: 250px;">
+                                        <!-- 중앙 원 -->
+                                        <div class="absolute inset-0 flex items-center justify-center">
+                                            <div class="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center text-white text-xs font-bold text-center leading-tight">프로젝트<br>핵심</div>
+                                        </div>
+                                        
+                                        <!-- 외부 원형 프로세스 -->
+                                        <div class="absolute inset-0 circle-process">
+                                            <!-- 1단계 -->
+                                            <div class="absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-full">
+                                                <div class="bg-white border-2 border-gray-500 rounded-lg p-3 w-24 text-center">
+                                                    <div class="w-6 h-6 bg-gray-500 text-white rounded-full flex items-center justify-center text-xs font-bold mx-auto mb-2">1</div>
+                                                    <div class="text-xs font-medium text-gray-800 mb-1">사용자 중심</div>
+                                                    <div class="text-xs text-gray-600">분석</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- 2단계 -->
+                                            <div class="absolute top-1/2 -right-2 transform translate-x-full -translate-y-1/2">
+                                                <div class="bg-white border-2 border-gray-500 rounded-lg p-3 w-24 text-center">
+                                                    <div class="w-6 h-6 bg-gray-500 text-white rounded-full flex items-center justify-center text-xs font-bold mx-auto mb-2">2</div>
+                                                    <div class="text-xs font-medium text-gray-800 mb-1">디지털 환경</div>
+                                                    <div class="text-xs text-gray-600">활용</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- 3단계 -->
+                                            <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full">
+                                                <div class="bg-white border-2 border-gray-500 rounded-lg p-3 w-24 text-center">
+                                                    <div class="w-6 h-6 bg-gray-500 text-white rounded-full flex items-center justify-center text-xs font-bold mx-auto mb-2">3</div>
+                                                    <div class="text-xs font-medium text-gray-800 mb-1">효율적 제작</div>
+                                                    <div class="text-xs text-gray-600">시스템</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-center text-xs text-gray-600">
+                                    <i class="fas fa-sync-alt mr-1"></i>순환적 프로세스로 지속적 개선
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4. 역할 -->
+                        <div class="mb-8">
+                            <h3 class="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">4</span>역할
+                            </h3>
+                            
+                            <!-- 전체 프로세스 - 매트릭스 그리드 -->
+                            <div class="bg-gray-100 rounded-lg p-6 border border-gray-300 mb-6">
+                                <div class="text-center mb-6">
+                                    <div class="inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded-md text-sm font-medium">
+                                        <i class="fas fa-th-large mr-2"></i>3개 관점 매트릭스
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4">
+                                    <div class="bg-white border border-gray-400 rounded-lg p-4 text-center">
+                                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                            <i class="fas fa-search text-lg"></i>
+                                        </div>
+                                        <h5 class="text-sm font-bold text-gray-800 mb-2">사용자 리서치</h5>
+                                        <div class="text-xs text-gray-600">행동 패턴 심층 분석</div>
+                                    </div>
+                                    <div class="bg-white border border-gray-400 rounded-lg p-4 text-center">
+                                        <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                            <i class="fas fa-lightbulb text-lg"></i>
+                                        </div>
+                                        <h5 class="text-sm font-bold text-gray-800 mb-2">콘텐츠 기획</h5>
+                                        <div class="text-xs text-gray-600">혁신적 포맷 개발</div>
+                                    </div>
+                                    <div class="bg-white border border-gray-400 rounded-lg p-4 text-center">
+                                        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                            <i class="fas fa-cogs text-lg"></i>
+                                        </div>
+                                        <h5 class="text-sm font-bold text-gray-800 mb-2">제작 효율화</h5>
+                                        <div class="text-xs text-gray-600">글로벌 확장 전략</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <!-- 사용자 리서치 - 트리 다이어그램 -->
+                                <div class="border border-gray-300 rounded-lg overflow-hidden">
+                                    <div class="bg-gray-500 text-white p-3">
+                                        <div class="flex items-center">
+                                            <span class="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                                            <span class="font-medium"><i class="fas fa-sitemap mr-2"></i>사용자 리서치 관점 - 행동 패턴 심층 분석</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 bg-white">
+                                        <div class="pl-8">
+                                            <div class="text-sm font-medium text-gray-800 mb-4">
+                                                <i class="fas fa-seedling mr-2 text-green-600"></i>리서치 과정
+                                            </div>
+                                            <div class="space-y-3 ml-4">
+                                                <div class="tree-branch bg-gray-50 rounded p-3 border border-gray-200">
+                                                    <div class="text-sm font-medium text-gray-800 mb-1">뎁스 인터뷰</div>
+                                                    <div class="text-xs text-gray-600">법정 교육에 대한 '의무감'과 '거부감' 사이의 심리적 갈등 구조 파악</div>
+                                                </div>
+                                                <div class="tree-branch bg-gray-50 rounded p-3 border border-gray-200">
+                                                    <div class="text-sm font-medium text-gray-800 mb-1">3개 페르소나 도출</div>
+                                                    <div class="text-xs text-gray-600">적극 참여형, 소극 참여형, 회피형 - 각 유형별 학습 동기와 회피 패턴 분석</div>
+                                                </div>
+                                                <div class="tree-branch bg-gray-50 rounded p-3 border border-gray-200">
+                                                    <div class="text-sm font-medium text-gray-800 mb-1">ALT+TAB 패턴 분석</div>
+                                                    <div class="text-xs text-gray-600">유저시나리오 기반으로 ALT+TAB 사용률 90% 발생 시점과 트리거 요인을 구체적으로 식별</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 콘텐츠 기획 - 피라미드 구조 -->
+                                <div class="border border-gray-300 rounded-lg overflow-hidden">
+                                    <div class="bg-gray-500 text-white p-3">
+                                        <div class="flex items-center">
+                                            <span class="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                                            <span class="font-medium"><i class="fas fa-mountain mr-2"></i>콘텐츠 기획 관점 - 혁신적 포맷 개발</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 bg-white">
+                                        <div class="flex flex-col items-center space-y-3">
+                                            <!-- 최상단 -->
+                                            <div class="pyramid-level bg-yellow-100 border-2 border-yellow-300 rounded-lg p-4 w-80 text-center">
+                                                <div class="text-sm font-bold text-gray-800 mb-2">
+                                                    <i class="fas fa-crown mr-2 text-yellow-600"></i>학습 효과 전환
+                                                </div>
+                                                <div class="text-xs text-gray-600">회피 행동을 학습 효과로 전환하는 구조 설계</div>
+                                            </div>
+                                            <!-- 중간단 -->
+                                            <div class="pyramid-level bg-blue-100 border-2 border-blue-300 rounded-lg p-4 w-96 text-center">
+                                                <div class="text-sm font-bold text-gray-800 mb-2">
+                                                    <i class="fas fa-palette mr-2 text-blue-600"></i>웹툰형 시각 구성
+                                                </div>
+                                                <div class="text-xs text-gray-600">페르소나별 선호 디지털 환경(메신저, 브라우저, 문서)을 활용한 혁신적 구성</div>
+                                            </div>
+                                            <!-- 기반 -->
+                                            <div class="pyramid-level bg-green-100 border-2 border-green-300 rounded-lg p-4 w-full text-center">
+                                                <div class="text-sm font-bold text-gray-800 mb-2">
+                                                    <i class="fas fa-foundation mr-2 text-green-600"></i>기존 강의형 콘텐츠 한계 극복
+                                                </div>
+                                                <div class="text-xs text-gray-600">화면 전환 순간을 활용하여 임팩트 있는 메시지 배치</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 제작 효율화 - 타임라인 -->
+                                <div class="border border-gray-300 rounded-lg overflow-hidden">
+                                    <div class="bg-gray-500 text-white p-3">
+                                        <div class="flex items-center">
+                                            <span class="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                                            <span class="font-medium"><i class="fas fa-clock mr-2"></i>제작 효율화 관점 - 글로벌 확장 전략</span>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 bg-white">
+                                        <div class="space-y-4">
+                                            <div class="timeline-item bg-gray-50 rounded p-3 border border-gray-200">
+                                                <div class="text-sm font-medium text-gray-800 mb-1">고정 화면 중심 연출</div>
+                                                <div class="text-xs text-gray-600">제작 프로세스 최적화 기반 구축</div>
+                                            </div>
+                                            <div class="timeline-item bg-gray-50 rounded p-3 border border-gray-200">
+                                                <div class="text-sm font-medium text-gray-800 mb-1">촬영 효율 30% 증대</div>
+                                                <div class="text-xs text-gray-600">표준화된 촬영 환경으로 생산성 향상</div>
+                                            </div>
+                                            <div class="timeline-item bg-gray-50 rounded p-3 border border-gray-200">
+                                                <div class="text-sm font-medium text-gray-800 mb-1">편집 시간 40% 단축</div>
+                                                <div class="text-xs text-gray-600">효율적 후반 작업 프로세스 구현</div>
+                                            </div>
+                                            <div class="timeline-item bg-gray-50 rounded p-3 border border-gray-200">
+                                                <div class="text-sm font-medium text-gray-800 mb-1">5개국어 동시 제작</div>
+                                                <div class="text-xs text-gray-600">한국어, 영어, 중국어, 일본어, 베트남어 - 언어 무관 직관적 시각적 학습 환경</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. 기술 - 카테고리 그룹화 -->
+                        <div class="mb-6">
+                            <h2 class="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                                <span class="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">5</span>활용 기술
+                            </h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-video text-red-600 mr-2"></i>
+                                    <h4 class="text-sm font-medium text-gray-800">영상 제작</h4>
+                                </div>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <div>• <strong>Premiere Pro</strong>: 디지털 화면 기반 포맷 제작</div>
+                                    <div>• <strong>After Effects</strong>: 모션 그래픽 제작</div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-paint-brush text-blue-600 mr-2"></i>
+                                    <h4 class="text-sm font-medium text-gray-800">그래픽 리소스</h4>
+                                </div>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <div>• <strong>Photoshop</strong>: UI 기반 화면 요소 제작</div>
+                                    <div>• <strong>Stable Diffusion</strong>: AI 기반 시각 자료 생성</div>
+                                    <div>• <strong>Midjourney</strong>: 고품질 시각 자료 생성</div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-users text-green-600 mr-2"></i>
+                                    <h4 class="text-sm font-medium text-gray-800">사용자 리서치</h4>
+                                </div>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <div>• <strong>뎁스 인터뷰</strong>: 심리적 갈등 구조 파악</div>
+                                    <div>• <strong>페르소나 설계</strong>: 사용자 유형별 분석</div>
+                                    <div>• <strong>유저시나리오 분석</strong>: 행동 패턴 식별</div>
+                                </div>
+                            </div>
+                            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-globe text-purple-600 mr-2"></i>
+                                    <h4 class="text-sm font-medium text-gray-800">다국어 최적화</h4>
+                                </div>
+                                <div class="space-y-2 text-sm text-gray-600">
+                                    <div>• <strong>고정 화면 구조</strong>: 효율적 다국어 버전 제작</div>
+                                    <div>• <strong>시스템 구축</strong>: 글로벌 전개 기반 마련</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pb-8"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="no-print absolute top-6 right-6 w-10 h-10 bg-white bg-opacity-80 hover:bg-white text-gray-600 hover:text-gray-800 rounded-full flex items-center justify-center transition-all shadow-lg z-10">
+                <span class="text-xl leading-none">×</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
