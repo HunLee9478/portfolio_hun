@@ -3299,7 +3299,7 @@ export default function CombinedLanding() {
                       </div>
 
                       {/* 6. 활용 기술 */}
-                      <div className="mb-8">
+                      <div className="mb-8 mt-8">
                         <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                           <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
                           활용 기술
