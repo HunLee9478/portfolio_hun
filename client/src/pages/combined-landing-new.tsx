@@ -5219,17 +5219,6 @@ export default function CombinedLanding() {
                 {/* 9번 프로젝트 상세 콘텐츠 - Snapask 프리미엄 브랜드 콘텐츠 영상 제작 */}
                 {selectedProject.id === "9" && (
                   <div className="mb-12">
-                    {/* 썸네일 이미지 */}
-                    <div className="mb-8">
-                      <div className="w-full max-w-2xl mx-auto">
-                        <img 
-                          src="/attached_assets/image_1754037041182.png"
-                          alt="Snapask 프리미엄 브랜드 콘텐츠 영상 제작 - 기획 및 제작 과정"
-                          className="w-full h-auto rounded-lg shadow-lg"
-                        />
-                      </div>
-                    </div>
-
                     {/* 1. 프로젝트 기간 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
