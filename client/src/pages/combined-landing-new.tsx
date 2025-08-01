@@ -508,7 +508,7 @@ export default function CombinedLanding() {
       id: "7",
       src: "/assets/projects/samsung-education-studio.jpg",
       alt: "컴플라이언스 캠페인 기획, 제작",
-      title: "컴플라이언스 기획, 제작",
+      title: "컴플라이언스 캠페인 기획, 제작",
       subtitle: "혁신적 메신저·브라우저 기반 콘텐츠 포맷",
       description: "SAMSUNG C&T\n사용자 화면 전환 회피 행동 역이용 혁신 캠페인",
       category: "Campaign Contents",
