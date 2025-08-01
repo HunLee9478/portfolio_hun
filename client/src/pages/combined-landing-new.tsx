@@ -4790,7 +4790,7 @@ export default function CombinedLanding() {
                         {selectedProject.id === "1" && (
                           <>
                             <div className="space-y-4">
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-32">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   🎬 영상 제작
                                 </h3>
@@ -4810,7 +4810,7 @@ export default function CombinedLanding() {
                                 </div>
                               </div>
 
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   🤖 AI 기술
                                 </h3>
@@ -4828,7 +4828,7 @@ export default function CombinedLanding() {
                             </div>
 
                             <div className="space-y-4">
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   ⚙️ 자동화
                                 </h3>
@@ -4844,7 +4844,7 @@ export default function CombinedLanding() {
                                 </div>
                               </div>
 
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   📊 데이터
                                 </h3>
@@ -4866,7 +4866,7 @@ export default function CombinedLanding() {
                         {selectedProject.id === "2" && (
                           <>
                             <div className="space-y-4">
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   🎥 촬영 장비
                                 </h3>
@@ -4882,7 +4882,7 @@ export default function CombinedLanding() {
                                 </div>
                               </div>
 
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-32">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   🎬 편집 도구
                                 </h3>
@@ -4904,7 +4904,7 @@ export default function CombinedLanding() {
                             </div>
 
                             <div className="space-y-4">
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   ⚙️ 자동화 시스템
                                 </h3>
@@ -4920,7 +4920,7 @@ export default function CombinedLanding() {
                                 </div>
                               </div>
 
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   🎨 그래픽 도구
                                 </h3>
@@ -4942,7 +4942,7 @@ export default function CombinedLanding() {
                         {selectedProject.id === "4" && (
                           <>
                             <div className="space-y-4">
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-32">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   🎬 영상 제작
                                 </h3>
@@ -4962,7 +4962,7 @@ export default function CombinedLanding() {
                                 </div>
                               </div>
 
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   🌍 현지화
                                 </h3>
@@ -4980,7 +4980,7 @@ export default function CombinedLanding() {
                             </div>
 
                             <div className="space-y-4">
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   📱 소셜 미디어
                                 </h3>
@@ -4996,7 +4996,7 @@ export default function CombinedLanding() {
                                 </div>
                               </div>
 
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
                                 <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
                                   🎨 그래픽 디자인
                                 </h3>
@@ -5018,7 +5018,7 @@ export default function CombinedLanding() {
                         {selectedProject.id === "5" && (
                           <>
                             <div className="space-y-4">
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-32">
                                 <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                                   🎬 영상 제작
                                 </h3>
@@ -5038,7 +5038,7 @@ export default function CombinedLanding() {
                                 </div>
                               </div>
 
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-32">
                                 <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                                   🤖 AI 기술
                                 </h3>
@@ -5060,7 +5060,7 @@ export default function CombinedLanding() {
                             </div>
 
                             <div className="space-y-4">
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-32">
                                 <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                                   🌐 메타버스 플랫폼
                                 </h3>
@@ -5080,7 +5080,7 @@ export default function CombinedLanding() {
                                 </div>
                               </div>
 
-                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
+                              <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
                                 <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                                   📊 자동화 & 분석
                                 </h3>
