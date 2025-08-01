@@ -485,6 +485,25 @@ export default function CombinedLanding() {
         MetaverseQuest,
       ],
     },
+    {
+      id: "6",
+      src: VRCulturalHeritageImage,
+      alt: "종로구 문화유산 VR 콘텐츠 기획",
+      title: "종로구 문화유산 VR 콘텐츠 기획",
+      subtitle: "문화유산의 VR 디지털 체험",
+      description: "CULTURAL VR\n문화유산 VR 콘텐츠 기획",
+      category: "VR Content & Cultural Heritage",
+      year: "2024",
+      client: "종로구청",
+      role: "VR 콘텐츠 기획, 제작, 문화 연구",
+      tools: ["Unity 3D", "VR Development", "Cultural Research", "3D Modeling", "Photogrammetry"],
+      images: [
+        "/assets/projects/vr-cultural-1.jpg",
+        "/assets/projects/vr-cultural-2.jpg",
+        "/assets/projects/vr-cultural-3.jpg",
+        "/assets/projects/vr-cultural-4.jpg",
+      ],
+    },
   ];
 
   // Gallery items
@@ -1421,7 +1440,7 @@ export default function CombinedLanding() {
               >
 
                 <div className="flex gap-8 pb-4" style={{ width: 'max-content' }}>
-                  {portfolioItems.slice(0, 5).map((item, index) => (
+                  {portfolioItems.slice(0, 6).map((item, index) => (
                     <motion.div
                       key={item.id}
                       className="group cursor-pointer flex-shrink-0"
@@ -1926,6 +1945,22 @@ export default function CombinedLanding() {
                           }}
                         >
                           AI를 활용한 '익숙한 일상 공간의 게임화' 컨셉으로 메타버스 기반 디지털 캠페인을 기획·제작했습니다. 데이터 분석을 통한 문제 진단부터 창의적 솔루션 설계, 실시간 최적화 운영까지 전 과정을 담당하며 5개 고객사 수주 성과를 달성했습니다.
+                        </AdvancedEditableText>
+                      )}
+                      {selectedProject.id === "6" && (
+                        <AdvancedEditableText
+                          textKey={`project-${selectedProject.id}-description`}
+                          className="text-[#282623] text-sm tracking-tight leading-relaxed"
+                          isTextArea={true}
+                          style={{
+                            fontSize: TYPOGRAPHY.fontSize.small,
+                            lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                            color: "#282623",
+                            minHeight: "80px",
+                            width: "100%"
+                          }}
+                        >
+                          종로구의 문화유산을 가상현실(VR) 기술로 체험할 수 있는 콘텐츠를 기획하고 제작했습니다. 전통 문화의 디지털 보존과 체험형 콘텐츠를 통해 문화유산의 가치를 확산시키고, 차세대에게 우리 문화를 전달하는 혁신적인 방법을 제시했습니다.
                         </AdvancedEditableText>
                       )}
                     </div>
@@ -3955,6 +3990,97 @@ export default function CombinedLanding() {
                         </div>
                       </>
                     )}
+                    {selectedProject.id === "6" && (
+                      <>
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-role-1-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 문화유산 디지털 아카이빙
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-role-1-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            전통 문화재의 역사적 가치를 보존하면서 차세대가 쉽게 접근할 수 있는 디지털 형태로 변환하는 작업
+                          </AdvancedEditableText>
+                        </div>
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-role-2-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • VR 환경 구축 및 인터랙션 설계
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-role-2-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            Unity 3D 기반 VR 환경에서 사용자가 자연스럽게 문화유산을 탐험하고 학습할 수 있는 몰입형 경험 설계
+                          </AdvancedEditableText>
+                        </div>
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-role-3-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 3D 모델링 및 포토그래메트리 활용
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-role-3-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            실제 문화재를 정밀 스캐닝하여 VR 환경에서 디테일까지 재현할 수 있는 고품질 3D 모델 제작
+                          </AdvancedEditableText>
+                        </div>
+                      </>
+                    )}
                     {selectedProject.id === "3" && (
                       <>
                         <div>
@@ -4702,6 +4828,30 @@ export default function CombinedLanding() {
                       <div>
                         <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Gather API</div>
                         <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">메타버스 플랫폼 연동 및 제어</div>
+                      </div>
+                    </>
+                  )}
+                  {selectedProject.id === "6" && (
+                    <>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Unity 3D</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">VR 환경 구축 및 인터랙션 개발</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">VR Development</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">가상현실 콘텐츠 제작 및 최적화</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Cultural Research</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">문화유산 조사 및 디지털 아카이빙</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">3D Modeling</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">문화재 3D 모델링 및 텍스처링</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Photogrammetry</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">실제 문화재의 정밀 3D 스캐닝</div>
                       </div>
                     </>
                   )}
