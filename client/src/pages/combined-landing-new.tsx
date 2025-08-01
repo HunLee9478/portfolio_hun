@@ -2199,9 +2199,10 @@ export default function CombinedLanding() {
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">1</span>
                         프로젝트 기간
                       </h3>
-                      <div className="text-sm text-[#58534e] leading-relaxed">
-                        <p><strong>2023.02 - 2023.08 (8개월)</strong></p>
-                        <p>메타버스 플랫폼 구축 및 5개 클라이언트 대상 캠페인 운영</p>
+                      <div>
+                        <span className="text-sm text-[#282623] tracking-tight leading-relaxed" style={{ fontSize: "14px", color: "rgb(40, 38, 35)", lineHeight: "1.6", letterSpacing: "0px", fontFamily: "inherit", fontWeight: "400" }}>
+                          2023.02 - 2023.08 (8개월)
+                        </span>
                       </div>
                     </div>
 
