@@ -523,6 +523,25 @@ export default function CombinedLanding() {
         SamsungEducationMultiscreen,
       ],
     },
+    {
+      id: "8",
+      src: SamsungOfflineImage,
+      alt: "글로벌 IT기업 온·오프라인 캠페인 기획·운영",
+      title: "글로벌 IT기업 온·오프라인 캠페인 기획·운영",
+      subtitle: "23개월간 50회 이상 글로벌 캠페인 운영",
+      description: "GLOBAL IT COMPANY\n온·오프라인 캠페인 기획·운영",
+      category: "Campaign Management",
+      year: "2023.01-2024.11",
+      client: "글로벌 IT기업",
+      role: "통합 기획, 실시간 운영, 기술 통합",
+      tools: ["Campaign Planning", "Real-time Operations", "Technical Integration", "Multi-language Support"],
+      images: [
+        "/assets/projects/samsung-education-filming.jpg",
+        "/assets/projects/samsung-education-multiscreen.jpg",
+        "/assets/projects/samsung-education-screenlife.jpg",
+        "/assets/projects/samsung-education-studio.jpg",
+      ],
+    },
   ];
 
   // Gallery items
@@ -1426,7 +1445,7 @@ export default function CombinedLanding() {
 
               {/* Portfolio Grid - 2 Column Layout */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                {portfolioItems.slice(0, 7).map((item, index) => (
+                {portfolioItems.slice(0, 8).map((item, index) => (
                   <motion.div
                     key={item.id}
                     className="group cursor-pointer"
@@ -4764,7 +4783,7 @@ export default function CombinedLanding() {
                 )}
 
                 {/* 활용 기술 섹션 - 모든 프로젝트에 대해 새로운 스타일로 통일 */}
-                {selectedProject.id !== "6" && selectedProject.id !== "7" && (
+                {selectedProject.id !== "6" && selectedProject.id !== "7" && selectedProject.id !== "8" && (
                   <div className="mb-12">
                     <div className="mb-6">
                       <h2 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
@@ -5114,6 +5133,296 @@ export default function CombinedLanding() {
                       <div>
                         <h3 className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed">• 주요 경쟁 우위 요소</h3>
                         <p className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4">사용자 친화적 분석 및 맞춤형 솔루션 제공, 창의적 기법과 사용자 행동 분석의 효과적 결합, 교육 효과와 브랜드 메시지 전달의 균형있는 통합, 지속 가능한 교육 콘텐츠 제작 방법론 구축</p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* 8번째 프로젝트: 글로벌 IT기업 온·오프라인 캠페인 기획·운영 */}
+                {selectedProject.id === "8" && (
+                  <div className="mb-12">
+                    {/* 1. 프로젝트 기간 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">1</span>
+                        프로젝트 기간
+                      </h3>
+                      <div>
+                        <span className="text-sm text-gray-800 tracking-tight leading-relaxed">2023.01 ~ 2024.11 (23개월)</span>
+                      </div>
+                    </div>
+
+                    {/* 2. 주요 성과 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">2</span>
+                        주요 성과
+                      </h3>
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-gray-800 mb-3">1. 50회 이상 캠페인에서 NPS 4.5 이상 지속 달성</h4>
+                          <p className="text-sm text-gray-600 leading-relaxed">글로벌 규모의 다양한 캠페인에서 일관된 고품질 서비스 제공을 통해 참가자 만족도 최고 수준 유지</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-gray-800 mb-3">2. 출연자 불참, 시스템 오류 등 돌발 상황 발생 시 즉석 대응으로 캠페인 중단 없이 완주</h4>
+                          <p className="text-sm text-gray-600 leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 진행과 참가자 신뢰 확보</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-gray-800 mb-3">3. 아시아, 유럽, 아메리카 전 지역 해외법인 대상 다국어 캠페인 성공적 운영</h4>
+                          <p className="text-sm text-gray-600 leading-relaxed">통역 협업을 통한 전문 도메인 완벽 소통으로 글로벌 스케일 캠페인의 효과적 메시지 전달 달성</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 3. 내용 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">3</span>
+                        내용
+                      </h3>
+                      
+                      {/* 피라미드 구조 시각화 */}
+                      <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 mb-4">
+                        <div className="text-center mb-4">
+                          <h4 className="text-sm font-medium text-gray-800 mb-2">글로벌 캠페인 운영 구조</h4>
+                        </div>
+                        
+                        <div className="space-y-4">
+                          {/* 최상단: 실시간 위기 관리 */}
+                          <div className="flex justify-center">
+                            <div className="bg-gray-800 text-white px-6 py-3 rounded-lg text-center" style={{width: "200px"}}>
+                              <div className="text-xs font-bold mb-1">실시간 위기 관리</div>
+                              <div className="text-xs opacity-80">즉시 대응력</div>
+                            </div>
+                          </div>
+                          
+                          {/* 중간: 전문 도메인 대응 */}
+                          <div className="flex justify-center">
+                            <div className="bg-gray-600 text-white px-6 py-3 rounded-lg text-center" style={{width: "300px"}}>
+                              <div className="text-xs font-bold mb-1">전문 도메인 대응</div>
+                              <div className="text-xs opacity-80">컴플라이언스·핵심역량·안전교육</div>
+                            </div>
+                          </div>
+                          
+                          {/* 기반: 글로벌 스케일 운영 */}
+                          <div className="flex justify-center">
+                            <div className="bg-gray-500 text-white px-6 py-3 rounded-lg text-center" style={{width: "400px"}}>
+                              <div className="text-xs font-bold mb-1">글로벌 스케일 운영</div>
+                              <div className="text-xs opacity-80">본사 ~ 해외법인, 워크숍 ~ 웨비나</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-gray-800 mb-3">1. 글로벌 스케일 운영</h4>
+                          <p className="text-sm text-gray-600 leading-relaxed">본사 임직원부터 전 세계 해외법인, 그룹사 직원까지 소규모 리더십 워크숍부터 대규모 온라인 웨비나까지 다양한 규모의 캠페인 통합 관리</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-gray-800 mb-3">2. 전문 도메인 대응</h4>
+                          <p className="text-sm text-gray-600 leading-relaxed">컴플라이언스·핵심역량·안전교육 등 전문 영역에서 통역 협업을 통한 완벽한 다국어 소통 구현</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-gray-800 mb-3">3. 실시간 위기 관리</h4>
+                          <p className="text-sm text-gray-600 leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 완주 달성</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 4. 역할 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">4</span>
+                        역할
+                      </h3>
+                      
+                      {/* 원형 프로세스 다이어그램 */}
+                      <div className="bg-gray-100 rounded-lg p-6 border border-gray-300 mb-6">
+                        <div className="text-center mb-6">
+                          <div className="inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded-md text-sm font-medium">3개 관점 통합 운영</div>
+                        </div>
+                        
+                        <div className="relative" style={{height: "200px"}}>
+                          <svg width="100%" height="200" viewBox="0 0 500 200" className="overflow-visible">
+                            {/* 중앙 핵심 원 */}
+                            <circle cx="250" cy="100" r="40" fill="#374151" opacity="0.1" stroke="#374151" strokeWidth="2"/>
+                            <text x="250" y="95" textAnchor="middle" className="text-xs fill-gray-800 font-medium">글로벌</text>
+                            <text x="250" y="108" textAnchor="middle" className="text-xs fill-gray-800 font-medium">캠페인</text>
+                            
+                            {/* 3개 관점 원들 */}
+                            {/* 통합 기획 (상단) */}
+                            <circle cx="250" cy="30" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
+                            <text x="250" y="27" textAnchor="middle" className="text-xs fill-gray-700 font-medium">통합 기획</text>
+                            <text x="250" y="38" textAnchor="middle" className="text-xs fill-gray-600">글로벌 관리</text>
+                            
+                            {/* 실시간 운영 (좌하) */}
+                            <circle cx="180" cy="150" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
+                            <text x="180" y="147" textAnchor="middle" className="text-xs fill-gray-700 font-medium">실시간 운영</text>
+                            <text x="180" y="158" textAnchor="middle" className="text-xs fill-gray-600">위기 대응</text>
+                            
+                            {/* 기술 통합 (우하) */}
+                            <circle cx="320" cy="150" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
+                            <text x="320" y="147" textAnchor="middle" className="text-xs fill-gray-700 font-medium">기술 통합</text>
+                            <text x="320" y="158" textAnchor="middle" className="text-xs fill-gray-600">제작-운영</text>
+                            
+                            {/* 연결선들 */}
+                            <line x1="250" y1="70" x2="250" y2="60" stroke="#374151" strokeWidth="2"/>
+                            <line x1="220" y1="120" x2="210" y2="140" stroke="#374151" strokeWidth="2"/>
+                            <line x1="280" y1="120" x2="290" y2="140" stroke="#374151" strokeWidth="2"/>
+                            
+                            {/* 화살표 마커 */}
+                            <defs>
+                              <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+                              </marker>
+                            </defs>
+                            
+                            <line x1="250" y1="70" x2="250" y2="60" stroke="#374151" strokeWidth="2" markerEnd="url(#arrow)"/>
+                            <line x1="220" y1="120" x2="210" y2="140" stroke="#374151" strokeWidth="2" markerEnd="url(#arrow)"/>
+                            <line x1="280" y1="120" x2="290" y2="140" stroke="#374151" strokeWidth="2" markerEnd="url(#arrow)"/>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div className="space-y-6">
+                        <div className="border border-gray-300 rounded-lg overflow-hidden">
+                          <div className="bg-gray-500 text-white p-3">
+                            <div className="flex items-center">
+                              <span className="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                              <span className="font-medium">통합 캠페인 기획 관점 - 글로벌 스케일 관리</span>
+                            </div>
+                          </div>
+                          <div className="p-4 bg-white space-y-4">
+                            <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                              <h6 className="text-sm font-medium text-gray-800 mb-2">50회 이상 캠페인 전과정 담당</h6>
+                              <p className="text-sm text-gray-600 leading-relaxed">본사부터 아시아, 유럽, 아메리카 전 지역 해외법인 대상 캠페인 기획부터 운영까지 완전 통합 관리</p>
+                            </div>
+                            <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                              <h6 className="text-sm font-medium text-gray-800 mb-2">규모별 맞춤형 캠페인 설계</h6>
+                              <p className="text-sm text-gray-600 leading-relaxed">소규모 리더십 워크숍부터 대규모 온라인 웨비나까지 규모별 최적화 설계 및 NPS 4.5 이상 품질 관리</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="border border-gray-300 rounded-lg overflow-hidden">
+                          <div className="bg-gray-500 text-white p-3">
+                            <div className="flex items-center">
+                              <span className="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                              <span className="font-medium">실시간 운영 관점 - 위기 대응 및 현장 감각</span>
+                            </div>
+                          </div>
+                          <div className="p-4 bg-white space-y-4">
+                            
+                            {/* 위기 대응 플로우차트 */}
+                            <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
+                              <h6 className="text-sm font-medium text-gray-800 mb-3">즉석 위기 대응 시스템</h6>
+                              <div className="flex items-center justify-between text-center">
+                                <div className="bg-red-100 border border-red-300 rounded-lg p-2 flex-1 mx-1">
+                                  <div className="text-xs font-medium text-red-800">돌발 상황</div>
+                                  <div className="text-xs text-red-600">출연자 불참<br/>시스템 오류</div>
+                                </div>
+                                <div className="text-gray-400 text-lg">→</div>
+                                <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-2 flex-1 mx-1">
+                                  <div className="text-xs font-medium text-yellow-800">즉시 판단</div>
+                                  <div className="text-xs text-yellow-600">상황 분석<br/>대안 도출</div>
+                                </div>
+                                <div className="text-gray-400 text-lg">→</div>
+                                <div className="bg-green-100 border border-green-300 rounded-lg p-2 flex-1 mx-1">
+                                  <div className="text-xs font-medium text-green-800">완벽 대응</div>
+                                  <div className="text-xs text-green-600">캠페인 완주<br/>신뢰 유지</div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                              <h6 className="text-sm font-medium text-gray-800 mb-2">실시간 최적화 운영</h6>
+                              <p className="text-sm text-gray-600 leading-relaxed">실시간 큐시트 수정과 참가자 반응 모니터링을 통한 캠페인 흐름 최적화로 라이브 진행의 신뢰성 확보</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="border border-gray-300 rounded-lg overflow-hidden">
+                          <div className="bg-gray-500 text-white p-3">
+                            <div className="flex items-center">
+                              <span className="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                              <span className="font-medium">기술 통합 관점 - 제작-운영 연계</span>
+                            </div>
+                          </div>
+                          <div className="p-4 bg-white space-y-4">
+                            
+                            {/* 이중 역할 전환 다이어그램 */}
+                            <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
+                              <h6 className="text-sm font-medium text-gray-800 mb-3">진행자-운영자 이중 역할 시스템</h6>
+                              <div className="grid grid-cols-2 gap-4">
+                                <div className="text-center">
+                                  <div className="bg-blue-100 border-2 border-blue-300 rounded-lg p-3 mb-2">
+                                    <div className="text-sm font-medium text-blue-800">평상시</div>
+                                    <div className="text-xs text-blue-600 mt-1">진행자 역할</div>
+                                  </div>
+                                  <div className="text-xs text-gray-600">• 캠페인 진행<br/>• 참가자 소통<br/>• 콘텐츠 전달</div>
+                                </div>
+                                <div className="text-center">
+                                  <div className="bg-orange-100 border-2 border-orange-300 rounded-lg p-3 mb-2">
+                                    <div className="text-sm font-medium text-orange-800">위기시</div>
+                                    <div className="text-xs text-orange-600 mt-1">운영자 전환</div>
+                                  </div>
+                                  <div className="text-xs text-gray-600">• 기술적 대응<br/>• 즉시 해결<br/>• 신뢰 유지</div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                              <h6 className="text-sm font-medium text-gray-800 mb-2">제작 기술 역량 통합 활용</h6>
+                              <p className="text-sm text-gray-600 leading-relaxed">송출, 그래픽 리소스 제작, 벤더사 및 셀럽 커뮤니케이션 등 제작 기술 역량을 활용한 라이브 진행 중 기술적 이슈 즉시 대응</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 5. 활용 기술 */}
+                    <div className="mb-6">
+                      <h2 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">5</span>
+                        활용 기술
+                      </h2>
+                    </div>
+
+                    {/* 기술 스택 매트릭스 */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                        <div className="flex items-center mb-3">
+                          <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
+                          <h4 className="text-sm font-medium text-gray-800">실시간 운영</h4>
+                        </div>
+                        <div className="space-y-2 text-sm text-gray-600">
+                          <div>• <strong>라이브 위기 대응</strong>: 돌발 상황 즉시 해결</div>
+                          <div>• <strong>즉석 큐시트 수정</strong>: 실시간 진행 최적화</div>
+                          <div>• <strong>참가자 반응 분석</strong>: 실시간 모니터링</div>
+                        </div>
+                      </div>
+                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                        <div className="flex items-center mb-3">
+                          <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                          <h4 className="text-sm font-medium text-gray-800">기술 통합</h4>
+                        </div>
+                        <div className="space-y-2 text-sm text-gray-600">
+                          <div>• <strong>송출 시스템</strong>: 안정적 라이브 방송</div>
+                          <div>• <strong>그래픽 제작</strong>: 실시간 비주얼 지원</div>
+                          <div>• <strong>벤더 커뮤니케이션</strong>: 통합 협업 관리</div>
+                        </div>
+                      </div>
+                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                        <div className="flex items-center mb-3">
+                          <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>
+                          <h4 className="text-sm font-medium text-gray-800">다국어 소통</h4>
+                        </div>
+                        <div className="space-y-2 text-sm text-gray-600">
+                          <div>• <strong>통역 협업</strong>: 전문 도메인 완벽 소통</div>
+                          <div>• <strong>컴플라이언스</strong>: 법규 준수 캠페인</div>
+                          <div>• <strong>핵심역량·안전교육</strong>: 전문 영역 대응</div>
+                        </div>
                       </div>
                     </div>
                   </div>
