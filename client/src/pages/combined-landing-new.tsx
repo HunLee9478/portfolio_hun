@@ -2660,6 +2660,71 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
+                {/* 추가 이미지 갤러리 - 7번 프로젝트 전용 */}
+                {selectedProject.id === "7" && (
+                  <div className="mb-12">
+                    <div className="mb-6">
+                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">6</span>
+                        프로젝트 이미지
+                      </h3>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4 mb-8">
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src="/assets/projects/samsung-education-filming.jpg" 
+                          alt="Samsung 컴플라이언스 캠페인 촬영 현장"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-filming.jpg")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src="/assets/projects/samsung-education-multiscreen.jpg" 
+                          alt="Samsung 컴플라이언스 멀티스크린 콘텐츠"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-multiscreen.jpg")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src="/assets/projects/samsung-education-screenlife.jpg" 
+                          alt="Samsung 컴플라이언스 스크린라이프 콘텐츠"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-screenlife.jpg")}
+                        />
+                      </div>
+                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                        <img 
+                          src="/assets/projects/samsung-education-studio.jpg" 
+                          alt="Samsung 컴플라이언스 스튜디오 제작"
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            console.error("이미지 로딩 실패:", e.currentTarget.src);
+                            e.currentTarget.style.backgroundColor = "#ff6b6b";
+                          }}
+                          onLoad={() => console.log("이미지 로딩 성공: samsung-education-studio.jpg")}
+                        />
+                      </div>
+                    </div>
+                    <div className="text-center mb-8">
+                      <p className="text-sm text-gray-600 italic">Samsung 컴플라이언스 캠페인 제작 과정 및 혁신적 콘텐츠 포맷</p>
+                    </div>
+                  </div>
+                )}
+
                 {/* 추가 이미지 갤러리 - 2번 프로젝트 전용 */}
                 {selectedProject.id === "2" && (
                   <div className="mb-12">
