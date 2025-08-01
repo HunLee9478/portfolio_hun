@@ -2288,17 +2288,46 @@ export default function CombinedLanding() {
                           </AdvancedEditableText>
                           <div className="relative pl-4 mt-4 mb-6">
                             <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200"></div>
-                            <AdvancedEditableText
-                              textKey={`project-${selectedProject.id}-role-1-context`}
-                              className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                              style={{
-                                fontSize: TYPOGRAPHY.fontSize.small,
-                                color: "#58534e",
-                                lineHeight: TYPOGRAPHY.lineHeight.relaxed
-                              }}
-                            >
-                              각 고객사별 특성 분석 → 맞춤형 가상공간 설계 → AI 도구 활용한 콘텐츠 생성 → 게임화 요소 통합
-                            </AdvancedEditableText>
+                            {/* 워크플로우 시각화 */}
+                            <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
+                              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div className="text-center">
+                                  <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-2">1</div>
+                                  <div className="text-xs text-[#282623] font-medium mb-1">고객사 분석</div>
+                                  <div className="text-xs text-[#58534e]">특성 파악</div>
+                                </div>
+                                <div className="text-center">
+                                  <div className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-2">2</div>
+                                  <div className="text-xs text-[#282623] font-medium mb-1">공간 설계</div>
+                                  <div className="text-xs text-[#58534e]">맞춤형 가상공간</div>
+                                </div>
+                                <div className="text-center">
+                                  <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-2">3</div>
+                                  <div className="text-xs text-[#282623] font-medium mb-1">AI 콘텐츠</div>
+                                  <div className="text-xs text-[#58534e]">도구 활용 생성</div>
+                                </div>
+                                <div className="text-center">
+                                  <div className="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-2">4</div>
+                                  <div className="text-xs text-[#282623] font-medium mb-1">게임화</div>
+                                  <div className="text-xs text-[#58534e]">요소 통합</div>
+                                </div>
+                              </div>
+                              
+                              {/* 화살표 연결선 - 데스크톱에서만 표시 */}
+                              <div className="hidden md:flex justify-between items-center mt-2 px-6">
+                                <div className="flex-1 h-0.5 bg-gray-300 relative">
+                                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-gray-300 border-t-2 border-b-2 border-t-transparent border-b-transparent"></div>
+                                </div>
+                                <div className="w-4"></div>
+                                <div className="flex-1 h-0.5 bg-gray-300 relative">
+                                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-gray-300 border-t-2 border-b-2 border-t-transparent border-b-transparent"></div>
+                                </div>
+                                <div className="w-4"></div>
+                                <div className="flex-1 h-0.5 bg-gray-300 relative">
+                                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-gray-300 border-t-2 border-b-2 border-t-transparent border-b-transparent"></div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
