@@ -1627,7 +1627,7 @@ export default function CombinedLanding() {
                         fontWeight: "300",
                       }}
                     >
-                      <p className={`${FONT_SIZES.small} mb-2 font-normal`} style={{ color: COLORS.text.light }}>저는 제작 역량을 기반으로 기획부터 연출, 촬영, 편집, 사용자 경험까지 모든 과정에서 '무엇을, 어떻게' 보여줄지를 고민해왔습니다.</p>
+                      <p className={`${FONT_SIZES.small} mb-2 font-normal`} style={{ color: COLORS.text.light }}>유니세프에서 저는 데이터 분석으로 후원자들의 마음을 읽고, 그들 각자에게 가장 와닿는 아동권리 이야기를 개인 맞춤형으로 전달하여, 일회성 기부가 아닌 평생에 걸친 진정한 동반자 관계를 만들고 싶습니다</p>
                       <p className={`${FONT_SIZES.small} mb-2 font-normal`} style={{ color: COLORS.text.light }}>경험 많은 동료들과의 협력을 통해 이러한 목표를 달성할 수 있다고 확신합니다. 데이터로 사람의 마음을 읽고, 기술로 진정한 감동을 전달하며, 전 세계 모든 아이들이 더 큰 꿈을 키울 수 있도록. 유니세프 한국위원회와 함께 이 꿈을 현실로 만들어가겠습니다</p>
                     </div>
 
