@@ -2324,8 +2324,6 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
-
-
                 {/* 주요 성과 */}
                 <div className="mb-12">
                   <div className="mb-6 mt-8 pt-8 border-t border-gray-200">
