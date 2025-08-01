@@ -5553,6 +5553,38 @@ export default function CombinedLanding() {
                       <div className="mb-6">
                         <span className="text-sm text-[#282623] tracking-tight leading-relaxed">2022.01 ~ 2022.07 (7개월)</span>
                       </div>
+                      
+                      {/* Snapask 프로젝트 이미지 갤러리 */}
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                        <div className="aspect-video rounded-lg overflow-hidden">
+                          <img 
+                            src="/attached_assets/image_1754036032577.png"
+                            alt="Snapask 브랜드 콘텐츠 - 교육자 인터뷰"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden">
+                          <img 
+                            src="/attached_assets/image_1754036035520.png"
+                            alt="Snapask 브랜드 콘텐츠 - 전문가 강의"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden">
+                          <img 
+                            src="/attached_assets/image_1754036038001.png"
+                            alt="Snapask 브랜드 콘텐츠 - 학습자 인터뷰"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="aspect-video rounded-lg overflow-hidden">
+                          <img 
+                            src="/attached_assets/image_1754036040763.png"
+                            alt="Snapask 브랜드 콘텐츠 - 브랜드 영상"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </div>
                     </div>
 
                     {/* 2. 주요 성과 */}
