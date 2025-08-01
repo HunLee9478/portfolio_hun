@@ -2153,7 +2153,7 @@ export default function CombinedLanding() {
                           {/* 최상단: 실시간 위기 관리 */}
                           <div className="flex justify-center">
                             <div className="bg-[#282623] text-white px-6 py-3 rounded-lg text-center" style={{ width: "200px" }}>
-                              <div className="text-xs font-bold mb-1">실시간 위기 관리</div>
+                              <div className="text-sm font-bold mb-1">실시간 위기 관리</div>
                               <div className="opacity-80 text-[14px]">즉시 대응가능</div>
                             </div>
                           </div>
@@ -2161,16 +2161,16 @@ export default function CombinedLanding() {
                           {/* 중간: 전문 도메인 대응 */}
                           <div className="flex justify-center">
                             <div className="bg-[#58534e] text-white px-6 py-3 rounded-lg text-center" style={{ width: "300px" }}>
-                              <div className="text-xs font-bold mb-1">전문 도메인 대응</div>
-                              <div className="text-xs opacity-80">컴플라이언스·핵심역량·안전교육</div>
+                              <div className="text-sm font-bold mb-1">전문 도메인 대응</div>
+                              <div className="text-sm opacity-80">컴플라이언스·핵심역량·안전교육</div>
                             </div>
                           </div>
                           
                           {/* 기반: 다양한 유형 캠페인 운영 */}
                           <div className="flex justify-center">
                             <div className="bg-[#6b7280] text-white px-6 py-3 rounded-lg text-center" style={{ width: "400px" }}>
-                              <div className="text-xs font-bold mb-1">다양한 유형 캠페인 운영</div>
-                              <div className="text-xs opacity-80">본사~글로벌법인, 컴플라이언스~안전교육</div>
+                              <div className="text-sm font-bold mb-1">다양한 유형 캠페인 운영</div>
+                              <div className="text-sm opacity-80">본사~글로벌법인, 컴플라이언스~안전교육</div>
                             </div>
                           </div>
                         </div>
@@ -2205,17 +2205,17 @@ export default function CombinedLanding() {
                           <div className="text-center">
                             <div className="bg-[#282623] text-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">1</div>
                             <h5 className="text-sm font-medium text-[#282623] mb-2">통합 기획</h5>
-                            <p className="text-xs text-[#58534e]">전체 아키텍처 설계</p>
+                            <p className="text-sm text-[#58534e]">전체 아키텍처 설계</p>
                           </div>
                           <div className="text-center">
                             <div className="bg-[#58534e] text-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">2</div>
                             <h5 className="text-sm font-medium text-[#282623] mb-2">실시간 운영</h5>
-                            <p className="text-xs text-[#58534e]">즉석 위기 대응</p>
+                            <p className="text-sm text-[#58534e]">즉석 위기 대응</p>
                           </div>
                           <div className="text-center">
                             <div className="bg-[#6b7280] text-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">3</div>
                             <h5 className="text-sm font-medium text-[#282623] mb-2">기술 통합</h5>
-                            <p className="text-xs text-[#58534e]">제작-운영 연계</p>
+                            <p className="text-sm text-[#58534e]">제작-운영 연계</p>
                           </div>
                         </div>
                       </div>
@@ -2295,19 +2295,19 @@ export default function CombinedLanding() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h5 className="text-sm font-bold text-[#282623] mb-2">실시간 운영</h5>
-                          <p className="text-xs text-[#58534e]">라이브 진행 중 위기 대응, 즉석 큐시트 수정, 참가자 반응 실시간 분석</p>
+                          <p className="text-sm text-[#58534e]">라이브 진행 중 위기 대응, 즉석 큐시트 수정, 참가자 반응 실시간 분석</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h5 className="text-sm font-bold text-[#282623] mb-2">기술 통합</h5>
-                          <p className="text-xs text-[#58534e]">송출 시스템, 그래픽 제작, 벤더 커뮤니케이션을 활용한 제작-운영 연계</p>
+                          <p className="text-sm text-[#58534e]">송출 시스템, 그래픽 제작, 벤더 커뮤니케이션을 활용한 제작-운영 연계</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h5 className="text-sm font-bold text-[#282623] mb-2">다국어 소통</h5>
-                          <p className="text-xs text-[#58534e]">통역 협업을 통한 전문 도메인(컴플라이언스, 핵심역량, 안전교육) 완벽 소통 구현</p>
+                          <p className="text-sm text-[#58534e]">통역 협업을 통한 전문 도메인(컴플라이언스, 핵심역량, 안전교육) 완벽 소통 구현</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h5 className="text-sm font-bold text-[#282623] mb-2">진행자-운영자 역할 전환</h5>
-                          <p className="text-xs text-[#58534e]">평상시 진행자에서 위기 상황 시 운영자로 역할 전환을 통한 신뢰성 확보</p>
+                          <p className="text-sm text-[#58534e]">평상시 진행자에서 위기 상황 시 운영자로 역할 전환을 통한 신뢰성 확보</p>
                         </div>
                       </div>
                     </div>
@@ -2683,15 +2683,15 @@ export default function CombinedLanding() {
                             <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">Premiere Pro</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">디지털 화면 편집</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">디지털 화면 편집</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">After Effects</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">모션 그래픽</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">모션 그래픽</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">Found Footage</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">화면 녹화</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">화면 녹화</span>
                               </div>
                             </div>
                           </div>
@@ -2703,11 +2703,11 @@ export default function CombinedLanding() {
                             <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">Stable Diffusion</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">시각 자료 생성</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">시각 자료 생성</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">Midjourney</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">UI 요소 생성</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">UI 요소 생성</span>
                               </div>
                             </div>
                           </div>
@@ -2721,15 +2721,15 @@ export default function CombinedLanding() {
                             <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">User Research</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">행동 패턴 분석</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">행동 패턴 분석</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">뎁스 인터뷰</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">심리 구조 파악</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">심리 구조 파악</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">페르소나 설계</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">사용자 유형화</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">사용자 유형화</span>
                               </div>
                             </div>
                           </div>
@@ -2741,11 +2741,11 @@ export default function CombinedLanding() {
                             <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">다국어 시스템</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">5개국어 제작</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">5개국어 제작</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">고정 화면 구조</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">효율적 제작</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">효율적 제작</span>
                               </div>
                             </div>
                           </div>
@@ -3140,7 +3140,7 @@ export default function CombinedLanding() {
                             </div>
                             <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
                               <h5 className="text-sm font-bold text-[#282623] mb-2">데이터 분석</h5>
-                              <div className="text-xs text-[#58534e] space-y-1">
+                              <div className="text-sm text-[#58534e] space-y-1">
                                 <div>• 사용자 로그 분석</div>
                                 <div>• 참여도 편차 확인</div>
                                 <div>• 형식적 참여 패턴 도출</div>
@@ -3155,7 +3155,7 @@ export default function CombinedLanding() {
                             </div>
                             <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
                               <h5 className="text-sm font-bold text-[#282623] mb-2">콘텐츠 제작</h5>
-                              <div className="text-xs text-[#58534e] space-y-1">
+                              <div className="text-sm text-[#58534e] space-y-1">
                                 <div>• AI 도구 활용 맵 제작</div>
                                 <div>• 친숙한 공간 + 퀘스트</div>
                                 <div>• 진입장벽 최소화 UX</div>
@@ -3170,7 +3170,7 @@ export default function CombinedLanding() {
                             </div>
                             <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
                               <h5 className="text-sm font-bold text-[#282623] mb-2">현장 운영</h5>
-                              <div className="text-xs text-[#58534e] space-y-1">
+                              <div className="text-sm text-[#58534e] space-y-1">
                                 <div>• 실시간 소통 진행</div>
                                 <div>• 참가자 반응 즉시 파악</div>
                                 <div>• 몰입도 지속 관리</div>
@@ -3251,7 +3251,7 @@ export default function CombinedLanding() {
                                 <div className="bg-white border border-gray-300 p-4 rounded-lg mb-4">
                                   <div className="text-center mb-3">
                                     <h6 className="text-sm font-medium text-[#282623] mb-1">메타버스 게임화 시스템</h6>
-                                    <p className="text-xs text-[#58534e]">일상 공간 → 가상 환경 → 게임 요소 통합</p>
+                                    <p className="text-sm text-[#58534e]">일상 공간 → 가상 환경 → 게임 요소 통합</p>
                                   </div>
                                   <svg width="100%" height="160" viewBox="0 0 600 160" className="overflow-visible">
                                     {/* 오피스 공간 */}
@@ -3340,15 +3340,15 @@ export default function CombinedLanding() {
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-center">
                                   <div className="bg-white border border-gray-300 rounded px-3 py-2">
                                     <div className="text-xs font-medium text-[#282623]">참가자 모니터링</div>
-                                    <div className="text-xs text-[#58534e]">실시간 반응 추적</div>
+                                    <div className="text-sm text-[#58534e]">실시간 반응 추적</div>
                                   </div>
                                   <div className="bg-white border border-gray-300 rounded px-3 py-2">
                                     <div className="text-xs font-medium text-[#282623]">몰입도 관리</div>
-                                    <div className="text-xs text-[#58534e]">지속적 흥미 유발</div>
+                                    <div className="text-sm text-[#58534e]">지속적 흥미 유발</div>
                                   </div>
                                   <div className="bg-white border border-gray-300 rounded px-3 py-2">
                                     <div className="text-xs font-medium text-[#282623]">즉시 대응</div>
-                                    <div className="text-xs text-[#58534e]">상황별 맞춤 진행</div>
+                                    <div className="text-sm text-[#58534e]">상황별 맞춤 진행</div>
                                   </div>
                                 </div>
                               </div>
@@ -4233,7 +4233,7 @@ export default function CombinedLanding() {
                             <div className="bg-white border border-gray-200 p-8 rounded-lg">
                               <div className="text-center mb-6">
                                 <h4 className="text-sm font-medium text-[#282623] mb-2">사용자 집중도 변화 패턴</h4>
-                                <p className="text-xs text-[#58534e]">교육 콘텐츠 시청 시간에 따른 집중도 하락 분석</p>
+                                <p className="text-sm text-[#58534e]">교육 콘텐츠 시청 시간에 따른 집중도 하락 분석</p>
                               </div>
                               
                               <svg width="100%" height="260" viewBox="0 0 700 260" className="overflow-visible">
@@ -4345,7 +4345,7 @@ export default function CombinedLanding() {
                             <div className="bg-white border border-gray-200 p-4 rounded-lg">
                               <div className="text-center mb-3">
                                 <h4 className="text-sm font-medium text-[#282623] mb-1">Screen Life 솔루션 구조</h4>
-                                <p className="text-xs text-[#58534e]">집중도 향상을 위한 4가지 핵심 전략</p>
+                                <p className="text-sm text-[#58534e]">집중도 향상을 위한 4가지 핵심 전략</p>
                               </div>
                               <svg width="100%" height="220" viewBox="0 0 500 220" className="overflow-visible">
                                 {/* 중앙 Screen Life 원 */}
@@ -4440,7 +4440,7 @@ export default function CombinedLanding() {
                             <div className="bg-white border border-gray-200 p-6 rounded-lg">
                               <div className="text-center mb-4">
                                 <h4 className="text-sm font-medium text-[#282623] mb-2">베트남 인플루언서 콘텐츠 제작 전략</h4>
-                                <p className="text-xs text-[#58534e]">자연스러운 브랜드 노출과 현지 문화 체험의 조화</p>
+                                <p className="text-sm text-[#58534e]">자연스러운 브랜드 노출과 현지 문화 체험의 조화</p>
                               </div>
                               
                               <svg width="100%" height="200" viewBox="0 0 600 200" className="overflow-visible">
@@ -4522,7 +4522,7 @@ export default function CombinedLanding() {
                             <div className="bg-white border border-gray-200 p-4 rounded-lg">
                               <div className="text-center mb-3">
                                 <h4 className="text-sm font-medium text-[#282623] mb-1">현장 제작 워크플로우</h4>
-                                <p className="text-xs text-[#58534e]">핸디캠 중심의 효율적 제작 과정</p>
+                                <p className="text-sm text-[#58534e]">핸디캠 중심의 효율적 제작 과정</p>
                               </div>
                               <svg width="100%" height="140" viewBox="0 0 700 140" className="overflow-visible">
                                 {/* 프로세스 단계들 */}
@@ -4777,7 +4777,7 @@ export default function CombinedLanding() {
                             <div className="bg-white border border-gray-200 p-4 rounded-lg">
                               <div className="text-center mb-3">
                                 <h4 className="text-sm font-medium text-[#282623] mb-1">메타버스 게임화 시스템</h4>
-                                <p className="text-xs text-[#58534e]">일상 공간 → 가상 환경 → 게임 요소 통합</p>
+                                <p className="text-sm text-[#58534e]">일상 공간 → 가상 환경 → 게임 요소 통합</p>
                               </div>
                               <svg width="100%" height="160" viewBox="0 0 600 160" className="overflow-visible">
                                 {/* 오피스 공간 */}
@@ -5469,15 +5469,15 @@ export default function CombinedLanding() {
                             <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">색보정 소프트웨어</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">브랜드 표준</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">브랜드 표준</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">Premiere Pro</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">고급 편집</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">고급 편집</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">After Effects</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">모션그래픽</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">모션그래픽</span>
                               </div>
                             </div>
                           </div>
@@ -5489,11 +5489,11 @@ export default function CombinedLanding() {
                             <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">Photoshop</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">브랜드 그래픽</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">브랜드 그래픽</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">AI 이미지 도구</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">창의적 자료</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">창의적 자료</span>
                               </div>
                             </div>
                           </div>
@@ -5506,15 +5506,15 @@ export default function CombinedLanding() {
                             <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">Python 스크립팅</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">자막 자동화</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">자막 자동화</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">음성 인식 API</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">전사 시스템</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">전사 시스템</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">배치 처리</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">대량 렌더링</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">대량 렌더링</span>
                               </div>
                             </div>
                           </div>
@@ -5526,11 +5526,11 @@ export default function CombinedLanding() {
                             <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">전문 카메라</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">영화급 화질</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">영화급 화질</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">프로 조명 시스템</span>
-                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">스튜디오급</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">스튜디오급</span>
                               </div>
                             </div>
                           </div>
