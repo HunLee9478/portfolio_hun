@@ -1967,17 +1967,17 @@ export default function CombinedLanding() {
               <div className="px-8 lg:px-16 pb-12">
 
 
-                {/* 1번 프로젝트 HTML 템플릿 기반 상세 모달 */}
+                {/* 삼성물산 컴플라이언스 프로젝트 전용 상세 모달 */}
                 {selectedProject.id === "1" && (
                   <div className="mb-12">
                     {/* 1. 프로젝트 기간 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">1</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">1</span>
                         프로젝트 기간
                       </h3>
                       <div>
-                        <span className="text-sm text-gray-800 tracking-tight leading-relaxed">
+                        <span className="text-sm text-[#282623] tracking-tight leading-relaxed" style={{ fontSize: "14px", color: "rgb(40, 38, 35)", lineHeight: "1.6", letterSpacing: "0px", fontFamily: "inherit", fontWeight: "400" }}>
                           2023.01 ~ 2024.11 (23개월)
                         </span>
                       </div>
