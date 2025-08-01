@@ -3455,12 +3455,7 @@ export default function CombinedLanding() {
                 {/* 메타버스 프로젝트는 주요 역할 섹션 생략 - 콘텐츠 섹션에서 충분히 다뤄짐 */}
                 {selectedProject.id !== "5" && (
                   <div className="mb-12">
-                    <div className="mb-6 mt-8 pt-8 border-t border-gray-200">
-                      <h2 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">2</span>
-                        주요 역할
-                      </h2>
-                    </div>
+                   
                     <div className="space-y-4 mb-8">
                       {selectedProject.id === "1" && (
                       <>
@@ -3966,10 +3961,10 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 4. 주요 성과 */}
+                    {/* 5. 주요 성과 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
                         주요 성과
                       </h3>
                       <div className="space-y-3">
