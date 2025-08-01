@@ -544,7 +544,7 @@ export default function CombinedLanding() {
     },
     {
       id: "9",
-      src: "/attached_assets/image_1754037303842.png",
+      src: "/attached_assets/image_1754037460982.png",
       alt: "Snapask 프리미엄 브랜드 콘텐츠 영상 제작",
       title: "Snapask 프리미엄 브랜드 콘텐츠 영상 제작",
       subtitle: "인하우스 제작 체제 전환으로 40% 예산 절감 달성",
