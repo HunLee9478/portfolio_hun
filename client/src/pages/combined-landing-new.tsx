@@ -2476,7 +2476,7 @@ export default function CombinedLanding() {
                             <span className="text-lg">{expandedSection === 'content-creation' ? '−' : '+'}</span>
                           </div>
                           {expandedSection === 'content-creation' && (
-                            <div className="p-4 bg-white space-y-4">
+                            <div className="p-4 bg-white space-y-6">
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                                   <h6 className="text-sm font-medium text-[#282623] mb-2">AI 도구 활용</h6>
@@ -2492,6 +2492,66 @@ export default function CombinedLanding() {
                                     <div>• 친숙한 일상 공간 기반</div>
                                     <div>• 퀘스트 요소 자연스럽게 결합</div>
                                     <div>• 진입장벽 최소화 + 탐험 동기 제공</div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              {/* 게임화 시스템 설계 도식 */}
+                              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h6 className="text-sm font-medium text-[#282623] mb-3">게임화 시스템 설계</h6>
+                                <p className="text-sm text-[#58534e] mb-4"><strong>익숙한 일상 공간의 게임화 컨셉:</strong></p>
+                                
+                                <div className="bg-white border border-gray-300 p-4 rounded-lg mb-4">
+                                  <div className="text-center mb-3">
+                                    <h6 className="text-sm font-medium text-[#282623] mb-1">메타버스 게임화 시스템</h6>
+                                    <p className="text-xs text-[#58534e]">일상 공간 → 가상 환경 → 게임 요소 통합</p>
+                                  </div>
+                                  <svg width="100%" height="160" viewBox="0 0 600 160" className="overflow-visible">
+                                    {/* 오피스 공간 */}
+                                    <rect x="50" y="30" width="120" height="50" fill="#4a5568" opacity="0.1" stroke="#4a5568" strokeWidth="1" rx="6"/>
+                                    <text x="110" y="50" textAnchor="middle" className="text-xs fill-[#374151] font-medium">오피스 공간</text>
+                                    <text x="110" y="65" textAnchor="middle" className="text-xs fill-[#6b7280]">업무 환경</text>
+                                    <line x1="170" y1="55" x2="210" y2="55" stroke="#374151" strokeWidth="2" markerEnd="url(#metaArrow1)"/>
+                                    
+                                    {/* 카페 공간 */}
+                                    <rect x="50" y="100" width="120" height="50" fill="#4a5568" opacity="0.1" stroke="#4a5568" strokeWidth="1" rx="6"/>
+                                    <text x="110" y="120" textAnchor="middle" className="text-xs fill-[#374151] font-medium">카페 공간</text>
+                                    <text x="110" y="135" textAnchor="middle" className="text-xs fill-[#6b7280]">소셜 환경</text>
+                                    <line x1="170" y1="125" x2="210" y2="125" stroke="#374151" strokeWidth="2" markerEnd="url(#metaArrow2)"/>
+                                    
+                                    {/* 게임화 요소 */}
+                                    <rect x="220" y="65" width="120" height="50" fill="#58534e" opacity="0.1" stroke="#58534e" strokeWidth="1" rx="6"/>
+                                    <text x="280" y="85" textAnchor="middle" className="text-xs fill-[#374151] font-medium">퀘스트 시스템</text>
+                                    <text x="280" y="100" textAnchor="middle" className="text-xs fill-[#6b7280]">미션 & 보상</text>
+                                    <line x1="340" y1="90" x2="380" y2="90" stroke="#374151" strokeWidth="2" markerEnd="url(#metaArrow3)"/>
+                                    
+                                    {/* 데이터 수집 */}
+                                    <rect x="390" y="65" width="120" height="50" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="1" rx="6"/>
+                                    <text x="450" y="85" textAnchor="middle" className="text-xs fill-[#374151] font-medium">데이터 수집</text>
+                                    <text x="450" y="100" textAnchor="middle" className="text-xs fill-[#6b7280]">행동 분석</text>
+                                    
+                                    {/* 화살표 마커 정의 */}
+                                    <defs>
+                                      <marker id="metaArrow1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                        <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+                                      </marker>
+                                      <marker id="metaArrow2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                        <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+                                      </marker>
+                                      <marker id="metaArrow3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                        <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+                                      </marker>
+                                    </defs>
+                                  </svg>
+                                </div>
+                                
+                                <div className="space-y-2 text-sm">
+                                  <p className="text-[#282623] font-medium">핵심 설계 원칙:</p>
+                                  <div className="ml-4 space-y-1 text-[#58534e]">
+                                    <p>• 현실 공간의 친숙함과 가상 환경의 상호작용성 결합</p>
+                                    <p>• 자연스러운 사용자 참여를 유도하는 퀘스트 시스템</p>
+                                    <p>• 실시간 데이터 수집을 통한 개인화된 경험 제공</p>
+                                    <p>• 고객사별 맞춤 브랜딩과 메시지 전달</p>
                                   </div>
                                 </div>
                               </div>
