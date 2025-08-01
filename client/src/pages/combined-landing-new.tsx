@@ -5157,50 +5157,50 @@ export default function CombinedLanding() {
                       <div className="grid grid-cols-2 gap-4">
                         <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                           <img 
-                            src="/assets/projects/samsung-education-studio.jpg" 
-                            alt="삼성 교육 콘텐츠 제작 스튜디오"
+                            src="/attached_assets/image_1754035144082.png" 
+                            alt="글로벌 IT기업 온라인 캠페인 현장"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             onError={(e) => {
                               console.error("이미지 로딩 실패:", e.currentTarget.src);
                               e.currentTarget.style.backgroundColor = "#ff6b6b";
                             }}
-                            onLoad={() => console.log("이미지 로딩 성공: samsung-education-studio.jpg")}
+                            onLoad={() => console.log("이미지 로딩 성공: image_1754035144082.png")}
                           />
                         </div>
                         <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                           <img 
-                            src="/assets/projects/samsung-education-filming.jpg" 
-                            alt="삼성 교육 콘텐츠 촬영 현장"
+                            src="/attached_assets/image_1754035147147.png" 
+                            alt="캠페인 운영 시스템 및 기술 지원"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             onError={(e) => {
                               console.error("이미지 로딩 실패:", e.currentTarget.src);
                               e.currentTarget.style.backgroundColor = "#ff6b6b";
                             }}
-                            onLoad={() => console.log("이미지 로딩 성공: samsung-education-filming.jpg")}
+                            onLoad={() => console.log("이미지 로딩 성공: image_1754035147147.png")}
                           />
                         </div>
                         <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                           <img 
-                            src="/assets/projects/samsung-education-multiscreen.jpg" 
-                            alt="삼성 교육 콘텐츠 멀티스크린"
+                            src="/attached_assets/image_1754035149545.png" 
+                            alt="글로벌 스태프 소개 및 다국어 캠페인"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             onError={(e) => {
                               console.error("이미지 로딩 실패:", e.currentTarget.src);
                               e.currentTarget.style.backgroundColor = "#ff6b6b";
                             }}
-                            onLoad={() => console.log("이미지 로딩 성공: samsung-education-multiscreen.jpg")}
+                            onLoad={() => console.log("이미지 로딩 성공: image_1754035149545.png")}
                           />
                         </div>
                         <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
                           <img 
-                            src="/assets/projects/samsung-education-screenlife.jpg" 
-                            alt="삼성 교육 콘텐츠 스크린라이프"
+                            src="/attached_assets/image_1754035151778.png" 
+                            alt="메타버스 플랫폼 캠페인 운영"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             onError={(e) => {
                               console.error("이미지 로딩 실패:", e.currentTarget.src);
                               e.currentTarget.style.backgroundColor = "#ff6b6b";
                             }}
-                            onLoad={() => console.log("이미지 로딩 성공: samsung-education-screenlife.jpg")}
+                            onLoad={() => console.log("이미지 로딩 성공: image_1754035151778.png")}
                           />
                         </div>
                       </div>
