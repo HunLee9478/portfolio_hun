@@ -5143,33 +5143,33 @@ export default function CombinedLanding() {
                   <div className="mb-12">
                     {/* 1. 프로젝트 기간 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">1</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">1</span>
                         프로젝트 기간
                       </h3>
                       <div>
-                        <span className="text-sm text-gray-800 tracking-tight leading-relaxed">2023.01 ~ 2024.11 (23개월)</span>
+                        <span className="text-sm text-[#282623] tracking-tight leading-relaxed">2023.01 ~ 2024.11 (23개월)</span>
                       </div>
                     </div>
 
                     {/* 2. 주요 성과 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">2</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">2</span>
                         주요 성과
                       </h3>
                       <div className="space-y-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-gray-800 mb-3">1. 50회 이상 캠페인에서 NPS 4.5 이상 지속 달성</h4>
-                          <p className="text-sm text-gray-600 leading-relaxed">소규모부터 대규모까지 다양한 캠페인 유형에서 일관된 높은 품질 관리와 참가자 만족도 확보</p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 50회 이상 캠페인에서 NPS 4.5 이상 지속 달성</h4>
+                          <p className="text-sm text-[#58534e] tracking-tight leading-relaxed">소규모부터 대규모까지 다양한 캠페인 유형에서 일관된 높은 품질 관리와 참가자 만족도 확보</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-gray-800 mb-3">2. 출연자 불참, 시스템 오류 등 돌발 상황 발생 시 즉석 대응으로 캠페인 중단 없이 완주</h4>
-                          <p className="text-sm text-gray-600 leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 신뢰성과 완주율 100% 달성</p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">2. 출연자 불참, 시스템 오류 등 돌발 상황 발생 시 즉석 대응으로 캠페인 중단 없이 완주</h4>
+                          <p className="text-sm text-[#58534e] tracking-tight leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 신뢰성과 완주율 100% 달성</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-gray-800 mb-3">3. 국내외 다양한 대상을 포함한 통합 캠페인 운영 체계 구축</h4>
-                          <p className="text-sm text-gray-600 leading-relaxed">본사 임직원부터 해외법인까지 아시아, 유럽, 아메리카 전 지역 대상 다국어 캠페인 성공적 운영</p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 국내외 다양한 대상을 포함한 통합 캠페인 운영 체계 구축</h4>
+                          <p className="text-sm text-[#58534e] tracking-tight leading-relaxed">본사 임직원부터 해외법인까지 아시아, 유럽, 아메리카 전 지역 대상 다국어 캠페인 성공적 운영</p>
                         </div>
                       </div>
                     </div>
@@ -5184,15 +5184,15 @@ export default function CombinedLanding() {
                       {/* 피라미드 구조 시각화 */}
                       <div className="bg-gray-100 rounded-lg p-8 border border-gray-300 mb-6">
                         <div className="text-center mb-6">
-                          <div className="inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded-md text-sm font-medium">다양한 유형의 캠페인 통합 관리 체계</div>
+                          <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">다양한 유형의 캠페인 통합 관리 체계</div>
                         </div>
                         
                         <div className="space-y-6">
                           {/* 3단계: 실시간 위기 관리 */}
                           <div className="flex justify-center">
                             <div className="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style={{width: "320px"}}>
-                              <h5 className="text-sm font-bold text-gray-800 mb-3">3. 실시간 위기 관리</h5>
-                              <p className="text-xs text-gray-600 leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 완주 달성</p>
+                              <h5 className="text-sm font-bold text-[#282623] mb-3">3. 실시간 위기 관리</h5>
+                              <p className="text-xs text-[#58534e] tracking-tight leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 완주 달성</p>
                             </div>
                           </div>
                           
@@ -5204,8 +5204,8 @@ export default function CombinedLanding() {
                           {/* 2단계: 전문 도메인 대응 */}
                           <div className="flex justify-center">
                             <div className="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style={{width: "400px"}}>
-                              <h5 className="text-sm font-bold text-gray-800 mb-3">2. 전문 도메인 대응</h5>
-                              <p className="text-xs text-gray-600 leading-relaxed">컴플라이언스·핵심역량·안전교육 등 전문 영역에서 통역 협업을 통한 완벽한 다국어 소통 구현</p>
+                              <h5 className="text-sm font-bold text-[#282623] mb-3">2. 전문 도메인 대응</h5>
+                              <p className="text-xs text-[#58534e] tracking-tight leading-relaxed">컴플라이언스·핵심역량·안전교육 등 전문 영역에서 통역 협업을 통한 완벽한 다국어 소통 구현</p>
                             </div>
                           </div>
                           
@@ -5217,8 +5217,8 @@ export default function CombinedLanding() {
                           {/* 1단계: 다양한 유형의 캠페인 통합 운영 */}
                           <div className="flex justify-center">
                             <div className="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style={{width: "480px"}}>
-                              <h5 className="text-sm font-bold text-gray-800 mb-3">1. 다양한 유형의 캠페인 통합 운영</h5>
-                              <p className="text-xs text-gray-600 leading-relaxed">소규모 리더십 워크숍부터 대규모 온라인 웨비나, 국내 캠페인부터 글로벌 다국어 캠페인까지 다양한 규모와 유형의 캠페인 통합 관리</p>
+                              <h5 className="text-sm font-bold text-[#282623] mb-3">1. 다양한 유형의 캠페인 통합 운영</h5>
+                              <p className="text-xs text-[#58534e] tracking-tight leading-relaxed">소규모 리더십 워크숍부터 대규모 온라인 웨비나, 국내 캠페인부터 글로벌 다국어 캠페인까지 다양한 규모와 유형의 캠페인 통합 관리</p>
                             </div>
                           </div>
                         </div>
@@ -5235,49 +5235,49 @@ export default function CombinedLanding() {
                       {/* 간단한 3개 관점 다이어그램 */}
                       <div className="bg-gray-100 rounded-lg p-6 border border-gray-300 mb-6">
                         <div className="text-center mb-4">
-                          <div className="inline-flex items-center bg-gray-800 text-white px-4 py-2 rounded-md text-sm font-medium">3개 관점 통합 운영</div>
+                          <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">3개 관점 통합 운영</div>
                         </div>
                         
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                           <div className="bg-white rounded-lg p-4 border border-gray-300">
-                            <div className="text-sm font-medium text-gray-800 mb-1">통합 기획</div>
-                            <div className="text-xs text-gray-600">다양한 유형 관리</div>
+                            <div className="text-sm font-medium text-[#282623] mb-1">통합 기획</div>
+                            <div className="text-xs text-[#58534e]">다양한 유형 관리</div>
                           </div>
                           <div className="bg-white rounded-lg p-4 border border-gray-300">
-                            <div className="text-sm font-medium text-gray-800 mb-1">실시간 운영</div>
-                            <div className="text-xs text-gray-600">위기 대응</div>
+                            <div className="text-sm font-medium text-[#282623] mb-1">실시간 운영</div>
+                            <div className="text-xs text-[#58534e]">위기 대응</div>
                           </div>
                           <div className="bg-white rounded-lg p-4 border border-gray-300">
-                            <div className="text-sm font-medium text-gray-800 mb-1">기술 통합</div>
-                            <div className="text-xs text-gray-600">제작-운영</div>
+                            <div className="text-sm font-medium text-[#282623] mb-1">기술 통합</div>
+                            <div className="text-xs text-[#58534e]">제작-운영</div>
                           </div>
                         </div>
                       </div>
 
                       <div className="space-y-6">
                         <div className="border border-gray-300 rounded-lg overflow-hidden">
-                          <div className="bg-gray-500 text-white p-3">
+                          <div className="bg-[#6b7280] text-white p-3">
                             <div className="flex items-center">
-                              <span className="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                              <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
                               <span className="font-medium">통합 캠페인 기획 관점 - 다양한 유형의 캠페인 기획·관리</span>
                             </div>
                           </div>
                           <div className="p-4 bg-white space-y-4">
                             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                              <h6 className="text-sm font-medium text-gray-800 mb-2">50회 이상 캠페인 전과정 담당</h6>
-                              <p className="text-sm text-gray-600 leading-relaxed">컴플라이언스, 핵심역량, 안전교육 등 다양한 유형의 캠페인을 기획부터 운영까지 완전 통합 관리</p>
+                              <h6 className="text-sm font-medium text-[#282623] mb-2">50회 이상 캠페인 전과정 담당</h6>
+                              <p className="text-sm text-[#58534e] tracking-tight leading-relaxed">컴플라이언스, 핵심역량, 안전교육 등 다양한 유형의 캠페인을 기획부터 운영까지 완전 통합 관리</p>
                             </div>
                             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                              <h6 className="text-sm font-medium text-gray-800 mb-2">규모별 맞춤형 캠페인 설계</h6>
-                              <p className="text-sm text-gray-600 leading-relaxed">소규모 리더십 워크숍부터 대규모 온라인 웨비나까지 규모별 최적화 설계 및 NPS 4.5 이상 품질 관리</p>
+                              <h6 className="text-sm font-medium text-[#282623] mb-2">규모별 맞춤형 캠페인 설계</h6>
+                              <p className="text-sm text-[#58534e] tracking-tight leading-relaxed">소규모 리더십 워크숍부터 대규모 온라인 웨비나까지 규모별 최적화 설계 및 NPS 4.5 이상 품질 관리</p>
                             </div>
                           </div>
                         </div>
 
                         <div className="border border-gray-300 rounded-lg overflow-hidden">
-                          <div className="bg-gray-500 text-white p-3">
+                          <div className="bg-[#6b7280] text-white p-3">
                             <div className="flex items-center">
-                              <span className="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                              <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
                               <span className="font-medium">실시간 운영 관점 - 위기 대응 및 현장 감각</span>
                             </div>
                           </div>
@@ -5285,7 +5285,7 @@ export default function CombinedLanding() {
                             
                             {/* 위기 대응 플로우차트 */}
                             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
-                              <h6 className="text-sm font-medium text-gray-800 mb-3">즉석 위기 대응 시스템</h6>
+                              <h6 className="text-sm font-medium text-[#282623] mb-3">즉석 위기 대응 시스템</h6>
                               <div className="flex items-center justify-between text-center">
                                 <div className="bg-red-100 border border-red-300 rounded-lg p-2 flex-1 mx-1">
                                   <div className="text-xs font-medium text-red-800">돌발 상황</div>
@@ -5305,16 +5305,16 @@ export default function CombinedLanding() {
                             </div>
                             
                             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                              <h6 className="text-sm font-medium text-gray-800 mb-2">실시간 최적화 운영</h6>
-                              <p className="text-sm text-gray-600 leading-relaxed">실시간 큐시트 수정과 참가자 반응 모니터링을 통한 캠페인 흐름 최적화로 라이브 진행의 신뢰성 확보</p>
+                              <h6 className="text-sm font-medium text-[#282623] mb-2">실시간 최적화 운영</h6>
+                              <p className="text-sm text-[#58534e] tracking-tight leading-relaxed">실시간 큐시트 수정과 참가자 반응 모니터링을 통한 캠페인 흐름 최적화로 라이브 진행의 신뢰성 확보</p>
                             </div>
                           </div>
                         </div>
 
                         <div className="border border-gray-300 rounded-lg overflow-hidden">
-                          <div className="bg-gray-500 text-white p-3">
+                          <div className="bg-[#6b7280] text-white p-3">
                             <div className="flex items-center">
-                              <span className="w-6 h-6 bg-white text-gray-500 rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                              <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
                               <span className="font-medium">기술 통합 관점 - 제작-운영 연계</span>
                             </div>
                           </div>
@@ -5322,28 +5322,28 @@ export default function CombinedLanding() {
                             
                             {/* 이중 역할 전환 다이어그램 */}
                             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
-                              <h6 className="text-sm font-medium text-gray-800 mb-3">진행자-운영자 이중 역할 시스템</h6>
+                              <h6 className="text-sm font-medium text-[#282623] mb-3">진행자-운영자 이중 역할 시스템</h6>
                               <div className="grid grid-cols-2 gap-4">
                                 <div className="text-center">
                                   <div className="bg-blue-100 border-2 border-blue-300 rounded-lg p-3 mb-2">
                                     <div className="text-sm font-medium text-blue-800">평상시</div>
                                     <div className="text-xs text-blue-600 mt-1">진행자 역할</div>
                                   </div>
-                                  <div className="text-xs text-gray-600">• 캠페인 진행<br/>• 참가자 소통<br/>• 콘텐츠 전달</div>
+                                  <div className="text-xs text-[#58534e]">• 캠페인 진행<br/>• 참가자 소통<br/>• 콘텐츠 전달</div>
                                 </div>
                                 <div className="text-center">
                                   <div className="bg-orange-100 border-2 border-orange-300 rounded-lg p-3 mb-2">
                                     <div className="text-sm font-medium text-orange-800">위기시</div>
                                     <div className="text-xs text-orange-600 mt-1">운영자 전환</div>
                                   </div>
-                                  <div className="text-xs text-gray-600">• 기술적 대응<br/>• 즉시 해결<br/>• 신뢰 유지</div>
+                                  <div className="text-xs text-[#58534e]">• 기술적 대응<br/>• 즉시 해결<br/>• 신뢰 유지</div>
                                 </div>
                               </div>
                             </div>
                             
                             <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                              <h6 className="text-sm font-medium text-gray-800 mb-2">제작 기술 역량 통합 활용</h6>
-                              <p className="text-sm text-gray-600 leading-relaxed">송출, 그래픽 리소스 제작, 벤더사 및 셀럽 커뮤니케이션 등 제작 기술 역량을 활용한 라이브 진행 중 기술적 이슈 즉시 대응</p>
+                              <h6 className="text-sm font-medium text-[#282623] mb-2">제작 기술 역량 통합 활용</h6>
+                              <p className="text-sm text-[#58534e] tracking-tight leading-relaxed">송출, 그래픽 리소스 제작, 벤더사 및 셀럽 커뮤니케이션 등 제작 기술 역량을 활용한 라이브 진행 중 기술적 이슈 즉시 대응</p>
                             </div>
                           </div>
                         </div>
@@ -5352,8 +5352,8 @@ export default function CombinedLanding() {
 
                     {/* 5. 활용 기술 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">5</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
                         활용 기술
                       </h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
