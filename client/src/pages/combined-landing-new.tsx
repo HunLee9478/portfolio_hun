@@ -5289,7 +5289,7 @@ export default function CombinedLanding() {
                               <div className="flex items-center justify-between text-center">
                                 <div className="bg-red-100 border border-red-300 rounded-lg p-2 flex-1 mx-1">
                                   <div className="text-xs font-medium text-red-800">돌발 상황</div>
-                                  <div className="text-xs text-red-600">출연자 불참<br/>시스템 오류</div>
+                                  <div className="text-red-600 text-[14px]">출연자 불참<br/>시스템 오류</div>
                                 </div>
                                 <div className="text-gray-400 text-lg">→</div>
                                 <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-2 flex-1 mx-1">
