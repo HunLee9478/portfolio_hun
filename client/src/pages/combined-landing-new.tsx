@@ -5383,26 +5383,84 @@ export default function CombinedLanding() {
 
                     {/* 5. 활용 기술 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
+                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">5</span>
                         활용 기술
                       </h3>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">실시간 운영</h5>
-                          <p className="text-xs text-[#58534e]">라이브 진행 중 위기 대응, 즉석 큐시트 수정, 참가자 반응 실시간 분석</p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="space-y-4">
+                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-32">
+                            <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
+                              🎯 실시간 운영
+                            </h3>
+                            <div className="space-y-2">
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#58534e]">라이브 위기 대응</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">즉시 해결</span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#58534e]">큐시트 수정</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">실시간 최적화</span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#58534e]">참가자 반응 분석</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">모니터링</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
+                            <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
+                              🌐 다국어 소통
+                            </h3>
+                            <div className="space-y-2">
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#58534e]">통역 협업</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">전문 도메인</span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#58534e]">글로벌 소통</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">완벽 구현</span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">기술 통합</h5>
-                          <p className="text-xs text-[#58534e]">송출 시스템, 그래픽 제작, 벤더 커뮤니케이션을 활용한 제작-운영 연계</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">다국어 소통</h5>
-                          <p className="text-xs text-[#58534e]">통역 협업을 통한 전문 도메인(컴플라이언스, 핵심역량, 안전교육) 완벽 소통 구현</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">진행자-운영자 역할 전환</h5>
-                          <p className="text-xs text-[#58534e]">평상시 진행자에서 위기 상황 시 운영자로 역할 전환을 통한 신뢰성 확보</p>
+                        <div className="space-y-4">
+                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-32">
+                            <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
+                              🔧 기술 통합
+                            </h3>
+                            <div className="space-y-2">
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#58534e]">송출 시스템</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">안정적 방송</span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#58534e]">그래픽 제작</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">비주얼 지원</span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#58534e]">벤더 커뮤니케이션</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">통합 관리</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-24">
+                            <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
+                              🔄 역할 전환
+                            </h3>
+                            <div className="space-y-2">
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#58534e]">진행자-운영자</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">이중 역할</span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <span className="text-sm text-[#58534e]">신뢰성 확보</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">위기 대응</span>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
