@@ -2614,43 +2614,31 @@ export default function CombinedLanding() {
                     </div>
 
                     {/* 5. 활용 기술 */}
-                    <div className="mb-6">
+                    <div className="mb-6 mt-8 pt-8 border-t border-gray-200">
                       <h2 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">5</span>
                         활용 기술
                       </h2>
                     </div>
-
-                    {/* 매트릭스 그리드 */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                        <h4 className="text-sm font-medium text-gray-800 mb-3">영상 제작</h4>
-                        <div className="space-y-2 text-sm text-gray-600">
-                          <div>• <strong>Premiere Pro</strong>: 디지털 화면 기반 포맷 제작</div>
-                          <div>• <strong>After Effects</strong>: 모션 그래픽 제작</div>
+                    <div className="grid grid-cols-2 gap-6 mb-8">
+                      <div className="space-y-4">
+                        <div>
+                          <div className="text-sm text-gray-800 tracking-tight leading-relaxed mb-2 font-medium">사용자 리서치 & 분석</div>
+                          <div className="text-sm text-gray-600 tracking-tight leading-relaxed">뎁스 인터뷰, 페르소나 설계, 유저시나리오 분석을 통한 사용자 행동 패턴 심층 분석 및 ALT+TAB 화면 전환 심리 구조 파악</div>
+                        </div>
+                        <div>
+                          <div className="text-sm text-gray-800 tracking-tight leading-relaxed mb-2 font-medium">영상 제작 & 포스트 프로덕션</div>
+                          <div className="text-sm text-gray-600 tracking-tight leading-relaxed">Premiere Pro, After Effects를 활용한 디지털 화면 기반 포맷 및 모션 그래픽 제작. 고정 화면 구조로 효율적 편집 워크플로우 구축</div>
                         </div>
                       </div>
-                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                        <h4 className="text-sm font-medium text-gray-800 mb-3">그래픽 리소스</h4>
-                        <div className="space-y-2 text-sm text-gray-600">
-                          <div>• <strong>Photoshop</strong>: UI 기반 화면 요소 제작</div>
-                          <div>• <strong>Stable Diffusion</strong>: AI 기반 시각 자료 생성</div>
-                          <div>• <strong>Midjourney</strong>: 고품질 시각 자료 생성</div>
+                      <div className="space-y-4">
+                        <div>
+                          <div className="text-sm text-gray-800 tracking-tight leading-relaxed mb-2 font-medium">AI 기반 그래픽 리소스 생성</div>
+                          <div className="text-sm text-gray-600 tracking-tight leading-relaxed">Photoshop, Stable Diffusion, Midjourney를 활용한 UI 기반 화면 요소 및 시각 자료 생성. 메신저, 브라우저 등 디지털 환경 재현</div>
                         </div>
-                      </div>
-                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                        <h4 className="text-sm font-medium text-gray-800 mb-3">사용자 리서치</h4>
-                        <div className="space-y-2 text-sm text-gray-600">
-                          <div>• <strong>뎁스 인터뷰</strong>: 심리적 갈등 구조 파악</div>
-                          <div>• <strong>페르소나 설계</strong>: 사용자 유형별 분석</div>
-                          <div>• <strong>유저시나리오 분석</strong>: 행동 패턴 식별</div>
-                        </div>
-                      </div>
-                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                        <h4 className="text-sm font-medium text-gray-800 mb-3">다국어 최적화</h4>
-                        <div className="space-y-2 text-sm text-gray-600">
-                          <div>• <strong>고정 화면 구조</strong>: 효율적 다국어 버전 제작</div>
-                          <div>• <strong>시스템 구축</strong>: 글로벌 전개 기반 마련</div>
+                        <div>
+                          <div className="text-sm text-gray-800 tracking-tight leading-relaxed mb-2 font-medium">글로벌 확장 시스템</div>
+                          <div className="text-sm text-gray-600 tracking-tight leading-relaxed">언어와 상관없이 직관적 이해가 가능한 시각적 학습 환경 구현. 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 동시 제작 체계 구축</div>
                         </div>
                       </div>
                     </div>
