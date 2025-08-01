@@ -253,7 +253,7 @@ export default function CombinedLanding() {
     service2Title: "데이터 기반 캠페인 기획 및 전략 ",
     service2Description: "사용자 행동 데이터에서 심리적 저항 요인을 파악하여 개인 맞춤형 참여 시나리오를 설계하는 전략 기획력을 보유했습니다. '익숙한 일상 공간의 게임화' 등 창의적 아이디어로 형식적 참여를 진성 참여로 전환하는 역량을 보유하고 있습니다.",
     service3Title: "온, 오프라인 캠페인 운영",
-    service3Description: "온, 오프라인 캠페인 직접 운영하며 출연자 관리와 제작 능력을 기반으로 한 기술적 이슈 대응을 통해 1년간 NPS 4.5 이상의 안정적인 성과를 달성합니다.",
+    service3Description: "온, 오프라인 캠페인 직접 운영하며 출연자 관리와 제작 능력을 기반으로 한 기술적 이슈 대응을 통해 1년간 NPS 4.5 이상의 안정적인 성과를 달성하였습니다.",
     contactTitle: "I Keep Challenging Myself to Make Good and Meaningful Content",
     contactDescription: "저는 제작 역량을 기반으로 기획부터 연출, 촬영, 편집, 사용자 경험까지 모든 과정에서 '무엇을, 어떻게' 보여줄지를 고민해왔습니다. 심리를 설계하고, 이탈 데이터를 분석해 UI 개선을 제안했으며, AI 툴을 활용해 제작 속도와 품질을 동시에 끌어올렸습니다. 감성과 전략, 창의성과 기술을 넘나들며 종합적인 콘텐츠 구조를 설계하는 콘텐츠 크리에이터로 성장해왔으며, 앞으로도 명확한 메시지를 중심에 둔 콘텐츠를 만들어가겠습니다.",
   });
@@ -469,10 +469,10 @@ export default function CombinedLanding() {
     {
       id: "5",
       src: MetaverseMainImage,
-      alt: "Gather, 게임형 메타버스 캠페인",
-      title: "Gather, 게임형 메타버스 캠페인",
+      alt: "메타버스 디지털 캠페인 기획, 제작",
+      title: "메타버스 디지털 캠페인 기획, 제작",
       subtitle: "AI 활용 메타버스 환경 구축",
-      description: "METAVERSE Campagin\n게임형 디지털 캠페인 기획·제작",
+      description: "GATHER\n메타버스 디지털 캠페인 기획·제작",
       category: "Metaverse & Campagin",
       year: "2023",
       client: "NH농협, 삼성교육재단 외 3개사",
@@ -510,10 +510,10 @@ export default function CombinedLanding() {
       alt: "컴플라이언스 캠페인 기획, 제작",
       title: "컴플라이언스 캠페인 기획, 제작",
       subtitle: "혁신적 메신저·브라우저 기반 콘텐츠 포맷",
-      description: "SAMSUNG C&T\n사용자 화면 전환 회피 행동 역이용 혁신 캠페인",
+      description: "SAMSUNG\n컴플라이언스 캠페인 기획 제작",
       category: "Campaign Contents",
       year: "2023.02-2023.08",
-      client: "Samsung",
+      client: "SAMSUNG",
       role: "사용자 리서치, 콘텐츠 기획, 제작 효율화",
       tools: ["Found Footage", "Photoshop", "After Effects", "Premiere Pro", "Stable Diffusion", "User Research"],
       images: [
@@ -526,13 +526,13 @@ export default function CombinedLanding() {
     {
       id: "8",
       src: SamsungOfflineImage,
-      alt: "글로벌 IT기업 온·오프라인 캠페인 기획·운영",
-      title: "글로벌 IT기업 온·오프라인 캠페인 기획·운영",
+      alt: "온·오프라인 캠페인 기획·운영",
+      title: "온·오프라인 캠페인 기획·운영",
       subtitle: "23개월간 50회 이상 글로벌 캠페인 운영",
-      description: "GLOBAL IT COMPANY\n온·오프라인 캠페인 기획·운영",
+      description: "SAMSUNG\n온·오프라인 캠페인 기획·운영",
       category: "Campaign Management",
       year: "2023.01-2024.11",
-      client: "글로벌 IT기업",
+      client: "Samsung",
       role: "통합 기획, 실시간 운영, 기술 통합",
       tools: ["Campaign Planning", "Real-time Operations", "Technical Integration", "Multi-language Support"],
       images: [
@@ -545,10 +545,10 @@ export default function CombinedLanding() {
     {
       id: "9",
       src: "/attached_assets/image_1754037460982.png",
-      alt: "Snapask 프리미엄 브랜드 콘텐츠 영상 제작",
-      title: "Snapask 프리미엄 브랜드 콘텐츠 영상 제작",
+      alt: "SNAPASK",
+      title: "프리미엄 브랜드 콘텐츠 제작",
       subtitle: "인하우스 제작 체제 전환으로 40% 예산 절감 달성",
-      description: "SNAPASK PREMIUM\nSnapask 프리미엄 브랜드 콘텐츠 영상 제작",
+      description: "SNAPASK \n 프리미엄 브랜드 콘텐츠 제작",
       category: "Video Production & Branding",
       year: "2022.01-2022.07",
       client: "Snapask",
@@ -1897,7 +1897,7 @@ export default function CombinedLanding() {
                             width: "100%"
                           }}
                         >
-                          글로벌 IT기업의 온·오프라인 캠페인을 23개월간 기획·운영했습니다. 50회 이상 캠페인에서 NPS 4.5 이상을 달성하고, 출연자 불참이나 시스템 오류 등 돌발 상황에서도 즉석 대응으로 캠페인을 완주했습니다.
+                         온·오프라인 캠페인을 23개월간 기획·운영했습니다. 50회 이상 캠페인에서 NPS 4.5 이상을 달성하고, 출연자 불참이나 시스템 오류 등 돌발 상황에서도 즉석 대응으로 캠페인을 완주했습니다.
                         </AdvancedEditableText>
                       )}
                       {selectedProject.id === "2" && (
