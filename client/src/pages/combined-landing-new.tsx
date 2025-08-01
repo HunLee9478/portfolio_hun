@@ -2361,48 +2361,89 @@ export default function CombinedLanding() {
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
                         역할
                       </h3>
+                      {/* 프로세스 플로우 시각화 */}
+                      <div className="mb-6 bg-gray-50 rounded-lg p-4 border border-gray-200">
+                        <div className="flex items-center justify-between text-xs text-[#58534e] mb-2">
+                          <span>문제 발견</span>
+                          <span>→</span>
+                          <span>솔루션 설계</span>
+                          <span>→</span>
+                          <span>실시간 운영</span>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <div className="flex flex-col items-center">
+                            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold mb-1">📊</div>
+                            <span className="text-xs text-[#58534e] text-center">데이터 분석</span>
+                          </div>
+                          <div className="flex-1 h-0.5 bg-gray-300 mx-2"></div>
+                          <div className="flex flex-col items-center">
+                            <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold mb-1">🎨</div>
+                            <span className="text-xs text-[#58534e] text-center">콘텐츠 제작</span>
+                          </div>
+                          <div className="flex-1 h-0.5 bg-gray-300 mx-2"></div>
+                          <div className="flex flex-col items-center">
+                            <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs font-bold mb-1">⚡</div>
+                            <span className="text-xs text-[#58534e] text-center">현장 운영</span>
+                          </div>
+                        </div>
+                      </div>
+
                       <div className="space-y-6">
                         {/* 데이터 분석 관점 */}
-                        <div>
+                        <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
-                            <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                            <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold mr-3">📊</div>
                             데이터 분석 관점 - 근본 문제 발견
                           </h4>
-                          <div className="ml-4 space-y-2">
-                            <div className="text-sm text-[#58534e] leading-relaxed">
-                              <span className="font-medium text-[#282623]">1.</span> 사용자 행동 로그 분석 → 온라인 캠페인 참여도 편차가 심해 기존 평균값이나 중위값으로는 실제 관심도를 측정할 수 없음을 확인
+                          <div className="ml-9 space-y-3">
+                            <div className="bg-white rounded-md p-3 border border-blue-100">
+                              <div className="text-sm text-[#58534e] leading-relaxed">
+                                <span className="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center text-xs font-bold mr-2">1</span> 
+                                사용자 행동 로그 분석 → 온라인 캠페인 참여도 편차가 심해 기존 평균값이나 중위값으로는 실제 관심도를 측정할 수 없음을 확인
+                              </div>
                             </div>
-                            <div className="text-sm text-[#58534e] leading-relaxed">
-                              <span className="font-medium text-[#282623]">2.</span> 설문조사 임의 체크, 교육 콘텐츠 빠른 스킵 등 형식적 참여 패턴을 수치로 확인하여 진성 참여 유도 전략의 필요성 도출
+                            <div className="bg-white rounded-md p-3 border border-blue-100">
+                              <div className="text-sm text-[#58534e] leading-relaxed">
+                                <span className="inline-block w-6 h-6 bg-blue-100 text-blue-600 rounded-full text-center text-xs font-bold mr-2">2</span> 
+                                설문조사 임의 체크, 교육 콘텐츠 빠른 스킵 등 형식적 참여 패턴을 수치로 확인하여 진성 참여 유도 전략의 필요성 도출
+                              </div>
                             </div>
                           </div>
                         </div>
 
                         {/* 콘텐츠 제작 관점 */}
-                        <div>
+                        <div className="bg-green-50 rounded-lg p-4 border border-green-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
-                            <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold mr-3">🎨</div>
                             콘텐츠 제작 관점 - 혁신적 환경 구현
                           </h4>
-                          <div className="ml-4 space-y-2">
-                            <div className="text-sm text-[#58534e] leading-relaxed">
-                              <span className="font-medium text-[#282623]">1.</span> Python, ComfyUI, Midjourney, Stable Diffusion을 활용해 사무실, 카페 등 친숙한 일상 공간에 퀘스트 요소를 자연스럽게 결합한 메타버스 맵 직접 제작
+                          <div className="ml-9 space-y-3">
+                            <div className="bg-white rounded-md p-3 border border-green-100">
+                              <div className="text-sm text-[#58534e] leading-relaxed">
+                                <span className="inline-block w-6 h-6 bg-green-100 text-green-600 rounded-full text-center text-xs font-bold mr-2">1</span> 
+                                Python, ComfyUI, Midjourney, Stable Diffusion을 활용해 사무실, 카페 등 친숙한 일상 공간에 퀘스트 요소를 자연스럽게 결합한 메타버스 맵 직접 제작
+                              </div>
                             </div>
-                            <div className="text-sm text-[#58534e] leading-relaxed">
-                              <span className="font-medium text-[#282623]">2.</span> 완전히 새로운 공간이 아닌 '변화된 일상'을 통해 초기 진입 장벽은 낮추면서 지속적인 탐험 동기는 제공하는 UX 설계
+                            <div className="bg-white rounded-md p-3 border border-green-100">
+                              <div className="text-sm text-[#58534e] leading-relaxed">
+                                <span className="inline-block w-6 h-6 bg-green-100 text-green-600 rounded-full text-center text-xs font-bold mr-2">2</span> 
+                                완전히 새로운 공간이 아닌 '변화된 일상'을 통해 초기 진입 장벽은 낮추면서 지속적인 탐험 동기는 제공하는 UX 설계
+                              </div>
                             </div>
                           </div>
                         </div>
 
                         {/* 현장 운영 관점 */}
-                        <div>
+                        <div className="bg-purple-50 rounded-lg p-4 border border-purple-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
-                            <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                            <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs font-bold mr-3">⚡</div>
                             현장 운영 관점 - 실시간 소통 최적화
                           </h4>
-                          <div className="ml-4">
-                            <div className="text-sm text-[#58534e] leading-relaxed">
-                              퀘스트를 자동화하지 않고 진행자가 직접 실시간 소통으로 참가자 반응을 즉시 파악하고 온라인 캠페인, 행사 호응 유도
+                          <div className="ml-9">
+                            <div className="bg-white rounded-md p-3 border border-purple-100">
+                              <div className="text-sm text-[#58534e] leading-relaxed">
+                                퀘스트를 자동화하지 않고 진행자가 직접 실시간 소통으로 참가자 반응을 즉시 파악하고 온라인 캠페인, 행사 호응 유도
+                              </div>
                             </div>
                           </div>
                         </div>
