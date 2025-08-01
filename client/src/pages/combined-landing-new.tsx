@@ -2190,7 +2190,7 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
-                {/* 메타버스 프로젝트 전용 상세 모달 - 표준 순서 적용 */}
+                {/* 메타버스 프로젝트 전용 상세 모달 */}
                 {selectedProject.id === "5" && (
                   <div className="mb-12">
                     {/* 1. 프로젝트 세부 활동 */}
@@ -2200,9 +2200,9 @@ export default function CombinedLanding() {
                         프로젝트 세부 활동
                       </h3>
                       <div className="text-sm text-[#58534e] leading-relaxed space-y-3">
-                        <p>픽셀 아트 스타일의 2D 메타버스 플랫폼 Gather를 활용하여 5개 주요 클라이언트 대상 게임형 디지털 캠페인을 기획·제작했습니다.</p>
-                        <p>사용자 행동 로그 분석을 통해 형식적 참여 패턴을 식별하고, 일상 공간 기반의 친숙한 환경과 게임화 요소를 결합한 솔루션을 설계했습니다.</p>
-                        <p>AI 도구(Midjourney, Stable Diffusion, ComfyUI)를 활용해 메타버스 맵을 제작하고, 실시간 소통 기반의 운영으로 참여도를 극대화했습니다.</p>
+                        <p>픽셀 아트 스타일의 2D 메타버스 플랫폼 Gather를 활용하여 5개 주요 클라이언트 대상 게임형 디지털 캠페인을 기획·제작</p>
+                        <p>사용자 행동 로그 분석을 통해 형식적 참여 패턴을 식별하고, 일상 공간 기반의 친숙한 환경과 게임화 요소를 결합한 솔루션 설계</p>
+                        <p>AI 도구(Midjourney, Stable Diffusion, ComfyUI)를 활용해 메타버스 맵을 제작하고, 실시간 소통 기반의 운영으로 참여도 극대화</p>
                       </div>
                     </div>
 
@@ -2239,211 +2239,87 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 3. 프로젝트 기간 */}
+                    {/* 3. 내용 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
-                        프로젝트 기간
+                        내용
                       </h3>
-                      <div className="text-sm text-[#58534e] leading-relaxed">
-                        <p><strong>2023.02 - 2023.08 (8개월)</strong></p>
-                        <p>메타버스 플랫폼 구축 및 5개 클라이언트 대상 캠페인 운영</p>
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 데이터 기반 문제 진단</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            사용자 행동 로그를 분석해 기존 온라인 교육의 형식적 참여 패턴을 도출하고, 진성 참여와 형식적 참여를 구분하는 지표 개발
+                          </p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">2. 창의적 솔루션 설계</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            친숙함과 호기심을 동시에 자극하는 메타버스 환경을 만들어 초기 진입 장벽은 낮추고 지속적인 탐험 동기는 높임
+                          </p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 실시간 최적화 운영</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            자동화 대신 진행자가 직접 소통하며 참가자 반응을 즉시 파악하고 몰입도를 지속적으로 관리
+                          </p>
+                        </div>
                       </div>
                     </div>
 
-                    {/* 4. 주요 성과 */}
+                    {/* 4. 역할 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
-                        주요 성과
+                        역할
                       </h3>
-                      <div className="text-sm text-[#58534e] leading-relaxed space-y-2">
-                        <p>• <strong>5개 주요 클라이언트</strong> 대상 메타버스 캠페인 성공적 운영 (NH농협, 삼성교육재단, 한국증권 등)</p>
-                        <p>• <strong>참여도 30% 향상</strong> - 기존 온라인 이벤트 대비 능동적 참여 증가</p>
-                        <p>• <strong>데이터 기반 최적화</strong> - 실시간 행동 분석을 통한 콘텐츠 개선</p>
-                        <p>• <strong>AI 도구 활용 효율화</strong> - 제작 시간 50% 단축 및 품질 향상</p>
-                      </div>
-                    </div>
-
-                    {/* 5. 주요 역할 */}
-                    <div className="mb-8">
-                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
-                        주요 역할
-                      </h3>
-                      
-                      <div className="space-y-4">
+                      <div className="space-y-6">
+                        {/* 데이터 분석 관점 */}
                         <div>
-                          <AdvancedEditableText
-                            textKey={`project-${selectedProject.id}-role-1-title`}
-                            className="text-sm font-medium text-[#282623] mb-4 tracking-tight leading-relaxed"
-                            style={{
-                              fontSize: TYPOGRAPHY.fontSize.small,
-                              color: "#282623",
-                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                              fontWeight: "500"
-                            }}
-                          >
-                            AI 기반 메타버스 환경 설계
-                          </AdvancedEditableText>
-                          <div className="relative pl-4 mt-4 mb-6">
-                            <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200"></div>
-                            {/* 워크플로우 시각화 */}
-                            <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
-                              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                <div className="text-center">
-                                  <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-2">1</div>
-                                  <div className="text-xs text-[#282623] font-medium mb-1">고객사 분석</div>
-                                  <div className="text-xs text-[#58534e]">특성 파악</div>
-                                </div>
-                                <div className="text-center">
-                                  <div className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-2">2</div>
-                                  <div className="text-xs text-[#282623] font-medium mb-1">공간 설계</div>
-                                  <div className="text-xs text-[#58534e]">맞춤형 가상공간</div>
-                                </div>
-                                <div className="text-center">
-                                  <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-2">3</div>
-                                  <div className="text-xs text-[#282623] font-medium mb-1">AI 콘텐츠</div>
-                                  <div className="text-xs text-[#58534e]">도구 활용 생성</div>
-                                </div>
-                                <div className="text-center">
-                                  <div className="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold mx-auto mb-2">4</div>
-                                  <div className="text-xs text-[#282623] font-medium mb-1">게임화</div>
-                                  <div className="text-xs text-[#58534e]">요소 통합</div>
-                                </div>
-                              </div>
-                              
-                              {/* 화살표 연결선 - 데스크톱에서만 표시 */}
-                              <div className="hidden md:flex justify-between items-center mt-2 px-6">
-                                <div className="flex-1 h-0.5 bg-gray-300 relative">
-                                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-gray-300 border-t-2 border-b-2 border-t-transparent border-b-transparent"></div>
-                                </div>
-                                <div className="w-4"></div>
-                                <div className="flex-1 h-0.5 bg-gray-300 relative">
-                                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-gray-300 border-t-2 border-b-2 border-t-transparent border-b-transparent"></div>
-                                </div>
-                                <div className="w-4"></div>
-                                <div className="flex-1 h-0.5 bg-gray-300 relative">
-                                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-gray-300 border-t-2 border-b-2 border-t-transparent border-b-transparent"></div>
-                                </div>
-                              </div>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                            데이터 분석 관점 - 근본 문제 발견
+                          </h4>
+                          <div className="ml-4 space-y-2">
+                            <div className="text-sm text-[#58534e] leading-relaxed">
+                              <span className="font-medium text-[#282623]">1.</span> 사용자 행동 로그 분석 → 온라인 캠페인 참여도 편차가 심해 기존 평균값이나 중위값으로는 실제 관심도를 측정할 수 없음을 확인
+                            </div>
+                            <div className="text-sm text-[#58534e] leading-relaxed">
+                              <span className="font-medium text-[#282623]">2.</span> 설문조사 임의 체크, 교육 콘텐츠 빠른 스킵 등 형식적 참여 패턴을 수치로 확인하여 진성 참여 유도 전략의 필요성 도출
                             </div>
                           </div>
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                              <AdvancedEditableText
-                                textKey={`project-${selectedProject.id}-role-1-sub-1-title`}
-                                className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                                style={{
-                                  fontSize: TYPOGRAPHY.fontSize.small,
-                                  color: "#282623",
-                                  lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                  fontWeight: "500",
-                                  marginBottom: "16px"
-                                }}
-                              >
-                                AI 도구 활용
-                              </AdvancedEditableText>
-                              <div className="space-y-2">
-                                <div>
-                                  <AdvancedEditableText
-                                    textKey={`project-${selectedProject.id}-role-1-sub-1-item-1-title`}
-                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
-                                    style={{
-                                      fontSize: TYPOGRAPHY.fontSize.small,
-                                      color: "#58534e",
-                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                      display: "block",
-                                      marginBottom: "4px"
-                                    }}
-                                  >
-                                    • ComfyUI: 일관된 캐릭터 생성
-                                  </AdvancedEditableText>
-                                </div>
-                                <div>
-                                  <AdvancedEditableText
-                                    textKey={`project-${selectedProject.id}-role-1-sub-1-item-2-title`}
-                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
-                                    style={{
-                                      fontSize: TYPOGRAPHY.fontSize.small,
-                                      color: "#58534e",
-                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                      display: "block",
-                                      marginBottom: "4px"
-                                    }}
-                                  >
-                                    • Midjourney: 환경 디자인 컨셉
-                                  </AdvancedEditableText>
-                                </div>
-                                <div>
-                                  <AdvancedEditableText
-                                    textKey={`project-${selectedProject.id}-role-1-sub-1-item-3-title`}
-                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
-                                    style={{
-                                      fontSize: TYPOGRAPHY.fontSize.small,
-                                      color: "#58534e",
-                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                      display: "block",
-                                      marginBottom: "4px"
-                                    }}
-                                  >
-                                    • Stable Diffusion: 세부 요소 제작
-                                  </AdvancedEditableText>
-                                </div>
-                              </div>
+                        </div>
+
+                        {/* 콘텐츠 제작 관점 */}
+                        <div>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
+                            <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            콘텐츠 제작 관점 - 혁신적 환경 구현
+                          </h4>
+                          <div className="ml-4 space-y-2">
+                            <div className="text-sm text-[#58534e] leading-relaxed">
+                              <span className="font-medium text-[#282623]">1.</span> Python, ComfyUI, Midjourney, Stable Diffusion을 활용해 사무실, 카페 등 친숙한 일상 공간에 퀘스트 요소를 자연스럽게 결합한 메타버스 맵 직접 제작
                             </div>
-                            <div>
-                              <AdvancedEditableText
-                                textKey={`project-${selectedProject.id}-role-1-sub-2-title`}
-                                className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                                style={{
-                                  fontSize: TYPOGRAPHY.fontSize.small,
-                                  color: "#282623",
-                                  lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                  fontWeight: "500",
-                                  marginBottom: "16px"
-                                }}
-                              >
-                                데이터 분석 및 운영
-                              </AdvancedEditableText>
-                              <div className="space-y-2">
-                                <div>
-                                  <AdvancedEditableText
-                                    textKey={`project-${selectedProject.id}-role-1-sub-2-item-1-title`}
-                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
-                                    style={{
-                                      fontSize: TYPOGRAPHY.fontSize.small,
-                                      color: "#58534e",
-                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                      display: "block",
-                                      marginBottom: "4px"
-                                    }}
-                                  >
-                                    • 사용자 행동 로그 분석으로 형식적 참여 패턴 발견
-                                  </AdvancedEditableText>
-                                </div>
-                                <div>
-                                  <AdvancedEditableText
-                                    textKey={`project-${selectedProject.id}-role-1-sub-2-item-2-title`}
-                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
-                                    style={{
-                                      fontSize: TYPOGRAPHY.fontSize.small,
-                                      color: "#58534e",
-                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                      display: "block",
-                                      marginBottom: "4px"
-                                    }}
-                                  >
-                                    • 실시간 소통으로 참가자 반응 파악 및 호응 유도
-                                  </AdvancedEditableText>
-                                </div>
-                              </div>
+                            <div className="text-sm text-[#58534e] leading-relaxed">
+                              <span className="font-medium text-[#282623]">2.</span> 완전히 새로운 공간이 아닌 '변화된 일상'을 통해 초기 진입 장벽은 낮추면서 지속적인 탐험 동기는 제공하는 UX 설계
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 현장 운영 관점 */}
+                        <div>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
+                            <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                            현장 운영 관점 - 실시간 소통 최적화
+                          </h4>
+                          <div className="ml-4">
+                            <div className="text-sm text-[#58534e] leading-relaxed">
+                              퀘스트를 자동화하지 않고 진행자가 직접 실시간 소통으로 참가자 반응을 즉시 파악하고 온라인 캠페인, 행사 호응 유도
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-
 
                   </div>
                 )}
