@@ -5555,7 +5555,7 @@ export default function CombinedLanding() {
                       </div>
                       
                       {/* Snapask 프로젝트 이미지 갤러리 */}
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                      <div className="grid grid-cols-2 gap-4 mb-6">
                         <div className="aspect-video rounded-lg overflow-hidden">
                           <img 
                             src="/attached_assets/image_1754036032577.png"
