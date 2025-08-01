@@ -243,7 +243,7 @@ export default function CombinedLanding() {
   });
   const [editableTexts, setEditableTexts] = useState<Record<string, string>>({
     heroTitle1: "메세지 전달을 넘어",
-    heroTitle2: "<span style='color: #1CABE2'>후원자의 마음</span>을",
+    heroTitle2: "<span style='color: #1CABE2'>아이들과 후원자의 마음</span>을",
     heroTitle3: "움직이는",
     heroTitle4: "디지털 마케터 이승훈 입니다",
     aboutTitle: "> ALL-IN-ONE CAMPAIGN\nCREATOR",
@@ -891,7 +891,7 @@ export default function CombinedLanding() {
                 className="block mt-[2px] mb-[2px] pt-[1px] pb-[1px] text-[#2D2926]"
                 style={{ lineHeight: "1.1" }}
               >
-                후원자의 마음만을
+                아이들과 후원자의 마음만을
               </EditableText>
               <div
                 className="block pt-[0px] pb-[0px] mt-[-4px] mb-[-4px]"
