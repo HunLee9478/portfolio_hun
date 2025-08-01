@@ -3921,15 +3921,52 @@ export default function CombinedLanding() {
                             src="/assets/projects/samsung-education-studio.png" 
                             alt="삼성물산 컴플라이언스 캠페인"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: samsung-education-studio.png")}
                           />
                         </div>
                         <div className="aspect-[4/3] bg-[#f5f5f5] overflow-hidden rounded-lg relative">
                           <img 
-                            src="/assets/projects/samsung-education-studio.png" 
+                            src="/assets/projects/samsung-education-filming.jpg" 
                             alt="디지털 환경 기반 콘텐츠"
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: samsung-education-filming.jpg")}
                           />
                         </div>
+                        <div className="aspect-[4/3] bg-[#f5f5f5] overflow-hidden rounded-lg relative">
+                          <img 
+                            src="/assets/projects/samsung-education-screenlife.jpg" 
+                            alt="화면 중심 촬영 기법"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: samsung-education-screenlife.jpg")}
+                          />
+                        </div>
+                        <div className="aspect-[4/3] bg-[#f5f5f5] overflow-hidden rounded-lg relative">
+                          <img 
+                            src="/assets/projects/samsung-education-multiscreen.jpg" 
+                            alt="다국어 콘텐츠 제작"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: samsung-education-multiscreen.jpg")}
+                          />
+                        </div>
+                      </div>
+                      <div className="text-center mb-8">
+                        <p className="text-sm text-[#58534e] italic">디지털 환경 기반 컴플라이언스 교육 콘텐츠 제작 과정</p>
                       </div>
                     </div>
 
@@ -3967,18 +4004,84 @@ export default function CombinedLanding() {
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
                         주요 성과
                       </h3>
-                      <div className="space-y-3">
-                        <div className="flex items-start">
-                          <span className="text-sm text-[#282623] font-medium mr-2">1.</span>
-                          <span className="text-sm text-[#58534e] leading-relaxed">경쟁사 대비 30% 높은 단가로 수주 성공</span>
+                      <div className="space-y-6">
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-1-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400"
+                            }}
+                          >
+                            • 경쟁사 대비 30% 높은 단가로 수주 성공
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-1-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px"
+                            }}
+                          >
+                            사용자 리서치 기반의 차별화된 접근법으로 기존 강의형 콘텐츠 대비 혁신적 솔루션 제시. 고객사 내부 승인 과정에서 압도적 선택을 받으며 프리미엄 단가 책정 성공
+                          </AdvancedEditableText>
                         </div>
-                        <div className="flex items-start">
-                          <span className="text-sm text-[#282623] font-medium mr-2">2.</span>
-                          <span className="text-sm text-[#58534e] leading-relaxed">사용자 화면 전환 회피 행동을 역이용한 메신저·브라우저 기반 콘텐츠 포맷 개발</span>
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400"
+                            }}
+                          >
+                            • 화면 전환 회피 행동의 역발상 활용 포맷 개발
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px"
+                            }}
+                          >
+                            ALT+TAB 패턴의 심리적 저항을 오히려 활용하여 메신저, 브라우저 등 친숙한 디지털 환경에서 자연스럽게 메시지를 전달하는 혁신적 콘텐츠 구조 설계
+                          </AdvancedEditableText>
                         </div>
-                        <div className="flex items-start">
-                          <span className="text-sm text-[#282623] font-medium mr-2">3.</span>
-                          <span className="text-sm text-[#58534e] leading-relaxed">고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축으로 5개국어 다국어 콘텐츠 개발</span>
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400"
+                            }}
+                          >
+                            • 글로벌 확장 기반의 효율적 제작 시스템 구축
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px"
+                            }}
+                          >
+                            고정 화면 중심 연출로 촬영 효율 30% 증대, 편집 시간 40% 단축 달성. 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 동시 제작 체계로 글로벌 전개 기반 마련
+                          </AdvancedEditableText>
                         </div>
                       </div>
                     </div>
@@ -3989,22 +4092,110 @@ export default function CombinedLanding() {
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
                         핵심 기술
                       </h3>
-                      <div className="grid grid-cols-2 gap-4">
-                        <div>
-                          <h4 className="text-sm font-medium text-[#282623] mb-2">영상 제작</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">Premiere Pro, After Effects를 활용한 디지털 화면 기반 포맷 및 모션 그래픽 제작</p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="space-y-4">
+                          <div>
+                            <AdvancedEditableText
+                              textKey={`project-${selectedProject.id}-tech-1-title`}
+                              className="text-sm font-medium text-[#282623] mb-2 tracking-tight leading-relaxed"
+                              style={{
+                                fontSize: TYPOGRAPHY.fontSize.small,
+                                color: "#282623",
+                                lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                fontWeight: "500"
+                              }}
+                            >
+                              UX 리서치 & 사용자 분석
+                            </AdvancedEditableText>
+                            <AdvancedEditableText
+                              textKey={`project-${selectedProject.id}-tech-1-desc`}
+                              className="text-sm text-[#58534e] tracking-tight leading-relaxed"
+                              style={{
+                                fontSize: TYPOGRAPHY.fontSize.small,
+                                color: "#58534e",
+                                lineHeight: TYPOGRAPHY.lineHeight.relaxed
+                              }}
+                            >
+                              뎁스 인터뷰, 페르소나 설계, 유저시나리오 분석을 통한 사용자 행동 패턴 심층 분석 및 ALT+TAB 화면 전환 심리 구조 파악
+                            </AdvancedEditableText>
+                          </div>
+                          <div>
+                            <AdvancedEditableText
+                              textKey={`project-${selectedProject.id}-tech-2-title`}
+                              className="text-sm font-medium text-[#282623] mb-2 tracking-tight leading-relaxed"
+                              style={{
+                                fontSize: TYPOGRAPHY.fontSize.small,
+                                color: "#282623",
+                                lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                fontWeight: "500"
+                              }}
+                            >
+                              영상 제작 & 포스트 프로덕션
+                            </AdvancedEditableText>
+                            <AdvancedEditableText
+                              textKey={`project-${selectedProject.id}-tech-2-desc`}
+                              className="text-sm text-[#58534e] tracking-tight leading-relaxed"
+                              style={{
+                                fontSize: TYPOGRAPHY.fontSize.small,
+                                color: "#58534e",
+                                lineHeight: TYPOGRAPHY.lineHeight.relaxed
+                              }}
+                            >
+                              Premiere Pro, After Effects를 활용한 디지털 화면 기반 포맷 및 모션 그래픽 제작. 고정 화면 구조로 효율적 편집 워크플로우 구축
+                            </AdvancedEditableText>
+                          </div>
                         </div>
-                        <div>
-                          <h4 className="text-sm font-medium text-[#282623] mb-2">그래픽 리소스</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">Photoshop, Stable Diffusion, Midjourney로 UI 기반 화면 요소 및 시각 자료 생성</p>
-                        </div>
-                        <div>
-                          <h4 className="text-sm font-medium text-[#282623] mb-2">사용자 리서치</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">뎁스 인터뷰, 페르소나 설계, 유저시나리오 분석을 통한 사용자 중심 콘텐츠 기획</p>
-                        </div>
-                        <div>
-                          <h4 className="text-sm font-medium text-[#282623] mb-2">다국어 최적화</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">고정 화면 구조를 활용한 효율적 다국어 버전 제작 시스템 구축</p>
+                        <div className="space-y-4">
+                          <div>
+                            <AdvancedEditableText
+                              textKey={`project-${selectedProject.id}-tech-3-title`}
+                              className="text-sm font-medium text-[#282623] mb-2 tracking-tight leading-relaxed"
+                              style={{
+                                fontSize: TYPOGRAPHY.fontSize.small,
+                                color: "#282623",
+                                lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                fontWeight: "500"
+                              }}
+                            >
+                              AI 기반 그래픽 리소스 생성
+                            </AdvancedEditableText>
+                            <AdvancedEditableText
+                              textKey={`project-${selectedProject.id}-tech-3-desc`}
+                              className="text-sm text-[#58534e] tracking-tight leading-relaxed"
+                              style={{
+                                fontSize: TYPOGRAPHY.fontSize.small,
+                                color: "#58534e",
+                                lineHeight: TYPOGRAPHY.lineHeight.relaxed
+                              }}
+                            >
+                              Photoshop, Stable Diffusion, Midjourney를 활용한 UI 기반 화면 요소 및 시각 자료 생성. 메신저, 브라우저 등 디지털 환경 재현
+                            </AdvancedEditableText>
+                          </div>
+                          <div>
+                            <AdvancedEditableText
+                              textKey={`project-${selectedProject.id}-tech-4-title`}
+                              className="text-sm font-medium text-[#282623] mb-2 tracking-tight leading-relaxed"
+                              style={{
+                                fontSize: TYPOGRAPHY.fontSize.small,
+                                color: "#282623",
+                                lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                fontWeight: "500"
+                              }}
+                            >
+                              글로벌 확장 시스템
+                            </AdvancedEditableText>
+                            <AdvancedEditableText
+                              textKey={`project-${selectedProject.id}-tech-4-desc`}
+                              className="text-sm text-[#58534e] tracking-tight leading-relaxed"
+                              style={{
+                                fontSize: TYPOGRAPHY.fontSize.small,
+                                color: "#58534e",
+                                lineHeight: TYPOGRAPHY.lineHeight.relaxed
+                              }}
+                            >
+                              언어와 상관없이 직관적 이해가 가능한 시각적 학습 환경 구현. 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 동시 제작 체계 구축
+                            </AdvancedEditableText>
+                          </div>
                         </div>
                       </div>
                     </div>
