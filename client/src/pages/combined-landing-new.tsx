@@ -5101,21 +5101,21 @@ export default function CombinedLanding() {
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
                         활용 기술
                       </h2>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">실시간 운영</h5>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-3">실시간 운영</h5>
                           <p className="text-sm text-[#58534e]">라이브 위기 대응, 큐시트 수정, 참가자 반응 분석을 통한 모니터링</p>
                         </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">다국어 소통</h5>
+                        <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-3">다국어 소통</h5>
                           <p className="text-sm text-[#58534e]">통역 협업, 글로벌 커뮤니케이션 지원</p>
                         </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">기술 통합</h5>
+                        <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-3">기술 통합</h5>
                           <p className="text-sm text-[#58534e]">송출 시스템, 그래픽 제작, 벤더 커뮤니케이션 통합 관리</p>
                         </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">역할 전환</h5>
+                        <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-3">역할 전환</h5>
                           <p className="text-sm text-[#58534e]">진행자-운영자 이중 역할을 통한 신뢰성 확보 및 위기 대응</p>
                         </div>
                       </div>
