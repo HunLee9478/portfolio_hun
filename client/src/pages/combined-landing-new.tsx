@@ -513,7 +513,7 @@ export default function CombinedLanding() {
       description: "SAMSUNG\n컴플라이언스 캠페인 기획 제작",
       category: "Campaign Contents",
       year: "2023.02-2023.08",
-      client: "SAMSUNG",
+      client: "Samsung",
       role: "사용자 리서치, 콘텐츠 기획, 제작 효율화",
       tools: ["Found Footage", "Photoshop", "After Effects", "Premiere Pro", "Stable Diffusion", "User Research"],
       images: [
