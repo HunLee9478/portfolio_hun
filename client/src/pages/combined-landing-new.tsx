@@ -935,7 +935,7 @@ export default function CombinedLanding() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <div className="space-y-2 text-center max-w-4xl mx-auto">
+            <div className="space-y-1 text-center max-w-4xl mx-auto">
               <EditableText
                 textKey="heroTitle1"
                 className="block text-left text-[#2D2926]"
@@ -2680,7 +2680,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                               🎬 영상 제작
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">Premiere Pro</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">디지털 화면 편집</span>
@@ -2700,7 +2700,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                               🤖 AI 기술
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">Stable Diffusion</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">시각 자료 생성</span>
@@ -2718,7 +2718,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                               📊 리서치 & 분석
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">User Research</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">행동 패턴 분석</span>
@@ -2738,7 +2738,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-bold text-[#282623] mb-3 flex items-center">
                               🌐 글로벌 확장
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e]">다국어 시스템</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">5개국어 제작</span>
@@ -3298,7 +3298,7 @@ export default function CombinedLanding() {
                                     <p className="text-[#58534e] leading-relaxed mb-3">
                                       <strong>친숙함과 호기심을 동시에 자극하는 메타버스 환경</strong>을 만들어 초기 진입 장벽은 낮추고 지속적인 탐험 동기는 높임
                                     </p>
-                                    <div className="ml-3 space-y-2 text-[#58534e] text-sm">
+                                    <div className="ml-3 space-y-1 text-[#58534e] text-sm">
                                       <p>→ 완전히 새로운 공간이 아닌 <strong>'변화된 일상'</strong>을 통해 UX 설계</p>
                                       <p>→ 오피스/카페 등 익숙한 공간에 게임 요소를 자연스럽게 통합</p>
                                       <p>→ 사용자가 이미 알고 있는 공간에서 새로운 경험 제공</p>
@@ -3307,7 +3307,7 @@ export default function CombinedLanding() {
                                   
                                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                                     <p className="text-[#282623] font-medium mb-3">핵심 설계 원칙</p>
-                                    <div className="ml-3 space-y-2 text-[#58534e] text-sm">
+                                    <div className="ml-3 space-y-1 text-[#58534e] text-sm">
                                       <p>• 현실 공간의 친숙함과 가상 환경의 상호작용성 결합</p>
                                       <p>• 자연스러운 사용자 참여를 유도하는 퀘스트 시스템</p>
                                       <p>• 실시간 데이터 수집을 통한 개인화된 경험 제공</p>
@@ -3416,7 +3416,7 @@ export default function CombinedLanding() {
                               >
                                 협력사 커뮤니케이션
                               </AdvancedEditableText>
-                              <div className="space-y-2">
+                              <div className="space-y-1">
                                 <div>
                                   <AdvancedEditableText
                                     textKey={`project-${selectedProject.id}-role-1-sub-1-item-1-title`}
@@ -3482,7 +3482,7 @@ export default function CombinedLanding() {
                               >
                                 돌발 상황 대응
                               </AdvancedEditableText>
-                              <div className="space-y-2">
+                              <div className="space-y-1">
                                 <AdvancedEditableText
                                   textKey={`project-${selectedProject.id}-role-1-sub-2-item-1`}
                                   className="text-sm text-[#58534e] tracking-tight leading-relaxed block mb-2"
@@ -3567,7 +3567,7 @@ export default function CombinedLanding() {
                               >
                                 그래픽 제작 시스템
                               </AdvancedEditableText>
-                              <div className="space-y-2">
+                              <div className="space-y-1">
                                 <AdvancedEditableText
                                   textKey={`project-${selectedProject.id}-role-2-sub-1-item-1`}
                                   className="text-sm text-[#58534e] tracking-tight leading-relaxed block mb-2"
@@ -3622,7 +3622,7 @@ export default function CombinedLanding() {
                               >
                                 자동화 프로그램 (폐쇄망 환경)
                               </AdvancedEditableText>
-                              <div className="space-y-2">
+                              <div className="space-y-1">
                                 <AdvancedEditableText
                                   textKey={`project-${selectedProject.id}-role-2-sub-2-item-1`}
                                   className="text-sm text-[#58534e] tracking-tight leading-relaxed block mb-2"
@@ -3707,7 +3707,7 @@ export default function CombinedLanding() {
                               >
                                 플랫폼 확장 기획
                               </AdvancedEditableText>
-                              <div className="space-y-2">
+                              <div className="space-y-1">
                                 <AdvancedEditableText
                                   textKey={`project-${selectedProject.id}-role-3-sub-1-item-1`}
                                   className="text-sm text-[#58534e] tracking-tight leading-relaxed block mb-2"
@@ -3762,7 +3762,7 @@ export default function CombinedLanding() {
                               >
                                 데이터 구조 설계
                               </AdvancedEditableText>
-                              <div className="space-y-2">
+                              <div className="space-y-1">
                                 <AdvancedEditableText
                                   textKey={`project-${selectedProject.id}-role-3-sub-2-item-1`}
                                   className="text-sm text-[#58534e] tracking-tight leading-relaxed block mb-2"
@@ -4405,7 +4405,7 @@ export default function CombinedLanding() {
                               </svg>
                             </div>
                             
-                            <div className="space-y-2 text-sm">
+                            <div className="space-y-1 text-sm">
                               <p className="text-[#282623] font-medium">핵심 전략:</p>
                               <p>- Screen Life 포맷을 활용한 몰입도 향상</p>
                               <p>- 자동 주의 집중 유도 시스템 구축</p>
@@ -4485,7 +4485,7 @@ export default function CombinedLanding() {
                             
                             <div className="mt-4 p-4 bg-gray-50 rounded-lg">
                               <h5 className="text-sm font-medium text-[#282623] mb-3">핵심 전략 포인트</h5>
-                              <div className="space-y-2 text-sm">
+                              <div className="space-y-1 text-sm">
                                 <div className="flex items-start space-x-2">
                                   <span className="text-[#ef4444] font-bold">1.</span>
                                   <span className="text-[#58534e]">베트남 현지 인플루언서의 자연스러운 한국 문화 체험</span>
@@ -4581,7 +4581,7 @@ export default function CombinedLanding() {
                               </svg>
                             </div>
                             
-                            <div className="space-y-2 text-sm">
+                            <div className="space-y-1 text-sm">
                               <p className="text-[#282623] font-medium">제작 특징:</p>
                               <p>- 시네마 장비 대신 핸디캠 활용으로 자연스러운 분위기 연출</p>
                               <p>- 출연자와의 원활한 소통을 통한 협조적 촬영 환경 구축</p>
@@ -4636,7 +4636,7 @@ export default function CombinedLanding() {
                               >
                                 AI 도구 활용
                               </AdvancedEditableText>
-                              <div className="space-y-2">
+                              <div className="space-y-1">
                                 <div>
                                   <AdvancedEditableText
                                     textKey={`project-${selectedProject.id}-role-1-sub-1-item-1-title`}
@@ -4702,7 +4702,7 @@ export default function CombinedLanding() {
                               >
                                 데이터 연동
                               </AdvancedEditableText>
-                              <div className="space-y-2">
+                              <div className="space-y-1">
                                 <div>
                                   <AdvancedEditableText
                                     textKey={`project-${selectedProject.id}-role-1-sub-2-item-1-title`}
@@ -4818,7 +4818,7 @@ export default function CombinedLanding() {
                               </svg>
                             </div>
                             
-                            <div className="space-y-2 text-sm">
+                            <div className="space-y-1 text-sm">
                               <p className="text-[#282623] font-medium">핵심 설계 원칙:</p>
                               <p>- 현실 공간의 친숙함과 가상 환경의 상호작용성 결합</p>
                               <p>- 자연스러운 사용자 참여를 유도하는 퀘스트 시스템</p>
@@ -5142,7 +5142,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
                               🎯 실시간 운영
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">라이브 위기 대응</span>
                                 <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">즉시 해결</span>
@@ -5162,7 +5162,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
                               🌐 다국어 소통
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">통역 협업</span>
                                 <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">전문 도메인</span>
@@ -5179,7 +5179,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
                               🔧 기술 통합
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">송출 시스템</span>
                                 <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">안정적 방송</span>
@@ -5199,7 +5199,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
                               🔄 역할 전환
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">진행자-운영자</span>
                                 <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">이중 역할</span>
@@ -5466,7 +5466,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
                               🎥 영상 제작
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">색보정 소프트웨어</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">브랜드 표준</span>
@@ -5486,7 +5486,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
                               🎨 그래픽 리소스
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">Photoshop</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">브랜드 그래픽</span>
@@ -5503,7 +5503,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
                               ⚡ 자동화 시스템
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">Python 스크립팅</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">자막 자동화</span>
@@ -5523,7 +5523,7 @@ export default function CombinedLanding() {
                             <h3 className="text-sm font-medium text-[#282623] mb-3 flex items-center">
                               📷 영화급 장비
                             </h3>
-                            <div className="space-y-2">
+                            <div className="space-y-1">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">전문 카메라</span>
                                 <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">영화급 화질</span>
