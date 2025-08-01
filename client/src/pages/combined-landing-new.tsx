@@ -3298,35 +3298,33 @@ export default function CombinedLanding() {
                         </div>
                       </div>
 
-
-                    </div>
-
-                    {/* 6. 활용 기술 */}
-                    <div className="mb-8">
-                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
-                        활용 기술
-                      </h3>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">AI 도구 활용</h5>
-                          <p className="text-sm text-[#58534e]">Python 기반 데이터 처리, ComfyUI UI 자동 생성, Midjourney·Stable Diffusion 이미지 생성</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">메타버스 환경 구축</h5>
-                          <p className="text-sm text-[#58534e]">Gather 플랫폼 기반 2D 메타버스 공간 설계, 아바타 상호작용 시스템 구현</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">데이터 분석</h5>
-                          <p className="text-sm text-[#58534e]">사용자 행동 로그 분석, 참여도 패턴 도출, 실시간 데이터 수집 및 분석</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">실시간 운영</h5>
-                          <p className="text-sm text-[#58534e]">라이브 진행 중 참가자 반응 모니터링, 몰입도 관리, 즉석 상황 대응</p>
+                      {/* 6. 활용 기술 */}
+                      <div className="mb-8">
+                        <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                          <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
+                          활용 기술
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">AI 도구 활용</h5>
+                            <p className="text-sm text-[#58534e]">Python 기반 데이터 처리, ComfyUI UI 자동 생성, Midjourney·Stable Diffusion 이미지 생성</p>
+                          </div>
+                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">메타버스 환경 구축</h5>
+                            <p className="text-sm text-[#58534e]">Gather 플랫폼 기반 2D 메타버스 공간 설계, 아바타 상호작용 시스템 구현</p>
+                          </div>
+                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">데이터 분석</h5>
+                            <p className="text-sm text-[#58534e]">사용자 행동 로그 분석, 참여도 패턴 도출, 실시간 데이터 수집 및 분석</p>
+                          </div>
+                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">실시간 운영</h5>
+                            <p className="text-sm text-[#58534e]">라이브 진행 중 참가자 반응 모니터링, 몰입도 관리, 즉석 상황 대응</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
+                    </div>
                   </div>
                 )}
 
