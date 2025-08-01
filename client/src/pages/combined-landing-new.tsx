@@ -1939,7 +1939,7 @@ export default function CombinedLanding() {
                   <div className="mb-12">
                     <div className="mb-6">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        프로젝트 세부 활동
+                        이미지
                       </h3>
                     </div>
                     <div className="grid grid-cols-2 gap-4 mb-8">
@@ -2003,7 +2003,7 @@ export default function CombinedLanding() {
                   <div className="mb-12">
                     <div className="mb-6">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        프로젝트 세부 활동
+                        이미지
                       </h3>
                     </div>
                     <div className="grid grid-cols-2 gap-4 mb-8">
@@ -2067,7 +2067,7 @@ export default function CombinedLanding() {
                   <div className="mb-12">
                     <div className="mb-6">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        프로젝트 세부 활동
+                        이미지
                       </h3>
                     </div>
                     <div className="grid grid-cols-2 gap-4 mb-8">
@@ -2131,7 +2131,7 @@ export default function CombinedLanding() {
                   <div className="mb-12">
                     <div className="mb-6">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        프로젝트 세부 활동
+                        이미지
                       </h3>
                     </div>
                     <div className="grid grid-cols-2 gap-4 mb-8">
