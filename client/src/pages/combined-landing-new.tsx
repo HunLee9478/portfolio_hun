@@ -5469,15 +5469,15 @@ export default function CombinedLanding() {
                             <div className="space-y-2">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">색보정 소프트웨어</span>
-                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">브랜드 표준</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">브랜드 표준</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">Premiere Pro</span>
-                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">고급 편집</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">고급 편집</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">After Effects</span>
-                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">모션그래픽</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">모션그래픽</span>
                               </div>
                             </div>
                           </div>
@@ -5489,11 +5489,11 @@ export default function CombinedLanding() {
                             <div className="space-y-2">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">Photoshop</span>
-                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">브랜드 그래픽</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">브랜드 그래픽</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">AI 이미지 도구</span>
-                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">창의적 자료</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">창의적 자료</span>
                               </div>
                             </div>
                           </div>
@@ -5506,15 +5506,15 @@ export default function CombinedLanding() {
                             <div className="space-y-2">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">Python 스크립팅</span>
-                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">자막 자동화</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">자막 자동화</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">음성 인식 API</span>
-                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">전사 시스템</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">전사 시스템</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">배치 처리</span>
-                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">대량 렌더링</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">대량 렌더링</span>
                               </div>
                             </div>
                           </div>
@@ -5526,11 +5526,11 @@ export default function CombinedLanding() {
                             <div className="space-y-2">
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">전문 카메라</span>
-                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">영화급 화질</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">영화급 화질</span>
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">프로 조명 시스템</span>
-                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">스튜디오급</span>
+                                <span className="text-xs text-[#6b7280] bg-gray-200 px-2 py-1 rounded">스튜디오급</span>
                               </div>
                             </div>
                           </div>
