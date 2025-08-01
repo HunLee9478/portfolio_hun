@@ -1859,7 +1859,7 @@ export default function CombinedLanding() {
                             width: "100%"
                           }}
                         >
-                          23개월간 50회 이상의 글로벌 캠페인을 기획부터 운영까지 전담하며 NPS 4.5 이상을 지속 달성했습니다. 돌발 상황 발생 시 즉석 대응으로 캠페인 중단 없이 완주하고, 아시아·유럽·아메리카 전 지역 해외법인 대상 다국어 캠페인을 성공적으로 운영한 프로젝트입니다.
+                          글로벌 IT기업의 온·오프라인 캠페인을 23개월간 기획·운영했습니다. 50회 이상 캠페인에서 NPS 4.5 이상을 달성하고, 출연자 불참이나 시스템 오류 등 돌발 상황에서도 즉석 대응으로 캠페인을 완주했습니다.
                         </AdvancedEditableText>
                       )}
                       {selectedProject.id === "2" && (
@@ -2155,18 +2155,18 @@ export default function CombinedLanding() {
                           <div className="bg-[#6b7280] text-white p-3">
                             <div className="flex items-center">
                               <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
-                              <span className="font-medium">통합 기획 관점 - 아키텍처 설계부터 참가자 여정까지</span>
+                              <span className="font-medium">통합 캠페인 기획 관점 - 글로벌 스케일 관리</span>
                             </div>
                           </div>
                           <div className="p-4 bg-white">
                             <div className="space-y-4">
                               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                <h6 className="text-sm font-medium text-[#282623] mb-2">전체 아키텍처 설계</h6>
-                                <p className="text-sm text-[#58534e] leading-relaxed">글로벌 규모의 다양한 캠페인 형태(워크숍, 웨비나, 하이브리드)에 맞는 기술 스택과 운영 프로세스 통합 설계</p>
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">본사부터 해외법인까지 전 과정 담당</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">아시아, 유럽, 아메리카 전 지역 해외법인 대상 50회 이상 캠페인 기획부터 운영까지 전 과정 담당</p>
                               </div>
                               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                <h6 className="text-sm font-medium text-[#282623] mb-2">참가자 여정 설계</h6>
-                                <p className="text-sm text-[#58534e] leading-relaxed">사전 등록부터 사후 피드백까지 전체 참가자 경험을 일관되게 관리하는 시스템 구축</p>
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">규모별 맞춤형 캠페인 설계</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">소규모 리더십 워크숍부터 대규모 온라인 웨비나까지 규모별 맞춤형 캠페인 설계 및 NPS 4.5 이상 품질 관리</p>
                               </div>
                             </div>
                           </div>
@@ -2176,18 +2176,18 @@ export default function CombinedLanding() {
                           <div className="bg-[#6b7280] text-white p-3">
                             <div className="flex items-center">
                               <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
-                              <span className="font-medium">실시간 운영 관점 - 라이브 대응력과 품질 관리</span>
+                              <span className="font-medium">실시간 운영 관점 - 위기 대응 및 현장 감각</span>
                             </div>
                           </div>
                           <div className="p-4 bg-white">
                             <div className="space-y-4">
                               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                <h6 className="text-sm font-medium text-[#282623] mb-2">즉석 위기 대응</h6>
-                                <p className="text-sm text-[#58534e] leading-relaxed">출연자 불참, 시스템 오류 등 예측 불가능한 변수 발생 시 즉시 대안 실행으로 캠페인 중단 없이 완주</p>
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">돌발 상황 즉석 대응</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">출연자 돌발 불참 시 즉석 대체 진행 담당 및 기술 오류 발생 시 제작 역량 기반 즉시 해결 방안 제시</p>
                               </div>
                               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                <h6 className="text-sm font-medium text-[#282623] mb-2">실시간 품질 모니터링</h6>
-                                <p className="text-sm text-[#58534e] leading-relaxed">참가자 피드백과 시스템 성능을 실시간으로 추적하여 50회 이상 캠페인에서 NPS 4.5 이상 지속 달성</p>
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">실시간 캠페인 최적화</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">실시간 큐시트 수정과 참가자 반응 모니터링을 통한 캠페인 흐름 최적화로 라이브 진행의 신뢰성 확보</p>
                               </div>
                             </div>
                           </div>
@@ -2197,18 +2197,18 @@ export default function CombinedLanding() {
                           <div className="bg-[#6b7280] text-white p-3">
                             <div className="flex items-center">
                               <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
-                              <span className="font-medium">기술 통합 관점 - 다국어 환경과 글로벌 인프라</span>
+                              <span className="font-medium">기술 통합 관점 - 제작-운영 연계</span>
                             </div>
                           </div>
                           <div className="p-4 bg-white">
                             <div className="space-y-4">
                               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                <h6 className="text-sm font-medium text-[#282623] mb-2">통역 시스템 통합</h6>
-                                <p className="text-sm text-[#58534e] leading-relaxed">전문 도메인(컴플라이언스, 핵심역량, 안전교육) 통역 협업을 통한 완벽한 다국어 소통 환경 구축</p>
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">제작 기술 역량 활용한 즉시 대응</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">송출, 그래픽 리소스 제작, 벤더사 및 셀럽 커뮤니케이션 등 제작 기술 역량을 활용한 라이브 진행 중 기술적 이슈 즉시 대응</p>
                               </div>
                               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                <h6 className="text-sm font-medium text-[#282623] mb-2">글로벌 인프라 운영</h6>
-                                <p className="text-sm text-[#58534e] leading-relaxed">아시아·유럽·아메리카 전 지역 해외법인을 대상으로 안정적인 기술 환경과 네트워크 인프라 제공</p>
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">운영자-진행자 전환</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">평상시 진행자 역할에서 위기 상황 시 운영자-진행자 전환으로 참가자 신뢰 유지</p>
                               </div>
                             </div>
                           </div>
@@ -2216,28 +2216,28 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 6. 활용 기술 */}
+                    {/* 6. 기술 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
-                        활용 기술
+                        기술
                       </h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">캠페인 플랫폼</h5>
-                          <p className="text-xs text-[#58534e]">Zoom, Teams, WebEx 등 다양한 플랫폼 통합 운영 및 하이브리드 환경 구축</p>
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">실시간 운영</h5>
+                          <p className="text-xs text-[#58534e]">라이브 진행 중 위기 대응, 즉석 큐시트 수정, 참가자 반응 실시간 분석</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">다국어 통역 시스템</h5>
-                          <p className="text-xs text-[#58534e]">실시간 통역 도구와 전문 통역사 협업을 통한 글로벌 소통 환경 제공</p>
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">기술 통합</h5>
+                          <p className="text-xs text-[#58534e]">송출 시스템, 그래픽 제작, 벤더 커뮤니케이션을 활용한 제작-운영 연계</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">실시간 모니터링</h5>
-                          <p className="text-xs text-[#58534e]">참가자 피드백 시스템과 성능 추적 도구를 활용한 품질 관리</p>
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">다국어 소통</h5>
+                          <p className="text-xs text-[#58534e]">통역 협업을 통한 전문 도메인(컴플라이언스, 핵심역량, 안전교육) 완벽 소통 구현</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-2">위기 대응 시스템</h5>
-                          <p className="text-xs text-[#58534e]">예비 시나리오와 백업 시스템을 통한 즉석 대응 체계 구축</p>
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">진행자-운영자 역할 전환</h5>
+                          <p className="text-xs text-[#58534e]">평상시 진행자에서 위기 상황 시 운영자로 역할 전환을 통한 신뢰성 확보</p>
                         </div>
                       </div>
                     </div>
