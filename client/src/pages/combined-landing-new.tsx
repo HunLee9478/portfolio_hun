@@ -5299,7 +5299,7 @@ export default function CombinedLanding() {
                                 <div className="text-gray-400 text-lg">→</div>
                                 <div className="bg-green-100 border border-green-300 rounded-lg p-2 flex-1 mx-1">
                                   <div className="text-xs font-medium text-green-800">완벽 대응</div>
-                                  <div className="text-xs text-green-600">캠페인 완주<br/>신뢰 유지</div>
+                                  <div className="text-green-600 text-[14px]">캠페인 완주<br/>신뢰 유지</div>
                                 </div>
                               </div>
                             </div>
