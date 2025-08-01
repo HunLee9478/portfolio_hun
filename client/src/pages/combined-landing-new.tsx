@@ -43,7 +43,7 @@ const JinairShillaBeauty = "/assets/projects/jinair-shilla-beauty.png";
 const JinairShillaStore = "/assets/projects/jinair-shilla-store.png";
 
 // Metaverse Project images
-import MetaverseMainImage from '@assets/generated_images/Metaverse_campaign_hero_cb01be69.png';
+import MetaverseMainImage from '@assets/Gather_01_1754012619251.png';
 import MetaverseOfficeSpace from '@assets/generated_images/Metaverse_office_space_76121093.png';
 import MetaverseCafeSpace from '@assets/generated_images/Virtual_cafe_space_f25d46e9.png';
 import MetaverseAnalytics from '@assets/generated_images/Metaverse_analytics_dashboard_e9fe9d5b.png';
