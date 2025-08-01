@@ -2239,39 +2239,11 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 3. 내용 */}
-                    <div className="mb-8">
-                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
-                        내용
-                      </h3>
-                      <div className="space-y-4">
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 데이터 기반 문제 진단</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            사용자 행동 로그를 분석해 기존 온라인 교육의 형식적 참여 패턴을 도출하고, 진성 참여와 형식적 참여를 구분하는 지표 개발
-                          </p>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">2. 창의적 솔루션 설계</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            친숙함과 호기심을 동시에 자극하는 메타버스 환경을 만들어 초기 진입 장벽은 낮추고 지속적인 탐험 동기는 높임
-                          </p>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 실시간 최적화 운영</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            자동화 대신 진행자가 직접 소통하며 참가자 반응을 즉시 파악하고 몰입도를 지속적으로 관리
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
                     {/* 메타버스 프로젝트 주요 성과 */}
                     {selectedProject.id === "5" && (
                       <div className="mb-8">
                         <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                          <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
+                          <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
                           주요 성과
                         </h3>
                         <div className="space-y-5">
@@ -2354,6 +2326,34 @@ export default function CombinedLanding() {
                         </div>
                       </div>
                     )}
+
+                    {/* 4. 내용 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
+                        내용
+                      </h3>
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 데이터 기반 문제 진단</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            사용자 행동 로그를 분석해 기존 온라인 교육의 형식적 참여 패턴을 도출하고, 진성 참여와 형식적 참여를 구분하는 지표 개발
+                          </p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">2. 창의적 솔루션 설계</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            친숙함과 호기심을 동시에 자극하는 메타버스 환경을 만들어 초기 진입 장벽은 낮추고 지속적인 탐험 동기는 높임
+                          </p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 실시간 최적화 운영</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            자동화 대신 진행자가 직접 소통하며 참가자 반응을 즉시 파악하고 몰입도를 지속적으로 관리
+                          </p>
+                        </div>
+                      </div>
+                    </div>
 
                     {/* 5. 역할 */}
                     <div className="mb-8">
