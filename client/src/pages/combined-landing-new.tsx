@@ -2424,7 +2424,7 @@ export default function CombinedLanding() {
                             <div className="flex-shrink-0 w-12 h-12 bg-gray-600 text-white rounded-full flex items-center justify-center font-bold text-lg mr-4">1</div>
                             <div className="flex-1 bg-white border-2 border-gray-600 rounded-lg p-4">
                               <h5 className="text-sm font-bold text-gray-800 mb-2">사용자 중심 분석</h5>
-                              <p className="text-xs text-gray-600">뎁스 인터뷰, 페르소나, 유저시나리오를 통해 ALT+TAB 화면 전환 패턴의 심리적 저항 원인을 발견하고 이를 활용한 역발상 전략 수립</p>
+                              <p className="text-sm text-gray-600">뎁스 인터뷰, 페르소나, 유저시나리오를 통해 ALT+TAB 화면 전환 패턴의 심리적 저항 원인을 발견하고 이를 활용한 역발상 전략 수립</p>
                             </div>
                           </div>
                           
@@ -2438,7 +2438,7 @@ export default function CombinedLanding() {
                             <div className="flex-shrink-0 w-12 h-12 bg-gray-600 text-white rounded-full flex items-center justify-center font-bold text-lg mr-4">2</div>
                             <div className="flex-1 bg-white border-2 border-gray-600 rounded-lg p-4">
                               <h5 className="text-sm font-bold text-gray-800 mb-2">친숙한 디지털 환경 활용</h5>
-                              <p className="text-xs text-gray-600">메신저, 브라우저, 문서 등 일상적으로 사용하는 화면 구성을 통해 소리 없이도 완전한 메시지 전달이 가능한 콘텐츠 구조 설계</p>
+                              <p className="text-sm text-gray-600">메신저, 브라우저, 문서 등 일상적으로 사용하는 화면 구성을 통해 소리 없이도 완전한 메시지 전달이 가능한 콘텐츠 구조 설계</p>
                             </div>
                           </div>
                           
@@ -2452,7 +2452,7 @@ export default function CombinedLanding() {
                             <div className="flex-shrink-0 w-12 h-12 bg-gray-600 text-white rounded-full flex items-center justify-center font-bold text-lg mr-4">3</div>
                             <div className="flex-1 bg-white border-2 border-gray-600 rounded-lg p-4">
                               <h5 className="text-sm font-bold text-gray-800 mb-2">효율적 제작 시스템</h5>
-                              <p className="text-xs text-gray-600">고정 화면 중심 연출을 통해 다국어 버전 제작의 효율성을 극대화하고 글로벌 전개 기반 마련</p>
+                              <p className="text-sm text-gray-600">고정 화면 중심 연출을 통해 다국어 버전 제작의 효율성을 극대화하고 글로벌 전개 기반 마련</p>
                             </div>
                           </div>
                         </div>
@@ -2476,7 +2476,7 @@ export default function CombinedLanding() {
                             <div className="bg-gray-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">1</div>
                             <div className="bg-white border-2 border-gray-500 rounded-lg p-4 min-h-[100px]">
                               <h5 className="text-sm font-bold text-gray-800 mb-2">사용자 리서치</h5>
-                              <div className="text-xs text-gray-600 space-y-1">
+                              <div className="text-sm text-gray-600 space-y-1">
                                 <div>• 뎁스 인터뷰</div>
                                 <div>• 페르소나 설계</div>
                                 <div>• 유저시나리오 분석</div>
@@ -2487,7 +2487,7 @@ export default function CombinedLanding() {
                             <div className="bg-gray-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">2</div>
                             <div className="bg-white border-2 border-gray-500 rounded-lg p-4 min-h-[100px]">
                               <h5 className="text-sm font-bold text-gray-800 mb-2">콘텐츠 기획</h5>
-                              <div className="text-xs text-gray-600 space-y-1">
+                              <div className="text-sm text-gray-600 space-y-1">
                                 <div>• 혁신적 포맷 개발</div>
                                 <div>• 역발상 전략 수립</div>
                                 <div>• 웹툰형 시각 구성</div>
@@ -2498,7 +2498,7 @@ export default function CombinedLanding() {
                             <div className="bg-gray-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">3</div>
                             <div className="bg-white border-2 border-gray-500 rounded-lg p-4 min-h-[100px]">
                               <h5 className="text-sm font-bold text-gray-800 mb-2">제작 효율화</h5>
-                              <div className="text-xs text-gray-600 space-y-1">
+                              <div className="text-sm text-gray-600 space-y-1">
                                 <div>• 고정 화면 연출</div>
                                 <div>• 다국어 최적화</div>
                                 <div>• 글로벌 확장</div>
@@ -2528,20 +2528,20 @@ export default function CombinedLanding() {
                               <div className="grid grid-cols-3 gap-4 mb-4">
                                 <div className="text-center">
                                   <div className="bg-white border-2 border-gray-400 rounded-lg p-2">
-                                    <div className="text-xs font-medium text-gray-800 mb-1">심리적 갈등</div>
-                                    <div className="text-xs text-gray-600">의무감 vs 거부감</div>
+                                    <div className="text-sm font-medium text-gray-800 mb-1">심리적 갈등</div>
+                                    <div className="text-sm text-gray-600">의무감 vs 거부감</div>
                                   </div>
                                 </div>
                                 <div className="text-center">
                                   <div className="bg-white border-2 border-gray-400 rounded-lg p-2">
-                                    <div className="text-xs font-medium text-gray-800 mb-1">3개 페르소나</div>
-                                    <div className="text-xs text-gray-600">적극/소극/회피형</div>
+                                    <div className="text-sm font-medium text-gray-800 mb-1">3개 페르소나</div>
+                                    <div className="text-sm text-gray-600">적극/소극/회피형</div>
                                   </div>
                                 </div>
                                 <div className="text-center">
                                   <div className="bg-white border-2 border-gray-400 rounded-lg p-2">
-                                    <div className="text-xs font-medium text-gray-800 mb-1">ALT+TAB 패턴</div>
-                                    <div className="text-xs text-gray-600">90% 발생 시점</div>
+                                    <div className="text-sm font-medium text-gray-800 mb-1">ALT+TAB 패턴</div>
+                                    <div className="text-sm text-gray-600">90% 발생 시점</div>
                                   </div>
                                 </div>
                               </div>
@@ -2581,16 +2581,16 @@ export default function CombinedLanding() {
                                 <div className="flex-1 text-center">
                                   <div className="bg-red-100 border-2 border-red-300 rounded-lg p-3 mb-2">
                                     <div className="text-sm font-medium text-red-800">기존 강의형</div>
-                                    <div className="text-xs text-red-600 mt-1">형식적 참여</div>
+                                    <div className="text-sm text-red-600 mt-1">형식적 참여</div>
                                   </div>
                                 </div>
                                 <div className="mx-4">
-                                  <div className="bg-gray-600 text-white px-3 py-1 rounded-full text-xs font-medium">변환</div>
+                                  <div className="bg-gray-600 text-white px-3 py-1 rounded-full text-sm font-medium">변환</div>
                                 </div>
                                 <div className="flex-1 text-center">
                                   <div className="bg-green-100 border-2 border-green-300 rounded-lg p-3 mb-2">
                                     <div className="text-sm font-medium text-green-800">웹툰형 구성</div>
-                                    <div className="text-xs text-green-600 mt-1">진성 참여</div>
+                                    <div className="text-sm text-green-600 mt-1">진성 참여</div>
                                   </div>
                                 </div>
                               </div>
@@ -2626,28 +2626,28 @@ export default function CombinedLanding() {
                                 <div className="flex-1 text-center">
                                   <div className="bg-blue-100 border border-blue-300 rounded-lg p-2">
                                     <div className="text-sm font-bold text-blue-800">고정 화면 연출</div>
-                                    <div className="text-xs text-blue-600 mt-1">기반 시스템</div>
+                                    <div className="text-sm text-blue-600 mt-1">기반 시스템</div>
                                   </div>
                                 </div>
                                 <div className="text-gray-400">→</div>
                                 <div className="flex-1 text-center">
                                   <div className="bg-green-100 border border-green-300 rounded-lg p-2">
                                     <div className="text-sm font-bold text-green-800">촬영 30%↑</div>
-                                    <div className="text-xs text-green-600 mt-1">효율 증대</div>
+                                    <div className="text-sm text-green-600 mt-1">효율 증대</div>
                                   </div>
                                 </div>
                                 <div className="text-gray-400">→</div>
                                 <div className="flex-1 text-center">
                                   <div className="bg-purple-100 border border-purple-300 rounded-lg p-2">
                                     <div className="text-sm font-bold text-purple-800">편집 40%↓</div>
-                                    <div className="text-xs text-purple-600 mt-1">시간 단축</div>
+                                    <div className="text-sm text-purple-600 mt-1">시간 단축</div>
                                   </div>
                                 </div>
                                 <div className="text-gray-400">→</div>
                                 <div className="flex-1 text-center">
                                   <div className="bg-orange-100 border border-orange-300 rounded-lg p-2">
                                     <div className="text-sm font-bold text-orange-800">5개국어</div>
-                                    <div className="text-xs text-orange-600 mt-1">동시 제작</div>
+                                    <div className="text-sm text-orange-600 mt-1">동시 제작</div>
                                   </div>
                                 </div>
                               </div>
@@ -3197,8 +3197,8 @@ export default function CombinedLanding() {
                                   <svg width="100%" height="160" viewBox="0 0 600 160" className="overflow-visible">
                                     {/* 오피스 공간 */}
                                     <rect x="50" y="30" width="120" height="50" fill="#4a5568" opacity="0.1" stroke="#4a5568" strokeWidth="1" rx="6"/>
-                                    <text x="110" y="50" textAnchor="middle" className="text-xs fill-[#374151] font-medium">오피스 공간</text>
-                                    <text x="110" y="65" textAnchor="middle" className="text-xs fill-[#6b7280]">업무 환경</text>
+                                    <text x="110" y="50" textAnchor="middle" className="text-sm fill-[#374151] font-medium">오피스 공간</text>
+                                    <text x="110" y="65" textAnchor="middle" className="text-sm fill-[#6b7280]">업무 환경</text>
                                     <line x1="170" y1="55" x2="210" y2="55" stroke="#374151" strokeWidth="2" markerEnd="url(#metaArrow1)"/>
                                     
                                     {/* 카페 공간 */}
@@ -3280,15 +3280,15 @@ export default function CombinedLanding() {
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-center">
                                   <div className="bg-white border border-gray-300 rounded px-3 py-2">
-                                    <div className="text-xs font-medium text-[#282623]">참가자 모니터링</div>
+                                    <div className="text-sm font-medium text-[#282623]">참가자 모니터링</div>
                                     <div className="text-sm text-[#58534e]">실시간 반응 추적</div>
                                   </div>
                                   <div className="bg-white border border-gray-300 rounded px-3 py-2">
-                                    <div className="text-xs font-medium text-[#282623]">몰입도 관리</div>
+                                    <div className="text-sm font-medium text-[#282623]">몰입도 관리</div>
                                     <div className="text-sm text-[#58534e]">지속적 흥미 유발</div>
                                   </div>
                                   <div className="bg-white border border-gray-300 rounded px-3 py-2">
-                                    <div className="text-xs font-medium text-[#282623]">즉시 대응</div>
+                                    <div className="text-sm font-medium text-[#282623]">즉시 대응</div>
                                     <div className="text-sm text-[#58534e]">상황별 맞춤 진행</div>
                                   </div>
                                 </div>
@@ -4939,7 +4939,7 @@ export default function CombinedLanding() {
                           <div className="flex justify-center">
                             <div className="bg-[#282623] text-white px-4 py-4 rounded-lg text-center" style={{width: "220px", minHeight: "70px"}}>
                               <div className="text-sm font-medium mb-2">실시간 위기 관리</div>
-                              <div className="opacity-80 text-xs">즉시 대응가능</div>
+                              <div className="opacity-80 text-sm">즉시 대응가능</div>
                             </div>
                           </div>
                           
@@ -4952,7 +4952,7 @@ export default function CombinedLanding() {
                           <div className="flex justify-center">
                             <div className="bg-[#58534e] text-white px-4 py-4 rounded-lg text-center" style={{width: "320px", minHeight: "70px"}}>
                               <div className="text-sm font-medium mb-2">전문 도메인 대응</div>
-                              <div className="opacity-80 text-xs">컴플라이언스·핵심역량·안전교육</div>
+                              <div className="opacity-80 text-sm">컴플라이언스·핵심역량·안전교육</div>
                             </div>
                           </div>
                           
@@ -5209,7 +5209,7 @@ export default function CombinedLanding() {
                             <div className="bg-red-100 border-2 border-red-300 rounded-lg p-4 mb-3">
                               <div className="bg-red-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">1</div>
                               <h5 className="text-sm font-bold text-[#282623] mb-2">외주 제작 한계</h5>
-                              <div className="text-xs text-red-600 space-y-1">
+                              <div className="text-sm text-red-600 space-y-1">
                                 <div>• 소통 지연</div>
                                 <div>• 예산 초과</div>
                                 <div>• 품질 편차</div>
@@ -5263,25 +5263,25 @@ export default function CombinedLanding() {
                               <div className="flex items-center justify-between text-center">
                                 <div className="flex-1">
                                   <div className="bg-blue-100 rounded-lg p-2 mb-2">
-                                    <div className="text-xs font-medium text-blue-800">기획·연출</div>
+                                    <div className="text-sm font-medium text-blue-800">기획·연출</div>
                                   </div>
                                 </div>
                                 <div className="px-2 text-gray-400">→</div>
                                 <div className="flex-1">
                                   <div className="bg-green-100 rounded-lg p-2 mb-2">
-                                    <div className="text-xs font-medium text-green-800">촬영·조명</div>
+                                    <div className="text-sm font-medium text-green-800">촬영·조명</div>
                                   </div>
                                 </div>
                                 <div className="px-2 text-gray-400">→</div>
                                 <div className="flex-1">
                                   <div className="bg-purple-100 rounded-lg p-2 mb-2">
-                                    <div className="text-xs font-medium text-purple-800">미술·스튜디오</div>
+                                    <div className="text-sm font-medium text-purple-800">미술·스튜디오</div>
                                   </div>
                                 </div>
                                 <div className="px-2 text-gray-400">→</div>
                                 <div className="flex-1">
                                   <div className="bg-orange-100 rounded-lg p-2 mb-2">
-                                    <div className="text-xs font-medium text-orange-800">후반작업</div>
+                                    <div className="text-sm font-medium text-orange-800">후반작업</div>
                                   </div>
                                 </div>
                               </div>
@@ -5328,24 +5328,24 @@ export default function CombinedLanding() {
                               <h6 className="text-sm font-medium text-[#282623] mb-3">제작 규모 확장성</h6>
                               <div className="grid grid-cols-5 gap-2 mb-3">
                                 <div className="bg-blue-100 border border-blue-300 rounded p-2 text-center">
-                                  <div className="text-xs font-medium text-blue-800">콘텐츠 1</div>
-                                  <div className="text-xs text-blue-600">50분</div>
+                                  <div className="text-sm font-medium text-blue-800">콘텐츠 1</div>
+                                  <div className="text-sm text-blue-600">50분</div>
                                 </div>
                                 <div className="bg-blue-100 border border-blue-300 rounded p-2 text-center">
-                                  <div className="text-xs font-medium text-blue-800">콘텐츠 2</div>
-                                  <div className="text-xs text-blue-600">50분</div>
+                                  <div className="text-sm font-medium text-blue-800">콘텐츠 2</div>
+                                  <div className="text-sm text-blue-600">50분</div>
                                 </div>
                                 <div className="bg-blue-100 border border-blue-300 rounded p-2 text-center">
-                                  <div className="text-xs font-medium text-blue-800">콘텐츠 3</div>
-                                  <div className="text-xs text-blue-600">50분</div>
+                                  <div className="text-sm font-medium text-blue-800">콘텐츠 3</div>
+                                  <div className="text-sm text-blue-600">50분</div>
                                 </div>
                                 <div className="bg-blue-100 border border-blue-300 rounded p-2 text-center">
-                                  <div className="text-xs font-medium text-blue-800">콘텐츠 4</div>
-                                  <div className="text-xs text-blue-600">50분</div>
+                                  <div className="text-sm font-medium text-blue-800">콘텐츠 4</div>
+                                  <div className="text-sm text-blue-600">50분</div>
                                 </div>
                                 <div className="bg-blue-100 border border-blue-300 rounded p-2 text-center">
-                                  <div className="text-xs font-medium text-blue-800">콘텐츠 5</div>
-                                  <div className="text-xs text-blue-600">50분</div>
+                                  <div className="text-sm font-medium text-blue-800">콘텐츠 5</div>
+                                  <div className="text-sm text-blue-600">50분</div>
                                 </div>
                               </div>
                               <div className="text-center text-sm text-[#58534e]">50분 분량 브랜드 콘텐츠 5개 동시 제작</div>
