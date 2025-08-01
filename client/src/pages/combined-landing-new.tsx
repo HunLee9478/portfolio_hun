@@ -2556,86 +2556,37 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 5. 기술 - 카테고리 그룹화 */}
-                    <div className="mb-6">
+                    {/* 활용 기술 */}
+                    <div className="mb-6 mt-8 pt-8 border-t border-gray-200">
                       <h2 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">5</span>활용 기술
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">5</span>
+                        활용 기술
                       </h2>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="space-y-4">
-                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
-                            <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
-                              🎬 영상 제작
-                            </h3>
-                            <div className="space-y-2">
-                              <div className="flex justify-between items-center">
-                                <span className="text-sm text-gray-700">Found Footage</span>
-                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">Screen Life 기법</span>
-                              </div>
-                              <div className="flex justify-between items-center">
-                                <span className="text-sm text-gray-700">Premiere Pro</span>
-                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">영상 편집</span>
-                              </div>
-                              <div className="flex justify-between items-center">
-                                <span className="text-sm text-gray-700">After Effects</span>
-                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">모션 그래픽</span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
-                            <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
-                              🔬 사용자 리서치
-                            </h3>
-                            <div className="space-y-2">
-                              <div className="flex justify-between items-center">
-                                <span className="text-sm text-gray-700">뎁스 인터뷰</span>
-                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">정성 조사</span>
-                              </div>
-                              <div className="flex justify-between items-center">
-                                <span className="text-sm text-gray-700">페르소나</span>
-                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">유형 분석</span>
-                              </div>
-                              <div className="flex justify-between items-center">
-                                <span className="text-sm text-gray-700">유저시나리오</span>
-                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">행동 패턴</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="space-y-4">
-                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
-                            <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
-                              🎨 그래픽 리소스
-                            </h3>
-                            <div className="space-y-2">
-                              <div className="flex justify-between items-center">
-                                <span className="text-sm text-gray-700">Photoshop</span>
-                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">UI 편집</span>
-                              </div>
-                              <div className="flex justify-between items-center">
-                                <span className="text-sm text-gray-700">Stable Diffusion</span>
-                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">AI 생성</span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="bg-gray-50 rounded-lg border border-gray-200 p-4">
-                            <h3 className="text-sm font-bold text-gray-800 mb-3 flex items-center">
-                              🌍 다국어 최적화
-                            </h3>
-                            <div className="space-y-2">
-                              <div className="grid grid-cols-2 gap-2 text-xs">
-                                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-center">한국어</span>
-                                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-center">영어</span>
-                                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-center">중국어</span>
-                                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-center">일본어</span>
-                                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-center col-span-2">베트남어</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-6 mb-8">
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Found Footage</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">Screen Life 기법의 핵심 도구<br/>실제 화면 녹화 및 편집</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Photoshop</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">화면 요소 편집 및 UI 디자인</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">After Effects</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">고정 화면 중심 모션 그래픽</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Premiere Pro</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">메신저·브라우저 환경 영상 편집</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Stable Diffusion</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">효율적 시각 자료 생성</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">User Research</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">화면 전환 회피 행동 분석</div>
                       </div>
                     </div>
                   </div>
