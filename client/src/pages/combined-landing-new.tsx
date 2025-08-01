@@ -1498,7 +1498,7 @@ export default function CombinedLanding() {
                 <span
                   className={`${FONT_SIZES.small} font-medium text-gray-500`}
                 >
-                  04
+                  06
                 </span>
               </div>
 
