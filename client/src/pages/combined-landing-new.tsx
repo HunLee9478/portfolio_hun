@@ -26,7 +26,7 @@ const GalleryBeautyImage = "/assets/gallery/beauty.png";
 const PersonalPortfolioImage = "/assets/gallery/personal-portfolio.png";
 const GalleryInterviewImage = "/assets/gallery/interview.png";
 const LikelionHackathonImage = "/assets/gallery/likelion-hackathon.png";
-const GalleryMalePortraitImage = "/assets/gallery/male-portrait.png";
+const GalleryMalePortraitImage = "/assets/gallery/male-portrait.jpg";
 const JinairSurfingDayImage = "/assets/gallery/jinair-surfing.png";
 const GalleryJinairPromotionImage = "/assets/gallery/jinair-promotion.png";
 
@@ -605,16 +605,16 @@ export default function CombinedLanding() {
     {
       id: "gallery-6",
       src: GalleryMalePortraitImage,
-      alt: "개인 포트폴리오",
-      title: "개인 포트폴리오",
-      subtitle: "",
+      alt: "Samsung 안전문화캠페인",
+      title: "Samsung 안전문화캠페인",
+      subtitle: "직장 내 안전의식 개선 캠페인",
       description:
-        "ComfyUI, FLUX, Python을 활용하여 실사형 제품 광고 이미지를 제작했습니다. 자연스러운 인물 표현과 디테일한 후보정을 통해 실제 촬영과 구분이 어려운 수준의 결과물을 구현했습니다.",
-      category: "AI Portrait",
-      year: "2024",
-      client: "개인 포트폴리오",
-      role: "개인 포트폴리오",
-      tools: ["ComfyUI", "Python", "Photoshop"],
+        "Samsung의 안전문화 정착을 위한 캠페인 콘텐츠를 기획하고 제작했습니다. 직장 내 안전사고 예방과 안전의식 향상을 목표로 하는 사내 교육용 캠페인으로, 실무진들의 안전 행동 변화를 유도하는 메시지를 담았습니다.",
+      category: "Safety Campaign",
+      year: "2023",
+      client: "Samsung",
+      role: "캠페인 기획, 콘텐츠 제작",
+      tools: ["Campaign Planning", "Safety Education", "Video Production"],
       images: [],
     },
     {
