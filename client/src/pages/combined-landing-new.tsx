@@ -2596,50 +2596,7 @@ export default function CombinedLanding() {
                         </div>
                       </div>
 
-                      {/* 기술 스택 및 결과 요약 */}
-                      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h5 className="text-sm font-bold text-[#282623] mb-3 text-center">핵심 기술 스택</h5>
-                          <div className="grid grid-cols-2 gap-3 text-center">
-                            <div className="bg-white border border-gray-300 rounded px-3 py-2">
-                              <div className="text-xs font-medium text-[#282623]">Python</div>
-                              <div className="text-xs text-[#58534e]">데이터 분석</div>
-                            </div>
-                            <div className="bg-white border border-gray-300 rounded px-3 py-2">
-                              <div className="text-xs font-medium text-[#282623]">ComfyUI</div>
-                              <div className="text-xs text-[#58534e]">UI 생성</div>
-                            </div>
-                            <div className="bg-white border border-gray-300 rounded px-3 py-2">
-                              <div className="text-xs font-medium text-[#282623]">Midjourney</div>
-                              <div className="text-xs text-[#58534e]">이미지 생성</div>
-                            </div>
-                            <div className="bg-white border border-gray-300 rounded px-3 py-2">
-                              <div className="text-xs font-medium text-[#282623]">Gather</div>
-                              <div className="text-xs text-[#58534e]">메타버스 플랫폼</div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                        <div className="bg-[#282623] text-white rounded-lg p-4">
-                          <div className="text-center">
-                            <div className="text-sm font-bold mb-2">프로젝트 임팩트</div>
-                            <div className="grid grid-cols-1 gap-2 text-xs">
-                              <div className="flex justify-between">
-                                <span>고객사 수주</span>
-                                <span className="font-bold">5개사</span>
-                              </div>
-                              <div className="flex justify-between">
-                                <span>가상공간 구축</span>
-                                <span className="font-bold">AI 기반</span>
-                              </div>
-                              <div className="flex justify-between">
-                                <span>데이터 인사이트</span>
-                                <span className="font-bold">API 연동</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+
                     </div>
 
                   </div>
