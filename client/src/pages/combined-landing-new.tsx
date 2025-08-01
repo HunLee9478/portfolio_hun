@@ -487,21 +487,21 @@ export default function CombinedLanding() {
     },
     {
       id: "6",
-      src: VRCulturalHeritageImage,
-      alt: "종로구 문화유산 VR 콘텐츠 기획",
-      title: "종로구 문화유산 VR 콘텐츠 기획",
-      subtitle: "문화유산의 VR 디지털 체험",
-      description: "CULTURAL VR\n문화유산 VR 콘텐츠 기획",
-      category: "VR Content & Cultural Heritage",
-      year: "2024",
-      client: "종로구청",
-      role: "VR 콘텐츠 기획, 제작, 문화 연구",
-      tools: ["Unity 3D", "VR Development", "Cultural Research", "3D Modeling", "Photogrammetry"],
+      src: "/assets/projects/samsung-education-studio.png",
+      alt: "삼성물산 컴플라이언스 캠페인 콘텐츠 기획·제작",
+      title: "삼성물산 컴플라이언스 캠페인 콘텐츠 기획·제작",
+      subtitle: "사용자 행동 분석 기반 혁신 콘텐츠 포맷",
+      description: "COMPLIANCE CAMPAIGN\n사용자 중심 분석 기반 캠페인 기획·제작",
+      category: "Campaign Planning & Content Production",
+      year: "2023",
+      client: "삼성물산",
+      role: "콘텐츠 기획, 사용자 리서치, 제작 총괄",
+      tools: ["Premiere Pro", "After Effects", "Photoshop", "Stable Diffusion", "Midjourney", "User Research"],
       images: [
-        "/assets/projects/vr-cultural-1.jpg",
-        "/assets/projects/vr-cultural-2.jpg",
-        "/assets/projects/vr-cultural-3.jpg",
-        "/assets/projects/vr-cultural-4.jpg",
+        "/assets/projects/samsung-compliance-1.jpg",
+        "/assets/projects/samsung-compliance-2.jpg", 
+        "/assets/projects/samsung-compliance-3.jpg",
+        "/assets/projects/samsung-compliance-4.jpg",
       ],
     },
   ];
@@ -1960,7 +1960,7 @@ export default function CombinedLanding() {
                             width: "100%"
                           }}
                         >
-                          종로구의 문화유산을 가상현실(VR) 기술로 체험할 수 있는 콘텐츠를 기획하고 제작했습니다. 전통 문화의 디지털 보존과 체험형 콘텐츠를 통해 문화유산의 가치를 확산시키고, 차세대에게 우리 문화를 전달하는 혁신적인 방법을 제시했습니다.
+                          사용자 행동 분석을 기반으로 한 혁신적인 컴플라이언스 캠페인 콘텐츠를 기획하고 제작했습니다. ALT+TAB 화면 전환 패턴의 심리적 저항을 역이용하여 메신저, 브라우저 등 친숙한 디지털 환경 기반의 새로운 콘텐츠 포맷을 개발했습니다.
                         </AdvancedEditableText>
                       )}
                     </div>
@@ -3899,6 +3899,145 @@ export default function CombinedLanding() {
                         </div>
                       </>
                     )}
+
+                {/* 6번 프로젝트: 삼성물산 컴플라이언스 캠페인 상세 모달 */}
+                {selectedProject.id === "6" && (
+                  <div className="mb-12">
+                    {/* 1. 프로젝트 기간 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">1</span>
+                        프로젝트 기간
+                      </h3>
+                      <div className="text-sm text-[#6b7280] tracking-tight leading-relaxed">
+                        2023.02 ~ 2023.08 (6개월)
+                      </div>
+                    </div>
+
+                    {/* 2. 프로젝트 상세 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">2</span>
+                        프로젝트 상세
+                      </h3>
+                      <div className="grid grid-cols-2 gap-4 mb-8">
+                        <div className="aspect-[4/3] bg-[#f5f5f5] overflow-hidden rounded-lg relative">
+                          <img 
+                            src="/assets/projects/samsung-education-studio.png" 
+                            alt="삼성물산 컴플라이언스 캠페인"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                        <div className="aspect-[4/3] bg-[#f5f5f5] overflow-hidden rounded-lg relative">
+                          <img 
+                            src="/assets/projects/samsung-education-studio.png" 
+                            alt="디지털 환경 기반 콘텐츠"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 3. 프로젝트 내용 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">3</span>
+                        프로젝트 내용
+                      </h3>
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#6b7280] mb-3">1. 사용자 중심 분석</h4>
+                          <p className="text-sm text-[#6b7280] leading-relaxed">
+                            뎁스 인터뷰, 페르소나, 유저시나리오를 통해 ALT+TAB 화면 전환 패턴의 심리적 저항 원인을 발견하고 이를 활용한 역발상 전략 수립
+                          </p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#6b7280] mb-3">2. 친숙한 디지털 환경 활용</h4>
+                          <p className="text-sm text-[#6b7280] leading-relaxed">
+                            메신저, 브라우저, 문서 등 일상적으로 사용하는 화면 구성을 통해 소리 없이도 완전한 메시지 전달이 가능한 콘텐츠 구조 설계
+                          </p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#6b7280] mb-3">3. 효율적 제작 시스템</h4>
+                          <p className="text-sm text-[#6b7280] leading-relaxed">
+                            고정 화면 중심 연출을 통해 다국어 버전 제작의 효율성을 극대화하고 글로벌 전개 기반 마련
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 4. 주요 성과 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">4</span>
+                        주요 성과
+                      </h3>
+                      <div className="space-y-3">
+                        <div className="flex items-start">
+                          <span className="text-sm text-[#6b7280] font-medium mr-2">1.</span>
+                          <span className="text-sm text-[#6b7280] leading-relaxed">경쟁사 대비 30% 높은 단가로 수주 성공</span>
+                        </div>
+                        <div className="flex items-start">
+                          <span className="text-sm text-[#6b7280] font-medium mr-2">2.</span>
+                          <span className="text-sm text-[#6b7280] leading-relaxed">사용자 화면 전환 회피 행동을 역이용한 메신저·브라우저 기반 콘텐츠 포맷 개발</span>
+                        </div>
+                        <div className="flex items-start">
+                          <span className="text-sm text-[#6b7280] font-medium mr-2">3.</span>
+                          <span className="text-sm text-[#6b7280] leading-relaxed">고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축으로 5개국어 다국어 콘텐츠 개발</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 6. 핵심 기술 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">6</span>
+                        핵심 기술
+                      </h3>
+                      <div className="grid grid-cols-2 gap-4">
+                        <div>
+                          <h4 className="text-sm font-medium text-[#6b7280] mb-2">영상 제작</h4>
+                          <p className="text-sm text-[#6b7280] leading-relaxed">Premiere Pro, After Effects를 활용한 디지털 화면 기반 포맷 및 모션 그래픽 제작</p>
+                        </div>
+                        <div>
+                          <h4 className="text-sm font-medium text-[#6b7280] mb-2">그래픽 리소스</h4>
+                          <p className="text-sm text-[#6b7280] leading-relaxed">Photoshop, Stable Diffusion, Midjourney로 UI 기반 화면 요소 및 시각 자료 생성</p>
+                        </div>
+                        <div>
+                          <h4 className="text-sm font-medium text-[#6b7280] mb-2">사용자 리서치</h4>
+                          <p className="text-sm text-[#6b7280] leading-relaxed">뎁스 인터뷰, 페르소나 설계, 유저시나리오 분석을 통한 사용자 중심 콘텐츠 기획</p>
+                        </div>
+                        <div>
+                          <h4 className="text-sm font-medium text-[#6b7280] mb-2">다국어 최적화</h4>
+                          <p className="text-sm text-[#6b7280] leading-relaxed">고정 화면 구조를 활용한 효율적 다국어 버전 제작 시스템 구축</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 7. 철학 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#6b7280] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#6b7280] text-white text-xs font-bold rounded-full mr-2">7</span>
+                        철학
+                      </h3>
+                      <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <h4 className="text-base font-medium text-[#6b7280] mb-4">"데이터 그 너머에 숨겨진 이용자들의 마음"</h4>
+                        <div className="space-y-4 text-sm text-[#6b7280] leading-relaxed">
+                          <p>
+                            숫자 뒤에 숨은 사용자들의 진짜 마음을 읽어냅니다. 삼성물산 컴플라이언스 캠페인에서 임직원들이 ALT+TAB으로 화면을 회피하는 패턴을 발견했을 때, 단순한 무관심이 아닌 '강제성에 대한 심리적 저항'임을 뎁스 인터뷰로 검증했습니다.
+                          </p>
+                          <p>
+                            이 인사이트를 역이용해 화면 이탈 순간에 임팩트 있는 메시지를 배치하고 오디오만으로도 완전한 이해가 가능한 시나리오를 구성한 결과, 경쟁사 대비 30-40% 높은 단가임에도 성공적으로 콘텐츠를 수주했습니다.
+                          </p>
+                          <p>
+                            단순한 수치 분석을 넘어 행동 패턴 뒤에 숨은 심리적 동기를 파악하여 전략적으로 활용하는 것이 저의 차별화된 강점입니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                     {selectedProject.id === "2" && (
                       <>
                         <div>
@@ -4005,7 +4144,7 @@ export default function CombinedLanding() {
                               marginBottom: "8px"
                             }}
                           >
-                            • 문화유산 디지털 아카이빙
+                            • 사용자 리서치 관점 - 행동 패턴 심층 분석
                           </AdvancedEditableText>
                           <AdvancedEditableText
                             textKey={`project-${selectedProject.id}-role-1-desc`}
@@ -4018,7 +4157,7 @@ export default function CombinedLanding() {
                               display: "block"
                             }}
                           >
-                            전통 문화재의 역사적 가치를 보존하면서 차세대가 쉽게 접근할 수 있는 디지털 형태로 변환하는 작업
+                            20명 대상 뎁스 인터뷰를 통해 법정 교육에 대한 '의무감'과 '거부감' 사이의 심리적 갈등 구조 파악. 3개 페르소나 도출 및 ALT+TAB 사용률 90% 발생 시점과 트리거 요인을 구체적으로 식별
                           </AdvancedEditableText>
                         </div>
                         <div>
@@ -4034,7 +4173,7 @@ export default function CombinedLanding() {
                               marginBottom: "8px"
                             }}
                           >
-                            • VR 환경 구축 및 인터랙션 설계
+                            • 콘텐츠 기획 관점 - 혁신적 포맷 개발
                           </AdvancedEditableText>
                           <AdvancedEditableText
                             textKey={`project-${selectedProject.id}-role-2-desc`}
@@ -4047,7 +4186,7 @@ export default function CombinedLanding() {
                               display: "block"
                             }}
                           >
-                            Unity 3D 기반 VR 환경에서 사용자가 자연스럽게 문화유산을 탐험하고 학습할 수 있는 몰입형 경험 설계
+                            페르소나별 선호 디지털 환경(메신저, 브라우저, 문서)을 활용한 웹툰형 시각 구성으로 기존 강의형 콘텐츠의 한계 극복. 화면 전환 순간을 활용하여 회피 행동을 학습 효과로 전환하는 구조 설계
                           </AdvancedEditableText>
                         </div>
                         <div>
@@ -4063,7 +4202,7 @@ export default function CombinedLanding() {
                               marginBottom: "8px"
                             }}
                           >
-                            • 3D 모델링 및 포토그래메트리 활용
+                            • 제작 효율화 관점 - 글로벌 확장 전략
                           </AdvancedEditableText>
                           <AdvancedEditableText
                             textKey={`project-${selectedProject.id}-role-3-desc`}
@@ -4076,7 +4215,7 @@ export default function CombinedLanding() {
                               display: "block"
                             }}
                           >
-                            실제 문화재를 정밀 스캐닝하여 VR 환경에서 디테일까지 재현할 수 있는 고품질 3D 모델 제작
+                            고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축하여 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 버전 동시 제작. 언어와 상관없이 직관적으로 이해 가능한 시각적 학습 환경 구현
                           </AdvancedEditableText>
                         </div>
                       </>
@@ -4834,24 +4973,28 @@ export default function CombinedLanding() {
                   {selectedProject.id === "6" && (
                     <>
                       <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Unity 3D</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">VR 환경 구축 및 인터랙션 개발</div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Premiere Pro</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">디지털 화면 기반 영상 편집</div>
                       </div>
                       <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">VR Development</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">가상현실 콘텐츠 제작 및 최적화</div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">After Effects</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">모션 그래픽 및 화면 전환 효과</div>
                       </div>
                       <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Cultural Research</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">문화유산 조사 및 디지털 아카이빙</div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Photoshop</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">UI 기반 화면 요소 제작</div>
                       </div>
                       <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">3D Modeling</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">문화재 3D 모델링 및 텍스처링</div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Stable Diffusion</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">사용자 리서치 기반 시각 자료 생성</div>
                       </div>
                       <div>
-                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Photogrammetry</div>
-                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">실제 문화재의 정밀 3D 스캐닝</div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Midjourney</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">디지털 환경 시각화</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">User Research</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">뎁스 인터뷰, 페르소나, 유저시나리오</div>
                       </div>
                     </>
                   )}
