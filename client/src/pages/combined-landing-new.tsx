@@ -2103,7 +2103,7 @@ export default function CombinedLanding() {
                           <div className="flex justify-center">
                             <div className="bg-[#282623] text-white px-6 py-3 rounded-lg text-center" style={{ width: "200px" }}>
                               <div className="text-xs font-bold mb-1">실시간 위기 관리</div>
-                              <div className="text-xs opacity-80">즉시 대응력</div>
+                              <div className="opacity-80 text-[14px]">즉시 대응가능</div>
                             </div>
                           </div>
                           
@@ -5191,8 +5191,8 @@ export default function CombinedLanding() {
                           {/* 3단계: 실시간 위기 관리 */}
                           <div className="flex justify-center">
                             <div className="bg-[#282623] text-white px-6 py-3 rounded-lg text-center" style={{width: "200px"}}>
-                              <div className="text-xs font-bold mb-1">실시간 위기 관리</div>
-                              <div className="text-xs opacity-80">즉시 대응력</div>
+                              <div className="font-bold mb-1 text-[14px]">실시간 위기 관리</div>
+                              <div className="opacity-80 text-[14px]">즉시 대응가능</div>
                             </div>
                           </div>
                           
@@ -5204,7 +5204,7 @@ export default function CombinedLanding() {
                           {/* 2단계: 전문 도메인 대응 */}
                           <div className="flex justify-center">
                             <div className="bg-[#58534e] text-white px-6 py-3 rounded-lg text-center" style={{width: "300px"}}>
-                              <div className="text-xs font-bold mb-1">전문 도메인 대응</div>
+                              <div className="font-bold mb-1 text-[14px]">전문 도메인 대응</div>
                               <div className="opacity-80 text-[14px]">컴플라이언스·핵심역량·안전교육</div>
                             </div>
                           </div>
