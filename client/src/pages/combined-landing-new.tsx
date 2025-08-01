@@ -2193,16 +2193,15 @@ export default function CombinedLanding() {
                 {/* 메타버스 프로젝트 전용 상세 모달 */}
                 {selectedProject.id === "5" && (
                   <div className="mb-12">
-                    {/* 1. 프로젝트 세부 활동 */}
+                    {/* 1. 프로젝트 기간 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">1</span>
-                        프로젝트 세부 활동
+                        프로젝트 기간
                       </h3>
-                      <div className="text-sm text-[#58534e] leading-relaxed space-y-3">
-                        <p>픽셀 아트 스타일의 2D 메타버스 플랫폼 Gather를 활용하여 5개 주요 클라이언트 대상 게임형 디지털 캠페인을 기획·제작</p>
-                        <p>사용자 행동 로그 분석을 통해 형식적 참여 패턴을 식별하고, 일상 공간 기반의 친숙한 환경과 게임화 요소를 결합한 솔루션 설계</p>
-                        <p>AI 도구(Midjourney, Stable Diffusion, ComfyUI)를 활용해 메타버스 맵을 제작하고, 실시간 소통 기반의 운영으로 참여도 극대화</p>
+                      <div className="text-sm text-[#58534e] leading-relaxed">
+                        <p><strong>2023.02 - 2023.08 (8개월)</strong></p>
+                        <p>메타버스 플랫폼 구축 및 5개 클라이언트 대상 캠페인 운영</p>
                       </div>
                     </div>
 
