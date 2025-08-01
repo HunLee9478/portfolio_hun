@@ -5351,11 +5351,11 @@ export default function CombinedLanding() {
                     </div>
 
                     {/* 5. 활용 기술 */}
-                    <div className="mb-8">
-                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                    <div className="mb-6 mt-8 pt-8 border-t border-gray-200">
+                      <h2 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
                         활용 기술
-                      </h3>
+                      </h2>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="space-y-4">
                           <div className="bg-gray-50 rounded-lg border border-gray-200 p-4 h-36">
@@ -5389,7 +5389,7 @@ export default function CombinedLanding() {
                               </div>
                               <div className="flex justify-between items-center">
                                 <span className="text-sm text-[#58534e] tracking-tight">글로벌 소통</span>
-                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">완벽 구현</span>
+                                <span className="text-sm text-[#6b7280] bg-gray-200 px-2 py-1 rounded">커뮤니케이션</span>
                               </div>
                             </div>
                           </div>
