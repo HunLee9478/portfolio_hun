@@ -1421,7 +1421,6 @@ export default function CombinedLanding() {
                 
                 {/* Core Skills Grid */}
                 <div className="flex flex-wrap gap-3">
-                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>캠페인 기획, 전략 수립</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>미디어 콘텐츠 기획, 연출, 제작</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>프로젝트 매니지먼트</span>
                    <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>온,오프라인 캠페인 진행,운영</span>
@@ -1431,12 +1430,10 @@ export default function CombinedLanding() {
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Premier Pro</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>DaVinci Resolve</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>After Effect</span>
-                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>DaVinci Resolve</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Photoshop</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>ComfyUI</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Java</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>웹 콘텐츠 제작</span>
-                  <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>콘텐츠 기획</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>정보처리기사</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>Midjourney</span>
                   <span className={`px-4 py-2 bg-gray-100 text-gray-700 rounded-full ${FONT_SIZES.small} font-medium`}>영어 (업무 수준)</span>
@@ -3304,21 +3301,21 @@ export default function CombinedLanding() {
                           <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
                           활용 기술
                         </h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                            <h5 className="text-sm font-bold text-[#282623] mb-2">AI 도구 활용</h5>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                          <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-4">AI 도구 활용</h5>
                             <p className="text-sm text-[#58534e]">Python 기반 데이터 처리, ComfyUI UI 자동 생성, Midjourney·Stable Diffusion 이미지 생성</p>
                           </div>
-                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                            <h5 className="text-sm font-bold text-[#282623] mb-2">메타버스 환경 구축</h5>
+                          <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-4">메타버스 환경 구축</h5>
                             <p className="text-sm text-[#58534e]">Gather 플랫폼 기반 2D 메타버스 공간 설계, 아바타 상호작용 시스템 구현</p>
                           </div>
-                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                            <h5 className="text-sm font-bold text-[#282623] mb-2">데이터 분석</h5>
+                          <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-4">데이터 분석</h5>
                             <p className="text-sm text-[#58534e]">사용자 행동 로그 분석, 참여도 패턴 도출, 실시간 데이터 수집 및 분석</p>
                           </div>
-                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                            <h5 className="text-sm font-bold text-[#282623] mb-2">실시간 운영</h5>
+                          <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-4">실시간 운영</h5>
                             <p className="text-sm text-[#58534e]">라이브 진행 중 참가자 반응 모니터링, 몰입도 관리, 즉석 상황 대응</p>
                           </div>
                         </div>
