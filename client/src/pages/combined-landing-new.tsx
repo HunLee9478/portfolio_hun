@@ -504,6 +504,25 @@ export default function CombinedLanding() {
         "/assets/projects/samsung-compliance-4.jpg",
       ],
     },
+    {
+      id: "7",
+      src: "/assets/projects/samsung-education-studio.jpg",
+      alt: "삼성물산 혁신 컴플라이언스 캠페인",
+      title: "삼성물산 혁신 컴플라이언스 캠페인",
+      subtitle: "혁신적 메신저·브라우저 기반 콘텐츠 포맷",
+      description: "SAMSUNG C&T\n사용자 화면 전환 회피 행동 역이용 혁신 캠페인",
+      category: "Innovation Campaign",
+      year: "2023.02-2023.08",
+      client: "삼성물산",
+      role: "사용자 리서치, 콘텐츠 기획, 제작 효율화",
+      tools: ["Found Footage", "Photoshop", "After Effects", "Premiere Pro", "Stable Diffusion", "User Research"],
+      images: [
+        SamsungEducationStudio,
+        SamsungEducationFilming,
+        SamsungEducationScreenLife,
+        SamsungEducationMultiscreen,
+      ],
+    },
   ];
 
   // Gallery items
@@ -1440,7 +1459,7 @@ export default function CombinedLanding() {
               >
 
                 <div className="flex gap-8 pb-4" style={{ width: 'max-content' }}>
-                  {portfolioItems.slice(0, 6).map((item, index) => (
+                  {portfolioItems.slice(0, 7).map((item, index) => (
                     <motion.div
                       key={item.id}
                       className="group cursor-pointer flex-shrink-0"
@@ -1963,6 +1982,22 @@ export default function CombinedLanding() {
                           사용자 행동 분석을 기반으로 한 혁신적인 컴플라이언스 캠페인 콘텐츠를 기획하고 제작했습니다. ALT+TAB 화면 전환 패턴의 심리적 저항을 역이용하여 메신저, 브라우저 등 친숙한 디지털 환경 기반의 새로운 콘텐츠 포맷을 개발했습니다.
                         </AdvancedEditableText>
                       )}
+                      {selectedProject.id === "7" && (
+                        <AdvancedEditableText
+                          textKey={`project-${selectedProject.id}-description`}
+                          className="text-[#282623] text-sm tracking-tight leading-relaxed"
+                          isTextArea={true}
+                          style={{
+                            fontSize: TYPOGRAPHY.fontSize.small,
+                            lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                            color: "#282623",
+                            minHeight: "80px",
+                            width: "100%"
+                          }}
+                        >
+                          사용자 화면 전환 회피 행동을 역이용한 혁신적 메신저·브라우저 기반 콘텐츠 포맷을 개발하여 경쟁사 대비 30% 높은 단가로 수주하고, 고정 화면 중심 연출로 제작 효율성을 극대화한 5개국어 다국어 콘텐츠 제작 프로젝트입니다.
+                        </AdvancedEditableText>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -2272,6 +2307,212 @@ export default function CombinedLanding() {
                           </p>
                           <p className="text-sm text-[#58534e] leading-relaxed">
                             단순한 수치 분석을 넘어 행동 패턴 뒤에 숨은 심리적 동기를 파악하여 전략적으로 활용하는 것이 저의 차별화된 강점입니다. 유니세프에서는 후원자들의 진정한 관심사와 감정적 동기를 데이터로 읽어내어, 아동권리가 '해야 할 일'이 아닌 '자연스럽게 하게 된 일'이 될 수 있는 개인의 숨겨진 마음과 환경까지 고려한 캠페인을 설계하겠습니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* 7번 프로젝트 상세 콘텐츠 - 삼성물산 혁신 컴플라이언스 캠페인 */}
+                {selectedProject.id === "7" && (
+                  <div className="mb-12">
+                    {/* 1. 프로젝트 기간 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">1</span>
+                        프로젝트 기간
+                      </h3>
+                      <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <div className="flex items-center justify-center">
+                          <div className="flex items-center space-x-8">
+                            <div className="text-center">
+                              <div className="w-3 h-3 bg-[#282623] rounded-full mx-auto mb-2"></div>
+                              <div className="text-xs text-[#58534e] mb-1">시작</div>
+                              <div className="text-sm font-medium text-[#282623]">2023.02</div>
+                            </div>
+                            <div className="flex-1 h-0.5 bg-gray-300 relative" style={{width: "200px"}}>
+                              <div className="absolute inset-0 bg-[#282623] rounded" style={{width: "100%"}}></div>
+                              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-2 py-1 text-xs text-[#58534e] border border-gray-300 rounded">6개월</div>
+                            </div>
+                            <div className="text-center">
+                              <div className="w-3 h-3 bg-[#282623] rounded-full mx-auto mb-2"></div>
+                              <div className="text-xs text-[#58534e] mb-1">완료</div>
+                              <div className="text-sm font-medium text-[#282623]">2023.08</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 2. 주요 성과 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">2</span>
+                        주요 성과
+                      </h3>
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 경쟁사 대비 30% 높은 단가로 수주 성공</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">혁신적인 콘텐츠 포맷 개발을 통해 기존 강의형 교육 대비 차별화된 가치 제안으로 프리미엄 단가 확보</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">2. 사용자 화면 전환 회피 행동을 역이용한 메신저·브라우저 기반 콘텐츠 포맷 개발</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">ALT+TAB 화면 전환 패턴을 학습 효과로 전환하는 창의적 접근법으로 새로운 교육 콘텐츠 포맷 창조</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">효율적 제작 시스템을 통해 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 다국어 콘텐츠 동시 개발 달성</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 3. 내용 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
+                        내용
+                      </h3>
+                      <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <div className="text-center mb-6">
+                          <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">
+                            <span className="mr-2">🔄</span>3단계 순환 프로세스
+                          </div>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                          <div className="bg-white border border-gray-400 rounded-lg p-4 text-center">
+                            <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                              <span className="text-lg">🔍</span>
+                            </div>
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">1. 사용자 중심 분석</h5>
+                            <div className="text-xs text-[#58534e]">행동 패턴 심층 분석</div>
+                          </div>
+                          <div className="bg-white border border-gray-400 rounded-lg p-4 text-center">
+                            <div className="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                              <span className="text-lg">💡</span>
+                            </div>
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">2. 디지털 환경 활용</h5>
+                            <div className="text-xs text-[#58534e]">메신저·브라우저 포맷</div>
+                          </div>
+                          <div className="bg-white border border-gray-400 rounded-lg p-4 text-center">
+                            <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                              <span className="text-lg">⚙️</span>
+                            </div>
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">3. 효율적 제작 시스템</h5>
+                            <div className="text-xs text-[#58534e]">다국어 최적화</div>
+                          </div>
+                        </div>
+                        <div className="text-center text-xs text-[#58534e]">
+                          <span className="mr-1">🔄</span>순환적 프로세스로 지속적 개선
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 4. 역할 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
+                        역할
+                      </h3>
+                      <div className="bg-gray-100 rounded-lg p-6 border border-gray-300">
+                        <div className="text-center mb-6">
+                          <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">
+                            <span className="mr-2">📊</span>3개 관점 매트릭스
+                          </div>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          <div className="bg-white border border-gray-400 rounded-lg p-4 text-center">
+                            <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                              <span className="text-lg">🔍</span>
+                            </div>
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">사용자 리서치</h5>
+                            <div className="text-xs text-[#58534e]">행동 패턴 심층 분석</div>
+                          </div>
+                          <div className="bg-white border border-gray-400 rounded-lg p-4 text-center">
+                            <div className="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                              <span className="text-lg">💡</span>
+                            </div>
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">콘텐츠 기획</h5>
+                            <div className="text-xs text-[#58534e]">혁신적 포맷 개발</div>
+                          </div>
+                          <div className="bg-white border border-gray-400 rounded-lg p-4 text-center">
+                            <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                              <span className="text-lg">⚙️</span>
+                            </div>
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">제작 효율화</h5>
+                            <div className="text-xs text-[#58534e]">글로벌 확장 전략</div>
+                          </div>
+                        </div>
+
+                        {/* 세부 역할 설명 */}
+                        <div className="space-y-4 mt-6">
+                          <div className="bg-white rounded-lg p-4 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">사용자 리서치 관점 - 행동 패턴 심층 분석</h5>
+                            <div className="text-xs text-[#58534e] space-y-1">
+                              <div>1. 20명 대상 뎁스 인터뷰를 통해 법정 교육에 대한 '의무감'과 '거부감' 사이의 심리적 갈등 구조 파악</div>
+                              <div>2. 3개 페르소나(적극 참여형, 소극 참여형, 회피형) 도출 및 각 유형별 학습 동기와 회피 패턴 분석</div>
+                              <div>3. 유저시나리오 기반으로 ALT+TAB 사용률 90% 발생 시점과 트리거 요인을 구체적으로 식별</div>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-white rounded-lg p-4 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">콘텐츠 기획 관점 - 혁신적 포맷 개발</h5>
+                            <div className="text-xs text-[#58534e] space-y-1">
+                              <div>1. 페르소나별 선호 디지털 환경(메신저, 브라우저, 문서)을 활용한 웹툰형 시각 구성으로 기존 강의형 콘텐츠의 한계 극복</div>
+                              <div>2. 유저시나리오에서 도출한 화면 전환 순간을 활용하여 임팩트 있는 메시지를 배치, 회피 행동을 학습 효과로 전환하는 구조 설계</div>
+                            </div>
+                          </div>
+
+                          <div className="bg-white rounded-lg p-4 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">제작 효율화 관점 - 글로벌 확장 전략</h5>
+                            <div className="text-xs text-[#58534e] space-y-1">
+                              <div>1. 고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축하여 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 버전 동시 제작</div>
+                              <div>2. 페르소나 분석을 통해 언어와 상관없이 직관적으로 이해 가능한 시각적 학습 환경 구현</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 5. 기술 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
+                        기술
+                      </h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">영상 제작</h5>
+                          <p className="text-xs text-[#58534e]">Premiere Pro, After Effects를 활용한 디지털 화면 기반 포맷 및 모션 그래픽 제작</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">그래픽 리소스</h5>
+                          <p className="text-xs text-[#58534e]">Photoshop, Stable Diffusion을 활용한 UI 기반 화면 요소 및 시각 자료 생성</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">사용자 리서치</h5>
+                          <p className="text-xs text-[#58534e]">뎁스 인터뷰, 페르소나 설계, 유저시나리오 분석을 통한 사용자 중심 콘텐츠 기획</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">다국어 최적화</h5>
+                          <p className="text-xs text-[#58534e]">고정 화면 구조를 활용한 효율적 다국어 버전 제작 시스템 구축</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 6. 차별화 요소 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
+                        차별화된 접근법
+                      </h3>
+                      <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <div className="space-y-4">
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            사용자의 회피 행동을 단순한 저항으로 보지 않고, 그 뒤에 숨은 심리적 동기를 파악하여 전략적으로 활용했습니다. ALT+TAB 화면 전환 패턴을 발견했을 때, 이를 '문제'가 아닌 '기회'로 전환하는 창의적 사고를 적용했습니다.
+                          </p>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            메신저와 브라우저라는 친숙한 디지털 환경을 교육 콘텐츠 포맷으로 변환하여, 학습자가 자연스럽게 몰입할 수 있는 환경을 조성했습니다. 이 혁신적 접근법으로 기존 강의형 콘텐츠 대비 30% 높은 단가로 수주에 성공했습니다.
                           </p>
                         </div>
                       </div>
@@ -3166,6 +3407,97 @@ export default function CombinedLanding() {
                             }}
                           >
                             진에어 측과 후속 프로젝트 진행을 위한 시즌2 기획 논의 성공적 확보
+                          </AdvancedEditableText>
+                        </div>
+                      </>
+                    )}
+                    {selectedProject.id === "7" && (
+                      <>
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-1-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 경쟁사 대비 30% 높은 단가로 수주 성공
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-1-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            혁신적인 콘텐츠 포맷 개발을 통해 기존 강의형 교육 대비 차별화된 가치 제안으로 프리미엄 단가 확보
+                          </AdvancedEditableText>
+                        </div>
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 사용자 화면 전환 회피 행동을 역이용한 메신저·브라우저 기반 콘텐츠 포맷 개발
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            ALT+TAB 화면 전환 패턴을 학습 효과로 전환하는 창의적 접근법으로 새로운 교육 콘텐츠 포맷 창조
+                          </AdvancedEditableText>
+                        </div>
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            효율적 제작 시스템을 통해 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 다국어 콘텐츠 동시 개발 달성
                           </AdvancedEditableText>
                         </div>
                       </>
@@ -4804,6 +5136,34 @@ export default function CombinedLanding() {
                       <div>
                         <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">User Research</div>
                         <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">뎁스 인터뷰, 페르소나, 유저시나리오</div>
+                      </div>
+                    </>
+                  )}
+                  {selectedProject.id === "7" && (
+                    <>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Found Footage</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">Screen Life 기법의 핵심 도구<br/>실제 화면 녹화 및 편집</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Photoshop</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">화면 요소 편집 및 UI 디자인</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">After Effects</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">고정 화면 중심 모션 그래픽</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Premiere Pro</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">메신저·브라우저 환경 영상 편집</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Stable Diffusion</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">효율적 시각 자료 생성</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">User Research</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">화면 전환 회피 행동 분석</div>
                       </div>
                     </>
                   )}
