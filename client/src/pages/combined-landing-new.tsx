@@ -5176,23 +5176,23 @@ export default function CombinedLanding() {
 
                     {/* 3. 내용 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">3</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
                         내용
                       </h3>
                       
                       {/* 피라미드 구조 시각화 */}
-                      <div className="bg-gray-100 rounded-lg p-8 border border-gray-300 mb-6">
-                        <div className="text-center mb-6">
-                          <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">다양한 유형의 캠페인 통합 관리 체계</div>
+                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
+                        <div className="text-center mb-4">
+                          <h4 className="text-sm font-medium text-[#282623] mb-2">다양한 유형의 캠페인 통합 관리 체계</h4>
                         </div>
                         
-                        <div className="space-y-6">
+                        <div className="space-y-4">
                           {/* 3단계: 실시간 위기 관리 */}
                           <div className="flex justify-center">
-                            <div className="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style={{width: "320px"}}>
-                              <h5 className="text-sm font-bold text-[#282623] mb-3">3. 실시간 위기 관리</h5>
-                              <p className="text-xs text-[#58534e] tracking-tight leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 완주 달성</p>
+                            <div className="bg-[#282623] text-white px-6 py-3 rounded-lg text-center" style={{width: "200px"}}>
+                              <div className="text-xs font-bold mb-1">실시간 위기 관리</div>
+                              <div className="text-xs opacity-80">즉시 대응력</div>
                             </div>
                           </div>
                           
@@ -5203,9 +5203,9 @@ export default function CombinedLanding() {
                           
                           {/* 2단계: 전문 도메인 대응 */}
                           <div className="flex justify-center">
-                            <div className="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style={{width: "400px"}}>
-                              <h5 className="text-sm font-bold text-[#282623] mb-3">2. 전문 도메인 대응</h5>
-                              <p className="text-xs text-[#58534e] tracking-tight leading-relaxed">컴플라이언스·핵심역량·안전교육 등 전문 영역에서 통역 협업을 통한 완벽한 다국어 소통 구현</p>
+                            <div className="bg-[#58534e] text-white px-6 py-3 rounded-lg text-center" style={{width: "300px"}}>
+                              <div className="text-xs font-bold mb-1">전문 도메인 대응</div>
+                              <div className="text-xs opacity-80">컴플라이언스·핵심역량·안전교육</div>
                             </div>
                           </div>
                           
@@ -5216,9 +5216,9 @@ export default function CombinedLanding() {
                           
                           {/* 1단계: 다양한 유형의 캠페인 통합 운영 */}
                           <div className="flex justify-center">
-                            <div className="bg-white border-2 border-gray-500 rounded-lg p-6 text-center" style={{width: "480px"}}>
-                              <h5 className="text-sm font-bold text-[#282623] mb-3">1. 다양한 유형의 캠페인 통합 운영</h5>
-                              <p className="text-xs text-[#58534e] tracking-tight leading-relaxed">소규모 리더십 워크숍부터 대규모 온라인 웨비나, 국내 캠페인부터 글로벌 다국어 캠페인까지 다양한 규모와 유형의 캠페인 통합 관리</p>
+                            <div className="bg-[#6b7280] text-white px-6 py-3 rounded-lg text-center" style={{width: "400px"}}>
+                              <div className="text-xs font-bold mb-1">다양한 유형 캠페인 운영</div>
+                              <div className="text-xs opacity-80">본사~글로벌법인, 컴플라이언스~안전교육</div>
                             </div>
                           </div>
                         </div>
@@ -5227,13 +5227,13 @@ export default function CombinedLanding() {
 
                     {/* 4. 역할 */}
                     <div className="mb-8">
-                      <h3 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">4</span>
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
                         역할
                       </h3>
                       
                       {/* 간단한 3개 관점 다이어그램 */}
-                      <div className="bg-gray-100 rounded-lg p-6 border border-gray-300 mb-6">
+                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
                         <div className="text-center mb-4">
                           <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">3개 관점 통합 운영</div>
                         </div>
