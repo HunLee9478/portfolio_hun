@@ -5329,7 +5329,7 @@ export default function CombinedLanding() {
                                     <div className="text-sm font-medium text-blue-800">평상시</div>
                                     <div className="text-xs text-blue-600 mt-1">진행자 역할</div>
                                   </div>
-                                  <div className="text-xs text-[#58534e]">• 캠페인 진행<br/>• 참가자 소통<br/>• 콘텐츠 전달</div>
+                                  <div className="text-[#58534e] text-[14px]">• 캠페인 진행<br/>• 참가자 소통<br/>• 콘텐츠 전달</div>
                                 </div>
                                 <div className="text-center">
                                   <div className="bg-orange-100 border-2 border-orange-300 rounded-lg p-3 mb-2">
