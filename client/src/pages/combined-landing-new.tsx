@@ -5382,46 +5382,27 @@ export default function CombinedLanding() {
                     </div>
 
                     {/* 5. 활용 기술 */}
-                    <div className="mb-6">
-                      <h2 className="text-base text-gray-800 font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-gray-800 text-white text-xs font-bold rounded-full mr-2">5</span>
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
                         활용 기술
-                      </h2>
-                    </div>
-
-                    {/* 기술 스택 매트릭스 */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                        <div className="flex items-center mb-3">
-                          <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
-                          <h4 className="text-sm font-medium text-gray-800">실시간 운영</h4>
+                      </h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">실시간 운영</h5>
+                          <p className="text-xs text-[#58534e]">라이브 진행 중 위기 대응, 즉석 큐시트 수정, 참가자 반응 실시간 분석</p>
                         </div>
-                        <div className="space-y-2 text-sm text-gray-600">
-                          <div>• <strong>라이브 위기 대응</strong>: 돌발 상황 즉시 해결</div>
-                          <div>• <strong>즉석 큐시트 수정</strong>: 실시간 진행 최적화</div>
-                          <div>• <strong>참가자 반응 분석</strong>: 실시간 모니터링</div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">기술 통합</h5>
+                          <p className="text-xs text-[#58534e]">송출 시스템, 그래픽 제작, 벤더 커뮤니케이션을 활용한 제작-운영 연계</p>
                         </div>
-                      </div>
-                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                        <div className="flex items-center mb-3">
-                          <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
-                          <h4 className="text-sm font-medium text-gray-800">기술 통합</h4>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">다국어 소통</h5>
+                          <p className="text-xs text-[#58534e]">통역 협업을 통한 전문 도메인(컴플라이언스, 핵심역량, 안전교육) 완벽 소통 구현</p>
                         </div>
-                        <div className="space-y-2 text-sm text-gray-600">
-                          <div>• <strong>송출 시스템</strong>: 안정적 라이브 방송</div>
-                          <div>• <strong>그래픽 제작</strong>: 실시간 비주얼 지원</div>
-                          <div>• <strong>벤더 커뮤니케이션</strong>: 통합 협업 관리</div>
-                        </div>
-                      </div>
-                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                        <div className="flex items-center mb-3">
-                          <div className="w-3 h-3 bg-purple-500 rounded-full mr-2"></div>
-                          <h4 className="text-sm font-medium text-gray-800">다국어 소통</h4>
-                        </div>
-                        <div className="space-y-2 text-sm text-gray-600">
-                          <div>• <strong>통역 협업</strong>: 전문 도메인 완벽 소통</div>
-                          <div>• <strong>컴플라이언스</strong>: 법규 준수 캠페인</div>
-                          <div>• <strong>핵심역량·안전교육</strong>: 전문 영역 대응</div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">진행자-운영자 역할 전환</h5>
+                          <p className="text-xs text-[#58534e]">평상시 진행자에서 위기 상황 시 운영자로 역할 전환을 통한 신뢰성 확보</p>
                         </div>
                       </div>
                     </div>
