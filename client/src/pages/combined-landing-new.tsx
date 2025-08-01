@@ -5333,7 +5333,7 @@ export default function CombinedLanding() {
                                 </div>
                                 <div className="text-center">
                                   <div className="bg-orange-100 border-2 border-orange-300 rounded-lg p-3 mb-2">
-                                    <div className="text-sm font-medium text-orange-800">위기시</div>
+                                    <div className="text-sm font-medium text-orange-800">이슈발생</div>
                                     <div className="text-orange-600 mt-1 text-[14px]">운영자 전환</div>
                                   </div>
                                   <div className="text-[#58534e] text-[14px]">• 기술적 대응<br/>• 즉시 해결<br/>• 신뢰 유지</div>
