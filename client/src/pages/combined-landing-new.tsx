@@ -2272,55 +2272,145 @@ export default function CombinedLanding() {
                         주요 역할
                       </h3>
                       
-                      {/* 워크플로우 시각화 */}
-                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-6">
-                        <div className="flex items-center justify-between text-sm font-medium text-[#282623]">
-                          <div className="flex flex-col items-center">
-                            <div className="w-8 h-8 bg-[#282623] text-white rounded-full flex items-center justify-center text-xs mb-2">1</div>
-                            <span className="text-center">고객사 분석</span>
+                      <div className="space-y-4">
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-role-1-title`}
+                            className="text-sm font-medium text-[#282623] mb-4 tracking-tight leading-relaxed"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "500"
+                            }}
+                          >
+                            AI 기반 메타버스 환경 설계
+                          </AdvancedEditableText>
+                          <div className="relative pl-4 mt-4 mb-6">
+                            <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+                            <AdvancedEditableText
+                              textKey={`project-${selectedProject.id}-role-1-context`}
+                              className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                              style={{
+                                fontSize: TYPOGRAPHY.fontSize.small,
+                                color: "#58534e",
+                                lineHeight: TYPOGRAPHY.lineHeight.relaxed
+                              }}
+                            >
+                              각 고객사별 특성 분석 → 맞춤형 가상공간 설계 → AI 도구 활용한 콘텐츠 생성 → 게임화 요소 통합
+                            </AdvancedEditableText>
                           </div>
-                          <div className="text-gray-400">→</div>
-                          <div className="flex flex-col items-center">
-                            <div className="w-8 h-8 bg-[#282623] text-white rounded-full flex items-center justify-center text-xs mb-2">2</div>
-                            <span className="text-center">공간 설계</span>
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                              <AdvancedEditableText
+                                textKey={`project-${selectedProject.id}-role-1-sub-1-title`}
+                                className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                                style={{
+                                  fontSize: TYPOGRAPHY.fontSize.small,
+                                  color: "#282623",
+                                  lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                  fontWeight: "500",
+                                  marginBottom: "16px"
+                                }}
+                              >
+                                AI 도구 활용
+                              </AdvancedEditableText>
+                              <div className="space-y-2">
+                                <div>
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-role-1-sub-1-item-1-title`}
+                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
+                                    style={{
+                                      fontSize: TYPOGRAPHY.fontSize.small,
+                                      color: "#58534e",
+                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                      display: "block",
+                                      marginBottom: "4px"
+                                    }}
+                                  >
+                                    • ComfyUI: 일관된 캐릭터 생성
+                                  </AdvancedEditableText>
+                                </div>
+                                <div>
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-role-1-sub-1-item-2-title`}
+                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
+                                    style={{
+                                      fontSize: TYPOGRAPHY.fontSize.small,
+                                      color: "#58534e",
+                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                      display: "block",
+                                      marginBottom: "4px"
+                                    }}
+                                  >
+                                    • Midjourney: 환경 디자인 컨셉
+                                  </AdvancedEditableText>
+                                </div>
+                                <div>
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-role-1-sub-1-item-3-title`}
+                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
+                                    style={{
+                                      fontSize: TYPOGRAPHY.fontSize.small,
+                                      color: "#58534e",
+                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                      display: "block",
+                                      marginBottom: "4px"
+                                    }}
+                                  >
+                                    • Stable Diffusion: 세부 요소 제작
+                                  </AdvancedEditableText>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <AdvancedEditableText
+                                textKey={`project-${selectedProject.id}-role-1-sub-2-title`}
+                                className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                                style={{
+                                  fontSize: TYPOGRAPHY.fontSize.small,
+                                  color: "#282623",
+                                  lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                  fontWeight: "500",
+                                  marginBottom: "16px"
+                                }}
+                              >
+                                데이터 분석 및 운영
+                              </AdvancedEditableText>
+                              <div className="space-y-2">
+                                <div>
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-role-1-sub-2-item-1-title`}
+                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
+                                    style={{
+                                      fontSize: TYPOGRAPHY.fontSize.small,
+                                      color: "#58534e",
+                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                      display: "block",
+                                      marginBottom: "4px"
+                                    }}
+                                  >
+                                    • 사용자 행동 로그 분석으로 형식적 참여 패턴 발견
+                                  </AdvancedEditableText>
+                                </div>
+                                <div>
+                                  <AdvancedEditableText
+                                    textKey={`project-${selectedProject.id}-role-1-sub-2-item-2-title`}
+                                    className="text-sm text-[#58534e] tracking-tight leading-relaxed block"
+                                    style={{
+                                      fontSize: TYPOGRAPHY.fontSize.small,
+                                      color: "#58534e",
+                                      lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                                      display: "block",
+                                      marginBottom: "4px"
+                                    }}
+                                  >
+                                    • 실시간 소통으로 참가자 반응 파악 및 호응 유도
+                                  </AdvancedEditableText>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div className="text-gray-400">→</div>
-                          <div className="flex flex-col items-center">
-                            <div className="w-8 h-8 bg-[#282623] text-white rounded-full flex items-center justify-center text-xs mb-2">3</div>
-                            <span className="text-center">AI 콘텐츠</span>
-                          </div>
-                          <div className="text-gray-400">→</div>
-                          <div className="flex flex-col items-center">
-                            <div className="w-8 h-8 bg-[#282623] text-white rounded-full flex items-center justify-center text-xs mb-2">4</div>
-                            <span className="text-center">게임화</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* 3가지 핵심 역할 카드 */}
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                        <div className="bg-white border border-gray-200 rounded-lg p-4">
-                          <div className="flex items-center mb-3">
-                            <div className="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xs mr-2">📊</div>
-                            <h4 className="font-medium text-[#282623]">데이터 분석</h4>
-                          </div>
-                          <p className="text-[#58534e] leading-relaxed">사용자 행동 로그 분석으로 형식적 참여 패턴 발견 및 진성 참여 전략 수립</p>
-                        </div>
-
-                        <div className="bg-white border border-gray-200 rounded-lg p-4">
-                          <div className="flex items-center mb-3">
-                            <div className="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs mr-2">🎨</div>
-                            <h4 className="font-medium text-[#282623]">콘텐츠 제작</h4>
-                          </div>
-                          <p className="text-[#58534e] leading-relaxed">AI 도구로 친숙한 일상 공간에 퀘스트 요소를 결합한 메타버스 환경 직접 제작</p>
-                        </div>
-
-                        <div className="bg-white border border-gray-200 rounded-lg p-4">
-                          <div className="flex items-center mb-3">
-                            <div className="w-6 h-6 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-xs mr-2">🎮</div>
-                            <h4 className="font-medium text-[#282623]">현장 운영</h4>
-                          </div>
-                          <p className="text-[#58534e] leading-relaxed">자동화 대신 실시간 소통으로 참가자 반응 파악 및 호응 유도</p>
                         </div>
                       </div>
                     </div>
