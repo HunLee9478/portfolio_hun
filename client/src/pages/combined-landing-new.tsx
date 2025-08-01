@@ -2377,10 +2377,10 @@ export default function CombinedLanding() {
                         <div className="grid grid-cols-3 gap-4 mb-8">
                           {/* 1단계: 데이터 분석 */}
                           <div className="text-center">
-                            <div className="bg-[#4a5568] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
                               1
                             </div>
-                            <div className="bg-white border-2 border-[#4a5568] rounded-lg p-4 min-h-[120px]">
+                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
                               <h5 className="text-sm font-bold text-[#282623] mb-2">데이터 분석</h5>
                               <div className="text-xs text-[#58534e] space-y-1">
                                 <div>• 사용자 로그 분석</div>
@@ -2392,10 +2392,10 @@ export default function CombinedLanding() {
                           
                           {/* 2단계: 콘텐츠 제작 */}
                           <div className="text-center">
-                            <div className="bg-[#4a5568] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
                               2
                             </div>
-                            <div className="bg-white border-2 border-[#4a5568] rounded-lg p-4 min-h-[120px]">
+                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
                               <h5 className="text-sm font-bold text-[#282623] mb-2">콘텐츠 제작</h5>
                               <div className="text-xs text-[#58534e] space-y-1">
                                 <div>• AI 도구 활용 맵 제작</div>
@@ -2407,10 +2407,10 @@ export default function CombinedLanding() {
                           
                           {/* 3단계: 현장 운영 */}
                           <div className="text-center">
-                            <div className="bg-[#4a5568] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
                               3
                             </div>
-                            <div className="bg-white border-2 border-[#4a5568] rounded-lg p-4 min-h-[120px]">
+                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
                               <h5 className="text-sm font-bold text-[#282623] mb-2">현장 운영</h5>
                               <div className="text-xs text-[#58534e] space-y-1">
                                 <div>• 실시간 소통 진행</div>
@@ -2428,10 +2428,10 @@ export default function CombinedLanding() {
                       <div className="mt-6 space-y-6">
                         {/* 데이터 분석 상세 */}
                         <div className="border border-gray-300 rounded-lg overflow-hidden">
-                          <div className="bg-[#4a5568] text-white p-3 flex items-center justify-between cursor-pointer" 
+                          <div className="bg-[#6b7280] text-white p-3 flex items-center justify-between cursor-pointer" 
                                onClick={() => setExpandedSection(expandedSection === 'data-analysis' ? null : 'data-analysis')}>
                             <div className="flex items-center">
-                              <span className="w-6 h-6 bg-white text-[#4a5568] rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                              <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
                               <span className="font-medium">데이터 분석 관점 - 상세 프로세스</span>
                             </div>
                             <span className="text-lg">{expandedSection === 'data-analysis' ? '−' : '+'}</span>
@@ -2456,10 +2456,10 @@ export default function CombinedLanding() {
 
                         {/* 콘텐츠 제작 상세 */}
                         <div className="border border-gray-300 rounded-lg overflow-hidden">
-                          <div className="bg-[#4a5568] text-white p-3 flex items-center justify-between cursor-pointer"
+                          <div className="bg-[#6b7280] text-white p-3 flex items-center justify-between cursor-pointer"
                                onClick={() => setExpandedSection(expandedSection === 'content-creation' ? null : 'content-creation')}>
                             <div className="flex items-center">
-                              <span className="w-6 h-6 bg-white text-[#4a5568] rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                              <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
                               <span className="font-medium">콘텐츠 제작 관점 - 기술 구현</span>
                             </div>
                             <span className="text-lg">{expandedSection === 'content-creation' ? '−' : '+'}</span>
@@ -2550,10 +2550,10 @@ export default function CombinedLanding() {
 
                         {/* 현장 운영 상세 */}
                         <div className="border border-gray-300 rounded-lg overflow-hidden">
-                          <div className="bg-[#4a5568] text-white p-3 flex items-center justify-between cursor-pointer"
+                          <div className="bg-[#6b7280] text-white p-3 flex items-center justify-between cursor-pointer"
                                onClick={() => setExpandedSection(expandedSection === 'live-operation' ? null : 'live-operation')}>
                             <div className="flex items-center">
-                              <span className="w-6 h-6 bg-white text-[#4a5568] rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                              <span className="w-6 h-6 bg-white text-[#6b7280] rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
                               <span className="font-medium">현장 운영 관점 - 실시간 최적화</span>
                             </div>
                             <span className="text-lg">{expandedSection === 'live-operation' ? '−' : '+'}</span>
