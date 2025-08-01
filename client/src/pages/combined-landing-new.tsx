@@ -1464,7 +1464,7 @@ export default function CombinedLanding() {
 
               {/* Portfolio Grid - 2 Column Layout */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                {portfolioItems.slice(0, 9).map((item, index) => (
+                {portfolioItems.filter(item => !["1", "2", "3", "4", "6"].includes(item.id)).map((item, index) => (
                   <motion.div
                     key={item.id}
                     className="group cursor-pointer"
