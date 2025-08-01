@@ -3162,8 +3162,8 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
-                {/* 메타버스(5번), 컴플라이언스(3번), 삼성물산(6번) 프로젝트는 주요 성과 섹션 생략 - 상세 모달에서 충분히 다뤄짐 */}
-                {selectedProject.id !== "5" && selectedProject.id !== "3" && selectedProject.id !== "6" && (
+                {/* 메타버스(5번)와 컴플라이언스(3번) 프로젝트는 주요 성과 섹션 생략 - 상세 모달에서 충분히 다뤄짐 */}
+                {selectedProject.id !== "5" && selectedProject.id !== "3" && (
                   <div className="mb-12">
                     <div className="mb-6 mt-8 pt-8 border-t border-gray-200">
                       <h2 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
@@ -3452,8 +3452,8 @@ export default function CombinedLanding() {
                   </div>
                 )}
 
-                {/* 메타버스(5번)와 삼성물산(6번) 프로젝트는 주요 역할 섹션 생략 - 상세 모달에서 충분히 다뤄짐 */}
-                {selectedProject.id !== "5" && selectedProject.id !== "6" && (
+                {/* 메타버스 프로젝트는 주요 역할 섹션 생략 - 콘텐츠 섹션에서 충분히 다뤄짐 */}
+                {selectedProject.id !== "5" && (
                   <div className="mb-12">
                     <div className="mb-6 mt-8 pt-8 border-t border-gray-200">
                       <h2 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
