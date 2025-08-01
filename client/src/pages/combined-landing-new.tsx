@@ -3166,17 +3166,17 @@ export default function CombinedLanding() {
                           {(expandedSection === 'content-creation' || expandedSection === 'all') && (
                             <div className="p-4 bg-white space-y-4">
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                  <h6 className="text-sm font-medium text-[#282623] mb-2">AI 도구 활용</h6>
-                                  <div className="text-sm text-[#58534e] space-y-1">
+                                <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                                  <h6 className="text-sm font-medium text-[#282623] mb-3">AI 도구 활용</h6>
+                                  <div className="text-sm text-[#58534e] space-y-2">
                                     <div>• Python 기반 데이터 처리</div>
                                     <div>• ComfyUI로 UI 자동 생성</div>
                                     <div>• Midjourney, Stable Diffusion 이미지 생성</div>
                                   </div>
                                 </div>
-                                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                  <h6 className="text-sm font-medium text-[#282623] mb-2">UX 설계 전략</h6>
-                                  <div className="text-sm text-[#58534e] space-y-1">
+                                <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                                  <h6 className="text-sm font-medium text-[#282623] mb-3">UX 설계 전략</h6>
+                                  <div className="text-sm text-[#58534e] space-y-2">
                                     <div>• 친숙한 일상 공간 기반</div>
                                     <div>• 퀘스트 요소 자연스럽게 결합</div>
                                     <div>• 진입장벽 최소화 + 탐험 동기 제공</div>
