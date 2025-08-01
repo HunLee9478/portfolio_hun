@@ -1937,66 +1937,309 @@ export default function CombinedLanding() {
               <div className="px-8 lg:px-16 pb-12">
 
 
-                {/* 추가 이미지 갤러리 - 1번 프로젝트 전용 */}
+                {/* 삼성물산 컴플라이언스 프로젝트 전용 상세 모달 */}
                 {selectedProject.id === "1" && (
                   <div className="mb-12">
-                    <div className="mb-6">
+                    {/* 1. 프로젝트 기간 */}
+                    <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        이미지
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">1</span>
+                        프로젝트 기간
                       </h3>
-                    </div>
-                    <div className="grid grid-cols-2 gap-4 mb-8">
-                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                        <img 
-                          src={SamsungPresentationImage} 
-                          alt="삼성 프레젠테이션 발표 현장"
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                          onError={(e) => {
-                            console.error("이미지 로딩 실패:", e.currentTarget.src);
-                            e.currentTarget.style.backgroundColor = "#ff6b6b";
-                          }}
-                          onLoad={() => console.log("이미지 로딩 성공: samsung-presentation.png")}
-                        />
-                      </div>
-                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                        <img 
-                          src={SamsungEventStageImage} 
-                          alt="삼성 이벤트 무대 발표 현장"
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                          onError={(e) => {
-                            console.error("이미지 로딩 실패:", e.currentTarget.src);
-                            e.currentTarget.style.backgroundColor = "#ff6b6b";
-                          }}
-                          onLoad={() => console.log("이미지 로딩 성공: samsung-event-stage.png")}
-                        />
-                      </div>
-                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                        <img 
-                          src={OverseasEventImage} 
-                          alt="해외 이벤트 진행"
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                          onError={(e) => {
-                            console.error("이미지 로딩 실패:", e.currentTarget.src);
-                            e.currentTarget.style.backgroundColor = "#ff6b6b";
-                          }}
-                          onLoad={() => console.log("이미지 로딩 성공: overseas-event.jpg")}
-                        />
-                      </div>
-                      <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
-                        <img 
-                          src={OnlineEventImage} 
-                          alt="온라인 이벤트 기획"
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                          onError={(e) => {
-                            console.error("이미지 로딩 실패:", e.currentTarget.src);
-                            e.currentTarget.style.backgroundColor = "#ff6b6b";
-                          }}
-                          onLoad={() => console.log("이미지 로딩 성공: online-event.jpg")}
-                        />
+                      <div>
+                        <span className="text-sm text-[#282623] tracking-tight leading-relaxed" style={{ fontSize: "14px", color: "rgb(40, 38, 35)", lineHeight: "1.6", letterSpacing: "0px", fontFamily: "inherit", fontWeight: "400" }}>
+                          2023.02 - 2023.08 (6개월)
+                        </span>
                       </div>
                     </div>
-                    <div className="text-center mb-8">
-                      <p className="text-sm text-[#58534e] italic">온·오프라인 통합 운영 및 기술 지원 활동</p>
+
+                    {/* 2. 이미지 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">2</span>
+                        프로젝트 상세
+                      </h3>
+                      <div className="grid grid-cols-2 gap-4 mb-8">
+                        <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                          <img 
+                            src={SamsungPresentationImage} 
+                            alt="삼성 프레젠테이션 발표 현장"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: samsung-presentation.png")}
+                          />
+                        </div>
+                        <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                          <img 
+                            src={SamsungEventStageImage} 
+                            alt="삼성 이벤트 무대 발표 현장"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: samsung-event-stage.png")}
+                          />
+                        </div>
+                        <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                          <img 
+                            src={OverseasEventImage} 
+                            alt="해외 이벤트 진행"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: overseas-event.jpg")}
+                          />
+                        </div>
+                        <div className="aspect-[4/3] bg-[#b9b8b6] overflow-hidden rounded-lg relative">
+                          <img 
+                            src={OnlineEventImage} 
+                            alt="온라인 이벤트 기획"
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              console.error("이미지 로딩 실패:", e.currentTarget.src);
+                              e.currentTarget.style.backgroundColor = "#ff6b6b";
+                            }}
+                            onLoad={() => console.log("이미지 로딩 성공: online-event.jpg")}
+                          />
+                        </div>
+                      </div>
+                      <div className="text-center mb-8">
+                        <p className="text-sm text-[#58534e] italic">온·오프라인 통합 운영 및 기술 지원 활동</p>
+                      </div>
+                    </div>
+
+                    {/* 3. 내용 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
+                        내용
+                      </h3>
+                      <div className="space-y-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 사용자 중심 분석</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            뎁스 인터뷰, 페르소나, 유저시나리오를 통해 ALT+TAB 화면 전환 패턴의 심리적 저항 원인을 발견하고 이를 활용한 역발상 전략 수립
+                          </p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">2. 친숙한 디지털 환경 활용</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            메신저, 브라우저, 문서 등 일상적으로 사용하는 화면 구성을 통해 소리 없이도 완전한 메시지 전달이 가능한 콘텐츠 구조 설계
+                          </p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 효율적 제작 시스템</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            고정 화면 중심 연출을 통해 다국어 버전 제작의 효율성을 극대화하고 글로벌 전개 기반 마련
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 4. 주요 성과 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
+                        주요 성과
+                      </h3>
+                      <div className="space-y-5">
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-1-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 경쟁사 대비 30% 높은 단가로 수주 성공
+                          </AdvancedEditableText>
+                        </div>
+                        
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 사용자 화면 전환 회피 행동을 역이용한 메신저·브라우저 기반 콘텐츠 포맷 개발
+                          </AdvancedEditableText>
+                        </div>
+                        
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축으로 5개국어 다국어 콘텐츠 개발
+                          </AdvancedEditableText>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 5. 역할 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
+                        역할
+                      </h3>
+                      {/* 컴플라이언스 프로젝트 구조도 */}
+                      <div className="bg-gray-100 rounded-lg p-6 border border-gray-300">
+                        {/* 메인 플로우 */}
+                        <div className="text-center mb-6">
+                          <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">
+                            컴플라이언스 캠페인 프로세스
+                          </div>
+                        </div>
+                        
+                        {/* 3단계 구조 */}
+                        <div className="grid grid-cols-3 gap-4 mb-8">
+                          {/* 1단계: 사용자 리서치 */}
+                          <div className="text-center">
+                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+                              1
+                            </div>
+                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
+                              <h5 className="text-sm font-bold text-[#282623] mb-2">사용자 리서치</h5>
+                              <div className="text-xs text-[#58534e] space-y-1">
+                                <div>• 20명 뎁스 인터뷰</div>
+                                <div>• 3개 페르소나 도출</div>
+                                <div>• ALT+TAB 패턴 분석</div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          {/* 2단계: 콘텐츠 기획 */}
+                          <div className="text-center">
+                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+                              2
+                            </div>
+                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
+                              <h5 className="text-sm font-bold text-[#282623] mb-2">콘텐츠 기획</h5>
+                              <div className="text-xs text-[#58534e] space-y-1">
+                                <div>• 웹툰형 시각 구성</div>
+                                <div>• 디지털 환경 활용</div>
+                                <div>• 혁신적 포맷 개발</div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          {/* 3단계: 제작 효율화 */}
+                          <div className="text-center">
+                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">
+                              3
+                            </div>
+                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[120px]">
+                              <h5 className="text-sm font-bold text-[#282623] mb-2">제작 효율화</h5>
+                              <div className="text-xs text-[#58534e] space-y-1">
+                                <div>• 고정 화면 중심 연출</div>
+                                <div>• 5개국어 동시 제작</div>
+                                <div>• 글로벌 확장 전략</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 세부 역할 설명 */}
+                        <div className="space-y-4">
+                          <div className="bg-white rounded-lg p-4 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">사용자 리서치 관점 - 행동 패턴 심층 분석</h5>
+                            <div className="text-xs text-[#58534e] space-y-1">
+                              <div>1. 20명 대상 뎁스 인터뷰를 통해 법정 교육에 대한 '의무감'과 '거부감' 사이의 심리적 갈등 구조 파악</div>
+                              <div>2. 3개 페르소나(적극 참여형, 소극 참여형, 회피형) 도출 및 각 유형별 학습 동기와 회피 패턴 분석</div>
+                              <div>3. 유저시나리오 기반으로 ALT+TAB 사용률 90% 발생 시점과 트리거 요인을 구체적으로 식별</div>
+                            </div>
+                          </div>
+                          
+                          <div className="bg-white rounded-lg p-4 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">콘텐츠 기획 관점 - 혁신적 포맷 개발</h5>
+                            <div className="text-xs text-[#58534e] space-y-1">
+                              <div>1. 페르소나별 선호 디지털 환경(메신저, 브라우저, 문서)을 활용한 웹툰형 시각 구성으로 기존 강의형 콘텐츠의 한계 극복</div>
+                              <div>2. 유저시나리오에서 도출한 화면 전환 순간을 활용하여 임팩트 있는 메시지를 배치, 회피 행동을 학습 효과로 전환하는 구조 설계</div>
+                            </div>
+                          </div>
+
+                          <div className="bg-white rounded-lg p-4 border border-gray-200">
+                            <h5 className="text-sm font-bold text-[#282623] mb-2">제작 효율화 관점 - 글로벌 확장 전략</h5>
+                            <div className="text-xs text-[#58534e] space-y-1">
+                              <div>1. 고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축하여 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 버전 동시 제작</div>
+                              <div>2. 페르소나 분석을 통해 언어와 상관없이 직관적으로 이해 가능한 시각적 학습 환경 구현</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 6. 기술 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">6</span>
+                        기술
+                      </h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">영상 제작</h5>
+                          <p className="text-xs text-[#58534e]">Premiere Pro, After Effects를 활용한 디지털 화면 기반 포맷 및 모션 그래픽 제작</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">그래픽 리소스</h5>
+                          <p className="text-xs text-[#58534e]">Photoshop, Stable Diffusion, Midjourney로 UI 기반 화면 요소 및 시각 자료 생성</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">사용자 리서치</h5>
+                          <p className="text-xs text-[#58534e]">뎁스 인터뷰, 페르소나 설계, 유저시나리오 분석을 통한 사용자 중심 콘텐츠 기획</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h5 className="text-sm font-bold text-[#282623] mb-2">다국어 최적화</h5>
+                          <p className="text-xs text-[#58534e]">고정 화면 구조를 활용한 효율적 다국어 버전 제작 시스템 구축</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 7. 철학 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">7</span>
+                        데이터 그 너머에 숨겨진 이용자들의 마음
+                      </h3>
+                      <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <div className="space-y-4">
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            숫자 뒤에 숨은 사람들의 진짜 마음을 읽어냅니다. 삼성물산 컴플라이언스 캠페인에서 임직원들이 ALT+TAB으로 화면을 회피하는 패턴을 발견했을 때, 단순한 무관심이 아닌 '강제성에 대한 심리적 저항'임을 뎁스 인터뷰로 검증했습니다.
+                          </p>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            이 인사이트를 역이용해 화면 이탈 순간에 임팩트 있는 메시지를 배치하고 오디오만으로도 완전한 이해가 가능한 시나리오를 구성한 결과, 경쟁사 대비 30-40% 높은 단가임에도 성공적으로 콘텐츠를 수주했습니다.
+                          </p>
+                          <p className="text-sm text-[#58534e] leading-relaxed">
+                            단순한 수치 분석을 넘어 행동 패턴 뒤에 숨은 심리적 동기를 파악하여 전략적으로 활용하는 것이 저의 차별화된 강점입니다. 유니세프에서는 후원자들의 진정한 관심사와 감정적 동기를 데이터로 읽어내어, 아동권리가 '해야 할 일'이 아닌 '자연스럽게 하게 된 일'이 될 수 있는 개인의 숨겨진 마음과 환경까지 고려한 캠페인을 설계하겠습니다.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 )}
