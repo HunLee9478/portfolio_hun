@@ -5294,7 +5294,7 @@ export default function CombinedLanding() {
                                 <div className="text-gray-400 text-lg">→</div>
                                 <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-2 flex-1 mx-1">
                                   <div className="text-xs font-medium text-yellow-800">즉시 판단</div>
-                                  <div className="text-xs text-yellow-600">상황 분석<br/>대안 도출</div>
+                                  <div className="text-yellow-600 text-[14px]">상황 분석<br/>대안 도출</div>
                                 </div>
                                 <div className="text-gray-400 text-lg">→</div>
                                 <div className="bg-green-100 border border-green-300 rounded-lg p-2 flex-1 mx-1">
