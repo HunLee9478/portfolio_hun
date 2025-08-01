@@ -2977,7 +2977,7 @@ export default function CombinedLanding() {
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
                         주요 성과
                       </h3>
-                      <div className="space-y-5">
+                      <div className="space-y-4">
                         <div>
                           <AdvancedEditableText
                             textKey={`project-${selectedProject.id}-achievement-1-title`}
@@ -3272,7 +3272,7 @@ export default function CombinedLanding() {
                             <span className="text-lg">{(expandedSection === 'live-operation' || expandedSection === 'all') ? '−' : '+'}</span>
                           </div>
                           {(expandedSection === 'live-operation' || expandedSection === 'all') && (
-                            <div className="p-4 bg-white">
+                            <div className="p-4 bg-white space-y-4">
                               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                                 <h6 className="text-sm font-medium text-[#282623] mb-2">실시간 소통 전략</h6>
                                 <p className="text-sm text-[#58534e] leading-relaxed mb-3">
