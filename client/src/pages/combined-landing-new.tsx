@@ -3164,7 +3164,7 @@ export default function CombinedLanding() {
                             <span className="text-lg">{(expandedSection === 'content-creation' || expandedSection === 'all') ? '−' : '+'}</span>
                           </div>
                           {(expandedSection === 'content-creation' || expandedSection === 'all') && (
-                            <div className="p-4 bg-white space-y-6">
+                            <div className="p-4 bg-white space-y-4">
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                                   <h6 className="text-sm font-medium text-[#282623] mb-2">AI 도구 활용</h6>
