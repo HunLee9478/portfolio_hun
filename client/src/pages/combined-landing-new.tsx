@@ -2129,40 +2129,24 @@ export default function CombinedLanding() {
                         역할
                       </h3>
                       
-                      {/* 원형 프로세스 다이어그램 */}
-                      <div className="bg-gray-100 rounded-lg p-6 border border-gray-300 mb-6">
-                        <div className="text-center mb-6">
-                          <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">3개 관점 통합 운영</div>
-                        </div>
-                        
-                        <div className="relative" style={{ height: "200px" }}>
-                          <svg width="100%" height="200" viewBox="0 0 500 200" className="overflow-visible">
-                            {/* 중앙 핵심 원 */}
-                            <circle cx="250" cy="100" r="40" fill="#374151" opacity="0.1" stroke="#374151" strokeWidth="2"/>
-                            <text x="250" y="95" textAnchor="middle" className="text-xs fill-gray-800 font-medium">글로벌</text>
-                            <text x="250" y="108" textAnchor="middle" className="text-xs fill-gray-800 font-medium">캠페인</text>
-                            
-                            {/* 3개 관점 원들 */}
-                            {/* 통합 기획 (상단) */}
-                            <circle cx="250" cy="30" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
-                            <text x="250" y="27" textAnchor="middle" className="text-xs fill-gray-700 font-medium">통합 기획</text>
-                            <text x="250" y="38" textAnchor="middle" className="text-xs fill-gray-700 font-medium">관점</text>
-                            
-                            {/* 실시간 운영 (좌하) */}
-                            <circle cx="180" cy="150" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
-                            <text x="180" y="147" textAnchor="middle" className="text-xs fill-gray-700 font-medium">실시간 운영</text>
-                            <text x="180" y="158" textAnchor="middle" className="text-xs fill-gray-700 font-medium">관점</text>
-                            
-                            {/* 기술 통합 (우하) */}
-                            <circle cx="320" cy="150" r="30" fill="#6b7280" opacity="0.1" stroke="#6b7280" strokeWidth="2"/>
-                            <text x="320" y="147" textAnchor="middle" className="text-xs fill-gray-700 font-medium">기술 통합</text>
-                            <text x="320" y="158" textAnchor="middle" className="text-xs fill-gray-700 font-medium">관점</text>
-                            
-                            {/* 연결선들 */}
-                            <line x1="250" y1="60" x2="250" y2="100" stroke="#6b7280" strokeWidth="1" opacity="0.5"/>
-                            <line x1="210" y1="130" x2="230" y2="110" stroke="#6b7280" strokeWidth="1" opacity="0.5"/>
-                            <line x1="290" y1="130" x2="270" y2="110" stroke="#6b7280" strokeWidth="1" opacity="0.5"/>
-                          </svg>
+                      {/* 간단한 3단계 플로우 */}
+                      <div className="bg-gray-50 rounded-lg p-6 border border-gray-200 mb-6">
+                        <div className="grid grid-cols-3 gap-6">
+                          <div className="text-center">
+                            <div className="bg-[#282623] text-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">1</div>
+                            <h5 className="text-sm font-medium text-[#282623] mb-2">통합 기획</h5>
+                            <p className="text-xs text-[#58534e]">전체 아키텍처 설계</p>
+                          </div>
+                          <div className="text-center">
+                            <div className="bg-[#58534e] text-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">2</div>
+                            <h5 className="text-sm font-medium text-[#282623] mb-2">실시간 운영</h5>
+                            <p className="text-xs text-[#58534e]">즉석 위기 대응</p>
+                          </div>
+                          <div className="text-center">
+                            <div className="bg-[#6b7280] text-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">3</div>
+                            <h5 className="text-sm font-medium text-[#282623] mb-2">기술 통합</h5>
+                            <p className="text-xs text-[#58534e]">글로벌 인프라</p>
+                          </div>
                         </div>
                       </div>
 
