@@ -233,6 +233,9 @@ export default function CombinedLanding() {
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0);
   const [isClosingGallery, setIsClosingGallery] = useState(false);
 
+  // 상세 섹션 확장 상태
+  const [expandedSection, setExpandedSection] = useState<string | null>(null);
+
   // 개발자 모드 상태
   const [clickCount, setClickCount] = useState(0);
   const [isDeveloperMode, setIsDeveloperMode] = useState(() => {
@@ -2430,11 +2433,114 @@ export default function CombinedLanding() {
                           </div>
                           <div className="text-[#4a5568] text-2xl">→</div>
                         </div>
-                        
-                        {/* 핵심 도구 및 기술 */}
+                      </div>
+
+                      {/* 상세 역할 설명 */}
+                      <div className="mt-6 space-y-6">
+                        {/* 데이터 분석 상세 */}
+                        <div className="border border-gray-300 rounded-lg overflow-hidden">
+                          <div className="bg-[#4a5568] text-white p-3 flex items-center justify-between cursor-pointer" 
+                               onClick={() => setExpandedSection(expandedSection === 'data-analysis' ? null : 'data-analysis')}>
+                            <div className="flex items-center">
+                              <span className="w-6 h-6 bg-white text-[#4a5568] rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                              <span className="font-medium">데이터 분석 관점 - 상세 프로세스</span>
+                            </div>
+                            <span className="text-lg">{expandedSection === 'data-analysis' ? '−' : '+'}</span>
+                          </div>
+                          {expandedSection === 'data-analysis' && (
+                            <div className="p-4 bg-white space-y-4">
+                              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">상황 분석</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">
+                                  온라인 캠페인 참여도 편차가 심해 기존 평균값이나 중위값으로는 실제 관심도를 측정할 수 없음을 확인
+                                </p>
+                              </div>
+                              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">핵심 발견</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed">
+                                  설문조사 임의 체크, 교육 콘텐츠 빠른 스킵 등 형식적 참여 패턴을 수치로 확인하여 진성 참여 유도 전략의 필요성 도출
+                                </p>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* 콘텐츠 제작 상세 */}
+                        <div className="border border-gray-300 rounded-lg overflow-hidden">
+                          <div className="bg-[#4a5568] text-white p-3 flex items-center justify-between cursor-pointer"
+                               onClick={() => setExpandedSection(expandedSection === 'content-creation' ? null : 'content-creation')}>
+                            <div className="flex items-center">
+                              <span className="w-6 h-6 bg-white text-[#4a5568] rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                              <span className="font-medium">콘텐츠 제작 관점 - 기술 구현</span>
+                            </div>
+                            <span className="text-lg">{expandedSection === 'content-creation' ? '−' : '+'}</span>
+                          </div>
+                          {expandedSection === 'content-creation' && (
+                            <div className="p-4 bg-white space-y-4">
+                              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                  <h6 className="text-sm font-medium text-[#282623] mb-2">AI 도구 활용</h6>
+                                  <div className="text-sm text-[#58534e] space-y-1">
+                                    <div>• Python 기반 데이터 처리</div>
+                                    <div>• ComfyUI로 UI 자동 생성</div>
+                                    <div>• Midjourney, Stable Diffusion 이미지 생성</div>
+                                  </div>
+                                </div>
+                                <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                  <h6 className="text-sm font-medium text-[#282623] mb-2">UX 설계 전략</h6>
+                                  <div className="text-sm text-[#58534e] space-y-1">
+                                    <div>• 친숙한 일상 공간 기반</div>
+                                    <div>• 퀘스트 요소 자연스럽게 결합</div>
+                                    <div>• 진입장벽 최소화 + 탐험 동기 제공</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* 현장 운영 상세 */}
+                        <div className="border border-gray-300 rounded-lg overflow-hidden">
+                          <div className="bg-[#4a5568] text-white p-3 flex items-center justify-between cursor-pointer"
+                               onClick={() => setExpandedSection(expandedSection === 'live-operation' ? null : 'live-operation')}>
+                            <div className="flex items-center">
+                              <span className="w-6 h-6 bg-white text-[#4a5568] rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                              <span className="font-medium">현장 운영 관점 - 실시간 최적화</span>
+                            </div>
+                            <span className="text-lg">{expandedSection === 'live-operation' ? '−' : '+'}</span>
+                          </div>
+                          {expandedSection === 'live-operation' && (
+                            <div className="p-4 bg-white">
+                              <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                                <h6 className="text-sm font-medium text-[#282623] mb-2">실시간 소통 전략</h6>
+                                <p className="text-sm text-[#58534e] leading-relaxed mb-3">
+                                  퀘스트를 자동화하지 않고 진행자가 직접 실시간 소통으로 참가자 반응을 즉시 파악하고 온라인 캠페인, 행사 호응 유도
+                                </p>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-center">
+                                  <div className="bg-white border border-gray-300 rounded px-3 py-2">
+                                    <div className="text-xs font-medium text-[#282623]">참가자 모니터링</div>
+                                    <div className="text-xs text-[#58534e]">실시간 반응 추적</div>
+                                  </div>
+                                  <div className="bg-white border border-gray-300 rounded px-3 py-2">
+                                    <div className="text-xs font-medium text-[#282623]">몰입도 관리</div>
+                                    <div className="text-xs text-[#58534e]">지속적 흥미 유발</div>
+                                  </div>
+                                  <div className="bg-white border border-gray-300 rounded px-3 py-2">
+                                    <div className="text-xs font-medium text-[#282623]">즉시 대응</div>
+                                    <div className="text-xs text-[#58534e]">상황별 맞춤 진행</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* 기술 스택 및 결과 요약 */}
+                      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h5 className="text-sm font-bold text-[#282623] mb-3 text-center">핵심 기술 스택</h5>
-                          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
+                          <div className="grid grid-cols-2 gap-3 text-center">
                             <div className="bg-white border border-gray-300 rounded px-3 py-2">
                               <div className="text-xs font-medium text-[#282623]">Python</div>
                               <div className="text-xs text-[#58534e]">데이터 분석</div>
@@ -2454,22 +2560,21 @@ export default function CombinedLanding() {
                           </div>
                         </div>
                         
-                        {/* 결과 지표 */}
-                        <div className="mt-6 bg-[#282623] text-white rounded-lg p-4">
+                        <div className="bg-[#282623] text-white rounded-lg p-4">
                           <div className="text-center">
                             <div className="text-sm font-bold mb-2">프로젝트 임팩트</div>
-                            <div className="grid grid-cols-3 gap-4 text-xs">
-                              <div>
-                                <div className="font-bold">5개사</div>
-                                <div>고객사 수주</div>
+                            <div className="grid grid-cols-1 gap-2 text-xs">
+                              <div className="flex justify-between">
+                                <span>고객사 수주</span>
+                                <span className="font-bold">5개사</span>
                               </div>
-                              <div>
-                                <div className="font-bold">AI 기반</div>
-                                <div>가상공간 구축</div>
+                              <div className="flex justify-between">
+                                <span>가상공간 구축</span>
+                                <span className="font-bold">AI 기반</span>
                               </div>
-                              <div>
-                                <div className="font-bold">API 연동</div>
-                                <div>데이터 인사이트</div>
+                              <div className="flex justify-between">
+                                <span>데이터 인사이트</span>
+                                <span className="font-bold">API 연동</span>
                               </div>
                             </div>
                           </div>
