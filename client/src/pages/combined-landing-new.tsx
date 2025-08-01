@@ -5220,7 +5220,7 @@ export default function CombinedLanding() {
                             <div className="bg-blue-100 border-2 border-blue-300 rounded-lg p-4 mb-3">
                               <div className="bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">2</div>
                               <h5 className="text-sm font-bold text-[#282623] mb-2">통합 제작 시스템</h5>
-                              <div className="text-xs text-blue-600 space-y-1">
+                              <div className="text-sm text-blue-600 space-y-1">
                                 <div>• 전 과정 직접 담당</div>
                                 <div>• 창작 의도 보존</div>
                                 <div>• 일정·예산 컨트롤</div>
@@ -5231,7 +5231,7 @@ export default function CombinedLanding() {
                             <div className="bg-green-100 border-2 border-green-300 rounded-lg p-4">
                               <div className="bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">3</div>
                               <h5 className="text-sm font-bold text-[#282623] mb-2">기술적 고도화</h5>
-                              <div className="text-xs text-green-600 space-y-1">
+                              <div className="text-sm text-green-600 space-y-1">
                                 <div>• 자동화 시스템</div>
                                 <div>• 대규모 제작 효율화</div>
                                 <div>• 품질 표준화</div>
