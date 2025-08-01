@@ -2534,13 +2534,27 @@ export default function CombinedLanding() {
                                   </svg>
                                 </div>
                                 
-                                <div className="space-y-2 text-sm">
-                                  <p className="text-[#282623] font-medium">핵심 설계 원칙:</p>
-                                  <div className="ml-4 space-y-1 text-[#58534e]">
-                                    <p>• 현실 공간의 친숙함과 가상 환경의 상호작용성 결합</p>
-                                    <p>• 자연스러운 사용자 참여를 유도하는 퀘스트 시스템</p>
-                                    <p>• 실시간 데이터 수집을 통한 개인화된 경험 제공</p>
-                                    <p>• 고객사별 맞춤 브랜딩과 메시지 전달</p>
+                                <div className="space-y-3 text-sm">
+                                  <div className="bg-white border border-gray-300 rounded-lg p-3">
+                                    <p className="text-[#282623] font-medium mb-2">창의적 솔루션 설계</p>
+                                    <p className="text-[#58534e] leading-relaxed mb-2">
+                                      <strong>친숙함과 호기심을 동시에 자극하는 메타버스 환경</strong>을 만들어 초기 진입 장벽은 낮추고 지속적인 탐험 동기는 높임
+                                    </p>
+                                    <div className="ml-3 space-y-1 text-[#58534e] text-xs">
+                                      <p>→ 완전히 새로운 공간이 아닌 <strong>'변화된 일상'</strong>을 통해 UX 설계</p>
+                                      <p>→ 오피스/카페 등 익숙한 공간에 게임 요소를 자연스럽게 통합</p>
+                                      <p>→ 사용자가 이미 알고 있는 공간에서 새로운 경험 제공</p>
+                                    </div>
+                                  </div>
+                                  
+                                  <div className="bg-gray-50 rounded-lg p-3 border border-gray-200">
+                                    <p className="text-[#282623] font-medium mb-2">핵심 설계 원칙</p>
+                                    <div className="ml-3 space-y-1 text-[#58534e] text-xs">
+                                      <p>• 현실 공간의 친숙함과 가상 환경의 상호작용성 결합</p>
+                                      <p>• 자연스러운 사용자 참여를 유도하는 퀘스트 시스템</p>
+                                      <p>• 실시간 데이터 수집을 통한 개인화된 경험 제공</p>
+                                      <p>• 고객사별 맞춤 브랜딩과 메시지 전달</p>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
