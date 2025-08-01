@@ -4650,7 +4650,7 @@ export default function CombinedLanding() {
                     활용 기술
                   </h2>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mb-8">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mb-8">
                   {selectedProject.id === "1" && (
                     <>
                       <div>
