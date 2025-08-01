@@ -2235,125 +2235,213 @@ export default function CombinedLanding() {
                       </div>
                       
                       {/* Gather 서비스 설명 */}
-                      <div className="bg-gray-50 rounded-lg p-3 border border-gray-200 mb-4">
+                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-4">
                         <p className="text-sm text-[#58534e] leading-relaxed">
                           <strong className="text-[#282623]">Gather:</strong> 픽셀 아트 스타일의 2D 메타버스 플랫폼으로 오피스, 카페 등 일상 공간을 가상으로 재현하여 아바타 기반 실시간 소통을 지원
                         </p>
                       </div>
                     </div>
 
-                    {/* 메타버스 프로젝트 주요 성과 */}
+                    {/* 메타버스 프로젝트 내용 */}
                     {selectedProject.id === "5" && (
                       <div className="mb-8">
                         <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                           <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
-                          주요 성과
+                          내용
                         </h3>
-                        <div className="space-y-5">
-                          <div>
-                            <AdvancedEditableText
-                              textKey={`project-${selectedProject.id}-achievement-1-title`}
-                              className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                              style={{
-                                fontSize: TYPOGRAPHY.fontSize.small,
-                                color: "#282623",
-                                lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                fontWeight: "400",
-                                display: "block",
-                                marginBottom: "8px"
-                              }}
-                            >
-                              • NH농협, 삼성교육재단, 한국증권 등 5개 고객사 수주
-                            </AdvancedEditableText>
+                        <div className="space-y-4">
+                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <h4 className="text-sm font-medium text-[#282623] mb-3">1. 데이터 기반 문제 진단</h4>
+                            <p className="text-sm text-[#58534e] leading-relaxed">
+                              사용자 행동 로그를 분석해 기존 온라인 교육의 형식적 참여 패턴을 도출하고, 진성 참여와 형식적 참여를 구분하는 지표 개발
+                            </p>
                           </div>
                           
-                          <div>
-                            <AdvancedEditableText
-                              textKey={`project-${selectedProject.id}-achievement-2-title`}
-                              className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                              style={{
-                                fontSize: TYPOGRAPHY.fontSize.small,
-                                color: "#282623",
-                                lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                fontWeight: "400",
-                                display: "block",
-                                marginBottom: "8px"
-                              }}
-                            >
-                              • AI를 '익숙한 일상 공간의 게임화' 컨셉으로 현실 기반 가상공간 구축
-                            </AdvancedEditableText>
-                            <AdvancedEditableText
-                              textKey={`project-${selectedProject.id}-achievement-2-desc`}
-                              className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
-                              style={{
-                                fontSize: TYPOGRAPHY.fontSize.small,
-                                color: "#58534e",
-                                lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                marginLeft: "16px",
-                                display: "block"
-                              }}
-                            >
-                              AI 기반 메타버스 환경 구현으로 기존 온라인 이벤트 대비 향상된 참여도 달성
-                            </AdvancedEditableText>
+                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <h4 className="text-sm font-medium text-[#282623] mb-3">2. 창의적 솔루션 설계</h4>
+                            <p className="text-sm text-[#58534e] leading-relaxed">
+                              친숙함과 호기심을 동시에 자극하는 메타버스 환경을 만들어 초기 진입 장벽은 낮추고 지속적인 탐험 동기는 높임
+                            </p>
                           </div>
                           
-                          <div>
-                            <AdvancedEditableText
-                              textKey={`project-${selectedProject.id}-achievement-3-title`}
-                              className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
-                              style={{
-                                fontSize: TYPOGRAPHY.fontSize.small,
-                                color: "#282623",
-                                lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                fontWeight: "400",
-                                display: "block",
-                                marginBottom: "8px"
-                              }}
-                            >
-                              • 미국 본사 및 자사 영업/운영/IT 부서와 개인화 데이터 수집 API 연동 협의로 기존 데이터에서 추가 인사이트 도출
-                            </AdvancedEditableText>
-                            <AdvancedEditableText
-                              textKey={`project-${selectedProject.id}-achievement-3-desc`}
-                              className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
-                              style={{
-                                fontSize: TYPOGRAPHY.fontSize.small,
-                                color: "#58534e",
-                                lineHeight: TYPOGRAPHY.lineHeight.relaxed,
-                                marginLeft: "16px",
-                                display: "block"
-                              }}
-                            >
-                              기존 데이터와 신규 메타버스 데이터를 결합하여 고객 행동 패턴 분석 정확도 향상
-                            </AdvancedEditableText>
+                          <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                            <h4 className="text-sm font-medium text-[#282623] mb-3">3. 실시간 최적화 운영</h4>
+                            <p className="text-sm text-[#58534e] leading-relaxed">
+                              자동화 대신 진행자가 직접 소통하며 참가자 반응을 즉시 파악하고 몰입도를 지속적으로 관리
+                            </p>
                           </div>
                         </div>
                       </div>
                     )}
 
-                    {/* 4. 내용 */}
+                    {/* 4. 주요 성과 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
-                        내용
+                        주요 성과
                       </h3>
-                      <div className="space-y-4">
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">1. 데이터 기반 문제 진단</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            사용자 행동 로그를 분석해 기존 온라인 교육의 형식적 참여 패턴을 도출하고, 진성 참여와 형식적 참여를 구분하는 지표 개발
-                          </p>
+                      <div className="space-y-5">
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-1-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • NH농협, 삼성교육재단, 한국증권 등 5개 고객사 수주
+                          </AdvancedEditableText>
                         </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">2. 창의적 솔루션 설계</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            친숙함과 호기심을 동시에 자극하는 메타버스 환경을 만들어 초기 진입 장벽은 낮추고 지속적인 탐험 동기는 높임
-                          </p>
+                        
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • AI를 '익숙한 일상 공간의 게임화' 컨셉으로 현실 기반 가상공간 구축
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            AI 기반 메타버스 환경 구현으로 기존 온라인 이벤트 대비 향상된 참여도 달성
+                          </AdvancedEditableText>
                         </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 실시간 최적화 운영</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">
-                            자동화 대신 진행자가 직접 소통하며 참가자 반응을 즉시 파악하고 몰입도를 지속적으로 관리
-                          </p>
+                        
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 미국 본사 및 자사 영업/운영/IT 부서와 개인화 데이터 수집 API 연동 협의로 기존 데이터에서 추가 인사이트 도출
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                              기존 데이터와 신규 메타버스 데이터를 결합하여 고객 행동 패턴 분석 정확도 향상
+                          </AdvancedEditableText>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 4. 주요 성과 */}
+                    <div className="mb-8">
+                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
+                        주요 성과
+                      </h3>
+                      <div className="space-y-5">
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-1-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • NH농협, 삼성교육재단, 한국증권 등 5개 고객사 수주
+                          </AdvancedEditableText>
+                        </div>
+                        
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • AI를 '익숙한 일상 공간의 게임화' 컨셉으로 현실 기반 가상공간 구축
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-2-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            AI 기반 메타버스 환경 구현으로 기존 온라인 이벤트 대비 향상된 참여도 달성
+                          </AdvancedEditableText>
+                        </div>
+                        
+                        <div>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-title`}
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#282623",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              fontWeight: "400",
+                              display: "block",
+                              marginBottom: "8px"
+                            }}
+                          >
+                            • 미국 본사 및 자사 영업/운영/IT 부서와 개인화 데이터 수집 API 연동 협의로 기존 데이터에서 추가 인사이트 도출
+                          </AdvancedEditableText>
+                          <AdvancedEditableText
+                            textKey={`project-${selectedProject.id}-achievement-3-desc`}
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
+                            style={{
+                              fontSize: TYPOGRAPHY.fontSize.small,
+                              color: "#58534e",
+                              lineHeight: TYPOGRAPHY.lineHeight.relaxed,
+                              marginLeft: "16px",
+                              display: "block"
+                            }}
+                          >
+                            기존 데이터와 신규 메타버스 데이터를 결합하여 고객 행동 패턴 분석 정확도 향상
+                          </AdvancedEditableText>
                         </div>
                       </div>
                     </div>
