@@ -2421,18 +2421,7 @@ export default function CombinedLanding() {
                           </div>
                         </div>
                         
-                        {/* 화살표 연결 */}
-                        <div className="flex justify-center items-center space-x-4 mb-8">
-                          <div className="text-[#4a5568] text-2xl">→</div>
-                          <div className="text-center">
-                            <div className="bg-[#58534e] text-white px-3 py-1 rounded text-xs">데이터 기반 설계</div>
-                          </div>
-                          <div className="text-[#4a5568] text-2xl">→</div>
-                          <div className="text-center">
-                            <div className="bg-[#58534e] text-white px-3 py-1 rounded text-xs">실시간 최적화</div>
-                          </div>
-                          <div className="text-[#4a5568] text-2xl">→</div>
-                        </div>
+
                       </div>
 
                       {/* 상세 역할 설명 */}
