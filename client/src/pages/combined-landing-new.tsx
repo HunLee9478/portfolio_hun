@@ -2079,8 +2079,8 @@ export default function CombinedLanding() {
                           <p className="text-sm text-[#58534e] leading-relaxed">예측 불가능한 현장 변수에 대한 즉시 대응력으로 모든 캠페인의 안정적 진행과 참가자 신뢰 확보</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 아시아, 유럽, 아메리카 전 지역 해외법인 대상 다국어 캠페인 성공적 운영</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">통역 협업을 통한 전문 도메인 완벽 소통으로 다양한 유형 캠페인의 효과적 메시지 전달 달성</p>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">3. 다양한 대상 캠페인 성공적 운영 (글로벌 법인 포함)</h4>
+                          <p className="text-sm text-[#58534e] leading-relaxed">본사부터 아시아, 유럽, 아메리카 해외법인까지 다양한 대상에 대한 통역 협업을 통한 전문 도메인 완벽 소통 달성</p>
                         </div>
                       </div>
                     </div>
@@ -2119,7 +2119,7 @@ export default function CombinedLanding() {
                           <div className="flex justify-center">
                             <div className="bg-[#6b7280] text-white px-6 py-3 rounded-lg text-center" style={{ width: "400px" }}>
                               <div className="text-xs font-bold mb-1">다양한 유형 캠페인 운영</div>
-                              <div className="text-xs opacity-80">컴플라이언스 ~ 안전교육, 워크숍 ~ 웨비나</div>
+                              <div className="text-xs opacity-80">본사~글로벌법인, 컴플라이언스~안전교육</div>
                             </div>
                           </div>
                         </div>
@@ -2128,7 +2128,7 @@ export default function CombinedLanding() {
                       <div className="space-y-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">1. 다양한 유형 캠페인 운영</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">컴플라이언스, 핵심역량, 안전교육 등 다양한 교육 도메인과 소규모 리더십 워크숍부터 대규모 온라인 웨비나까지 다양한 규모의 캠페인 통합 관리</p>
+                          <p className="text-sm text-[#58534e] leading-relaxed">컴플라이언스, 핵심역량, 안전교육 등 다양한 교육 도메인과 본사부터 글로벌 법인까지 다양한 대상, 소규모 워크숍부터 대규모 웨비나까지 다양한 규모의 캠페인 통합 관리</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">2. 전문 도메인 대응</h4>
