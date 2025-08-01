@@ -2799,7 +2799,7 @@ export default function CombinedLanding() {
                               display: "block"
                             }}
                           >
-                            AI 기반 메타버스 환경 구현으로 기존 온라인 이벤트 대비 30% 향상된 참여도 달성
+                            AI 기반 메타버스 환경 구현으로 기존 온라인 이벤트 대비 향상된 참여도 달성
                           </AdvancedEditableText>
                         </div>
                         
