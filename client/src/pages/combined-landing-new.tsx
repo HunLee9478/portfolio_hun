@@ -2549,7 +2549,7 @@ export default function CombinedLanding() {
                                   
                                   <div className="bg-gray-50 rounded-lg p-3 border border-gray-200">
                                     <p className="text-[#282623] font-medium mb-2">핵심 설계 원칙</p>
-                                    <div className="ml-3 space-y-1 text-[#58534e] text-xs">
+                                    <div className="ml-3 space-y-1 text-[#58534e] text-[14px]">
                                       <p>• 현실 공간의 친숙함과 가상 환경의 상호작용성 결합</p>
                                       <p>• 자연스러운 사용자 참여를 유도하는 퀘스트 시스템</p>
                                       <p>• 실시간 데이터 수집을 통한 개인화된 경험 제공</p>
