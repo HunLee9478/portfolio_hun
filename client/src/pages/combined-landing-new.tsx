@@ -1628,7 +1628,7 @@ export default function CombinedLanding() {
                       }}
                     >
                       <p className={`${FONT_SIZES.small} mb-2 font-normal`} style={{ color: COLORS.text.light }}>저는 제작 역량을 기반으로 기획부터 연출, 촬영, 편집, 사용자 경험까지 모든 과정에서 '무엇을, 어떻게' 보여줄지를 고민해왔습니다.</p>
-                      <p className={`${FONT_SIZES.small} mb-2 font-normal`} style={{ color: COLORS.text.light }}>심리를 설계하고, 이탈 데이터를 분석해 UI 개선을 제안했으며, AI 툴을 활용해 제작 속도와 품질을 동시에 끌어올렸습니다. 감성과 전략, 창의성과 기술을 넘나들며 종합적인 콘텐츠 구조를 설계하는 콘텐츠 크리에이터로 성장해왔으며, 앞으로도 명확한 메시지를 중심에 둔 콘텐츠를 만들어가겠습니다.</p>
+                      <p className={`${FONT_SIZES.small} mb-2 font-normal`} style={{ color: COLORS.text.light }}>경험 많은 동료들과의 협력을 통해 이러한 목표를 달성할 수 있다고 확신합니다. 데이터로 사람의 마음을 읽고, 기술로 진정한 감동을 전달하며, 전 세계 모든 아이들이 더 큰 꿈을 키울 수 있도록. 유니세프 한국위원회와 함께 이 꿈을 현실로 만들어가겠습니다</p>
                     </div>
 
                     <a
