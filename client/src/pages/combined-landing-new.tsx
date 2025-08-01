@@ -1912,7 +1912,7 @@ export default function CombinedLanding() {
                             width: "100%"
                           }}
                         >
-                          사용자 행동 분석을 통한 맞춤형 캠페인 기획,전략을 수립했습니다. 메세지 전달을 위한 컴퓨터 디스플레이를 활용한 연출 기법을 활용하여 콘텐츠를 제작하고, 경쟁사 대비 30% 높은 단가임에도 불구하고 수주에 성공하여 가치를 입증했습니다.
+                          사용자 화면 전환 회피 행동을 역이용한 혁신적 메신저·브라우저 기반 콘텐츠 포맷을 개발하여 경쟁사 대비 30% 높은 단가로 수주하고, 고정 화면 중심 연출로 제작 효율성을 극대화한 5개국어 다국어 콘텐츠 제작 프로젝트입니다.
                         </AdvancedEditableText>
                       )}
                       {selectedProject.id === "4" && (
@@ -3077,65 +3077,65 @@ export default function CombinedLanding() {
                               display: "block"
                             }}
                           >
-                            창의적 기법과 사용자 행동 분석의 효과적 결합으로 상업적 가치 입증
+                            혁신적인 콘텐츠 포맷 개발을 통해 기존 강의형 교육 대비 차별화된 가치 제안으로 프리미엄 단가 확보
                           </AdvancedEditableText>
                         </div>
                         <div>
                           <AdvancedEditableText
                             textKey={`project-${selectedProject.id}-achievement-2-title`}
-                            className="text-sm mb-2 tracking-tight leading-relaxed block"
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
                             style={{
                               fontSize: TYPOGRAPHY.fontSize.small,
-                              color: COLORS.text.primary,
+                              color: "#282623",
                               lineHeight: TYPOGRAPHY.lineHeight.relaxed,
                               fontWeight: "400",
                               display: "block",
                               marginBottom: "8px"
                             }}
                           >
-                            • 5초 이내 주의 집중 유도 시스템 구축
+                            • 사용자 화면 전환 회피 행동을 역이용한 메신저·브라우저 기반 콘텐츠 포맷 개발
                           </AdvancedEditableText>
                           <AdvancedEditableText
                             textKey={`project-${selectedProject.id}-achievement-2-desc`}
-                            className="text-sm tracking-tight leading-relaxed ml-4 block"
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
                             style={{
                               fontSize: TYPOGRAPHY.fontSize.small,
-                              color: COLORS.text.secondary,
+                              color: "#58534e",
                               lineHeight: TYPOGRAPHY.lineHeight.relaxed,
                               marginLeft: "16px",
                               display: "block"
                             }}
                           >
-                            사용자 행동 분석을 바탕으로 몰입도 극대화 기법 개발
+                            ALT+TAB 화면 전환 패턴을 학습 효과로 전환하는 창의적 접근법으로 새로운 교육 콘텐츠 포맷 창조
                           </AdvancedEditableText>
                         </div>
                         <div>
                           <AdvancedEditableText
                             textKey={`project-${selectedProject.id}-achievement-3-title`}
-                            className="text-sm mb-2 tracking-tight leading-relaxed block"
+                            className="text-sm text-[#282623] mb-2 tracking-tight leading-relaxed block"
                             style={{
                               fontSize: TYPOGRAPHY.fontSize.small,
-                              color: COLORS.text.primary,
+                              color: "#282623",
                               lineHeight: TYPOGRAPHY.lineHeight.relaxed,
                               fontWeight: "400",
                               display: "block",
                               marginBottom: "8px"
                             }}
                           >
-                            • Screen Life 포맷 전문성 확립
+                            • 고정 화면 중심 연출로 촬영 효율 30% 증대 및 편집 시간 40% 단축
                           </AdvancedEditableText>
                           <AdvancedEditableText
                             textKey={`project-${selectedProject.id}-achievement-3-desc`}
-                            className="text-sm tracking-tight leading-relaxed ml-4 block"
+                            className="text-sm text-[#58534e] tracking-tight leading-relaxed ml-4 block"
                             style={{
                               fontSize: TYPOGRAPHY.fontSize.small,
-                              color: COLORS.text.secondary,
+                              color: "#58534e",
                               lineHeight: TYPOGRAPHY.lineHeight.relaxed,
                               marginLeft: "16px",
                               display: "block"
                             }}
                           >
-                            Found Footage 기법과 결합한 차별화된 교육 콘텐츠 제작 방법론 정립
+                            효율적 제작 시스템을 통해 한국어, 영어, 중국어, 일본어, 베트남어 5개국어 다국어 콘텐츠 동시 개발 달성
                           </AdvancedEditableText>
                         </div>
                       </>
@@ -4646,7 +4646,7 @@ export default function CombinedLanding() {
                 {/* 활용 기술 */}
                 <div className="mb-6">
                   <h2 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                    <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">{selectedProject.id === "5" ? "4" : selectedProject.id === "1" ? "4" : "5"}</span>
+                    <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">{selectedProject.id === "5" ? "4" : selectedProject.id === "1" ? "4" : selectedProject.id === "3" ? "6" : "5"}</span>
                     활용 기술
                   </h2>
                 </div>
@@ -4720,6 +4720,14 @@ export default function CombinedLanding() {
                       <div>
                         <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Premiere Pro</div>
                         <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">영상 편집 및 사운드</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">Stable Diffusion</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">사용자 리서치 기반 시각 자료 생성</div>
+                      </div>
+                      <div>
+                        <div className="text-sm text-[#282623] tracking-tight leading-relaxed mb-2">User Research</div>
+                        <div className="text-sm text-[#58534e] tracking-tight leading-relaxed">뎁스 인터뷰, 페르소나, 유저시나리오</div>
                       </div>
                     </>
                   )}
