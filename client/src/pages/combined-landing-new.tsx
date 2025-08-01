@@ -507,13 +507,13 @@ export default function CombinedLanding() {
     {
       id: "7",
       src: "/assets/projects/samsung-education-studio.jpg",
-      alt: "삼성물산 혁신 컴플라이언스 캠페인",
-      title: "삼성물산 혁신 컴플라이언스 캠페인",
+      alt: "컴플라이언스 캠페인 기획, 제작",
+      title: "컴플라이언스 기획, 제작",
       subtitle: "혁신적 메신저·브라우저 기반 콘텐츠 포맷",
       description: "SAMSUNG C&T\n사용자 화면 전환 회피 행동 역이용 혁신 캠페인",
-      category: "Innovation Campaign",
+      category: "Campaign Contents",
       year: "2023.02-2023.08",
-      client: "삼성물산",
+      client: "Samsung",
       role: "사용자 리서치, 콘텐츠 기획, 제작 효율화",
       tools: ["Found Footage", "Photoshop", "After Effects", "Premiere Pro", "Stable Diffusion", "User Research"],
       images: [
@@ -1424,87 +1424,47 @@ export default function CombinedLanding() {
                 <div className="separator-line h-px bg-gray-200"></div>
               </div>
 
-              {/* Portfolio Grid - Horizontal Scrollable Layout */}
-              <div 
-                className="overflow-x-auto overflow-y-hidden mb-8 cursor-grab active:cursor-grabbing"
-                onMouseDown={(e) => {
-                  e.preventDefault();
-                  const slider = e.currentTarget;
-                  const startX = e.pageX - slider.offsetLeft;
-                  const scrollLeft = slider.scrollLeft;
-                  
-                  const handleMouseMove = (e: MouseEvent) => {
-                    const x = e.pageX - slider.offsetLeft;
-                    const walk = (x - startX) * 2;
-                    slider.scrollLeft = scrollLeft - walk;
-                  };
-                  
-                  const handleMouseUp = () => {
-                    document.removeEventListener('mousemove', handleMouseMove);
-                    document.removeEventListener('mouseup', handleMouseUp);
-                    slider.classList.remove('cursor-grabbing');
-                    slider.classList.add('cursor-grab');
-                  };
-                  
-                  document.addEventListener('mousemove', handleMouseMove);
-                  document.addEventListener('mouseup', handleMouseUp);
-                  slider.classList.remove('cursor-grab');
-                  slider.classList.add('cursor-grabbing');
-                }}
-                style={{ 
-                  scrollbarWidth: 'none',
-                  msOverflowStyle: 'none',
-                  WebkitOverflowScrolling: 'touch'
-                }}
-              >
-
-                <div className="flex gap-8 pb-4" style={{ width: 'max-content' }}>
-                  {portfolioItems.slice(0, 7).map((item, index) => (
-                    <motion.div
-                      key={item.id}
-                      className="group cursor-pointer flex-shrink-0"
-                      style={{ width: '320px' }}
-                      whileHover={{ scale: 1.05 }}
-                      onClick={(e) => {
-                        // 드래그 중이 아닐 때만 모달 열기
-                        if (!e.currentTarget.closest('[data-dragging="true"]')) {
-                          openProjectModal(item);
-                        }
-                      }}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: index * 0.1 }}
-                      viewport={{ once: true }}
-                    >
-                      {/* 프로젝트 이미지 카드 */}
-                      <div className="relative overflow-hidden bg-gray-100 rounded-lg aspect-[4/3]">
-                        <img
-                          src={item.src}
-                          alt={item.alt}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                          loading="lazy"
-                          decoding="async"
-                          draggable="false"
-                        />
-                        {/* 호버 오버레이 */}
-                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-300">
-                          <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <span
-                              className={`company block ${FONT_SIZES.small} opacity-90 font-medium drop-shadow-lg`}
-                            >
-                              {item.description.split("\n")[0]}
-                            </span>
-                            <span
-                              className={`content block ${FONT_SIZES.subheading} font-medium drop-shadow-lg`}
-                            >
-                              {item.description.split("\n")[1]}
-                            </span>
-                          </div>
+              {/* Portfolio Grid - 2 Column Layout */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                {portfolioItems.slice(0, 7).map((item, index) => (
+                  <motion.div
+                    key={item.id}
+                    className="group cursor-pointer"
+                    whileHover={{ scale: 1.05 }}
+                    onClick={() => openProjectModal(item)}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                  >
+                    {/* 프로젝트 이미지 카드 */}
+                    <div className="relative overflow-hidden bg-gray-100 rounded-lg aspect-[4/3]">
+                      <img
+                        src={item.src}
+                        alt={item.alt}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                        loading="lazy"
+                        decoding="async"
+                        draggable="false"
+                      />
+                      {/* 호버 오버레이 */}
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-300">
+                        <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <span
+                            className={`company block ${FONT_SIZES.small} opacity-90 font-medium drop-shadow-lg`}
+                          >
+                            {item.description.split("\n")[0]}
+                          </span>
+                          <span
+                            className={`content block ${FONT_SIZES.subheading} font-medium drop-shadow-lg`}
+                          >
+                            {item.description.split("\n")[1]}
+                          </span>
                         </div>
                       </div>
-                    </motion.div>
-                  ))}
-                </div>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </div>
 
