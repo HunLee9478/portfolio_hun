@@ -2271,32 +2271,56 @@ export default function CombinedLanding() {
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
                         주요 역할
                       </h3>
-                      <div className="text-sm text-[#58534e] leading-relaxed space-y-4">
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <p className="font-medium text-[#282623] mb-3">각 고객사별 특성 분석 → 맞춤형 가상공간 설계 → AI 도구 활용한 콘텐츠 생성 → 게임화 요소 통합</p>
-                        </div>
-                        
-                        <div>
-                          <p className="font-medium text-[#282623] mb-2">• 데이터 분석 관점 - 근본 문제 발견:</p>
-                          <div className="ml-4 space-y-1">
-                            <p>1. 사용자 행동 로그 분석을 통해 온라인 캠페인 참여도 편차가 심해 기존 평균값이나 중위값으로는 실제 관심도를 측정할 수 없음을 확인</p>
-                            <p>2. 설문조사 임의 체크, 교육 콘텐츠 빠른 스킵 등 형식적 참여 패턴을 수치로 확인하여 진성 참여 유도 전략의 필요성 도출</p>
+                      
+                      {/* 워크플로우 시각화 */}
+                      <div className="bg-gray-50 rounded-lg p-4 border border-gray-200 mb-6">
+                        <div className="flex items-center justify-between text-sm font-medium text-[#282623]">
+                          <div className="flex flex-col items-center">
+                            <div className="w-8 h-8 bg-[#282623] text-white rounded-full flex items-center justify-center text-xs mb-2">1</div>
+                            <span className="text-center">고객사 분석</span>
+                          </div>
+                          <div className="text-gray-400">→</div>
+                          <div className="flex flex-col items-center">
+                            <div className="w-8 h-8 bg-[#282623] text-white rounded-full flex items-center justify-center text-xs mb-2">2</div>
+                            <span className="text-center">공간 설계</span>
+                          </div>
+                          <div className="text-gray-400">→</div>
+                          <div className="flex flex-col items-center">
+                            <div className="w-8 h-8 bg-[#282623] text-white rounded-full flex items-center justify-center text-xs mb-2">3</div>
+                            <span className="text-center">AI 콘텐츠</span>
+                          </div>
+                          <div className="text-gray-400">→</div>
+                          <div className="flex flex-col items-center">
+                            <div className="w-8 h-8 bg-[#282623] text-white rounded-full flex items-center justify-center text-xs mb-2">4</div>
+                            <span className="text-center">게임화</span>
                           </div>
                         </div>
-                        
-                        <div>
-                          <p className="font-medium text-[#282623] mb-2">• 콘텐츠 제작 관점 - 혁신적 환경 구현:</p>
-                          <div className="ml-4 space-y-1">
-                            <p>1. Python, ComfyUI, Midjourney, Stable Diffusion을 활용해 사무실, 카페 등 친숙한 일상 공간에 퀘스트 요소를 자연스럽게 결합한 메타버스 맵 직접 제작</p>
-                            <p>2. 완전히 새로운 공간이 아닌 '변화된 일상'을 통해 초기 진입 장벽은 낮추면서 지속적인 탐험 동기는 제공하는 UX 설계</p>
+                      </div>
+
+                      {/* 3가지 핵심 역할 카드 */}
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                        <div className="bg-white border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-center mb-3">
+                            <div className="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xs mr-2">📊</div>
+                            <h4 className="font-medium text-[#282623]">데이터 분석</h4>
                           </div>
+                          <p className="text-[#58534e] leading-relaxed">사용자 행동 로그 분석으로 형식적 참여 패턴 발견 및 진성 참여 전략 수립</p>
                         </div>
-                        
-                        <div>
-                          <p className="font-medium text-[#282623] mb-2">• 현장 운영 관점 - 실시간 소통 최적화:</p>
-                          <div className="ml-4">
-                            <p>퀘스트를 자동화하지 않고 진행자가 직접 실시간 소통으로 참가자 반응을 즉시 파악하고 온라인 캠페인, 행사 호응 유도</p>
+
+                        <div className="bg-white border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-center mb-3">
+                            <div className="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs mr-2">🎨</div>
+                            <h4 className="font-medium text-[#282623]">콘텐츠 제작</h4>
                           </div>
+                          <p className="text-[#58534e] leading-relaxed">AI 도구로 친숙한 일상 공간에 퀘스트 요소를 결합한 메타버스 환경 직접 제작</p>
+                        </div>
+
+                        <div className="bg-white border border-gray-200 rounded-lg p-4">
+                          <div className="flex items-center mb-3">
+                            <div className="w-6 h-6 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-xs mr-2">🎮</div>
+                            <h4 className="font-medium text-[#282623]">현장 운영</h4>
+                          </div>
+                          <p className="text-[#58534e] leading-relaxed">자동화 대신 실시간 소통으로 참가자 반응 파악 및 호응 유도</p>
                         </div>
                       </div>
                     </div>
