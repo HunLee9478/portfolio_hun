@@ -5235,15 +5235,71 @@ export default function CombinedLanding() {
                           </div>
                         </div>
                       </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">외주 vs 인하우스 비교</h4>
+                          <div className="h-[180px] flex items-center justify-center text-sm text-[#58534e]">
+                            [차트 영역 - 외주 vs 인하우스 비교]
+                          </div>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">자동화 효과</h4>
+                          <div className="h-[180px] flex items-center justify-center text-sm text-[#58534e]">
+                            [차트 영역 - 자동화 효과]
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
-                    {/* 4. 역할 - 통일된 구조로 변경 */}
+                    {/* 4. 역할 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
                         역할
                       </h3>
                       
+                      <div className="bg-gray-100 rounded-lg p-6 border border-gray-300 mb-6">
+                        <div className="text-center mb-6">
+                          <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">올인원 제작 허브</div>
+                        </div>
+                        <div className="grid grid-cols-3 gap-4 mb-6">
+                          <div className="text-center">
+                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">1</div>
+                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[100px]">
+                              <h5 className="text-sm font-bold text-[#282623] mb-2">올인원 제작</h5>
+                              <div className="text-xs text-[#58534e] space-y-1">
+                                <div>• 전체 프로세스 통합</div>
+                                <div>• 소통 단절 해결</div>
+                                <div>• 일관된 품질 관리</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="text-center">
+                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">2</div>
+                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[100px]">
+                              <h5 className="text-sm font-bold text-[#282623] mb-2">프로페셔널 영상</h5>
+                              <div className="text-xs text-[#58534e] space-y-1">
+                                <div>• 영화급 장비 구축</div>
+                                <div>• 브랜드 색감 표준</div>
+                                <div>• 시각적 품질 향상</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="text-center">
+                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">3</div>
+                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[100px]">
+                              <h5 className="text-sm font-bold text-[#282623] mb-2">대량 제작 자동화</h5>
+                              <div className="text-xs text-[#58534e] space-y-1">
+                                <div>• 프로그래밍 활용</div>
+                                <div>• 반복작업 90% 감소</div>
+                                <div>• 확장 가능한 체계</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                       <div className="space-y-6">
                         <div className="border border-gray-300 rounded-lg overflow-hidden">
                           <div className="bg-[#6b7280] text-white p-3">
