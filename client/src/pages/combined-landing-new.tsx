@@ -4,6 +4,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FONT_SIZES, SPACING, ANIMATION_DURATIONS, TYPOGRAPHY, COLORS } from "../constants/styles";
 import AdvancedEditableText from "../components/AdvancedEditableText";
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement, PointElement, ArcElement, Title, Tooltip, Legend, RadialLinearScale } from 'chart.js';
+import { Bar, Line, Doughnut, Radar } from 'react-chartjs-2';
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, ArcElement, RadialLinearScale, Title, Tooltip, Legend);
 
 // Clean asset imports
 const ContactWorkspaceImage = "/assets/images/contact-workspace.png";
@@ -5175,21 +5179,82 @@ export default function CombinedLanding() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">예산 절감 효과</h4>
-                          <div className="h-[250px] flex items-center justify-center">
-                            <img 
-                              src="/attached_assets/image_1754158599930.png"
-                              alt="외주 vs 인하우스 비교 차트 및 자동화 효과"
-                              className="w-full h-full object-contain"
+                          <div className="h-[250px]">
+                            <Radar 
+                              data={{
+                                labels: ['예산 효율성', '품질 통제', '소통 원활성', '일정 준수', '창작 자유도'],
+                                datasets: [
+                                  {
+                                    label: '외주 제작',
+                                    data: [40, 60, 30, 50, 40],
+                                    borderColor: 'rgb(239, 68, 68)',
+                                    backgroundColor: 'rgba(239, 68, 68, 0.2)',
+                                    borderWidth: 2
+                                  },
+                                  {
+                                    label: '인하우스 제작',
+                                    data: [90, 95, 85, 90, 95],
+                                    borderColor: 'rgb(34, 197, 94)',
+                                    backgroundColor: 'rgba(34, 197, 94, 0.2)',
+                                    borderWidth: 2
+                                  }
+                                ]
+                              }}
+                              options={{
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                  legend: {
+                                    position: 'bottom'
+                                  }
+                                },
+                                scales: {
+                                  r: {
+                                    beginAtZero: true,
+                                    max: 100,
+                                    ticks: {
+                                      display: false
+                                    }
+                                  }
+                                }
+                              }}
                             />
                           </div>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">프로모션 영상 성과</h4>
-                          <div className="h-[250px] flex items-center justify-center">
-                            <img 
-                              src="/attached_assets/image_1754158612496.png"
-                              alt="예산 절감 효과 및 프로모션 영상 성과"
-                              className="w-full h-full object-contain"
+                          <div className="h-[250px]">
+                            <Bar 
+                              data={{
+                                labels: ['영상 1', '영상 2'],
+                                datasets: [
+                                  {
+                                    label: '조회수 (만)',
+                                    data: [10, 12],
+                                    backgroundColor: 'rgb(59, 130, 246)',
+                                    borderColor: 'rgb(29, 78, 216)',
+                                    borderWidth: 1
+                                  }
+                                ]
+                              }}
+                              options={{
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                  legend: {
+                                    position: 'bottom'
+                                  }
+                                },
+                                scales: {
+                                  y: {
+                                    beginAtZero: true,
+                                    max: 15,
+                                    ticks: {
+                                      stepSize: 2
+                                    }
+                                  }
+                                }
+                              }}
                             />
                           </div>
                         </div>
@@ -5261,14 +5326,81 @@ export default function CombinedLanding() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">외주 vs 인하우스 비교</h4>
-                          <div className="h-[180px] flex items-center justify-center text-sm text-[#58534e]">
-                            [차트 영역 - 외주 vs 인하우스 비교]
+                          <div className="h-[180px]">
+                            <Doughnut 
+                              data={{
+                                labels: ['절감된 예산', '실제 사용 예산'],
+                                datasets: [
+                                  {
+                                    data: [40, 60],
+                                    backgroundColor: [
+                                      'rgb(34, 197, 94)',
+                                      'rgb(209, 213, 219)'
+                                    ],
+                                    borderWidth: 2,
+                                    borderColor: 'white'
+                                  }
+                                ]
+                              }}
+                              options={{
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                  legend: {
+                                    position: 'bottom',
+                                    labels: {
+                                      fontSize: 12
+                                    }
+                                  }
+                                }
+                              }}
+                            />
                           </div>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">자동화 효과</h4>
-                          <div className="h-[180px] flex items-center justify-center text-sm text-[#58534e]">
-                            [차트 영역 - 자동화 효과]
+                          <div className="h-[180px]">
+                            <Bar 
+                              data={{
+                                labels: ['수동 작업', '자동화 후'],
+                                datasets: [
+                                  {
+                                    label: '작업 시간 (%)',
+                                    data: [100, 10],
+                                    backgroundColor: [
+                                      'rgb(239, 68, 68)',
+                                      'rgb(34, 197, 94)'
+                                    ],
+                                    borderColor: [
+                                      'rgb(220, 38, 127)',
+                                      'rgb(21, 128, 61)'
+                                    ],
+                                    borderWidth: 1
+                                  }
+                                ]
+                              }}
+                              options={{
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                  legend: {
+                                    display: false
+                                  }
+                                },
+                                scales: {
+                                  y: {
+                                    beginAtZero: true,
+                                    max: 100,
+                                    ticks: {
+                                      stepSize: 20,
+                                      callback: function(value) {
+                                        return value + '%';
+                                      }
+                                    }
+                                  }
+                                }
+                              }}
+                            />
                           </div>
                         </div>
                       </div>
