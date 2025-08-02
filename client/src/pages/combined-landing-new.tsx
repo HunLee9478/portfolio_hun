@@ -2022,7 +2022,7 @@ export default function CombinedLanding() {
                             width: "100%"
                           }}
                         >
-                          외주 제작의 한계를 극복하고 인하우스 제작 체제로 전환하여 40% 예산 절감과 프리미엄 품질을 동시에 달성했습니다. 프로모션 영상은 10만+ 조회수를 기록하며 본사 BP 사례로 선정된 혁신적 영상 제작 프로젝트입니다.
+                          외주 제작의 한계를 극복하고 인하우스 제작 체제로 전환하여 40% 예산 절감과 프리미엄 품질을 동시에 달성했습니다. 프로모션 영상 2편이 10만+ 조회수를 기록하며 본사 BP 사례로 선정된 혁신적 영상 제작 프로젝트입니다.
                         </AdvancedEditableText>
                       )}
                     </div>
@@ -5137,7 +5137,7 @@ export default function CombinedLanding() {
                       <div className="grid grid-cols-2 gap-4 mb-6">
                         <div className="aspect-video rounded-lg overflow-hidden">
                           <img 
-                            src="/attached_assets/image_1754160066957.png"
+                            src="/attached_assets/image_1754036032577.png"
                             alt="Snapask 브랜드 콘텐츠 - 교육자 인터뷰"
                             className="w-full h-full object-cover"
                           />
@@ -5172,7 +5172,6 @@ export default function CombinedLanding() {
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">2</span>
                         주요 성과
                       </h3>
-
                       <div className="space-y-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">인하우스 제작 체제 전환으로 제작 예산 40% 절감 및 품질 재투자</h4>
@@ -5236,58 +5235,15 @@ export default function CombinedLanding() {
                           </div>
                         </div>
                       </div>
-
-
                     </div>
 
-                    {/* 4. 역할 */}
+                    {/* 4. 역할 - 통일된 구조로 변경 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
                         역할
                       </h3>
                       
-                      <div className="bg-gray-100 rounded-lg p-6 border border-gray-300 mb-6">
-                        <div className="text-center mb-6">
-                          <div className="inline-flex items-center bg-[#282623] text-white px-4 py-2 rounded-md text-sm font-medium">올인원 제작 허브</div>
-                        </div>
-                        <div className="grid grid-cols-3 gap-4 mb-6">
-                          <div className="text-center">
-                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">1</div>
-                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[100px]">
-                              <h5 className="text-sm font-bold text-[#282623] mb-2">올인원 제작</h5>
-                              <div className="text-xs text-[#58534e] space-y-1">
-                                <div>• 전체 프로세스 통합</div>
-                                <div>• 소통 단절 해결</div>
-                                <div>• 일관된 품질 관리</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="text-center">
-                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">2</div>
-                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[100px]">
-                              <h5 className="text-sm font-bold text-[#282623] mb-2">프로페셔널 영상</h5>
-                              <div className="text-xs text-[#58534e] space-y-1">
-                                <div>• 영화급 장비 구축</div>
-                                <div>• 브랜드 색감 표준</div>
-                                <div>• 시각적 품질 향상</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="text-center">
-                            <div className="bg-[#6b7280] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 text-lg font-bold">3</div>
-                            <div className="bg-white border-2 border-[#6b7280] rounded-lg p-4 min-h-[100px]">
-                              <h5 className="text-sm font-bold text-[#282623] mb-2">대량 제작 자동화</h5>
-                              <div className="text-xs text-[#58534e] space-y-1">
-                                <div>• 프로그래밍 활용</div>
-                                <div>• 반복작업 90% 감소</div>
-                                <div>• 확장 가능한 체계</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
                       <div className="space-y-6">
                         <div className="border border-gray-300 rounded-lg overflow-hidden">
                           <div className="bg-[#6b7280] text-white p-3">
