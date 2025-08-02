@@ -5287,7 +5287,7 @@ export default function CombinedLanding() {
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                           <h4 className="text-sm font-medium text-[#282623] mb-3">외주 vs 인하우스 비교</h4>
                           <div className="h-[180px]">
@@ -5313,7 +5313,7 @@ export default function CombinedLanding() {
                                   legend: {
                                     position: 'bottom',
                                     labels: {
-                                      fontSize: 12
+                                      fontSize: 10
                                     }
                                   }
                                 }
@@ -5360,6 +5360,44 @@ export default function CombinedLanding() {
                                       callback: function(value) {
                                         return value + '%';
                                       }
+                                    }
+                                  }
+                                }
+                              }}
+                            />
+                          </div>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">프로젝트 성과</h4>
+                          <div className="h-[180px]">
+                            <Line 
+                              data={{
+                                labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월'],
+                                datasets: [
+                                  {
+                                    label: '품질 점수',
+                                    data: [60, 65, 75, 85, 90, 95, 98],
+                                    borderColor: 'rgb(59, 130, 246)',
+                                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                                    tension: 0.4,
+                                    fill: true
+                                  }
+                                ]
+                              }}
+                              options={{
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                  legend: {
+                                    display: false
+                                  }
+                                },
+                                scales: {
+                                  y: {
+                                    beginAtZero: true,
+                                    max: 100,
+                                    ticks: {
+                                      stepSize: 20
                                     }
                                   }
                                 }
