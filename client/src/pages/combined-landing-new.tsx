@@ -5178,7 +5178,7 @@ export default function CombinedLanding() {
                           <p className="text-sm text-[#58534e] leading-relaxed">외주 업체 의존도를 완전히 제거하고 내부 역량으로 전환하여 비용 효율성과 품질 통제력을 동시에 확보</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">프로모션 영상 2편 조회수 10만+ 달성, 본사 BP 사례 선정</h4>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">프로모션 영상 조회수 10만+ 달성, 본사 BP 사례 선정</h4>
                           <p className="text-sm text-[#58534e] leading-relaxed">높은 품질의 브랜드 콘텐츠로 시장에서 성공적인 반응을 얻으며 회사 내 모범 사례로 인정</p>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
