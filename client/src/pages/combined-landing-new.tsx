@@ -5170,79 +5170,10 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 2. 주요 성과 */}
+                    {/* 2. 내용 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
                         <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">2</span>
-                        주요 성과
-                      </h3>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">예산 절감 효과</h4>
-                          <div className="h-[250px]">
-                            <Radar 
-                              data={{
-                                labels: ['예산 효율성', '품질 통제', '소통 원활성', '일정 준수', '창작 자유도'],
-                                datasets: [
-                                  {
-                                    label: '외주 제작',
-                                    data: [40, 60, 30, 50, 40],
-                                    borderColor: 'rgb(239, 68, 68)',
-                                    backgroundColor: 'rgba(239, 68, 68, 0.2)',
-                                    borderWidth: 2
-                                  },
-                                  {
-                                    label: '인하우스 제작',
-                                    data: [90, 95, 85, 90, 95],
-                                    borderColor: 'rgb(34, 197, 94)',
-                                    backgroundColor: 'rgba(34, 197, 94, 0.2)',
-                                    borderWidth: 2
-                                  }
-                                ]
-                              }}
-                              options={{
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                plugins: {
-                                  legend: {
-                                    position: 'bottom'
-                                  }
-                                },
-                                scales: {
-                                  r: {
-                                    beginAtZero: true,
-                                    max: 100,
-                                    ticks: {
-                                      display: false
-                                    }
-                                  }
-                                }
-                              }}
-                            />
-                          </div>
-                        </div>
-
-                      </div>
-                      <div className="space-y-4">
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">인하우스 제작 체제 전환으로 제작 예산 40% 절감 및 품질 재투자</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">외주 업체 의존도를 완전히 제거하고 내부 역량으로 전환하여 비용 효율성과 품질 통제력을 동시에 확보</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">프로모션 영상 2편 조회수 10만+ 달성, 본사 BP 사례 선정</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">높은 품질의 브랜드 콘텐츠로 시장에서 성공적인 반응을 얻으며 회사 내 모범 사례로 인정</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">프리미엄 브랜드 콘텐츠 시장 경쟁력 확보</h4>
-                          <p className="text-sm text-[#58534e] leading-relaxed">업계 표준을 뛰어넘는 기술적 완성도로 브랜드 가치 향상 및 시장 차별화 달성</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* 3. 내용 */}
-                    <div className="mb-8">
-                      <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
                         내용
                       </h3>
                       
@@ -5417,10 +5348,10 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 4. 역할 */}
+                    {/* 3. 역할 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">3</span>
                         역할
                       </h3>
                       
@@ -5579,10 +5510,10 @@ export default function CombinedLanding() {
                       </div>
                     </div>
 
-                    {/* 5. 활용 기술 */}
+                    {/* 4. 활용 기술 */}
                     <div className="mb-8">
                       <h3 className="text-base text-[#282623] font-medium mb-4 tracking-tight leading-relaxed">
-                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">5</span>
+                        <span className="inline-flex items-center justify-center w-4 h-4 bg-[#282623] text-white text-xs font-bold rounded-full mr-2">4</span>
                         활용 기술
                       </h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
