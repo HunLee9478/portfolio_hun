@@ -4,10 +4,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FONT_SIZES, SPACING, ANIMATION_DURATIONS, TYPOGRAPHY, COLORS } from "../constants/styles";
 import AdvancedEditableText from "../components/AdvancedEditableText";
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement, PointElement, ArcElement, Title, Tooltip, Legend, RadialLinearScale } from 'chart.js';
-import { Bar, Line, Doughnut, Radar } from 'react-chartjs-2';
-
-ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, ArcElement, RadialLinearScale, Title, Tooltip, Legend);
 
 // Clean asset imports
 const ContactWorkspaceImage = "/assets/images/contact-workspace.png";
@@ -5241,87 +5237,7 @@ export default function CombinedLanding() {
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">외주 vs 인하우스 비교</h4>
-                          <div className="h-[180px]">
-                            <Doughnut 
-                              data={{
-                                labels: ['절감된 예산', '실제 사용 예산'],
-                                datasets: [
-                                  {
-                                    data: [40, 60],
-                                    backgroundColor: [
-                                      'rgb(34, 197, 94)',
-                                      'rgb(209, 213, 219)'
-                                    ],
-                                    borderWidth: 2,
-                                    borderColor: 'white'
-                                  }
-                                ]
-                              }}
-                              options={{
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                plugins: {
-                                  legend: {
-                                    position: 'bottom',
-                                    labels: {
-                                      fontSize: 12
-                                    }
-                                  }
-                                }
-                              }}
-                            />
-                          </div>
-                        </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">자동화 효과</h4>
-                          <div className="h-[180px]">
-                            <Bar 
-                              data={{
-                                labels: ['수동 작업', '자동화 후'],
-                                datasets: [
-                                  {
-                                    label: '작업 시간 (%)',
-                                    data: [100, 10],
-                                    backgroundColor: [
-                                      'rgb(239, 68, 68)',
-                                      'rgb(34, 197, 94)'
-                                    ],
-                                    borderColor: [
-                                      'rgb(220, 38, 127)',
-                                      'rgb(21, 128, 61)'
-                                    ],
-                                    borderWidth: 1
-                                  }
-                                ]
-                              }}
-                              options={{
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                plugins: {
-                                  legend: {
-                                    display: false
-                                  }
-                                },
-                                scales: {
-                                  y: {
-                                    beginAtZero: true,
-                                    max: 100,
-                                    ticks: {
-                                      stepSize: 20,
-                                      callback: function(value) {
-                                        return value + '%';
-                                      }
-                                    }
-                                  }
-                                }
-                              }}
-                            />
-                          </div>
-                        </div>
-                      </div>
+
                     </div>
 
                     {/* 4. 역할 */}
