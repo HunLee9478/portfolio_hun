@@ -5137,7 +5137,7 @@ export default function CombinedLanding() {
                       <div className="grid grid-cols-2 gap-4 mb-6">
                         <div className="aspect-video rounded-lg overflow-hidden">
                           <img 
-                            src="/attached_assets/image_1754036032577.png"
+                            src="/attached_assets/image_1754160725332.png"
                             alt="Snapask 브랜드 콘텐츠 - 교육자 인터뷰"
                             className="w-full h-full object-cover"
                           />
