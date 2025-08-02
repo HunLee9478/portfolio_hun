@@ -4,10 +4,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FONT_SIZES, SPACING, ANIMATION_DURATIONS, TYPOGRAPHY, COLORS } from "../constants/styles";
 import AdvancedEditableText from "../components/AdvancedEditableText";
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement, PointElement, ArcElement, Title, Tooltip, Legend, RadialLinearScale } from 'chart.js';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, LineElement, PointElement, ArcElement, Title, Tooltip, Legend, RadialLinearScale, Filler } from 'chart.js';
 import { Bar, Line, Doughnut, Radar } from 'react-chartjs-2';
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, ArcElement, RadialLinearScale, Title, Tooltip, Legend);
+ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, ArcElement, RadialLinearScale, Filler, Title, Tooltip, Legend);
 
 // Clean asset imports
 const ContactWorkspaceImage = "/assets/images/contact-workspace.png";
@@ -5368,15 +5368,15 @@ export default function CombinedLanding() {
                           </div>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">프로젝트 성과</h4>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">월별 성과 향상</h4>
                           <div className="h-[180px]">
                             <Line 
                               data={{
-                                labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월'],
+                                labels: ['1월', '2월', '3월', '4월', '5월', '6월'],
                                 datasets: [
                                   {
                                     label: '품질 점수',
-                                    data: [60, 65, 75, 85, 90, 95, 98],
+                                    data: [65, 70, 78, 85, 92, 98],
                                     borderColor: 'rgb(59, 130, 246)',
                                     backgroundColor: 'rgba(59, 130, 246, 0.1)',
                                     tension: 0.4,
@@ -5397,7 +5397,7 @@ export default function CombinedLanding() {
                                     beginAtZero: true,
                                     max: 100,
                                     ticks: {
-                                      stepSize: 20
+                                      stepSize: 25
                                     }
                                   }
                                 }
