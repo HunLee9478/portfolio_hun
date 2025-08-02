@@ -5369,19 +5369,24 @@ export default function CombinedLanding() {
                           </div>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">월별 성과 향상</h4>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">자동화 효과</h4>
                           <div className="h-[180px]">
-                            <Line 
+                            <Bar 
                               data={{
-                                labels: ['1월', '2월', '3월', '4월', '5월', '6월'],
+                                labels: ['수동 작업', '자동화 후'],
                                 datasets: [
                                   {
-                                    label: '품질 점수',
-                                    data: [65, 70, 78, 85, 92, 98],
-                                    borderColor: 'rgb(59, 130, 246)',
-                                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
-                                    tension: 0.4,
-                                    fill: true
+                                    label: '작업 시간 (%)',
+                                    data: [100, 10],
+                                    backgroundColor: [
+                                      'rgb(239, 68, 68)',
+                                      'rgb(34, 197, 94)'
+                                    ],
+                                    borderColor: [
+                                      'rgb(220, 38, 127)',
+                                      'rgb(21, 128, 61)'
+                                    ],
+                                    borderWidth: 1
                                   }
                                 ]
                               }}
@@ -5398,7 +5403,10 @@ export default function CombinedLanding() {
                                     beginAtZero: true,
                                     max: 100,
                                     ticks: {
-                                      stepSize: 25
+                                      stepSize: 20,
+                                      callback: function(value) {
+                                        return value + '%';
+                                      }
                                     }
                                   }
                                 }
