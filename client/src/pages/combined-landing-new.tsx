@@ -5221,43 +5221,7 @@ export default function CombinedLanding() {
                             />
                           </div>
                         </div>
-                        <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">프로모션 영상 성과</h4>
-                          <div className="h-[250px]">
-                            <Bar 
-                              data={{
-                                labels: ['영상 1', '영상 2'],
-                                datasets: [
-                                  {
-                                    label: '조회수 (만)',
-                                    data: [10, 12],
-                                    backgroundColor: 'rgb(59, 130, 246)',
-                                    borderColor: 'rgb(29, 78, 216)',
-                                    borderWidth: 1
-                                  }
-                                ]
-                              }}
-                              options={{
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                plugins: {
-                                  legend: {
-                                    position: 'bottom'
-                                  }
-                                },
-                                scales: {
-                                  y: {
-                                    beginAtZero: true,
-                                    max: 15,
-                                    ticks: {
-                                      stepSize: 2
-                                    }
-                                  }
-                                }
-                              }}
-                            />
-                          </div>
-                        </div>
+
                       </div>
                       <div className="space-y-4">
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
