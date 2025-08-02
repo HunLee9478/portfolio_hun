@@ -2026,7 +2026,7 @@ export default function CombinedLanding() {
                             width: "100%"
                           }}
                         >
-                          외주 제작의 한계를 극복하고 인하우스 제작 체제로 전환하여 40% 예산 절감과 프리미엄 품질을 동시에 달성했습니다. 프로모션 영상 2편이 10만+ 조회수를 기록하며 본사 BP 사례로 선정된 혁신적 영상 제작 프로젝트입니다.
+                          외주 제작의 한계를 극복하고 인하우스 제작 체제로 전환하여 40% 예산 절감과 프리미엄 품질을 동시에 달성했습니다. 프로모션 영상은 10만+ 조회수를 기록하며 본사 BP 사례로 선정된 혁신적 영상 제작 프로젝트입니다.
                         </AdvancedEditableText>
                       )}
                     </div>
@@ -5141,7 +5141,7 @@ export default function CombinedLanding() {
                       <div className="grid grid-cols-2 gap-4 mb-6">
                         <div className="aspect-video rounded-lg overflow-hidden">
                           <img 
-                            src="/attached_assets/image_1754036032577.png"
+                            src="/attached_assets/image_1754160066957.png"
                             alt="Snapask 브랜드 콘텐츠 - 교육자 인터뷰"
                             className="w-full h-full object-cover"
                           />
