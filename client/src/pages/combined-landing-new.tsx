@@ -5322,24 +5322,25 @@ export default function CombinedLanding() {
                           </div>
                         </div>
                         <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                          <h4 className="text-sm font-medium text-[#282623] mb-3">자동화 효과</h4>
+                          <h4 className="text-sm font-medium text-[#282623] mb-3">예산 절감 효과</h4>
                           <div className="h-[180px]">
-                            <Bar 
+                            <Radar 
                               data={{
-                                labels: ['수동 작업', '자동화 후'],
+                                labels: ['예산 효율성', '품질 통제', '소통 원활성', '일정 준수', '창작 자유도'],
                                 datasets: [
                                   {
-                                    label: '작업 시간 (%)',
-                                    data: [100, 10],
-                                    backgroundColor: [
-                                      'rgb(239, 68, 68)',
-                                      'rgb(34, 197, 94)'
-                                    ],
-                                    borderColor: [
-                                      'rgb(220, 38, 127)',
-                                      'rgb(21, 128, 61)'
-                                    ],
-                                    borderWidth: 1
+                                    label: '외주 제작',
+                                    data: [40, 60, 30, 50, 40],
+                                    borderColor: 'rgb(239, 68, 68)',
+                                    backgroundColor: 'rgba(239, 68, 68, 0.2)',
+                                    borderWidth: 2
+                                  },
+                                  {
+                                    label: '인하우스 제작',
+                                    data: [90, 95, 85, 90, 95],
+                                    borderColor: 'rgb(34, 197, 94)',
+                                    backgroundColor: 'rgba(34, 197, 94, 0.2)',
+                                    borderWidth: 2
                                   }
                                 ]
                               }}
@@ -5348,18 +5349,18 @@ export default function CombinedLanding() {
                                 maintainAspectRatio: false,
                                 plugins: {
                                   legend: {
-                                    display: false
+                                    position: 'bottom',
+                                    labels: {
+                                      fontSize: 8
+                                    }
                                   }
                                 },
                                 scales: {
-                                  y: {
+                                  r: {
                                     beginAtZero: true,
                                     max: 100,
                                     ticks: {
-                                      stepSize: 20,
-                                      callback: function(value) {
-                                        return value + '%';
-                                      }
+                                      display: false
                                     }
                                   }
                                 }
